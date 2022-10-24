@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="css/booking.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script>
+            let saveFile = () => {
+            const name = document.getElementById("txtName");
+            const email = document.getElementById("txtEmail");
+            const date = document.getElementById("txtDate");
+            const msg = document.getElementById("msg");
+
+            let data = "\r Name: " + name.value + " \r\n " + "Email: " + email.value + " \r\n " + "Date: " + date.value +  " \r\n " + "Message: " + msg.value;
+            const textToBLOB = new Blob([data], { type: "text/plain" });
+            let newLink = document.createElement("a");
+            newLink.download = "Booking";
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+            newLink.click();
+            
+        };
+  </script>
+</head>
+<body>
+
+  <div class="inputForm">
+    <div>
+      <input type="text" id="txtName" placeholder="Enter your name" />
+      <input type="text" id="txtDate" placeholder="dd/mm/åååå" />
+      <input type="text" id="txtEmail" placeholder="Enter your email address" />
+    </div>
+    <div>
+      <textarea id="msg" name="msg" placeholder="Write some message ..." style="height: 100px;"></textarea>
+    </div>
+    <div>
+      <input type="button" class="sendButton" id="bt" value="Send inn" onclick="saveFile()" />
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
