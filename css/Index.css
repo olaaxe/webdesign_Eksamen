@@ -1,7 +1,7 @@
 
 .HeaderBotBox {
   text-align: center;
-  color: rgb(225, 215, 196);
+  color: rgb(202, 67, 25);
   font-weight: bold;
   background-color: rgb(21, 21, 21);
   padding-top: 40px;
@@ -17,9 +17,9 @@
 .IntroBox {
   background-color: rgb(225, 215, 196);
   color:rgb(21, 21, 21);
-  text-align: center;
-  margin-right: 10%;
-  margin-left: 10%;
+  text-align: left;
+  margin-right: 20%;
+  margin-left: 20%;
   padding-top: min(20px, 95%);
   padding-bottom: min(20px, 95%);
 }
@@ -27,8 +27,8 @@
 .HeaderButtonsBox {
   display: flex;
   justify-content: space-between;
-  padding-left: min(20px, 95%);
-  padding-right: min(20px, 95%);
+  padding-left: min(100px, 95%);
+  padding-right: min(100px, 95%);
   background-color: rgb(21, 21, 21);
  
 }
@@ -50,5 +50,6 @@
 }
 
 .Introparagraph {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
