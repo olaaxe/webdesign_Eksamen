@@ -17,3 +17,43 @@ h2{
 h3{
   margin: 0px;
 }
+
+.HeaderBotBox {
+  text-align: center;
+  color: rgb(202, 67, 25);
+  font-weight: bold;
+  background-color: rgb(21, 21, 21);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.BotIntroBox {
+  background-color:rgb(225, 215, 196);
+  color:rgb(21, 21, 21);
+  text-align: center;
+}
+
+.HeaderButtonsBox {
+  display: flex;
+  justify-content: space-between;
+  padding-left: min(100px, 95%);
+  padding-right: min(100px, 95%);
+  background-color: rgb(21, 21, 21);
+ 
+}
+
+.HeaderButtons {
+  background-color: rgb(21, 21, 21);
+  color:rgb(225, 215, 196);
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.HeaderButtons:hover {
+  color: rgb(202, 67, 25);
+}
+ 
+.HeaderButtons:active {
+ color: rgb(241, 129, 95);
+}
