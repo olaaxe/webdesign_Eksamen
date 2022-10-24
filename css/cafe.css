@@ -1,0 +1,135 @@
+body {
+  margin: 0px;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.navigasjon-bar-div{
+  background-color: aqua;
+  width: 1fr;
+  height: 10px;
+}
+
+
+
+.main-retter-div{
+  background-color: lightblue;
+  padding-bottom: 1px;
+  margin: auto;
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  border-radius: 5px;
+  width: min(1000px,90%);
+}
+
+
+.main-retter-header-div {
+  width: 1fr;
+  background-color: lightcoral;
+  height: 80px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+.main-retter-header {
+  padding-top: 20px;
+}
+
+
+
+.main-retter-tab-div {
+  width: 1fr;
+  background-color: lightcoral;
+  height: auto;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  border-radius: 5px;
+}
+@media (max-width: 400px){
+  .main-retter-tab-div {
+    grid-template-columns: 1fr;
+  }
+  .main-retter-tab-text-header-div {
+    width: min(400px,90%);
+  }
+  .main-retter-tab-text-beskrivelse-div {
+    width: min(400px,90%);
+  }
+  .main-retter-tab-text-alergener-div {
+    width: min(400px,90%);
+  }
+
+}
+
+
+.main-retter-tab-text-div {
+  position: relative;
+}
+.main-retter-tab-text-header-div {
+  width: 1fr;
+  padding-right: 10px;
+  height: auto;
+  /*background-color: blueviolet;*/
+  
+}
+.main-retter-tab-text-header {
+  font-size: 25px;
+  padding-top: 10px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+.main-retter-tab-text-beskrivelse-div {
+  /*background-color: rgb(166, 94, 233);*/
+  width: 1fr;
+  padding-right: 10px;
+  height: auto;
+}
+.main-retter-tab-text-beskrivelse{
+  padding-top: 10px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+.main-retter-tab-text-alergener-div {
+  /*background-color: rgb(185, 149, 218);*/
+  width: 1fr;
+  padding-right: 10px;
+  height: auto;
+}
+.main-retter-tab-text-alergener {
+  padding-left: 15px;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+
+
+
+
+
+.main-retter-tab-img-div {
+  /*background-color: aquamarine;*/
+  align-items: center;
+  padding: auto;
+  display: flex;
+
+}
+.main-retter-tab-img{
+  object-fit: cover;
+  max-width:96%;
+  max-height:96%;
+  border-radius: 5px;
+  margin: 2px;
+  border: solid;
+  
+}
