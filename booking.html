@@ -1,28 +1,57 @@
 <!DOCTYPE html>
-<html>
-       <head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="css/booking.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script>
+            let saveFile = () => {
+            // Get the data from each element on the form.
+            const name = document.getElementById("txtName");
+            const email = document.getElementById("txtEmail");
+            const date = document.getElementById("txtDate");
+            const msg = document.getElementById("msg");
 
-       </head>
+            // This variable stores all the data.
+            let data = "\r Name: " + name.value + " \r\n " + "Email: " + email.value + " \r\n " + "Date: " + date.value +  " \r\n " + "Message: " + msg.value;
+            console.log(data); //printing form data into the console
+            // Convert the text to BLOB.
+            const textToBLOB = new Blob([data], { type: "text/plain" });
+            let newLink = document.createElement("a");
+            newLink.download = "bookingInfo";
 
+            if (window.webkitURL != null) {
+                newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+            } else {
+                newLink.href = window.URL.createObjectURL(textToBLOB);
+                newLink.style.display = "none";
+                document.body.appendChild(newLink);
+            }
 
+            newLink.click();
+        };
+  </script>
+</head>
+<body>
 
+  <h1>Save HTML Form data as text File using Javascript / Jquery</h1>
+  <div class="inputForm">
+    <div>
+      <input type="text" id="txtName" placeholder="Enter your name" />
+      <input type="text" id="txtDate" placeholder="dd/mm/åååå" />
+      <input type="text" id="txtEmail" placeholder="Enter your email address" />
+    </div>
+    <div>
+      <textarea id="msg" name="msg" placeholder="Write some message ..." style="height: 100px;"></textarea>
+    </div>
+    <div>
+      <input type="button" class="sendButton" id="bt" value="Send inn" onclick="saveFile()" />
+    </div>
+  </div>
 
-
-
-       <body>
-         <div class="størsteBilde"> </div>
-         <div class="førsteBilde"> </div>
-         <div class="andreBilde"> </div>
-         <div class="tredjeBilde"> </div>
-         <div class=" fjerdeBilde"> </div>     
-         <div class="femteBilde"> </div>
-
-
-       </body>
-
-
-
-
-
-
+</div>
+</body>
 </html>

@@ -1,0 +1,17 @@
+input[type="text"],
+textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.inputForm{
+  width: min(500px, 80%);
+  box-sizing: border-box;
+}
+.sendButton {
+  width: auto;
+  float: right;
+  cursor: pointer;
+  padding: 7px;
+}
