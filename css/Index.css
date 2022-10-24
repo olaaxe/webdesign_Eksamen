@@ -15,7 +15,7 @@
 }
 
 .IntroBox {
-  background-color: rgb(202, 67, 25);
+  background-color: rgb(225, 215, 196);
   color:rgb(21, 21, 21);
   text-align: center;
   margin-right: 10%;
@@ -47,4 +47,8 @@
  
 .HeaderButtons:active {
  color: rgb(241, 129, 95);
+}
+
+.Introparagraph {
+  margin-bottom: 10px;
 }
