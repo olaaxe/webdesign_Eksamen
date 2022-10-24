@@ -34,12 +34,25 @@ h3{
 }
 
 .HeaderButtonsBox {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: space-between;
   padding-left: min(100px, 95%);
   padding-right: min(100px, 95%);
   background-color: rgb(21, 21, 21);
  
+}
+
+@media (min-width:350px) {
+  .HeaderButtonsBox {
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+@media (min-width:580px) {
+  .HeaderButtonsBox {
+    grid-template-columns:repeat(5, 1fr);
+  }
 }
 
 .HeaderButtons {
