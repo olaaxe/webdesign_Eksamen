@@ -2,6 +2,7 @@
 .HeaderBotBox {
   text-align: center;
   color: rgb(225, 215, 196);
+  font-weight: bold;
   background-color: rgb(21, 21, 21);
   padding-top: 40px;
   padding-bottom: 40px;
@@ -19,14 +20,31 @@
   text-align: center;
   margin-right: 10%;
   margin-left: 10%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: min(20px, 95%);
+  padding-bottom: min(20px, 95%);
 }
 
 .HeaderButtonsBox {
-  flex: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-left: min(20px, 95%);
+  padding-right: min(20px, 95%);
+  background-color: rgb(21, 21, 21);
+ 
 }
 
 .HeaderButtons {
-  flex: auto;
+  background-color: rgb(21, 21, 21);
+  color:rgb(225, 215, 196);
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.HeaderButtons:hover {
+  color: rgb(202, 67, 25);
+}
+ 
+.HeaderButtons:active {
+ color: rgb(241, 129, 95);
 }
