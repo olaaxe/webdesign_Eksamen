@@ -1,5 +1,7 @@
 body{
   margin: 0px;
+  position: relative;
+  padding-bottom: 400px;
 }
 div{
   margin: 0px;
@@ -17,6 +19,12 @@ h2{
 h3{
   margin: 0px;
 }
+html{
+  scroll-behavior: smooth;
+}
+
+
+
 
 .HeaderBotBox {
   text-align: center;

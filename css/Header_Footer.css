@@ -1,0 +1,9 @@
+.footerWrapper{
+  position: absolute;
+  bottom: 0px;
+  height: 300px;
+  right: 0px;
+  left: 0px;
+  background-color: rgb(21, 21, 21);
+  overflow: auto;
+}
