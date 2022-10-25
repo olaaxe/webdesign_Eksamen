@@ -8,13 +8,14 @@ h1{
 
 
 .navigasjon-bar-div{
-  background-color: rgb(21, 21, 21);
+  background-color: rgb(225, 215, 196);
   width: auto;
   height: auto;
   display: grid;
   padding-left: 100px;
   padding-right: 100px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
 }
 
 @media (max-width: 600px){
@@ -26,7 +27,7 @@ h1{
 }
 
 .navigasjon-bar-button-div {
-  background-color: rgb(21, 21, 21);
+  background-color: rgb(225, 215, 196);
   height: auto;
   width: 1fr;
   margin: auto;
@@ -39,8 +40,8 @@ h1{
   padding: 0px;
   height: 25px;
   width: 1fr;
-  background-color: rgb(21, 21, 21);
-  color: rgb(225, 215, 196);
+  background-color: rgb(225, 215, 196);
+  color: rgb(21, 21, 21);
   transition: color 0.15s;
 }
 .navigasjon-bar-button:hover {
@@ -48,7 +49,7 @@ h1{
   padding: 0px;
   height: 25px;
   width: 1fr;
-  background-color: rgb(21, 21, 21);
+  background-color: rgb(225, 215, 196);
   color: rgb(202, 67, 25);
   cursor: pointer;
 }
@@ -66,7 +67,7 @@ h1{
 
 
 .retter-div{
-  background-color: rgb(208, 207, 207);
+  background-color: rgb(168, 162, 149);
   padding-bottom: 1px;
   margin: auto;
   margin-top: 50px;
@@ -80,14 +81,11 @@ h1{
 
 .retter-header-div {
   width: 1fr;
-  background-color: rgb(158, 150, 135);
+  background-color: rgb(202, 67, 25);
   height: 80px;
   margin-bottom: 15px;
   text-align: center;
   border-radius: 5px;
-}
-.retter-header-div:focus {
-  background-color: red;
 }
 .retter-header {
   padding-top: 20px;
@@ -97,7 +95,7 @@ h1{
 
 .retter-tab-div {
   width: 1fr;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(225, 215, 196);
   height: auto;
   margin-bottom: 15px;
   display: grid;
