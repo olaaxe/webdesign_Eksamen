@@ -1,5 +1,10 @@
 
 
+.BotIntroBox {
+  background-color:rgb(225, 215, 196);
+  color:rgb(21, 21, 21);
+  text-align: center;
+}
 
 .IntroBox {
   background-color: rgb(225, 215, 196);
