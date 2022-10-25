@@ -55,6 +55,7 @@
   font-weight: bold;
   padding-left: 2em;
   padding-right: 2em;
+  text-decoration: underline;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
