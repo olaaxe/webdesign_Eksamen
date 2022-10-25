@@ -23,3 +23,7 @@ h3{
 html{
   scroll-behavior: smooth;
 }
+
+.HeaderCenterButton {
+  text-align: center;
+}
