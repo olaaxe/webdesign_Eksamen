@@ -1,3 +1,4 @@
+/*--------- Header-------- */
 .HeaderBotBox {
   text-align: center;
   color: rgb(202, 67, 25);
@@ -5,12 +6,6 @@
   background-color: rgb(21, 21, 21);
   padding-top: 40px;
   padding-bottom: 40px;
-}
-
-.BotIntroBox {
-  background-color:rgb(225, 215, 196);
-  color:rgb(21, 21, 21);
-  text-align: center;
 }
 
 .HeaderButtonsBox {
@@ -39,7 +34,9 @@
   background-color: rgb(21, 21, 21);
   color:rgb(225, 215, 196);
   border: none;
+  text-align: center;
   font-size: 20px;
+  padding-top: 8px;
   font-weight: bold;
 }
 
@@ -51,8 +48,26 @@
  color: rgb(241, 129, 95);
 }
 
-/*--------- Footer-------- */
+/* Endring i button ut ifra hvilken side man er på */
+.Headeractive {
+  background-color: rgb(225, 215, 196);
+  color: rgb(21, 21, 21);
+  font-weight: bold;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: underline;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
 
+.Headermain {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px
+}
+
+/*--------- Footer-------- */
 .footerWrapper{
   position: absolute;
   bottom: 0px;
