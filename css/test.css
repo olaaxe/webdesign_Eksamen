@@ -10,27 +10,26 @@
   background-color: rgb(21, 21, 21);
   color: rgb(202, 67, 25);
 }
-.hedder-nav {
+.hedder-wrapper {
   align-items: center;
   box-sizing: border-box;
   background-color: rgb(21, 21, 21);
 
 }
 
-.menu {
+.menuFlex {
   display: flex;
   align-items:center;
   justify-content: space-between;
   width: 100%;
-
 }
 
-.menu > a {
+.menuFlex > a {
   margin: 0 1rem;
   overflow: hidden;
 }
 
-.menu > a > button {
+.menuFlex  a  button {
   background-color: rgb(21, 21, 21);
   color:rgb(225, 215, 196);
   border: none;
@@ -39,14 +38,14 @@
   font-weight: bold;
   cursor: pointer;
 }
-.menu > a > button:hover {
+.menuFlex > a  button:hover {
   color: rgb(202, 67, 25);
 }
  
-.menu > a > button:active {
+.menuFlex > a  button:active {
  color: rgb(241, 129, 95);
 }
-.menu > a >.headerActive {
+.menuFlex > a .headerActive {
   background-color: rgb(225, 215, 196);
   color: rgb(21, 21, 21);
   padding-left: 2em;
@@ -61,16 +60,14 @@
   height: 30px;
   width: 30px;
   cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /*transform: translate(50px, -50px)*/
 }
 
-#menu-toggle {
-  display: none; /*--- Gjemmer Checkboksen skal være display: none; --------*/
+#menu-checkbox-toggle {
+  display: none;
 }
 
-#menu-toggle:checked + .menu-button-container > .menu-button-img{
+#menu-checkbox-toggle:checked + .menu-button-container > .menu-button-img{
   background-color: red; /*--- bakgrunsfarge for menyknapp åpnet; --------*/
 }
 .menu-button-img{
@@ -79,13 +76,11 @@
   background-color: aliceblue;  /*--- bakgrunsfarge for menyknapp lukket; --------*/
 }
 
-
-
 @media (max-width: 700px) {
   .menu-button-container {
     display: inline-block;
   }
-  .menu {
+  .menuFlex {
     position: absolute;
     top: 0;
     left: 0;
@@ -93,17 +88,17 @@
     flex-direction: column;
     padding: 0;
   }
-  #menu-toggle ~ .menu a {
+  #menu-checkbox-toggle ~ .menuFlex a {
     height: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: height 500ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  #menu-toggle:checked ~ .menu a {
+  #menu-checkbox-toggle:checked ~ .menuFlex a {
     width: 100%;
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    height: 40px;
+    padding-bottom: 5px;
+    transition: height 500ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  .menu > a {
+  .menuFlex > a {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -112,22 +107,22 @@
   }
 
 
-  .menu > a > button {
+  .menuFlex > a  button {
     background-color: rgb(41, 41, 41);
     color:rgb(225, 215, 196);
     border: none;
+    padding-top: 0px;
     font-size: 20px;
-    padding-top: 8px;
     cursor: pointer;
   }
-  .menu > a > button:hover {
+  .menuFlex > a  button:hover {
     color: rgb(202, 67, 25);
   }
    
-  .menu > a > button:active {
+  .menuFlex > a  button:active {
    color: rgb(241, 129, 95);
   }
-  .menu > a >.headerActive {
+  .menuFlex > a .headerActive {
     background-color: rgb(41, 41, 41);
     color: rgb(202, 67, 25);
     padding-left: 2em;
