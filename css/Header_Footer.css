@@ -28,6 +28,9 @@
   .HeaderButtonsBox {
     grid-template-columns:repeat(5, 1fr);
   }
+  .HeaderBotBox {
+
+  }
 }
 
 .HeaderButtons {
@@ -52,6 +55,7 @@
 .Headeractive {
   background-color: rgb(225, 215, 196);
   color: rgb(21, 21, 21);
+  text-align: center;
   font-weight: bold;
   padding-left: 2em;
   padding-right: 2em;
