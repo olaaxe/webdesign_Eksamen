@@ -78,7 +78,7 @@
   .drpMenue {
     overflow: hidden;
     background-color: rgb(60, 60, 60);
-    position: relative;
+    position: absolute;
   }
   
   .drpMenue #burgerbuttoninfo {
