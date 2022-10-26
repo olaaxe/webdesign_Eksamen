@@ -29,7 +29,7 @@
   overflow: hidden;
 }
 
-.menuFlex  a  button {
+.menuFlex > a  button {
   background-color: rgb(21, 21, 21);
   color:rgb(225, 215, 196);
   border: none;
@@ -67,14 +67,23 @@
   display: none;
 }
 
-#menu-checkbox-toggle:checked + .menu-button-container > .menu-button-img{
-  background-color: red; /*--- bakgrunsfarge for menyknapp åpnet; --------*/
-}
-.menu-button-img{
+.menu-button-img1{
   width: 100%;
   height: 100%;
-  background-color: aliceblue;  /*--- bakgrunsfarge for menyknapp lukket; --------*/
 }
+.menu-button-img2{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#menu-checkbox-toggle:checked + .menu-button-container>figure>.menu-button-img1{
+  display: none;
+}
+#menu-checkbox-toggle:checked + .menu-button-container>figure>.menu-button-img2{
+  display: inline-block;
+}
+
+
 
 @media (max-width: 700px) {
   .menu-button-container {
@@ -84,7 +93,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 135px; /* burgerbar drop punkt */
+    margin-top:300px;/* 135px; /* burgerbar drop punkt */
     flex-direction: column;
     padding: 0;
   }
@@ -102,13 +111,13 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(46, 46, 46);
     text-decoration: none;
   }
 
 
   .menuFlex > a  button {
-    background-color: rgb(41, 41, 41);
+    background-color: transparent;
     color:rgb(225, 215, 196);
     border: none;
     padding-top: 0px;
@@ -123,7 +132,7 @@
    color: rgb(241, 129, 95);
   }
   .menuFlex > a .headerActive {
-    background-color: rgb(41, 41, 41);
+    background-color: transparent;
     color: rgb(202, 67, 25);
     padding-left: 2em;
     padding-right: 2em;
