@@ -1,0 +1,83 @@
+/*--------- Header-------- */
+.HeaderBotBox {
+  text-align: center;
+  color: rgb(202, 67, 25);
+  font-weight: bold;
+  background-color: rgb(21, 21, 21);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.HeaderButtonsBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  padding-left: min(100px, 95%);
+  padding-right: min(100px, 95%);
+  background-color: rgb(21, 21, 21);
+ 
+}
+
+@media (min-width:350px) {
+  .HeaderButtonsBox {
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+@media (min-width:580px) {
+  .HeaderButtonsBox {
+    grid-template-columns:repeat(5, 1fr);
+  }
+  .HeaderBotBox {
+
+  }
+}
+
+.HeaderButtons {
+  background-color: rgb(21, 21, 21);
+  color:rgb(225, 215, 196);
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.HeaderButtons:hover {
+  color: rgb(202, 67, 25);
+}
+ 
+.HeaderButtons:active {
+ color: rgb(241, 129, 95);
+}
+
+/* Endring i button ut ifra hvilken side man er på */
+.Headeractive {
+  background-color: rgb(225, 215, 196);
+  color: rgb(21, 21, 21);
+  text-align: center;
+  font-weight: bold;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: underline;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.Headermain {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px
+}
+
+/*--------- Footer-------- */
+.footerWrapper{
+  position: absolute;
+  bottom: 0px;
+  height: 300px;
+  right: 0px;
+  left: 0px;
+  background-color: rgb(21, 21, 21);
+  overflow: auto;
+}
