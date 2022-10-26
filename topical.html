@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/topical.css">
   <link rel="stylesheet" href="css/Header_Footer.css">
+  <link rel="stylesheet" href="css/Test.css">
 </head>
 <body>
 
@@ -25,19 +26,33 @@
     Repellat ratione ut unde tempora nisi eius numquam incidunt 
     dolorem. Maxime sed obcaecati, architecto nobis accusantium 
     asperiores porro ex velit officia. Magnam.</p>
-
+<!--google maps start-->
     <div>
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2002.898787340236!2d10.841096115848911!3d59.867426731094525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416f50e97b1e33%3A0xede9610e20767af7!2sOslo%20Klatresenter%20AS!5e0!3m2!1sen!2sno!4v1666794154165!5m2!1sen!2sno" 
-        width="600" 
-        height="450" 
+        width="300" 
+        height="225" 
         style="border:0;" 
         allowfullscreen="" 
         loading="lazy" 
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
-    
+<!--google maps slutt-->
+
+<!--Contackt form start-->
+  <input type="checkbox" name="SpawnContactForm" id="form">
+  <form class="contactForm">      
+    <input type="text" name="name" placeholder="Name" required/>   
+    <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+    <input type="datetime-local" name="date" required>
+    <textarea name="text" placeholder="Exstra information"></textarea>
+    <div class="sendForm">
+      <input type="checkbox" name="checkbox" required>
+      <p>I agree to the Terms of Service</p> <!--lang link?-->
+    </div>
+    <input type="submit" value="SUBMIT"/>
+<!--Contackt form slutt-->
 
 
 

@@ -1,0 +1,51 @@
+
+.contactForm{
+  border: solid 2px rgb(21, 21, 21);
+  border-radius: 8px;
+  background-color: rgb(21, 21, 21);
+  max-width: 400px;
+  margin: 0px;
+  padding-left: 10px;
+  display: none;
+}
+.contactForm > input, .contactForm > textarea{
+  width: 90%;
+  border:2px solid rgb(202, 67, 25);
+  border-radius: 8px;
+  height: 20px;
+  margin: 5px 0 5px 0;
+}
+.contactForm > textarea{
+  resize: vertical;
+  height: 150px;
+}
+.contactForm [type = "submit"]{
+  max-width: 200px;
+  cursor: pointer;
+}
+.contactForm [type = "submit"]:hover{
+  background-color: rgb(202, 67, 25);
+}
+
+.sendForm{
+  display: flex;
+  color: white;
+}
+.sendForm > input[type="checkbox"]{
+  width: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#form:checked ~ .contactForm{
+  display: block;
+}
+
+
+
+.googlemaps{
+  max-width: 300px;
+  max-height: 300px;
+}
+.googlemaps iframe{
+  object-fit: contain;
+}
