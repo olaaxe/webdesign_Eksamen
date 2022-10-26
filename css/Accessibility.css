@@ -1,12 +1,7 @@
 main{
   justify-content: center;
 }
-.tittel{
-  padding-top: 2%;
-  justify-content: center;
-  text-align: center;
-  color: rgb(225, 215, 196);
-}
+
 .tekstboks{
   display: flex;
   flex-direction: column;
@@ -14,12 +9,19 @@ main{
   padding: max(1vh, 1rem);
   justify-content: center;
 }
-.tekstinnhold{
+.tekstboks > h2{
+  padding-top: 2%;
+  justify-content: center;
+  text-align: center;
+  color: rgb(225, 215, 196);
+}
+.tekstboks > p{
 
   padding: 1rem 2rem;
   width: 55ch;
   margin:auto;
 }
+
 .bildeboks{
   display: flex;
   margin:auto;
@@ -29,6 +31,10 @@ main{
   padding-left: 1rem;
   padding-right: 1rem;
 
+}
+.bildeboks > img{
+  padding: max(1vh, 1rem);
+  padding-bottom: 0;
 }
 .container{
   background-color: rgb(46,46,46);
@@ -42,19 +48,20 @@ main{
   margin-inline: auto;
  
 }
-.bilder{
-  padding: max(1vh, 1rem);
-  padding-bottom: 0;
-}
+
 
 @media (max-width:700px), (handheld) {
   .body{
     background-color: rgb(46,46,46);
 
 }
-  .bildeboks{
-    width: min(85%, 500);
-    height: min(85%, 500);
+  .bildeboks > p{
+    width: min(85%, 500px);
+    height: min(85%, 500px);
+  }
+  .tekstboks > p{
+    width: min(85%, 500px);
+    height: min(85%, 500px);
   }
 }
 
