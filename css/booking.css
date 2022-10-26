@@ -1,87 +1,96 @@
+input[type="text"],
+textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.inputForm{
+  width: min(500px, 80%);
+  box-sizing: border-box;
+}
+.sendButton {
+  width: auto;
+  float: right;
+  cursor: pointer;
+  padding: 7px;
+}
 
 .body{
-       background-color: rgb(225, 215, 196);
-
+  background-color: rgb(225, 215, 196);
 }.main-farge{
-       background-color: rgb(225, 215, 196);
-       background-size: 100% 100%;
-       
-       
+  background-color: rgb(225, 215, 196);
+  background-size: 100% 100%;
+  
+  
 }
 .alleBildene{
 display: flex;
 justify-content: center;
 
-
 }
 .fireBildene{
-       display: grid;
-       grid-template-columns: 213px 213px;
+  display: grid;
+  grid-template-columns: 213px 213px;
 }
 .størsteBilde{
-       background-color: brown;
-       margin-right: 70px;
-       padding-right: min(400px,95%);
-       padding-bottom: 250px;
-       
+  background-color: brown;
+  margin-right: 70px;
+  padding-right: min(400px,95%);
+  padding-bottom: 250px;
+  
 }
-
 .førsteBilde{
-       background-color: blueviolet;
-       padding-right: min(300px,95%);
-       margin-right: 20px;
-       margin-bottom: 20px;
+  background-color: blueviolet;
+  padding-right: min(300px,95%);
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 .andreBilde{
-       background-color: cadetblue;
-       padding-right: min(300px,95%);
-       margin-left: 10px;
-       margin-bottom: 20px;
+  background-color: cadetblue;
+  padding-right: min(300px,95%);
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 .tredjeBilde{
-       background-color: aqua;
-       padding-right: min(300px,95%);
-       margin-right: 40px;
-       
-       
+  background-color: aqua;
+  padding-right: min(300px,95%);
+  margin-right: 40px;
+  
+  
 }
 .fjerdeBilde{
-       background-color: aquamarine;
-       padding-right: min(300px,95%);
-       margin-left: 10px;
+  background-color: aquamarine;
+  padding-right: min(300px,95%);
+  margin-left: 10px;
 }
-
 .tekstUnderBilde{
-       color: blue;
-       display: block;
-       padding-top: 00px;
-       background-color: rgb(46,46,46);
-       justify-content: center;
-       text-align: center;
-       margin-left: 169px;
-       margin-right: 169px;
-       margin-top: 5px;
-       padding-top: 100px;
-      
-
+  color: blue;
+  display: block;
+  padding-top: 00px;
+  background-color: rgb(46,46,46);
+  justify-content: center;
+  text-align: center;
+  margin-left: 169px;
+  margin-right: 169px;
+  margin-top: 5px;
+  padding-top: 100px;
+ 
 }
 .ratingBoks{
-       color: aquamarine;
-       margin-left: 169px;
-       background-color: rgb(46,46,46);
-       margin-right: 169px;
-       padding-top: 100px;
-       margin-top: 5px;
+  color: aquamarine;
+  margin-left: 169px;
+  background-color: rgb(46,46,46);
+  margin-right: 169px;
+  padding-top: 100px;
+  margin-top: 5px;
 }
-
 
 
 .sisteTekstBoks{
-       background-color: rgb(46,46,46);
-       margin-right: 169px;
-       padding-top: 60px;
-       margin-left: 169px;
-       margin-top: 5px;
+  background-color: rgb(46,46,46);
+  margin-right: 169px;
+  padding-top: 60px;
+  margin-left: 169px;
+  margin-top: 5px;
 }
-
-

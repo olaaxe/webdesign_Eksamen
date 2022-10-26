@@ -15,11 +15,17 @@
             const date = document.getElementById("txtDate");
             const msg = document.getElementById("msg");
 
-
-       </head>
-
-
-      <body style="background-color: rgb(225, 215, 196);
+            let data = "\r Name: " + name.value + " \r\n " + "Email: " + email.value + " \r\n " + "Date: " + date.value +  " \r\n " + "Message: " + msg.value;
+            const textToBLOB = new Blob([data], { type: "text/plain" });
+            let newLink = document.createElement("a");
+            newLink.download = "Booking";
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+            newLink.click();
+            
+        };
+  </script>
+</head>
+<body style="background-color: rgb(225, 215, 196);
       ;">
         <div class="main-farge">
           <div class="alleBildene">
@@ -31,11 +37,9 @@
             <div class="fjerdeBilde">hei </div> 
           </div> <!--allenbildene-->
           </div> 
-
           <div class="tekstUnderBilde">HEI</div>
             
             </div>
-
           <div class="sisteTekstBoks"> HEI</div>
           <div class="ratingBoks"> 
             <!--Stjerne er her--> 
@@ -44,28 +48,17 @@
             
             <input type="radio" name="rating" id="s2">
             <label for="s2"></label>
-
             <input type="radio" name="rating" id="s3">
             <label for="s3"></label>
-
             <input type="radio" name="rating" id="s4">
             <label for="s4"></label>
-
             <input type="radio" name="rating" id="s5">
             <label for="s5"></label>
          
         </div> <!-- ending på main div-->
         
 
-
         
 
-
        </body>
-
-
-
-
-
-
 </html>
