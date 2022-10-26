@@ -37,3 +37,8 @@
   grid-template-columns: 1fr 1fr;
 }
 }
+
+.bildecap{
+  padding-top: 2rem;
+  display: block;
+}
