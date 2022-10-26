@@ -24,6 +24,7 @@ h3{
 
 html{
   scroll-behavior: smooth;
+  scroll-padding: 14px;
 }
 
 .HeaderCenterButton {
