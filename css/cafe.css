@@ -129,6 +129,7 @@ h1{
 .retter-container > div:nth-child(2) {
   align-items: center;
   padding: auto;
+  margin: auto;
   display: flex;
 }
 .retter-container > div:nth-child(2) > img {
