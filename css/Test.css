@@ -1,4 +1,4 @@
-
+/*---------Contackt form--------*/
 .contactForm{
   border: solid 2px rgb(21, 21, 21);
   border-radius: 8px;
@@ -39,13 +39,4 @@
 #form:checked ~ .contactForm{
   display: block;
 }
-
-
-
-.googlemaps{
-  max-width: 300px;
-  max-height: 300px;
-}
-.googlemaps iframe{
-  object-fit: contain;
-}
+/*---------------------------------------------*/
