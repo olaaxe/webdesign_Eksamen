@@ -16,7 +16,7 @@ h1{
   padding-left: 100px;
   padding-right: 100px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .nav-bar > div {
   background-color: rgb(225, 215, 196);
@@ -45,6 +45,7 @@ h1{
 }
 .nav-bar > div > a > button > h1 {
   font-size: 20px;
+  text-decoration: underline;
 }
 @media (max-width: 600px){
   .nav-bar {
@@ -62,7 +63,7 @@ h1{
   background-color: rgb(168, 162, 149);
   padding-bottom: 1px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15px;
