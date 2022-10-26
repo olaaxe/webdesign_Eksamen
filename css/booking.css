@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 input[type="text"],
 textarea{
   width: 100%;
@@ -25,11 +26,23 @@ textarea{
   background-size: 100% 100%;
   
   
+=======
+
+.body{
+       background-color: rgb(225, 215, 196);
+
+}.main-farge{
+       background-color: rgb(225, 215, 196);
+       background-size: 100% 100%;
+       
+       
+>>>>>>> Stashed changes
 }
 .alleBildene{
 display: flex;
 justify-content: center;
 
+<<<<<<< Updated upstream
 }
 .fireBildene{
   display: grid;
@@ -109,6 +122,78 @@ justify-content: center;
 .customer-rating h2{
   justify-items: center;
   padding-left: 100px;
+=======
+
+}
+.fireBildene{
+       display: grid;
+       grid-template-columns: 213px 213px;
+}
+.størsteBilde{
+       background-color: brown;
+       margin-right: 70px;
+       padding-right: min(400px,95%);
+       padding-bottom: 250px;
+       
+}
+
+.førsteBilde{
+       background-color: blueviolet;
+       padding-right: min(300px,95%);
+       margin-right: 20px;
+       margin-bottom: 20px;
+}
+.andreBilde{
+       background-color: cadetblue;
+       padding-right: min(300px,95%);
+       margin-left: 10px;
+       margin-bottom: 20px;
+}
+.tredjeBilde{
+       background-color: aqua;
+       padding-right: min(300px,95%);
+       margin-right: 40px;
+       
+       
+}
+.fjerdeBilde{
+       background-color: aquamarine;
+       padding-right: min(300px,95%);
+       margin-left: 10px;
+}
+
+.tekstUnderBilde{
+       color: blue;
+       display: block;
+       padding-top: 00px;
+       background-color: rgb(46,46,46);
+       justify-content: center;
+       text-align: center;
+       margin-left: 169px;
+       margin-right: 169px;
+       margin-top: 5px;
+       padding-top: 100px;
+      
+
+}
+.ratingBoks{
+       color: aquamarine;
+       margin-left: 169px;
+       background-color: rgb(46,46,46);
+       margin-right: 169px;
+       padding-top: 100px;
+       margin-top: 5px;
+}
+
+
+
+.sisteTekstBoks{
+       background-color: rgb(46,46,46);
+       margin-right: 169px;
+       padding-top: 60px;
+       margin-left: 169px;
+       margin-top: 5px;
+>>>>>>> Stashed changes
 }
 
 
