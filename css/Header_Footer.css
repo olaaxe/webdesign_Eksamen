@@ -6,7 +6,26 @@
   background-color: rgb(21, 21, 21);
   padding-top: 40px;
   padding-bottom: 40px;
+  height: 120px;
+  width: auto;
 }
+
+.HeaderBotBox > a > img {
+  height: 100%;
+  width: auto;
+  transition: filter 0.25s;
+}
+
+.HeaderBotBox > a > img:hover {
+  filter: saturate(135%);
+  cursor: pointer;
+}
+
+.HeaderBotBox > a > img:active {
+  filter: saturate(100%);
+  transition: 0;
+}
+
 
 .HeaderButtonsBox {
   display: grid;
