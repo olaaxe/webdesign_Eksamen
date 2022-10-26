@@ -1,45 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Booking</title>
-  <link rel="stylesheet" href="css/booking.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script>
-            let saveFile = () => {
-            const name = document.getElementById("txtName");
-            const email = document.getElementById("txtEmail");
-            const date = document.getElementById("txtDate");
-            const msg = document.getElementById("msg");
+<html>
+       <head>
+        <link rel="stylesheet" href="css/booking.css">
 
-            let data = "\r Name: " + name.value + " \r\n " + "Email: " + email.value + " \r\n " + "Date: " + date.value +  " \r\n " + "Message: " + msg.value;
-            const textToBLOB = new Blob([data], { type: "text/plain" });
-            let newLink = document.createElement("a");
-            newLink.download = "Booking";
-            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-            newLink.click();
+
+       </head>
+
+
+      <body style="background-color: rgb(225, 215, 196);
+      ;">
+        <div class="main-farge">
+          <div class="alleBildene">
+          <div class="størsteBilde">dsda </div>
+            <div class="fireBildene"> 
+            <div class="førsteBilde"> hei</div>
+            <div class="andreBilde"> hei</div>
+            <div class="tredjeBilde">hei </div>
+            <div class="fjerdeBilde">hei </div> 
+          </div> <!--allenbildene-->
+          </div> 
+
+          <div class="tekstUnderBilde">HEI</div>
             
-        };
-  </script>
-</head>
-<body>
+            </div>
 
-  <div class="inputForm">
-    <div>
-      <input type="text" id="txtName" placeholder="Enter your name" />
-      <input type="text" id="txtDate" placeholder="dd/mm/åååå" />
-      <input type="text" id="txtEmail" placeholder="Enter your email address" />
-    </div>
-    <div>
-      <textarea id="msg" name="msg" placeholder="Write some message ..." style="height: 100px;"></textarea>
-    </div>
-    <div>
-      <input type="button" class="sendButton" id="bt" value="Send inn" onclick="saveFile()" />
-    </div>
-  </div>
+          <div class="sisteTekstBoks"> HEI</div>
+          <div class="ratingBoks"> 
+            <!--Stjerne er her--> 
+            <input type="radio" name="rating" id="s1">
+            <label for="s1"></label>
+            
+            <input type="radio" name="rating" id="s2">
+            <label for="s2"></label>
 
-</div>
-</body>
+            <input type="radio" name="rating" id="s3">
+            <label for="s3"></label>
+
+            <input type="radio" name="rating" id="s4">
+            <label for="s4"></label>
+
+            <input type="radio" name="rating" id="s5">
+            <label for="s5"></label>
+         
+        </div> <!-- ending på main div-->
+        
+
+
+        
+
+
+       </body>
+
+
+
+
+
+
 </html>
