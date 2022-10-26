@@ -35,14 +35,6 @@
   transition: 0;
 }
 
-
-
-
-
-
-
-
-
 .hedder-wrapper {
   align-items: center;
   box-sizing: border-box;
@@ -52,12 +44,14 @@
 .menuFlex {
   display: flex;
   align-items:center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content:space-between;
+  padding-right: 4%;
+  padding-left: 4%;
 }
 .menuFlex > a {
-  margin: 0 1rem;
-  overflow: hidden;
+  width: 160px;
+  text-align: center;
+  
 }
 .menuFlex > a  button {
   background-color: rgb(21, 21, 21);
@@ -76,10 +70,9 @@
 }
 .menuFlex > a .headerActive {
   background-color: rgb(225, 215, 196);
-  color: rgb(21, 21, 21);
-  padding-left: 2em;
-  padding-right: 2em;
+  color: rgb(202, 67, 25);
   text-decoration: underline;
+  width: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -126,7 +119,7 @@
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .menu-button-container {
     display: inline-block;
   }
@@ -135,9 +128,10 @@
     position: absolute;
     top: 0;
     left: 0;
+    padding: 0;
     margin-top: 218px; /* burgerbar drop punkt */
     flex-direction: column;
-    padding: 0;
+    width: 100%;
   }
 
   #menu-checkbox-toggle ~ .menuFlex a {
@@ -153,6 +147,7 @@
 
   .menuFlex > a {
     display: flex;
+    overflow: hidden;
     justify-content: center;
     width: 100%;
     background-color: rgb(46, 46, 46);
@@ -175,8 +170,6 @@
   .menuFlex > a .headerActive {
     background-color: transparent;
     color: rgb(223, 109, 70);
-    padding-left: 2em;
-    padding-right: 2em;
     text-decoration: underline;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
