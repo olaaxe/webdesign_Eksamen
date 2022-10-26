@@ -15,8 +15,16 @@
 }
 .logo > a > img {
   height: 100%;
-  width: auto;
+  max-width: 100%;
   transition: filter 0.25s;
+}
+@media (max-width: 448px) {
+  .logo{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .logo > a > img:hover {
   filter: saturate(135%);
@@ -26,6 +34,15 @@
   filter: saturate(100%);
   transition: 0;
 }
+
+
+
+
+
+
+
+
+
 .hedder-wrapper {
   align-items: center;
   box-sizing: border-box;
