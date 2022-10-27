@@ -175,12 +175,29 @@
   }
 }
 /*--------- Footer-------- */
-.footerWrapper{
-  position: absolute;
-  bottom: 0px;
-  height: 300px;
-  right: 0px;
-  left: 0px;
+.footerCointainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
+  min-height: 300px;
   background-color: rgb(21, 21, 21);
-  overflow: auto;
+  color: white;
+  margin-top: 30px;
+}
+
+.footerCointainer > section{
+  max-width: 300px;
+  margin-top: 30px;
+}
+.footerCointainer .åpningstider{
+  width: 100%;
+}
+.footerCointainer .åpningstider > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;  
+}
+.maps{
+  border: solid 2px rgb(202, 67, 25);
 }
