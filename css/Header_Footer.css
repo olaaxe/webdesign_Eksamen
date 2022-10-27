@@ -44,9 +44,8 @@
 .menuFlex {
   display: flex;
   align-items:center;
-  justify-content:space-between;
-  padding-right: 4%;
-  padding-left: 4%;
+  justify-content: space-around;
+  padding: 0px 4% 0px 4%;
 }
 .menuFlex > a {
   width: 160px;
