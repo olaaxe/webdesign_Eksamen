@@ -1,15 +1,19 @@
 /*---------Contackt form--------*/
+#form{
+  display: none;
+}
+
 .contactForm{
   border: solid 2px rgb(21, 21, 21);
   border-radius: 8px;
   background-color: rgb(21, 21, 21);
-  max-width: 400px;
+  color: white;
   margin: 0px;
   padding-left: 10px;
-  display: none;
   position: fixed;
   right: 100px;
   bottom: 100px;
+  box-sizing: border-box;
 }
 .contactForm > input, .contactForm > textarea{
   width: 90%;
@@ -40,26 +44,50 @@
   margin-right: 10px;
   cursor: pointer;
 }
-#form{
-  display: none;
+#form ~ .contactForm{
+  transform: scale(0);
+  overflow: hidden;
+  max-width: 0px;
+  max-height: 0px;
+  transition: max-height 0.8s cubic-bezier(0.25, 1, 0.35, 1),
+              max-width 0.8s cubic-bezier(0.25, 1, 0.35, 1),
+              transform 0.8s cubic-bezier(0.25, 1, 0.35, 1);
 }
+
 #form:checked ~ .contactForm{
-  display: block;
+  transform: scale(1);
+  max-height: 400px;
+  max-width: 400px;
+  transition: max-height 0.8s cubic-bezier(0.25, 1, 0.35, 1),
+              max-width 0.8s cubic-bezier(0.25, 1, 0.35, 1),
+              transform 0.8s cubic-bezier(0.25, 1, 0.35, 1);
 }
 .formKnapp{
-  background-color: white;
-  height: 60px;
-  width: 60px;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   position: fixed;
   right: 30px;
   bottom: 30px;
+  transition: height 0.8s cubic-bezier(0.25, 1, 0.35, 1),
+              width 0.8s cubic-bezier(0.25, 1, 0.35, 1),
+              background-color 0.8s cubic-bezier(0.25, 1, 0.35, 1);
 }
+.formKnapp:hover{
+  height: 60px;
+  width: 60px;
+  background-color: rgb(255, 255, 255);
+  transition: height 0.8s cubic-bezier(0.25, 1, 0.35, 1),
+              width 0.8s cubic-bezier(0.25, 1, 0.35, 1),
+              background-color 0.8s cubic-bezier(0.25, 1, 0.35, 1);
+}
+
 
 
 /*---------------------------------------------*/
 @media (prefers-color-scheme: dark){ /*---Endre fargen hvis i darkmode---*/
   body{
-    background-color: rgba(225, 215, 196, 0.9);
+    background-color: rgba(225, 215, 196, 0.445);
   }
 }
