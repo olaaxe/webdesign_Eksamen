@@ -176,28 +176,39 @@
 }
 /*--------- Footer-------- */
 .footerCointainer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 50px;
-  min-height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 20px;
   background-color: rgb(21, 21, 21);
-  color: white;
-  margin-top: 30px;
-}
-
-.footerCointainer > section{
-  max-width: 300px;
-  margin-top: 30px;
-}
-.footerCointainer .åpningstider{
-  width: 100%;
+  color: rgb(225, 215, 196);
 }
 .footerCointainer .åpningstider > div{
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;  
+  max-width: 400px;
 }
-.maps{
-  border: solid 2px rgb(202, 67, 25);
+.adr{
+  display: flex;
+  flex-wrap: wrap;
+}
+.adr iframe{
+  padding: 0 20px 0 0;
+}
+
+@media (max-width: 1500px) {
+  .footerCointainer{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footerCointainer{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 750px) {
+  .footerCointainer{
+    grid-template-columns: 1fr;
+  }
 }
