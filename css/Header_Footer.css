@@ -177,7 +177,7 @@
 /*--------- Footer-------- */
 .footerCointainer{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
   gap: 30px;
   padding: 20px;
   background-color: rgb(21, 21, 21);
@@ -188,6 +188,7 @@
   justify-content: space-between;
   max-width: 400px;
 }
+
 .adr{
   display: flex;
   flex-wrap: wrap;

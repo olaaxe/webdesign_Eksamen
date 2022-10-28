@@ -11,7 +11,7 @@
 .contactForm > input, .contactForm > textarea{
   width: 90%;
   border:2px solid rgb(202, 67, 25);
-  border-radius: 8px;
+  border-radius: 8px;   
   height: 20px;
   margin: 5px 0 5px 0;
 }
@@ -31,6 +31,7 @@
   display: flex;
   color: white;
 }
+
 .sendForm > input[type="checkbox"]{
   width: 15px;
   margin-right: 10px;
@@ -38,5 +39,13 @@
 }
 #form:checked ~ .contactForm{
   display: block;
+
 }
+
+
 /*---------------------------------------------*/
+@media (prefers-color-scheme: dark){ /*---Endre fargen hvis i darkmode---*/
+  body{
+    background-color: rgba(225, 215, 196, 0.9);
+  }
+}
