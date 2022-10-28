@@ -7,6 +7,9 @@
   margin: 0px;
   padding-left: 10px;
   display: none;
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
 }
 .contactForm > input, .contactForm > textarea{
   width: 90%;
@@ -37,9 +40,20 @@
   margin-right: 10px;
   cursor: pointer;
 }
+#form{
+  display: none;
+}
 #form:checked ~ .contactForm{
   display: block;
-
+}
+.formKnapp{
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
 }
 
 
