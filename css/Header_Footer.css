@@ -181,6 +181,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
   padding: 20px;
+  margin-top: 20px;
   background-color: rgb(21, 21, 21);
   color: rgb(225, 215, 196);
   height: auto;
