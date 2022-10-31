@@ -25,64 +25,129 @@
         };
   </script>
 </head>
-<body>
+<body style="background-color: rgb(225, 215, 196);">
+      <main>
+        <div class="main-farge">
+          <div class="alleBildene">
+            <div class="størsteBilde">dsda </div>
+              <div class="fireBildene"> 
+                <figure class="førsteBilde"> hei</figure>
+                <figure class="andreBilde"> hei</figure>
+                <figure class="tredjeBilde">hei </figure>
+                <figure class="fjerdeBilde">hei </figure>
+              </div> <!--ending på fire bildene-->
+            </div> <!--ending på allenbildene-->
+          <div class="tekstUnderBilde">HEI</div>
+            
+            </div>
+          <div class="sisteTekstBoks"> HEI</div>
+                  <!--rating boksen-->
+            <div class="ratingBoks">
+              <div class="customer-rating"> 
+                <h2>Customers rating </h2> 
+              </div>
+                  <!--Stjerne er her--> 
+              <div class="stjerner"> &#9733; &#9733; &#9733; &#9733; &#9733;</div>
+              <div><p>(191)</p></div>
+         
+          </div>    <!-- ending på main div-->
+      
 
-  <div class="inputForm">
-    <div>
-      <input type="text" id="txtName" placeholder="Enter your name" />
-      <input type="text" id="txtDate" placeholder="dd/mm/åååå" />
-      <input type="text" id="txtEmail" placeholder="Enter your email address" />
-    </div>
-    <div>
-      <textarea id="msg" name="msg" placeholder="Write some message ..." style="height: 100px;"></textarea>
-    </div>
-    <div>
-      <input type="button" class="sendButton" id="bt" value="Send inn" onclick="saveFile()" />
-    </div>
-  </div>
+       <head>
+        <link rel="stylesheet" href="css/booking.css">
 
-</div>
+          <div class="tekstUnderBilde">HEI</div>
+            
+            </div>
 
-<!--------- Header -------->
-<div class = "Headermain">
-  <div class="HeaderBotBox">
-    <h1>
-      C-SONS
-    </h1>
-  </div>
+          <div class="sisteTekstBoks"> HEI</div>
+          <div class="ratingBoks"> 
+            <!--Stjerne er her--> 
+            <input type="radio" name="rating" id="s1">
+            <label for="s1"></label>
+            
+            <input type="radio" name="rating" id="s2">
+            <label for="s2"></label>
 
-  <div class="HeaderButtonsBox">
-      <a class = "HeaderCenterButton" href="Index.html">
-        <button class="HeaderButtons">
-          Front&nbsp;page
-        </button></a>
+            <input type="radio" name="rating" id="s3">
+            <label for="s3"></label>
 
-      <a class = "Headeractive" href="booking.html">
-        <button class="HeaderButtons  Headeractive">
-        Booking
-      </button>
-    </a> 
+            <input type="radio" name="rating" id="s4">
+            <label for="s4"></label>
+
+            <input type="radio" name="rating" id="s5">
+            <label for="s5"></label>
+         
+        </div> <!-- ending på main div-->
+      </main>
     
-      <a class = "HeaderCenterButton" href="cafe.html">
-        <button class="HeaderButtons">
-          Café
-        </button>
-      </a>
-  
-      <a class = "HeaderCenterButton" href="Accessibility.html">
-        <button class="HeaderButtons">
-          Accessibility
-        </button>
-      </a>
-  
-      <a class = "HeaderCenterButton"href="topical.html">
-        <button class="HeaderButtons">
-        Topical
-      </button>
-    </a>
-  </div>
-</div>
-<!-- ----------- SLUTT HEADER ------------ -->
 
-</body>
+      <!-- Input from-->
+      <div class="inputForm">
+        <div>
+          <input type="text" id="txtName" placeholder="Enter your name" />
+          <input type="text" id="txtDate" placeholder="dd/mm/åååå" />
+          <input type="text" id="txtEmail" placeholder="Enter your email address" />
+        </div>
+        <div>
+          <textarea id="msg" name="msg" placeholder="Write some message ..." style="height: 100px;"></textarea>
+        </div>
+        <div>
+          <input type="button" class="sendButton" id="bt" value="Send inn" onclick="saveFile()" />
+        </div>
+      </div>
+      <!-- Input from Slut-->
+
+
+      <!-- Header Start -->
+<hedder class="headerMain">
+  <div class="logo">
+   <a href="Index.html">
+     <img src="img\Logo_new.transparent.png" alt="Image not found">
+   </a>
+ </div>
+ <div class="hedder-wrapper">
+   <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
+   <label class='menu-button-container' for="menu-checkbox-toggle">
+     <figure>
+       <img class="menu-button-img1" src="img\Burgermeny_transparent.png" alt="">
+       <img class="menu-button-img2" src="img\Cross_Transparent.png" alt="">
+     </figure>
+   </label>
+   
+   <nav class="menuFlex">
+     <a href="Index.html">
+       <button>
+         Front&nbsp;page
+       </button></a>
+     <a href="booking.html">
+       <button class="headerActive">
+       Booking
+     </button>
+     </a> 
+     <a href="cafe.html">
+       <button>
+         Café
+       </button>
+     </a>
+     <a href="Accessibility.html">
+       <button>
+         Accessibility
+       </button>
+     </a>
+     <a href="topical.html">
+       <button>
+         Topical
+       </button>
+     </a>
+   </nav>
+ </div>
+</hedder>
+<!-- Header Slutt -->
+
+
+        
+
+
+       </body>
 </html>

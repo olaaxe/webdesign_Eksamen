@@ -6,17 +6,19 @@
   text-align: center;
 }
 
-.IntroBox {
+.Introbox {
   background-color: rgb(225, 215, 196);
   color:rgb(21, 21, 21);
   text-align: left;
   margin-right: 20%;
   margin-left: 20%;
-  padding-top: min(20px, 95%);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: min(40px, 95%);
   padding-bottom: min(20px, 95%);
 }
 
-.Introparagraph {
+.Introbox  p {
   margin-bottom: 20px;
   line-height: 1.5;
 }
@@ -24,4 +26,8 @@
 .IndexPictureDiv {
   display: grid;
   grid-template-columns: 2fr 1fr;
+}
+
+.Indexparagraph {
+
 }

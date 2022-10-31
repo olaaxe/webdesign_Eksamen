@@ -2,28 +2,20 @@ body{
   margin: 0px;
   position: relative;
   padding-bottom: 400px;
-  padding-top: 149px;
+  padding-top: 218px;
   background-color: rgb(225, 215, 196);
 }
-div{
-  margin: 0px;
+* {
+  margin: 0;
+  padding: 0;
 }
 p{
-  margin: 0px;
   font-size: 20px;
-}
-h1{
-  margin: 0px;
-}
-h2{
-  margin: 0px;
-}
-h3{
-  margin: 0px;
 }
 
 html{
   scroll-behavior: smooth;
+  scroll-padding: 14px;
 }
 
 .HeaderCenterButton {
