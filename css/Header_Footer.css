@@ -183,6 +183,7 @@
   padding: 20px;
   background-color: rgb(21, 21, 21);
   color: rgb(225, 215, 196);
+  height: auto;
 
 }
 .footerCointainer .åpningstider > div{
@@ -192,16 +193,13 @@
 }
 
 .adr{
-  display: flex;
-  flex-wrap: wrap;
-  max-height: 250px;
-  max-width: 250px;
+  display: grid;
+  grid-template-columns: 1fr;
+
 }
 .adr iframe{
-  padding: 0 20px 0 0;
+  padding: 0 0 0 0;
   border:0; 
-  height: 100%; 
-  width: 100%;
 }
 
 .kontaktOss div a{
@@ -233,5 +231,10 @@
 @media (max-width: 750px) {
   .footerCointainer{
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 279px) {
+  .adr iframe {
+    display: none;
   }
 }

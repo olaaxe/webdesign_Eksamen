@@ -88,6 +88,6 @@
 /*---------------------------------------------*/
 @media (prefers-color-scheme: dark){ /*---Endre fargen hvis i darkmode---*/
   body{
-    background-color: rgba(225, 215, 196, 0.445);
+    background-color: rgba(225, 215, 196,);
   }
 }
