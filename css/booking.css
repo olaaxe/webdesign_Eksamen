@@ -37,9 +37,10 @@ justify-content: center;
 }
 .størsteBilde{
   background-color: brown;
-  margin-right: 70px;
-  padding-right: min(400px,95%);
-  padding-bottom: 250px;
+  width: 100px;
+  padding-right: min(400px,80%);
+  padding-bottom: 20%;
+  display: flex;
   
 }
 .førsteBilde{
@@ -109,5 +110,4 @@ justify-content: center;
 .customer-rating h2{
   justify-items: center;
   padding-left: 100px;
-
 }
