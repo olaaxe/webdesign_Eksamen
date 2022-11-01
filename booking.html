@@ -82,39 +82,90 @@
       </main>
     
 
-      <!-- Input from-->
-      <div class="inputForm">
-        <div>
-          <input type="text" id="txtName" placeholder="Enter your name" />
-          <input type="date" id="txtDate" placeholder="dd/mm/åååå" />
-          <input type="email" id="txtEmail" placeholder="Enter your email address" />
-        </div>
-        <div>
-          <textarea id="msg" name="msg" placeholder="Write some message ..." style="height: 100px;"></textarea>
-        </div>
-        <div>
-          <input type="button" class="sendButton" id="bt" value="Send inn" onclick="saveFile()" />
-        </div>
+      <!--Footer Start-->
+<footer>
+  <div class="footerCointainer">
+   
+    <section class="åpningstider">
+      <h1>Åpningstider</h1>
+      <div>
+        <p>Man-Tor:</p>
+        <p>09-22</p>
       </div>
-      <!-- Input from Slut-->
+      <div>
+        <p>Fre:</p>
+        <p>09-23</p>
+      </div>
+      <div>
+        <p>Lør:</p>
+        <p>10-23</p>
+      </div>
+      <div>
+        <p>Søn:</p>
+        <p>10-20</p>
+      </div>
+    </section> 
+    <section class="kontaktOss">
+      <h1>Kontakt oss</h1>
+      <div>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>+47 123 45 678</p>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>E-Post</p>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>Instagram</p>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>Facebook</p>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>Twitter</p>
+    </div>
+    </section>
+    
+    <section class="adr">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno" 
+      width="250" 
+      height="250" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div>
+        <p>Ellen Gleditschs hus</p>
+        <p>Pilestredet 35</p>
+        <p>0166 Oslo</p>
+      </div>
+    
+    </section>
+  </div>
+</footer>
+<!--Footer slutt-->
 
 
-      <!-- Header Start -->
-<hedder class="headerMain">
-  <div class="logo">
+<!-- Header Start -->
+<header>
+  <section class="logo">
    <a href="Index.html">
      <img src="img\Logo_new.transparent.png" alt="Image not found">
    </a>
- </div>
- <div class="hedder-wrapper">
+  </section>
+ <div>
    <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
    <label class='menu-button-container' for="menu-checkbox-toggle">
      <figure>
-       <img class="menu-button-img1" src="img\Burgermeny_transparent.png" alt="">
-       <img class="menu-button-img2" src="img\Cross_Transparent.png" alt="">
+       <img id="menu-button-img" class="menu-open" src="img\Burgermeny_transparent.png" alt="=">
+       <img id="menu-button-img" class="menu-close" src="img\Cross_Transparent.png" alt="X">
      </figure>
    </label>
-   
    <nav class="menuFlex">
      <a href="Index.html">
        <button>
@@ -127,7 +178,7 @@
      </a> 
      <a href="cafe.html">
        <button>
-         Café
+         Reastaurant
        </button>
      </a>
      <a href="Accessibility.html">
@@ -142,58 +193,8 @@
      </a>
    </nav>
  </div>
-</hedder>
+</header>
 <!-- Header Slutt -->
-<!--Footer Start-->
-<footer class="footerCointainer">
-  <section>
-    <h1>om oss</h1>
-    <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque eum error ipsam assumenda, veritatis sit fugiat, voluptates eligendi adipisci consequuntur sapiente sunt placeat ab recusandae deserunt aliquam dolorum odio.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rem distinctio necessitatibus ex facilis asperiores quos, magnam, rerum ratione nostrum tempora? Voluptate sint architecto ullam deleniti quae reprehenderit exercitationem blanditiis?</p>
-  </section>
-  <section class="åpningstider">
-    <h1>Åpningstider</h1>
-    <div>
-      <p>man-tor:</p>
-      <p>09-22</p>
-    </div>
-    <div>
-      <p>fre:</p>
-      <p>09-23</p>
-    </div>
-    <div>
-      <p>lør:</p>
-      <p>10-23</p>
-    </div>
-    <div>
-      <p>søn:</p>
-      <p>10-20</p>
-    </div>
-  </section> 
-  <section>
-    <p>Kontakt oss på</p>
-    <p>1234@gmail.com</p>
-    <p>tlf: +47 123 45 678</p>
-  </section>
-  <section>
-    <div class="maps">
-      <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1725.2134396538916!2d10.733815841324128!3d59.919409430451836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfda9fef5%3A0x1999a7ebc1b332a3!2sOsloMet%20-%20Biblioteket%20P35!5e1!3m2!1sen!2sno!4v1666857461596!5m2!1sen!2sno"
-      width="250" 
-      height="250" 
-      style="border:0;"
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    </div>
-    
-    <p>Ellen Gleditschs hus</p>
-    <p>Pilestredet 35</p>
-    <p>0166 Oslo</p>
-  </section>
-</footer>
-<!--Footer slutt-->
 
         
 
