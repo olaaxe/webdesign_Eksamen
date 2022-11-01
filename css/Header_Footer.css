@@ -156,10 +156,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
-  margin: 20px 0;
+  padding: 50px 200px;
+  margin-top: 20px;
+  background-color: rgb(21, 21, 21);
+  color: rgb(225, 215, 196);
   height: auto;
-  max-width: 1600px;
-  column-gap: 140px;
 
 }
 .footerCointainer  h1 {
@@ -167,21 +168,30 @@
   color: white;
   margin: 5px;
 }
-.footerCointainer p {
-  color: rgb(225, 215, 196);
-  vertical-align: middle;
-  line-height: 40px;
-}
-
 
 .åpningstider {
-  padding: 0;
+  padding: 0 30px;
 }
-.åpningstider > div{
+
+
+
+.footerCointainer .åpningstider > div{
   display: flex;
   justify-content: space-between;
   max-width: 400px;
-  margin-bottom: 5px;
+}
+
+.adr{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+
+}
+.adr iframe{
+  padding: 0 0 0 0;
+  border:0; 
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 
@@ -193,34 +203,18 @@
   grid-template-columns: 40px 1fr;
   row-gap: 5px;
 }
-.kontaktOss > div figure{
+.kontaktOss > div div{
   max-width: 40px;
   max-height: 40px;
 }
 .kontaktOss > div p {
-  margin-left: 10px;
+  vertical-align: middle;
+  line-height: 40px;
+  margin-left: 5px;
 }
-.kontaktOss > div figure img {
+.kontaktOss > div div img {
   height: 100%;
   width: 100%;
-}
-
-
-.adr{
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 0 auto;
-
-}
-.adr iframe{
-  padding: 0 0 0 0;
-  border:0;
-  margin-bottom: 10px;
-}
-.adr > div > p {
-  
-  line-height: 22px;
-  font-style: italic;
 }
 
 
@@ -240,7 +234,7 @@
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 279px) {
   .adr iframe {
     display: none;
   }
