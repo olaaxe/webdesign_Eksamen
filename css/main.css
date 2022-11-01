@@ -27,6 +27,7 @@ main{
   margin: 0 auto; 
   max-width: 1000px;
   flex: 1 0 auto;
+  padding-bottom: 10px;
 }
 header{
   position: absolute;
