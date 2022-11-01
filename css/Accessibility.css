@@ -1,6 +1,4 @@
-main{
-  justify-content: center;
-}
+
 
 .tekstboks{
   display: flex;
@@ -30,14 +28,31 @@ main{
   justify-content: center;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-bottom: 1rem;
+  max-width: 1000px;
   
   
 }
 .bildeboks > img{
   padding: max(1vh, 1rem);
   padding-bottom: 0;
-  max-width: 85ch;
+  width: 100%;
 }
+.bildeboks2{
+  display: flex;
+  margin:auto;
+  width: 55ch;
+  height: min(55ch, 90%);
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width:1000px;
+}
+
+.bildeboks2 > img{
+  width: 100%;
+}
+
 
 .container{
   background-color: rgb(46,46,46);
