@@ -1,4 +1,10 @@
 /*--------- Header-------- */
+.headerMain{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 .logo{
   text-align: center;
@@ -29,11 +35,18 @@
   transition: 0;
 }
 
+.hedder-wrapper {
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgb(21, 21, 21);
+}
+
 .menuFlex {
   display: flex;
   align-items:center;
   justify-content:space-around;
-  padding: 0 4%;
+  padding-right: 4%;
+  padding-left: 4%;
 }
 .menuFlex > a {
   width: 160px;
@@ -44,6 +57,7 @@
   background-color: rgb(21, 21, 21);
   color:rgb(225, 215, 196);
   border: none;
+  font-size: 20px;
   padding-top: 8px;
   font-weight: bold;
   cursor: pointer;
@@ -215,15 +229,16 @@
   max-width: 40px;
   max-height: 40px;
 }
-.kontaktOss > div div img {
-  height: 100%;
-  width: 100%;
-}
 .kontaktOss > div p {
   vertical-align: middle;
   line-height: 40px;
   margin-left: 5px;
 }
+.kontaktOss > div div img {
+  height: 100%;
+  width: 100%;
+}
+
 
 @media (max-width: 1500px) {
   .footerCointainer{
