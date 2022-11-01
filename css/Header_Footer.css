@@ -1,14 +1,6 @@
 /*--------- Header-------- */
-.headerMain{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 .logo{
   text-align: center;
-  background-color: rgb(21, 21, 21);
   height: 120px;
   width: auto;
   padding: 32px 0px 32px 0px;
@@ -35,10 +27,36 @@
   transition: 0;
 }
 
-.hedder-wrapper {
-  align-items: center;
-  box-sizing: border-box;
-  background-color: rgb(21, 21, 21);
+.menu-button-container {
+  display: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transform: translate(10px, -5px);
+}
+#menu-checkbox-toggle {
+  display: none;
+}
+#menu-button-img{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(202, 67, 25);
+}
+.menu-close{
+  display: none;
+}
+#menu-button-img:hover{
+  background-color: rgb(223, 109, 70);
+}
+#menu-button-img:active{
+  background-color: rgb(241, 129, 95);
+}
+
+#menu-checkbox-toggle:checked + .menu-button-container>figure>.menu-open{
+  display: none;
+}
+#menu-checkbox-toggle:checked + .menu-button-container>figure>.menu-close{
+  display: inline-block;
 }
 
 .menuFlex {
@@ -54,7 +72,7 @@
   
 }
 .menuFlex > a  button {
-  background-color: rgb(21, 21, 21);
+  background-color: transparent;
   color:rgb(225, 215, 196);
   border: none;
   font-size: 20px;
@@ -76,48 +94,6 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-
-.menu-button-container {
-  display: none;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  transform: translate(10px, -5px);
-}
-#menu-checkbox-toggle {
-  display: none;
-}
-.menu-button-img1{
-  width: 100%;
-  height: 100%;
-  background-color: rgb(202, 67, 25);
-}
-.menu-button-img1:hover{
-  background-color: rgb(223, 109, 70);
-}
-.menu-button-img1:active{
-  background-color: rgb(241, 129, 95);
-}
-.menu-button-img2{
-  width: 100%;
-  height: 100%;
-  background-color: rgb(202, 67, 25);
-  display: none;
-}
-.menu-button-img2:hover{
-  background-color: rgb(223, 109, 70);
-}
-.menu-button-img2:active{
-  background-color: rgb(241, 129, 95);
-}
-#menu-checkbox-toggle:checked + .menu-button-container>figure>.menu-button-img1{
-  display: none;
-}
-#menu-checkbox-toggle:checked + .menu-button-container>figure>.menu-button-img2{
-  display: inline-block;
-}
-
-
 
 @media (max-width: 900px) {
   .menu-button-container {
