@@ -26,25 +26,30 @@ main{
   display: flex;
   margin:auto;
   width:55ch;
-  height:55ch;
+  height: min(55ch, 90%);
   justify-content: center;
   padding-left: 1rem;
   padding-right: 1rem;
-
+  
+  
 }
 .bildeboks > img{
   padding: max(1vh, 1rem);
   padding-bottom: 0;
+  max-width: 85ch;
 }
+
 .container{
   background-color: rgb(46,46,46);
   display:grid;
   gap: 8px;
   width: fit-content;
+  padding-left: 1fr;
+  padding-right: 1fr;
   margin-top: 2rem;
   grid-template-columns: 1fr;
   border-radius: 2px ;
-  overflow-wrap: normal;
+  overflow-wrap:normal;
   margin-inline: auto;
  
 }
@@ -57,11 +62,16 @@ main{
 }
   .bildeboks > p{
     width: min(85%, 500px);
-    height: min(85%, 500px);
+    height: auto;
   }
   .tekstboks > p{
     width: min(85%, 500px);
     height: min(85%, 500px);
+  }
+  .bildeboks > img{
+    padding: max(1vh, 1rem);
+    padding-bottom: 0;
+    max-width: 95%;
   }
 }
 
