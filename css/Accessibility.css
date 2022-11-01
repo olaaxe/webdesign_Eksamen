@@ -55,7 +55,7 @@ main{
 }
 
 
-@media (max-width:700px), (handheld) {
+@media (max-width:900px), (handheld) {
   .body{
     background-color: rgb(46,46,46);
 
