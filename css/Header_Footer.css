@@ -71,7 +71,7 @@
 }
 .menuNav > a  button {
   background-color: transparent;
-  color:rgb(225, 215, 196);
+  color:rgb(225, 215, 196); /*<--tekst farge header*/
   border: none;
   padding: 8px 0 2px 0;
   font-weight: bold;
@@ -84,7 +84,7 @@
  color: rgb(241, 129, 95);
 }
 .menuNav > a .headerActive {
-  background-color: rgb(225, 215, 196);
+  background-color: rgb(225, 215, 196); /*<--tab meny farge*/
   color: rgb(202, 67, 25);
   text-decoration: underline;
   width: 100%;
@@ -107,7 +107,7 @@
     overflow: hidden;
     justify-content: center;
     width: 100%;
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(46, 46, 46); /*<--Dropdown meny farge*/
     text-decoration: none;
   }
   .menuNav > a .headerActive {
@@ -165,7 +165,6 @@
   border-radius: 10px;
   overflow: hidden;
 }
-
 
 .kontaktOss {
   margin: 0 auto;
