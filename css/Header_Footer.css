@@ -27,7 +27,8 @@
   transition: 0;
 }
 
-.menu-button-container {
+/*Hamburgermeny knappen */
+.menu-icon-container { 
   display: none;
   height: 30px;
   width: 30px;
@@ -37,7 +38,7 @@
 #menu-checkbox-toggle {
   display: none;
 }
-#menu-button-img{
+#menu-icon-img{
   width: 100%;
   height: 100%;
   background-color: rgb(202, 67, 25);
@@ -45,112 +46,85 @@
 .menu-close{
   display: none;
 }
-#menu-button-img:hover{
+#menu-icon-img:hover{
   background-color: rgb(223, 109, 70);
 }
-#menu-button-img:active{
+#menu-icon-img:active{
   background-color: rgb(241, 129, 95);
 }
-
-#menu-checkbox-toggle:checked + .menu-button-container>figure>.menu-open{
+#menu-checkbox-toggle:checked + .menu-icon-container>figure>.menu-open{
   display: none;
 }
-#menu-checkbox-toggle:checked + .menu-button-container>figure>.menu-close{
+#menu-checkbox-toggle:checked + .menu-icon-container>figure>.menu-close{
   display: inline-block;
 }
 
-.menuFlex {
+/*Knappene i menyen*/
+.menuNav {
   display: flex;
-  align-items:center;
   justify-content:space-around;
-  padding-right: 4%;
-  padding-left: 4%;
+  padding: 0 4%;
 }
-.menuFlex > a {
+.menuNav > a {
   width: 160px;
   text-align: center;
-  
 }
-.menuFlex > a  button {
+.menuNav > a  button {
   background-color: transparent;
-  color:rgb(225, 215, 196);
+  color:rgb(225, 215, 196); /*<--tekst farge header*/
   border: none;
-  font-size: 20px;
-  padding-top: 8px;
+  padding: 8px 0 2px 0;
   font-weight: bold;
   cursor: pointer;
 }
-.menuFlex > a  button:hover {
+.menuNav > a  button:hover {
   color: rgb(202, 67, 25);
 }
-.menuFlex > a  button:active {
+.menuNav > a  button:active {
  color: rgb(241, 129, 95);
 }
-.menuFlex > a .headerActive {
-  background-color: rgb(225, 215, 196);
+.menuNav > a .headerActive {
+  background-color: rgb(225, 215, 196); /*<--tab meny farge*/
   color: rgb(202, 67, 25);
   text-decoration: underline;
   width: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-radius: 12px 12px 0 0;
 }
 
+/*Endrer kanppene til hamburgermeny*/
 @media (max-width: 900px) {
-  .menu-button-container {
+  /*Hamburgermeny knappen skrus på */
+  .menu-icon-container { 
     display: inline-block;
   }
-
-  .menuFlex {
+  .menuNav {
     position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin-top: 218px; /* burgerbar drop punkt */
     flex-direction: column;
+    padding: 0;
     width: 100%;
   }
-
-  #menu-checkbox-toggle ~ .menuFlex a {
-    height: 0;
-    transition: height 500ms cubic-bezier(0.25, 1, 0.35, 1);
-  }
-  #menu-checkbox-toggle:checked ~ .menuFlex a {
-    width: 100%;
-    height: 40px;
-    padding-bottom: 5px;
-    transition: height 500ms cubic-bezier(0.25, 1, 0.35, 1);
-  }
-
-  .menuFlex > a {
-    display: flex;
+  .menuNav > a {
     overflow: hidden;
     justify-content: center;
     width: 100%;
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(46, 46, 46); /*<--Dropdown meny farge*/
     text-decoration: none;
   }
-  .menuFlex > a  button {
+  .menuNav > a .headerActive {
     background-color: transparent;
-    color:rgb(225, 215, 196);
-    border: none;
-    padding-top: 0px;
-    font-size: 20px;
-    cursor: pointer;
   }
-  .menuFlex > a  button:hover {
-    color: rgb(202, 67, 25);
+  /*animasjon for menyen*/
+  #menu-checkbox-toggle ~ .menuNav a {
+    height: 0;
+    transition: height 500ms cubic-bezier(0.25, 1, 0.35, 1);
   }
-  .menuFlex > a  button:active {
-   color: rgb(241, 129, 95);
-  }
-  .menuFlex > a .headerActive {
-    background-color: transparent;
-    color: rgb(223, 109, 70);
-    text-decoration: underline;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+  #menu-checkbox-toggle:checked ~ .menuNav a {
+    height: 40px;
+    padding: 5px;
+    transition: height 500ms cubic-bezier(0.25, 1, 0.35, 1);
   }
 }
+
 /*--------- Footer-------- */
 .footerCointainer{
   display: grid;
@@ -173,8 +147,6 @@
   padding: 0 30px;
 }
 
-
-
 .footerCointainer .åpningstider > div{
   display: flex;
   justify-content: space-between;
@@ -193,7 +165,6 @@
   border-radius: 10px;
   overflow: hidden;
 }
-
 
 .kontaktOss {
   margin: 0 auto;
