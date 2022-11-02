@@ -21,22 +21,18 @@ h2:after{
 p, li{
   color: var(--clr-grå);
 }
-
 .førsteDelen{
-  display: grid;
-  grid-template-areas: "tekst" "bildet";
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap-reverse;
   gap: 2rem;
-  
 }
-.førsteDelen figure{
-  max-width: fit-content;
-  width: 20em;
-  height: 16em;
+.førsteDelen >*{
+  flex: 1 1 45%;
 }
 .førsteDelen img{
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  
+
 
 }
 .førsteDelen button{
