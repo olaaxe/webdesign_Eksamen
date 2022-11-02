@@ -6,6 +6,7 @@ span{
 }
 h2, h1{
   font-size: 30px;
+  font-weight: bold;
 }
 
 h2::after{
@@ -16,6 +17,9 @@ h2::after{
   width: 8px;
   height: 8px;
   background-color: var(--clr-rød);
+}
+p{
+  color: var(--clr-grå);
 }
 
 .førsteDelen{
@@ -47,15 +51,13 @@ h2::after{
   background-color: var(--clr-rød);
 }
 /* ending på første delen*/
-.andreDelen{
-  padding-top: 3em;
+
+.Cards-Grid{
+  display: flex;
+  flex-wrap: wrap;
 }
-.andreDelen p{
-  padding-bottom: 2em;
-}
-.treboksene{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.Cards-Grid>*{
+  flex: 0 1 15em;
 }
 
 
@@ -70,15 +72,15 @@ h2::after{
 .infoSection#reverse{
   grid-template-columns: 2fr 1fr;
 }
-.infoSection figure{
-  max-width: fit-content;
-}
 .infoSection img{
   align-self: center;
   width: 100%;
 }
 .infoSection > div > *{
   margin: 2rem;
+}
+.infoSection hr{
+  opacity: 40%;
 }
 
 .infoGrid{
