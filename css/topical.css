@@ -1,16 +1,31 @@
 .bakgrunnDiv{
   background-color: var(--clr-beige);
+  
+}
+.bildecontainer{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.bildecontainer > figcaption{
+  padding-left: 1rem;
+  background-color: rgb(46,46,46);
+  color: var(--clr-beige);
 }
 
 .topicalGrid{
   /*background-color: rgb(46,46,46);*/
   display:grid;
   gap: 8px;
-  margin-left: max(5%, 2em);
+  margin-left: max(5%, 2rem);
   margin-top: 2em;
-  margin-right: max(5%, 2em);
+  margin-right: max(5%, 2rem);
   grid-template-columns: 1fr;
 }
+
 
 .tekstBoksTopical {
   padding: max(1vh, 1rem);
@@ -21,6 +36,13 @@
   .topicalGrid{
     grid-template-columns: 1fr 1fr;
   }
+  .col-span-2{
+    grid-column: span 2;
+  }
+  .row-span-2{
+    grid-row: span 2;
+  }
+  
 }
 .topicalGrid > figure{
 max-width: 100ch;
@@ -34,6 +56,11 @@ max-width: 100ch;
  /* color: rgb(225, 215, 196);*/
   padding: 1rem 2rem;
   text-align: left;
+}
+h1{
+  padding-bottom: 5rem;
+  font-size: 2.2rem;
+  text-align: center;
 }
 /*------------------------------------------*/
 
