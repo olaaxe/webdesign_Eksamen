@@ -41,16 +41,16 @@
 #menu-icon-img{
   width: 100%;
   height: 100%;
-  background-color: rgb(202, 67, 25);
+  background-color: var(--clr-rød);
 }
 .menu-close{
   display: none;
 }
 #menu-icon-img:hover{
-  background-color: rgb(223, 109, 70);
+  background-color: var(--clr-rød-hover);
 }
 #menu-icon-img:active{
-  background-color: rgb(241, 129, 95);
+  background-color: var(--clr-rød-activate);
 }
 #menu-checkbox-toggle:checked + .menu-icon-container>figure>.menu-open{
   display: none;
@@ -71,21 +71,21 @@
 }
 .menuNav > a  button {
   background-color: transparent;
-  color:rgb(225, 215, 196); /*<--tekst farge header*/
+  color: var(--clr-beige); /*<--tekst farge header*/
   border: none;
   padding: 8px 0 2px 0;
   font-weight: bold;
   cursor: pointer;
 }
 .menuNav > a  button:hover {
-  color: rgb(202, 67, 25);
+  color: var(--clr-rød);
 }
 .menuNav > a  button:active {
- color: rgb(241, 129, 95);
+ color: var(--clr-rød-activate);
 }
 .menuNav > a .headerActive {
-  background-color: rgb(225, 215, 196); /*<--tab meny farge*/
-  color: rgb(202, 67, 25);
+  background-color: var(--clr-beige); /*<--tab meny farge*/
+  color: var(--clr-rød);
   text-decoration: underline;
   width: 100%;
   border-radius: 12px 12px 0 0;
@@ -107,7 +107,7 @@
     overflow: hidden;
     justify-content: center;
     width: 100%;
-    background-color: rgb(46, 46, 46); /*<--Dropdown meny farge*/
+    background-color: var(--clr-grå); /*<--Dropdown meny farge*/
     text-decoration: none;
   }
   .menuNav > a .headerActive {
@@ -142,7 +142,7 @@
   margin: 5px;
 }
 .footerCointainer p {
-  color: rgb(225, 215, 196);
+  color: var(--clr-beige);
   vertical-align: middle;
   line-height: 40px;
   padding: 0;
@@ -171,6 +171,7 @@
 .kontaktOss > div figure{
   max-width: 40px;
   max-height: 40px;
+  background-color: rgb(225, 215, 196);
 }
 .kontaktOss > div p {
   margin-left: 10px;

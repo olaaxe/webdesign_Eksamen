@@ -1,5 +1,5 @@
 .bakgrunnDiv{
-  background-color:rgb(225, 215, 196);
+  background-color: var(--clr-beige);
 }
 
 .topicalGrid{
