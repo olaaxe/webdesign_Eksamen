@@ -107,6 +107,9 @@ h2::after{
   .infoSection{
     grid-template-columns: 1fr;
   }
+  .infoSection#reverse{
+    grid-template-columns: 1fr;
+  }
   .infoSection > img{
     display: none;
   }
