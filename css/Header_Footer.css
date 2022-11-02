@@ -171,7 +171,7 @@
 .kontaktOss > div figure{
   max-width: 40px;
   max-height: 40px;
-  background-color: rgb(225, 215, 196);
+  background-color: var(--clr-beige)
 }
 .kontaktOss > div p {
   margin-left: 10px;
