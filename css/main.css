@@ -2,9 +2,9 @@
   --clr-header: linear-gradient( 30deg, rgb(0, 0, 0) 0%, rgb(80, 80, 80) 100%);
   --clr-bakgrunn: rgb(255, 250, 240);
   --clr-footer: rgb(21, 21, 21);
+  
   --clr-grå: rgb(46,46,46);
   --clr-sort: rgb(21, 21, 21);
-  --clr-grå: rgb(46, 46, 46);
   --clr-beige: rgb(225, 215, 196);
   --clr-beige-dark: rgb(168, 162, 149);
   --clr-rød: rgb(202, 67, 25);
@@ -19,7 +19,6 @@ body{
   margin: 0px;
   position: relative;
   padding-top: 218px;
-  /*background-color: rgb(250, 249, 246);*/
   background-color: var(--clr-bakgrunn);
   display: flex;
   flex-direction: column;
