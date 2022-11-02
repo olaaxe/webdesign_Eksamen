@@ -1,14 +1,14 @@
 
 
 .BotIntroBox {
-  background-color:rgb(225, 215, 196);
-  color:rgb(21, 21, 21);
+  background-color:var(--clr-beige);
+  color: var(--clr-sort);
   text-align: center;
 }
 
 .Introbox {
-  background-color: rgb(225, 215, 196);
-  color:rgb(21, 21, 21);
+  background-color: var(--clr-beige);
+  color: var(--clr-sort);
   text-align: left;
   margin-right: 20%;
   margin-left: 20%;
