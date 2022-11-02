@@ -3,6 +3,7 @@
   
 }
 .bildecontainer{
+
   border-radius: 2px;
   padding-bottom: 1rem;
 }
@@ -10,12 +11,11 @@
   padding: 0px;
   margin: 0px;
 }
-.bildecontainer > div{
+.bildecontainer > figcaption{
   padding-left: 1rem;
   background-color: rgb(46,46,46);
   color: var(--clr-beige);
 }
-
 
 .topicalGrid{
   /*background-color: rgb(46,46,46);*/
