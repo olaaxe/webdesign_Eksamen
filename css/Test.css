@@ -88,6 +88,6 @@
 /*---------------------------------------------*/
 @media (prefers-color-scheme: dark){ /*---Endre fargen hvis i darkmode---*/
   body{
-    background-color: var(--clr-body);
+    background-color: var(--clr-bakgrunn);
   }
 }
