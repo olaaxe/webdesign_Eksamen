@@ -3,14 +3,13 @@
   
 }
 .bildecontainer{
-
-  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
-.bildecontainer:nth-child(1){
-  padding: 0px;
-  margin: 0px;
-}
+
 .bildecontainer > figcaption{
   padding-left: 1rem;
   background-color: rgb(46,46,46);
