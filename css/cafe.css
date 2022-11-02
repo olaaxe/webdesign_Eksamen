@@ -9,7 +9,7 @@ h1{
 /* NAVIGASJONSBAR */
 
 .nav-bar {
-  background-color: rgb(225, 215, 196);
+  background-color: var(--clr-beige);
   width: auto;
   height: auto;
   display: grid;
@@ -19,7 +19,7 @@ h1{
   margin-top: 20px;
 }
 .nav-bar > div {
-  background-color: rgb(225, 215, 196);
+  background-color: var(--clr-beige);
   height: auto;
   width: 1fr;
   margin: auto;
@@ -32,16 +32,16 @@ h1{
   padding: 0px;
   height: 25px;
   width: 1fr;
-  background-color: rgb(225, 215, 196);
+  background-color: var(--clr-beige);
   color: rgb(21, 21, 21);
   transition: color 0.15s;
 }
 .nav-bar > div > a > button:hover {
-  color: rgb(202, 67, 25);
+  color: var(--clr-rød);
   cursor: pointer;
 }
 .nav-bar > div > a > button:active {
-  color: rgb(241, 129, 95);
+  color: var(--clr-rød-activate);
 }
 .nav-bar > div > a > button > h1 {
   font-size: 20px;
@@ -75,7 +75,7 @@ h1{
 
 .retter-header {
   width: 1fr;
-  background-color: rgb(202, 67, 25);
+  background-color: var(--clr-rød);
   height: 80px;
   margin-bottom: 15px;
   text-align: center;
@@ -89,7 +89,7 @@ h1{
 
 .retter-container {
   width: 1fr;
-  background-color: rgb(225, 215, 196);
+  background-color: var(--clr-beige);
   height: auto;
   margin-bottom: 15px;
   display: grid;
