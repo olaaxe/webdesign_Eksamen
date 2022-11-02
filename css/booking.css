@@ -1,15 +1,23 @@
 /*dadadddddddddddddddddddd*/
 
-h1 span{
+span{
   font-size: 48px;
   color: rgb(44, 139, 0);
 }
 h2, h1{
   font-size: 30px;
 }
-main img{
 
+h2::after{
+  display: inline-block;
+  content: "";
+  margin-left: 5px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: var(--clr-rød);
 }
+
 .førsteDelen{
   display: grid;
   grid-template-areas: "tekst" "bildet";
@@ -25,8 +33,59 @@ main img{
 
 
 
+.infoSection{
+  display: grid;
+  grid-template-areas: "tekst" "bildet";
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  margin: 4rem 0;
+}
+.infoSection#reverse{
+  grid-template-columns: 2fr 1fr;
+}
+.infoSection figure{
+  max-width: fit-content;
+}
+.infoSection img{
+  align-self: center;
+  width: 100%;
+}
+.infoSection > div > *{
+  margin: 2rem;
+}
+
+.infoGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  list-style: none;
+}
+.infoGrid li{
+  display: flex;
+  gap: 1rem;
+}
+.infoGrid li img{
+
+  width: 2rem;
+  height: 2rem;
+}
+
+
+
 @media (max-width: 700px){
   .førsteDelen{
+    grid-template-columns: 1fr;
+  }
+
+  .infoSection{
+    grid-template-columns: 1fr;
+  }
+  .infoSection > img{
+    display: none;
+  }
+}
+@media (max-width: 900px){
+  .infoGrid{
     grid-template-columns: 1fr;
   }
 }
