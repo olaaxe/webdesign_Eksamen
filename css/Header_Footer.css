@@ -84,7 +84,7 @@
  color: var(--clr-rød-activate);
 }
 .menuNav > a .headerActive {
-  background-color: var(--clr-beige); /*<--tab meny farge*/
+  background-color: var(--clr-bakgrunn); /*<--tab meny farge*/
   color: var(--clr-rød);
   text-decoration: underline;
   width: 100%;
