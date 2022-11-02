@@ -14,16 +14,10 @@
   grid-template-columns: 1fr 1fr;
   padding-top: min(40px, 95%);
   padding-bottom: min(20px, 95%);
-  gap: 50px;
+  gap: 30px;
 }
 
-@media (max-width: 1600px) {
-  .Introbox {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
-  }
-}
 
 @media (max-width: 900px) {
   .Introbox {
