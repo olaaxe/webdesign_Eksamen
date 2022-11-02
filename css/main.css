@@ -27,6 +27,7 @@ body{
   margin: 0;
   padding: 0;
   font-size: 2rem;
+  font-family: Roboto, sans-serif;
 }
 html{
   scroll-behavior: smooth;
@@ -62,5 +63,4 @@ footer {
 p{
   padding-bottom: 1rem;
   line-height: 1.5em;
-
 }

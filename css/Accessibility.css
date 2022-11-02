@@ -3,7 +3,7 @@
 .tekstboks{
   display: flex;
   flex-direction: column;
-  color: rgb(225, 215, 196);
+  color: var(--clr-beige);
   padding: max(1vh, 1rem);
   justify-content: center;
 }
@@ -11,7 +11,7 @@
   padding-top: 2%;
   justify-content: center;
   text-align: center;
-  color: rgb(225, 215, 196);
+  color: var(--clr-beige);
 }
 .tekstboks > p{
 

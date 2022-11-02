@@ -4,9 +4,9 @@
 }
 
 .contactForm{
-  border: solid 2px rgb(21, 21, 21);
+  border: solid 2px var(--clr-sort);
   border-radius: 8px;
-  background-color: rgb(21, 21, 21);
+  background-color: var(--clr-sort);
   color: white;
   margin: 0px;
   padding-left: 10px;
@@ -17,7 +17,7 @@
 }
 .contactForm > input, .contactForm > textarea{
   width: 90%;
-  border:2px solid rgb(202, 67, 25);
+  border:2px solid var(--clr-rød);
   border-radius: 8px;   
   height: 20px;
   margin: 5px 0 5px 0;
@@ -31,7 +31,7 @@
   cursor: pointer;
 }
 .contactForm [type = "submit"]:hover{
-  background-color: rgb(202, 67, 25);
+  background-color: var(--clr-rød);
 }
 
 .sendForm{
@@ -88,14 +88,6 @@
 /*---------------------------------------------*/
 @media (prefers-color-scheme: dark){ /*---Endre fargen hvis i darkmode---*/
   body{
-    background-color: rgba(225, 215, 196,);
+    background-color: var(--clr-body);
   }
-}
-
-.burger{
-  background-color: red;
-  width: 10px;
-  height: 2px;
-  padding-bottom: 2px;
-  border-radius: 10px;
 }
