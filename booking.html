@@ -8,234 +8,220 @@
   <link rel="stylesheet" href="css/booking.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/Header_Footer.css">
-  <script>
-            let saveFile = () => {
-            const name = document.getElementById("txtName");
-            const email = document.getElementById("txtEmail");
-            const date = document.getElementById("txtDate");
-            const msg = document.getElementById("msg");
-
-            let data = "\r Name: " + name.value + " \r\n " + "Email: " + email.value + " \r\n " + "Date: " + date.value +  " \r\n " + "Message: " + msg.value;
-            const textToBLOB = new Blob([data], { type: "text/plain" });
-            let newLink = document.createElement("a");
-            newLink.download = "Booking";
-            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-            newLink.click();
-            
-        };
-  </script>
 </head>
 
 
 <body>
   <main>
-    <div class="main">
-      <div class="førsteDelen">
+    <section class="førsteDelen">
+      <div>
+        <h1> Møte rom<span>.</span></h1>
+        <p>Møterommene våre er i alle større byer i verden, så du kan være vertskap uansett hvor du trenger. Imponer kunder, hold minneverdige workshops, eller lever et vinnende pitch i våre fullt betjente møteplasser. Bestill på forespørsel per time, og vårt dedikerte team vil være til stede for å sikre at møtet ditt går problemfritt.</p>
+        <button>Reserver nå</button>
+      </div>
+      <figure>
         <div>
           <h1> Møte rom<span>.</span></h1>
           <p>Møterommene våre er i alle større byer i verden, så du kan være vertskap uansett hvor du trenger. Imponer kunder, hold minneverdige workshops, eller lever et vinnende pitch i våre fullt betjente møteplasser. Bestill på forespørsel per time, og vårt dedikerte team vil være til stede for å sikre at møtet ditt går problemfritt.</p>
           <button>Reserver nå</button>
         </div>
-        <figure>
-          <img src="img/cat.png" alt="katt med briller på">
-        </figure>
-      </div> <!--ending på første del-->
-      <div class="andreDelen">
-        <h2>Våre møterom.</h2>
-        <div>"Finn møterom du trenger for å imponere kunder, brainstorme med kolleger, holde minneverdige workshops eller levere et vinnende pitch. Bestill nedenfor eller bestill mens du er på farten med appen vår."</div>
-        <div class="treboksene">
-          <div class="førsteBoks">
-            <h2>konferanserom</h2>
-            <div class="kort-info">Rom utstyrt med toppmoderne presentasjonsutstyr, perfekt for ditt neste forretningsmøte.</div>
-            <button>Reserver nå</button>
-          </div> <!--ending på første boksen-->
-          <div class="andreBoks">andreBoks
-            <h2>Intervjurom</h2>
-            <div class="kort-info">Intervju kandidater i ditt valg av profesjonelle, inspirerende, avslappede eller diskrete rom.</div>
-            <button>Reserver nå</button>
-          </div> <!--ending på andre boksen-->
-          <div class="tredjeBoks">tredjeBoks
-            <h2>Trening rom</h2>
-            <div class="kort-info">Spesialbygde rom, ideelle for treningsøkter, med catering og støtte på stedet.</div>
-            <button>Reserver nå</button>
-          </div> <!--ending på tredje boksen-->
-        </div> <!--ending på treboksene-->
-      </div> <!--ending på andre del-->
-      <div class="tredjeDelen"> 
-        <img src="img/cat.png" alt="katt med briller på">
-        <div class="innhold"> 
-          <p>Frihet til å velge</p>
-          <h2>Et rom for ethvert behov</h2>
-          <p>Vårt brede utvalg av møterom lar deg velge det perfekte stedet og stedet for ditt neste møte. Vi hjelper deg med å finne det ideelle styrerommet for å være vertskap for et arrangement, et privat rom for å intervjue kandidater, eller et inspirerende sted å gjennomføre en treningsøkt.</p>
-          <div> Fullt utstyrte lokaler for sammenkomster i alle størrelser
-            Transportavstand
-            Møt i enhver større by, by eller transportknutepunkt
-            Arrangementsrom
-            Arrangementsrom, styrerom, treningsrom med mer
-            Business lounge
-            Komfortable, profesjonelle miljøer
-            
-            Bestill på dagen eller på forhånd via appen
-            Resepsjon
-            Erfarne rådgivere som hjelper deg med å finne riktig plass</div>
-        </div> <!--endign på innhold-->
-      </div> <!--ending på tredje delen-->
-      <div class="fjerdeDelen">
-        <img src="img/cat.png" alt="katt med briller på">
-        <div class="innhold2"> 
-          <p>Hva er inkludert</p>
-          <h2>Alt er tatt vare på.</h2>
-          <p>Rommene våre er fullt utstyrt med kvalitetsmøbler og videokonferanseutstyr, slik at du kan gå inn og kjøre produktive økter. Resepsjonistene våre vil hilse på gjestene dine, mens supportteamet vårt vil forberede rommet ditt og hjelpe alt til å gå på skinner.</p>
-          <div>Flatskjerm-TV, whiteboard og flippover
-            utbruddsområde
-            Utbruddsområder
-            fleksibel
-            Konfigurer møterom på din måte
-            Resepsjon
-            Profesjonelt mottaksteam for å hilse på gjester
-            wifi
-            Business-grade WiFi
-            Brukerstøtte
-            Erfarent internt supportteam</div> 
-        </div> <!--ending på innhold2-->
-      </div> <!--ending på fjerde delen-->
-      <div class="femteDelen">
-        <img src="img/cat.png" alt="katt med briller på">
-        <div>
-          <p>Bredt spekter av tjenester</p>
-          <h2>Tjenestene du trenger, når du trenger dem.</h2>
-          <p>Når du bestiller et av våre møterom, har du tilgang til en rekke tjenester for å hjelpe møtet ditt til en suksess. Bestill disse tjenestene på forhånd, så sørger vi for at alt er på plass og klart til bruk på dagen.</p>
-          <div>Skytv
-            IT- og teknisk støtte
-            Admin
-            Administrativ støtte
-            skala
-            Ekstra arbeidsområde etter behov
-            Kaffebar
-            Catering tjenester
-            Møterom
-            Projektorer og annet møteutstyr</div>
-        </div>
+        <!--<img src="img/cat.png" alt="katt med briller på">-->
+      </figure>
+    </section> <!--ending på første del-->
+    <div class="andreDelen">
+      <h2>Våre møterom.</h2>
+      <div>"Finn møterom du trenger for å imponere kunder, brainstorme med kolleger, holde minneverdige workshops eller levere et vinnende pitch. Bestill nedenfor eller bestill mens du er på farten med appen vår."</div>
+      <div class="treboksene">
+        <div class="førsteBoks">
+          <h2>konferanserom</h2>
+          <div class="kort-info">Rom utstyrt med toppmoderne presentasjonsutstyr, perfekt for ditt neste forretningsmøte.</div>
+          <button>Reserver nå</button>
+        </div> <!--ending på første boksen-->
+        <div class="andreBoks">andreBoks
+          <h2>Intervjurom</h2>
+          <div class="kort-info">Intervju kandidater i ditt valg av profesjonelle, inspirerende, avslappede eller diskrete rom.</div>
+          <button>Reserver nå</button>
+        </div> <!--ending på andre boksen-->
+        <div class="tredjeBoks">tredjeBoks
+          <h2>Trening rom</h2>
+          <div class="kort-info">Spesialbygde rom, ideelle for treningsøkter, med catering og støtte på stedet.</div>
+          <button>Reserver nå</button>
+        </div> <!--ending på tredje boksen-->
+      </div> <!--ending på treboksene-->
+    </div> <!--ending på andre del-->
+    <div class="tredjeDelen"> 
+      <img src="img/cat.png" alt="katt med briller på">
+      <div class="innhold"> 
+        <p>Frihet til å velge</p>
+        <h2>Et rom for ethvert behov</h2>
+        <p>Vårt brede utvalg av møterom lar deg velge det perfekte stedet og stedet for ditt neste møte. Vi hjelper deg med å finne det ideelle styrerommet for å være vertskap for et arrangement, et privat rom for å intervjue kandidater, eller et inspirerende sted å gjennomføre en treningsøkt.</p>
+        <div> Fullt utstyrte lokaler for sammenkomster i alle størrelser
+          Transportavstand
+          Møt i enhver større by, by eller transportknutepunkt
+          Arrangementsrom
+          Arrangementsrom, styrerom, treningsrom med mer
+          Business lounge
+          Komfortable, profesjonelle miljøer
+          
+          Bestill på dagen eller på forhånd via appen
+          Resepsjon
+          Erfarne rådgivere som hjelper deg med å finne riktig plass</div>
+      </div> <!--endign på innhold-->
+    </div> <!--ending på tredje delen-->
+    <div class="fjerdeDelen">
+      <img src="img/cat.png" alt="katt med briller på">
+      <div class="innhold2"> 
+        <p>Hva er inkludert</p>
+        <h2>Alt er tatt vare på.</h2>
+        <p>Rommene våre er fullt utstyrt med kvalitetsmøbler og videokonferanseutstyr, slik at du kan gå inn og kjøre produktive økter. Resepsjonistene våre vil hilse på gjestene dine, mens supportteamet vårt vil forberede rommet ditt og hjelpe alt til å gå på skinner.</p>
+        <div>Flatskjerm-TV, whiteboard og flippover
+          utbruddsområde
+          Utbruddsområder
+          fleksibel
+          Konfigurer møterom på din måte
+          Resepsjon
+          Profesjonelt mottaksteam for å hilse på gjester
+          wifi
+          Business-grade WiFi
+          Brukerstøtte
+          Erfarent internt supportteam</div> 
+      </div> <!--ending på innhold2-->
+    </div> <!--ending på fjerde delen-->
+    <div class="femteDelen">
+      <img src="img/cat.png" alt="katt med briller på">
+      <div>
+        <p>Bredt spekter av tjenester</p>
+        <h2>Tjenestene du trenger, når du trenger dem.</h2>
+        <p>Når du bestiller et av våre møterom, har du tilgang til en rekke tjenester for å hjelpe møtet ditt til en suksess. Bestill disse tjenestene på forhånd, så sørger vi for at alt er på plass og klart til bruk på dagen.</p>
+        <div>Skytv
+          IT- og teknisk støtte
+          Admin
+          Administrativ støtte
+          skala
+          Ekstra arbeidsområde etter behov
+          Kaffebar
+          Catering tjenester
+          Møterom
+          Projektorer og annet møteutstyr</div>
       </div>
-    
-    </div> <!--ending på main-->
+    </div>
   </main>
 
   
 
-<!--Footer Start-->
-<footer>
-  <div class="footerCointainer">
-   
-    <section class="åpningstider">
-      <h1>Åpningstider</h1>
-      <div>
-        <p>Man-Tor:</p>
-        <p>09-22</p>
+  <!--Footer Start-->
+  <footer>
+    <div class="footerCointainer">
+    
+      <section class="åpningstider">
+        <h1>Åpningstider</h1>
+        <div>
+          <p>Man-Tor:</p>
+          <p>09-22</p>
+        </div>
+        <div>
+          <p>Fre:</p>
+          <p>09-23</p>
+        </div>
+        <div>
+          <p>Lør:</p>
+          <p>10-23</p>
+        </div>
+        <div>
+          <p>Søn:</p>
+          <p>10-20</p>
+        </div>
+      </section> 
+      <section class="kontaktOss">
+        <h1>Kontakt oss</h1>
+        <div>
+          <div>
+            <img src="img/broden.png" alt="">
+          </div>
+          <p>+47 123 45 678</p>
+          <div>
+            <img src="img/broden.png" alt="">
+          </div>
+          <p>E-Post</p>
+          <div>
+            <img src="img/broden.png" alt="">
+          </div>
+          <p>Instagram</p>
+          <div>
+            <img src="img/broden.png" alt="">
+          </div>
+          <p>Facebook</p>
+          <div>
+            <img src="img/broden.png" alt="">
+          </div>
+          <p>Twitter</p>
       </div>
-      <div>
-        <p>Fre:</p>
-        <p>09-23</p>
-      </div>
-      <div>
-        <p>Lør:</p>
-        <p>10-23</p>
-      </div>
-      <div>
-        <p>Søn:</p>
-        <p>10-20</p>
-      </div>
-    </section> 
-    <section class="kontaktOss">
-      <h1>Kontakt oss</h1>
-      <div>
+      </section>
+      
+      <section class="adr">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno" 
+        width="250" 
+        height="250" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div>
-          <img src="img/broden.png" alt="">
+          <p>Ellen Gleditschs hus</p>
+          <p>Pilestredet 35</p>
+          <p>0166 Oslo</p>
         </div>
-        <p>+47 123 45 678</p>
-        <div>
-          <img src="img/broden.png" alt="">
-        </div>
-        <p>E-Post</p>
-        <div>
-          <img src="img/broden.png" alt="">
-        </div>
-        <p>Instagram</p>
-        <div>
-          <img src="img/broden.png" alt="">
-        </div>
-        <p>Facebook</p>
-        <div>
-          <img src="img/broden.png" alt="">
-        </div>
-        <p>Twitter</p>
+      
+      </section>
     </div>
+  </footer>
+  <!--Footer slutt-->
+
+
+  <!-- Header Start -->
+  <header>
+    <section class="logo">
+    <a href="Index.html">
+      <img src="img\Logo_new.transparent.png" alt="Image not found">
+    </a>
     </section>
-    
-    <section class="adr">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno" 
-      width="250" 
-      height="250" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div>
-        <p>Ellen Gleditschs hus</p>
-        <p>Pilestredet 35</p>
-        <p>0166 Oslo</p>
-      </div>
-    
-    </section>
+  <div>
+    <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
+    <label class='menu-icon-container' for="menu-checkbox-toggle">
+      <figure>
+        <img id="menu-icon-img" class="menu-open" src="img\Burgermeny_transparent.png" alt="=">
+        <img id="menu-icon-img" class="menu-close" src="img\Cross_Transparent.png" alt="X">
+      </figure>
+    </label>
+    <nav class="menuNav">
+      <a href="Index.html">
+        <button>
+          Front&nbsp;page
+        </button></a>
+      <a href="booking.html">
+        <button class="headerActive">
+        Booking
+      </button>
+      </a> 
+      <a href="cafe.html">
+        <button>
+          Reastaurant
+        </button>
+      </a>
+      <a href="Accessibility.html">
+        <button>
+          Accessibility
+        </button>
+      </a>
+      <a href="topical.html">
+        <button>
+          Topical
+        </button>
+      </a>
+    </nav>
   </div>
-</footer>
-<!--Footer slutt-->
-
-
-<!-- Header Start -->
-<header>
-  <section class="logo">
-   <a href="Index.html">
-     <img src="img\Logo_new.transparent.png" alt="Image not found">
-   </a>
-  </section>
- <div>
-   <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
-   <label class='menu-icon-container' for="menu-checkbox-toggle">
-     <figure>
-       <img id="menu-icon-img" class="menu-open" src="img\Burgermeny_transparent.png" alt="=">
-       <img id="menu-icon-img" class="menu-close" src="img\Cross_Transparent.png" alt="X">
-     </figure>
-   </label>
-   <nav class="menuNav">
-     <a href="Index.html">
-       <button>
-         Front&nbsp;page
-       </button></a>
-     <a href="booking.html">
-       <button class="headerActive">
-       Booking
-     </button>
-     </a> 
-     <a href="cafe.html">
-       <button>
-         Reastaurant
-       </button>
-     </a>
-     <a href="Accessibility.html">
-       <button>
-         Accessibility
-       </button>
-     </a>
-     <a href="topical.html">
-       <button>
-         Topical
-       </button>
-     </a>
-   </nav>
- </div>
-</header>
-<!-- Header Slutt -->
+  </header>
+  <!-- Header Slutt -->
 </body>
 
   
