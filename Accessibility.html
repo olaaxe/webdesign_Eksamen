@@ -12,79 +12,160 @@
 
 </head>
 
-<body>
-<!--------- Header -------->
-<div class = "Headermain">
-  <div class="HeaderBotBox">
-    <h1>
-      C-SONS
-    </h1>
+<body class="body">
+<main>
+  <article class="container">
+    <div class="tekstboks">
+      <h2>Oppsummering av tiltatk vi har gjort for tilgjengelighet</h2>
+      <p>
+        For å passe på at nettsiden vår er leselig har vi brukt en utvidelse som heter WAVE, 
+        som er ett verktøy vi bruker til å hjelpe oss å finne problemer folk med forskjellige
+        funksjonsnedsettelser kan møte på når de forsøker å bruke websiden. WAVE hjelper å identifisere
+        flere problemer som gjør netttet mindre tilgjengelig for folk med funksjonsnedsettelser og <abbr title="Web Content Accessibility Guideline"> WCAG</abbr> feil
+      </p>
+    </div>
+    <figure class="bildeboks">
+      <img src="img\accessability-images\Wave_eksempel1.png" alt="img\accessability-images\Wave_eksempel1.png">
+    </figure>
+    <div class="tekstboks">
+      <p>
+        Vi valgte en kombinasjon av tekstfarge og bakgrunnsfarge med en kontrast som gjør det leselig. I bildet over kan du se hvordan 
+        WAVE ville reagert om vi hadde lavere kontrast imellom bakgrunnen og tekstfargen.
+      </p>
+      <p>
+        
+      </p>
+    </div>
+    <figure class="bildeboks2">
+      <img class="kodeeksempel" src="img\accessability-images\Label_error_image.PNG" alt="img\accessability-images\Label_error_image.PNG">
+    </figure>
+    <div class="tekstboks">
+      <p>
+        Under testing, fant vi f.eks en feil i en burgermeny som kommer når skjermen blir for trang til å ha en menybar
+        da hadde vi en &#60;label&#62; tag, som vi hadde bilder i for menyknapper, men siden menyknappene ikke hadde bildetekst, stod den som empty
+        vi la inn bildetekst, som en evt tekstleser kan lese om folk med nedsatt synsevne skal ta ibruk  nettsiden
+      </p>
+    </div>
+    <div class="bildeboks2">
+      <img src="img\accessability-images\Label_error_fix_image.PNG" alt="Image of fixed code">
+    </div>
+
   </div>
+  </article>
+</main>
 
-  <div class="HeaderButtonsBox">
-      <a class = "HeaderCenterButton" href="Index.html">
-        <button class="HeaderButtons">
-          Front&nbsp;page
-        </button></a>
-
-      <a class = "HeaderCenterButton" href="booking.html">
-        <button class="HeaderButtons">
-        Booking
-      </button>
-    </a> 
+<!--Footer Start-->
+<footer>
+  <div class="footerCointainer">
+   
+    <section class="åpningstider">
+      <h1>Åpningstider</h1>
+      <div>
+        <p>Man-Tor:</p>
+        <p>09-22</p>
+      </div>
+      <div>
+        <p>Fre:</p>
+        <p>09-23</p>
+      </div>
+      <div>
+        <p>Lør:</p>
+        <p>10-23</p>
+      </div>
+      <div>
+        <p>Søn:</p>
+        <p>10-20</p>
+      </div>
+    </section> 
+    <section class="kontaktOss">
+      <h1>Kontakt oss</h1>
+      <div>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>+47 123 45 678</p>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>E-Post</p>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>Instagram</p>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>Facebook</p>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>Twitter</p>
+    </div>
+    </section>
     
-      <a class = "HeaderCenterButton" href="cafe.html">
-        <button class="HeaderButtons">
-          Café
-        </button>
-      </a>
-  
-      <a class = "Headeractive" href="Accessibility.html">
-        <button class="HeaderButtons Headeractive">
-          Accessibility
-        </button>
-      </a>
-  
-      <a class = "HeaderCenterButton"href="topical.html">
-        <button class="HeaderButtons">
-        Topical
-      </button>
-    </a>
+    <section class="adr">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno" 
+      width="250" 
+      height="250" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div>
+        <p>Ellen Gleditschs hus</p>
+        <p>Pilestredet 35</p>
+        <p>0166 Oslo</p>
+      </div>
+    
+    </section>
   </div>
-</div>
-<!-- ----------- SLUTT HEADER ------------ -->
+</footer>
+<!--Footer slutt-->
 
 
-  <div class="grid">
-    <div class="tekstboks">
-      <p class="tekstinnhold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, corporis. Dolores eos illo nemo expedita labore et officiis, doloremque doloribus maxime suscipit quis velit possimus, repudiandae aut reiciendis praesentium? Eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed repellendus magnam quibusdam expedita dignissimos voluptatibus vel accusamus! Aperiam molestias autem temporibus quisquam quidem officiis tenetur, exercitationem, rem, repudiandae nemo saepe?</p>
-    </div>
-    <div class="bildeboks">
-      <img class="bilder" src="img\broden.png" alt="img\broden.png">
-    </div>
-    <div class="tekstboks">
-      <p class="tekstinnhold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque modi, deserunt ducimus aut quasi excepturi, doloribus illum quam ipsa suscipit inventore? Quibusdam, voluptatibus quis sint fugiat distinctio aut adipisci assumenda!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quae nobis vitae ipsum. Autem exercitationem expedita, sunt facere ad incidunt dolorum labore illo esse deleniti architecto, voluptatum corrupti magnam unde?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio asperiores vel explicabo? Veritatis minima quia quod fugiat sint, aperiam blanditiis quas numquam quam, iure tenetur, voluptatum vel doloribus totam voluptate.
-      </p>
-    </div>
-    <div class="bildeboks">
-      <img class="bilder" src="img\broden.png" alt="img\broden.png">
-    </div>
-    <div class="tekstboks">
-      <p class="tekstinnhold">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam eligendi deserunt, inventore sit doloribus, facilis odio porro et doloremque est minus id quasi maxime eaque. Quisquam est dolores at quaerat!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab earum quos alias tenetur iure laborum, cumque neque officiis harum nisi quo fugit, dolor deserunt vitae, non aliquam omnis at sapiente?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, similique placeat deserunt nesciunt doloribus voluptate unde fuga eum saepe rerum amet, culpa distinctio, nostrum asperiores laboriosam ducimus eligendi fugit molestias.
-
-      </p>
-    </div>
-    <div class="bildeboks">
-      <img class="bilder" src="img\broden.png" alt="img\broden.png">
-    </div>
-
-  </div>
-</div>
-
+<!-- Header Start -->
+<header>
+  <section class="logo">
+   <a href="Index.html">
+     <img src="img\Logo_new.transparent.png" alt="Image not found">
+   </a>
+  </section>
+ <div>
+   <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
+   <label class='menu-icon-container' for="menu-checkbox-toggle">
+     <figure>
+       <img id="menu-icon-img" class="menu-open" src="img\Burgermeny_transparent.png" alt="=">
+       <img id="menu-icon-img" class="menu-close" src="img\Cross_Transparent.png" alt="X">
+     </figure>
+   </label>
+   <nav class="menuNav">
+     <a href="Index.html">
+       <button>
+         Front&nbsp;page
+       </button></a>
+     <a href="booking.html">
+       <button>
+       Booking
+     </button>
+     </a> 
+     <a href="cafe.html">
+       <button>
+         Reastaurant
+       </button>
+     </a>
+     <a href="Accessibility.html">
+       <button class="headerActive">
+         Accessibility
+       </button>
+     </a>
+     <a href="topical.html">
+       <button>
+         Topical
+       </button>
+     </a>
+   </nav>
+ </div>
+</header>
+<!-- Header Slutt -->
 </body>
 </html>

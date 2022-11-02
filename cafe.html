@@ -10,350 +10,340 @@
   <title>Document</title>
 </head>
 <body>
-  <!-- HER SKAL HEADEREN LIGGE -->
   
-  <!-- HER LIGGER DE FIRE NAVIGASJONSKNAPPENE FOR CAFE -->
+  <!------- NAVIGASJONSBAR ------->
 
-  <div class="navigasjon-bar-div">
-    
-    <div class="navigasjon-bar-button-div">
-      <a href="#lunch" class="navigasjon-bar-anchor">
-        <button class="navigasjon-bar-button">
-          <h1 class="navigasjon-bar-text">
+  <nav class="nav-bar">
+    <div>
+      <a href="#lunch">
+        <button>
+          <h1>
             Lunch
           </h1>
         </button>
       </a>
     </div>
 
-    <div class="navigasjon-bar-button-div">
-      <a href="#dinner" class="navigasjon-bar-anchor">
-        <button class="navigasjon-bar-button">
-          <h1 class="navigasjon-bar-text">
+    <div>
+      <a href="#dinner">
+        <button>
+          <h1>
             Dinner
           </h1>
         </button>
       </a>
-    </div >
+    </div>
 
-    <div class="navigasjon-bar-button-div">
-      <a href="#dessert" class="navigasjon-bar-anchor">
-        <button class="navigasjon-bar-button">
-          <h1 class="navigasjon-bar-text">
+    <div>
+      <a href="#dessert">
+        <button>
+          <h1>
             Dessert
           </h1>
         </button>
       </a>
     </div>
 
-    <div class="navigasjon-bar-button-div">
-      <a href="#drinks" class="navigasjon-bar-anchor">
-        <button class="navigasjon-bar-button">
-          <h1 class="navigasjon-bar-text">
+    <div>
+      <a href="#drinks">
+        <button>
+          <h1>
             Drinks
           </h1>
         </button>
       </a>
     </div>
+  </nav>
+  
 
-  </div>
+ 
 
- <!-- HER LIGGER HOVED DIVEN -->
+  <!------- MAIN ------->
 
+  <main class="retter-wrapper">
 
-  <div class="retter-wrapper-div"> 
+    <!------- LUNCH ------->
+
+    <div class="retter-header" id="lunch">
+      <h1>LUNCH</h1>
+    </div>
+
+    <div class="retter-container">
+      <div>
+        <h1>Bakt potet - 119,-</h1>
+        <p>Bakt potet, toppet med ost</p>
+        <p>Allergener: Melk</p>
+      </div>
+      <div>
+        <img src="img/dish-images/potato.jpg" title="Baked potato" alt="Image Missing">
+      </div>
+    </div>
+
+    <div class="retter-container">
+      <div >
+          <h1>Caesar Salat - 99,-</h1>
+          <p>En klassisk caesar salat, med en tvist.</p> 
+          <p>Allergener: Egg, Sesamfrø</p>
+      </div>
+      <div>
+        <img src="img/dish-images/ceasar.jpg" title="Ceasar salad" alt="Image Missing">
+      </div>
+    </div>
+
+    <div class="retter-container">
+      <div >       
+        <h1>Den ultimate sandwich - 129,-</h1>
+        <p>En veldig god sandwich</p> 
+        <p>Allergener: Gluten, Egg, Sennep, Melk</p>
+      </div>
+      <div>
+        <img src="img/dish-images/sandwich.jpg" title="Ultimate sandwitch" alt="Image Missing">
+      </div>
+    </div>
+
+    <!------- DINNER ------->
+
+    <div class="retter-header">
+      <h1 id="dinner">Middag</h1>
+    </div>
+
+    <div class="retter-container">
+      <div>
+        <h1 >Melkebiff - 229,-</h1>
+        <p >Melk i biff, en klassisk kombinasjon</p> 
+        <p >Allergener: Melk</p>
+      </div>
+      <div>
+        <img src="img/dish-images/milksteak.jpg" title="Milk steak" alt="Image Missing">
+      </div>
+    </div>
+
+    <div class="retter-container">
+      <div>
+        <h1>Pasta Tuna - 199,-</h1>
+        <p>En italiensk japansk kombinasjon som du ikke kommer til å glemme</p> 
+        <p>Allergener: Gluten, Fisk</p>
+      </div>
+      <div>
+        <img src="img/dish-images/tunapasta.jpg" title="Pasta tuna" alt="Image Missing">
+      </div>
+    </div>
+
+    <div class="retter-container">
+      <div>
+        <h1>Caesar Salat - 99,-</h1>
+          <p>En klassisk caesar salat, med en tvist.</p> 
+          <p>Allergener: Egg, Sesamfrø</p>
+      </div>
+      <div>
+        <img src="img/dish-images/ceasar.jpg" title="Caesar salad" alt="Image Missing">
+      </div>
+    </div>
+
+    <!------- DESSERT ------->
+
+    <div class="retter-header">
+      <h1 id="dessert">DESSERT</h1>
+    </div>
+
+    <div class="retter-container">
+      <div>
+        <h1>Banansplit - 99,-</h1>
+        <p>En banan splittet med ting oppi</p> 
+        <p>Allergener: Melk</p>
+      </div>
+      <div>
+        <img src="img/dish-images/banansplit.jpg" title="Bananasplit" alt="Image Missing">
+      </div>
+    </div>
+
+    <div class="retter-container">
+      <div>
+        <h1>Jellybean Creme Brule - 199,-</h1>
+        <p>En klassisk Creme Brule, toppet med Jellybeans</p> 
+        <p>Allergener: Egg, Melk</p>
+      </div>
+      <div>
+        <img src="img/dish-images/cremebrule.jpg" title="Creme brule" alt="Image Missing">
+      </div>
+    </div>
+
+    <div class="retter-container">
+      <div>
+        <h1>Jordbær med Cashews - 219,-</h1>
+        <p>En luksuriøs blanding av jorbær og Cashews.</p> 
+        <p>Allergener: Nøtter</p>
+      </div>
+      <div>
+        <img src="img/dish-images/strawberry.jpg" title="Strawberry cashew" alt="Image Missing">
+      </div>
+    </div>
+
+    <!------- DRINKS ------->
+
+    <div class="retter-header">
+      <h1 id="drinks">Drikke</h1>
+    </div>
+
+    <div class="retter-container">
+      <div>
+        <h1>Pina Colada  - 89,-</h1>
+        <p>En god blanding av rom, annanasjuice og kokosmelk</p> 
+        <p>Allergener: None</p>
+      </div>
+      <div>
+        <img src="img/dish-images/pinacolada.jpg" title="Piña colada" alt="Image Missing">
+      </div>
+    </div>
+
+    <div class="retter-container">
+      <div>
+        <h1>Øl  - 79,-</h1>
+        <p>Vårt hjemmebryggede fatøl</p> 
+        <p>Allergener: Gluten</p>
+      </div>
+      <div>
+        <img src="img/dish-images/beer.jpg" title="Beer" alt="Image Missing">
+      </div>
+    </div>
+
+    <div class="retter-container">
+      <div>
+        <h1>Ildbrus - 49,-</h1>
+        <p>Vår egne blanding av cola og ild, NB:VARM.</p>       
+        <p>Alergener: Sulphites</p>
+      </div>
+      <div>
+        <img src="img/dish-images/firesoda.jpg" title="Fire soda" alt="Image Missing">
+      </div>
+    </div>
+
+    <div class="retter-container">
+      <div>
+        <h1>Vann - 29,-</h1>
+        <p>Vårt egenproduserte vann.</p> 
+        <p>Allergens: None</p>
+      </div>
+      <div>
+        <img src="img/dish-images/water.jpg" title="Water" alt="Image Missing">
+      </div>
+    </div>
+
+  </main>
+
+<!--Footer Start-->
+<footer>
+  <div class="footerCointainer">
+   
+    <section class="åpningstider">
+      <h1>Åpningstider</h1>
+      <div>
+        <p>Man-Tor:</p>
+        <p>09-22</p>
+      </div>
+      <div>
+        <p>Fre:</p>
+        <p>09-23</p>
+      </div>
+      <div>
+        <p>Lør:</p>
+        <p>10-23</p>
+      </div>
+      <div>
+        <p>Søn:</p>
+        <p>10-20</p>
+      </div>
+    </section> 
+    <section class="kontaktOss">
+      <h1>Kontakt oss</h1>
+      <div>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>+47 123 45 678</p>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>E-Post</p>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>Instagram</p>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>Facebook</p>
+        <div>
+          <img src="img/broden.png" alt="">
+        </div>
+        <p>Twitter</p>
+    </div>
+    </section>
     
-    <div class="retter-div">
-
-      <!-- HER LIGGER ALL LUNCH -->
-
-      <div class="retter-header-div" id="lunch">
-        <h1 class="retter-header">LUNCH</h1>
+    <section class="adr">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno" 
+      width="250" 
+      height="250" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div>
+        <p>Ellen Gleditschs hus</p>
+        <p>Pilestredet 35</p>
+        <p>0166 Oslo</p>
       </div>
-
-      <div class="retter-tab-div">
-        <div class="retter-tab-text-div">
-          <div class="retter-tab-text-header-div">
-            <h1 class="retter-tab-text-header">Baked Potato - <span class="price-tag">119,-</span></h1>
-          </div>
-          <div class="retter-tab-text-beskrivelse-div">
-            <p class="retter-tab-text-beskrivelse">A potato baked in an oven topped with cheese.</p> 
-          </div>
-          <div class="retter-tab-text-alergener-div">
-            <p class="retter-tab-text-alergener">Allergens: Milk</p>
-          </div>
-        </div>
-        <div class="retter-tab-img-div">
-          <img src="img/dish-images/potato.jpg" title="Baked potato" alt="" class="retter-tab-img">
-        </div>
-      </div>
-
-      <div class="retter-tab-div">
-        <div class="retter-tab-text-div">
-          <div class="retter-tab-text-header-div">
-            <h1 class="retter-tab-text-header">Caesar Salad - <span class="price-tag">99,-</span></h1>
-          </div>
-          <div class="retter-tab-text-beskrivelse-div">
-            <p class="retter-tab-text-beskrivelse">A classic Ceasar salad made with love.</p> 
-          </div>
-          <div class="retter-tab-text-alergener-div">
-            <p class="retter-tab-text-alergener">Allergens: Egg, Sesame</p>
-          </div>
-        </div>
-        <div class="retter-tab-img-div">
-          <img src="img/dish-images/ceasar.jpg" title="Ceasar salad" alt="" class="retter-tab-img">
-        </div>
-      </div>
-
-      <div class="retter-tab-div">
-        <div class="retter-tab-text-div">
-          <div class="retter-tab-text-header-div">
-            <h1 class="retter-tab-text-header">The Ultimate Sandwich - <span class="price-tag">129,-</span></h1>
-          </div>
-          <div class="retter-tab-text-beskrivelse-div">
-            <p class="retter-tab-text-beskrivelse">A fine sandwich made of fried focaccia with ham, salad tomatoes and bacon.</p> 
-          </div>
-          <div class="retter-tab-text-alergener-div">
-            <p class="retter-tab-text-alergener">Allergens: Gluten, Egg, Mustard, Milk</p>
-          </div>
-        </div>
-        <div class="retter-tab-img-div">
-          <img src="img/dish-images/sandwich.jpg" title="Ultimate sandwitch" alt="" class="retter-tab-img">
-        </div>
-      </div>
-
-      <!-- HER LIGGER ALL DINNER -->
-
-      <div class="retter-header-div">
-        <h1 class="retter-header" id="dinner">DINNER</h1>
-      </div>
-
-      <div class="retter-tab-div">
-        <div class="retter-tab-text-div">
-          <div class="retter-tab-text-header-div">
-            <h1 class="retter-tab-text-header">Milk Steak - <span class="price-tag">229,-</span></h1>
-          </div>
-          <div class="retter-tab-text-beskrivelse-div">
-            <p class="retter-tab-text-beskrivelse">Milk and steak; whats not to love?</p> 
-          </div>
-          <div class="retter-tab-text-alergener-div">
-            <p class="retter-tab-text-alergener">Allergens: Milk</p>
-          </div>
-        </div>
-        <div class="retter-tab-img-div">
-          <img src="img/dish-images/milksteak.jpg" title="Milk steak" alt="" class="retter-tab-img">
-        </div>
-      </div>
-
-      <div class="retter-tab-div">
-        <div class="retter-tab-text-div">
-          <div class="retter-tab-text-header-div">
-            <h1 class="retter-tab-text-header">Pasta Tuna - <span class="price-tag">199,-</span></h1>
-          </div>
-          <div class="retter-tab-text-beskrivelse-div">
-            <p class="retter-tab-text-beskrivelse">A italian-japaneeze speciality, a homemade pasta, with raw tuna, topped with brussles sprout and tater tots.</p> 
-          </div>
-          <div class="retter-tab-text-alergener-div">
-            <p class="retter-tab-text-alergener">Allergens: Gluten, Fish</p>
-          </div>
-        </div>
-        <div class="retter-tab-img-div">
-          <img src="img/dish-images/tunapasta.jpg" title="Pasta tuna" alt="" class="retter-tab-img">
-        </div>
-      </div>
-
-      <div class="retter-tab-div">
-        <div class="retter-tab-text-div">
-          <div class="retter-tab-text-header-div">
-            <h1 class="retter-tab-text-header">Caesar Salad  - <span class="price-tag">99,-</span></h1>
-          </div>
-          <div class="retter-tab-text-beskrivelse-div">
-            <p class="retter-tab-text-beskrivelse">A classic Ceasar salad made with love.</p> 
-          </div>
-          <div class="retter-tab-text-alergener-div">
-            <p class="retter-tab-text-alergener">Allergens: Egg, Seasame</p>
-          </div>
-        </div>
-        <div class="retter-tab-img-div">
-          <img src="img/dish-images/ceasar.jpg" title="Caesar salad" alt="" class="retter-tab-img">
-        </div>
-      </div>
-
-      <!-- HER LIGGER ALL DESSERT -->
-
-      <div class="retter-header-div">
-        <h1 class="retter-header" id="dessert">DESSERT</h1>
-      </div>
-
-      <div class="retter-tab-div">
-        <div class="retter-tab-text-div">
-          <div class="retter-tab-text-header-div">
-            <h1 class="retter-tab-text-header">Banana split - <span class="price-tag">99,-</span></h1>
-          </div>
-          <div class="retter-tab-text-beskrivelse-div">
-            <p class="retter-tab-text-beskrivelse">A delicious bana split with ice cream, topped with chocolate sauce.</p> 
-          </div>
-          <div class="retter-tab-text-alergener-div">
-            <p class="retter-tab-text-alergener">Allergens: Millk</p>
-          </div>
-        </div>
-        <div class="retter-tab-img-div">
-          <img src="img/dish-images/banansplit.jpg" title="Bananasplit" alt="" class="retter-tab-img">
-        </div>
-      </div>
-
-      <div class="retter-tab-div">
-        <div class="retter-tab-text-div">
-          <div class="retter-tab-text-header-div">
-            <h1 class="retter-tab-text-header">Jellybean Creme Brule - <span class="price-tag">199,-</span></h1>
-          </div>
-          <div class="retter-tab-text-beskrivelse-div">
-            <p class="retter-tab-text-beskrivelse">Vanilla cream, topped with jellybeans and sugar, and then melted with  a torch.</p> 
-          </div>
-          <div class="retter-tab-text-alergener-div">
-            <p class="retter-tab-text-alergener">Allergens: Egg, Milk</p>
-          </div>
-        </div>
-        <div class="retter-tab-img-div">
-          <img src="img/dish-images/cremebrule.jpg" title="Creme brule" alt="" class="retter-tab-img">
-        </div>
-      </div>
-
-      <div class="retter-tab-div">
-        <div class="retter-tab-text-div">
-          <div class="retter-tab-text-header-div">
-            <h1 class="retter-tab-text-header">Strawberry with Cashews - <span class="price-tag">219,-</span></h1>
-          </div>
-          <div class="retter-tab-text-beskrivelse-div">
-            <p class="retter-tab-text-beskrivelse">A fantastic mix of strawberries and cashews.</p> 
-          </div>
-          <div class="retter-tab-text-alergener-div">
-            <p class="retter-tab-text-alergener">Allergens: Nuts</p>
-          </div>
-        </div>
-        <div class="retter-tab-img-div">
-          <img src="img/dish-images/strawberry.jpg" title="Strawberry cashew" alt="" class="retter-tab-img">
-        </div>
-      </div>
-
-      <!-- HER LIGGER ALLE DRINKS -->
-
-      <div class="retter-header-div">
-        <h1 class="retter-header" id="drinks">DRINKS</h1>
-      </div>
-
-      <div class="retter-tab-div">
-        <div class="retter-tab-text-div">
-          <div class="retter-tab-text-header-div">
-            <h1 class="retter-tab-text-header">Pina Colada  - <span class="price-tag">89,-</span></h1>
-          </div>
-          <div class="retter-tab-text-beskrivelse-div">
-            <p class="retter-tab-text-beskrivelse">A refreshing pinapple and coconut drink with rum.</p> 
-          </div>
-          <div class="retter-tab-text-alergener-div">
-            <p class="retter-tab-text-alergener">Allergens: None</p>
-          </div>
-        </div>
-        <div class="retter-tab-img-div">
-          <img src="img/dish-images/pinacolada.jpg" title="Piña colada" alt="" class="retter-tab-img">
-        </div>
-      </div>
-
-      <div class="retter-tab-div">
-        <div class="retter-tab-text-div">
-          <div class="retter-tab-text-header-div">
-            <h1 class="retter-tab-text-header">Beer  - <span class="price-tag">79,-</span></h1>
-          </div>
-          <div class="retter-tab-text-beskrivelse-div">
-            <p class="retter-tab-text-beskrivelse">Our finest beer.</p> 
-          </div>
-          <div class="retter-tab-text-alergener-div">
-            <p class="retter-tab-text-alergener">Allergens: Gluten</p>
-          </div>
-        </div>
-        <div class="retter-tab-img-div">
-          <img src="img/dish-images/beer.jpg" title="Beer" alt="" class="retter-tab-img">
-        </div>
-      </div>
-
-      <div class="retter-tab-div">
-        <div class="retter-tab-text-div">
-          <div class="retter-tab-text-header-div">
-            <h1 class="retter-tab-text-header">Fire Soda - <span class="price-tag">49,-</span></h1>
-          </div>
-          <div class="retter-tab-text-beskrivelse-div">
-            <p class="retter-tab-text-beskrivelse">Our homemade mixture of coke and pure fire, Warning HOT.</p> 
-          </div>
-          <div class="retter-tab-text-alergener-div">
-            <p class="retter-tab-text-alergener">Alergens: Sulphites</p>
-          </div>
-        </div>
-        <div class="retter-tab-img-div">
-          <img src="img/dish-images/firesoda.jpg" title="Fire soda" alt="" class="retter-tab-img">
-        </div>
-      </div>
-
-      <div class="retter-tab-div">
-        <div class="retter-tab-text-div">
-          <div class="retter-tab-text-header-div">
-            <h1 class="retter-tab-text-header">Water - <span class="price-tag">29,-</span></h1>
-          </div>
-          <div class="retter-tab-text-beskrivelse-div">
-            <p class="retter-tab-text-beskrivelse">Our wonderfull spring water, goes great with the fire soda.</p> 
-          </div>
-          <div class="retter-tab-text-alergener-div">
-            <p class="retter-tab-text-alergener">Allergens: None</p>
-          </div>
-        </div>
-        <div class="retter-tab-img-div">
-          <img src="img/dish-images/water.jpg" title="Water" alt="" class="retter-tab-img">
-        </div>
-      </div>
-
-
-    </div>
+    
+    </section>
   </div>
+</footer>
+<!--Footer slutt-->
 
-    <!--------- Header -------->
-    <div class = "Headermain">
-      <div class="HeaderBotBox">
-        <h1>
-          C-SONS
-        </h1>
-      </div>
-  
-      <div class="HeaderButtonsBox">
-          <a class = "HeaderCenterButton" href="Index.html">
-            <button class="HeaderButtons">
-              Front&nbsp;page
-            </button></a>
-  
-          <a class = "HeaderCenterButton" href="booking.html">
-            <button class="HeaderButtons">
-            Booking
-          </button>
-        </a> 
-        
-          <a class = "Headeractive" href="cafe.html">
-            <button class="HeaderButtons Headeractive">
-              Café
-            </button>
-          </a>
-      
-          <a class = "HeaderCenterButton" href="Accessibility.html">
-            <button class="HeaderButtons">
-              Accessibility
-            </button>
-          </a>
-      
-          <a class = "HeaderCenterButton"href="topical.html">
-            <button class="HeaderButtons">
-            Topical
-          </button>
-        </a>
-      </div>
-    </div>
-  <!-- ----------- SLUTT HEADER ------------ -->
+
+<!-- Header Start -->
+<header>
+  <section class="logo">
+   <a href="Index.html">
+     <img src="img\Logo_new.transparent.png" alt="Image not found">
+   </a>
+  </section>
+ <div>
+   <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
+   <label class='menu-icon-container' for="menu-checkbox-toggle">
+     <figure>
+       <img id="menu-icon-img" class="menu-open" src="img\Burgermeny_transparent.png" alt="=">
+       <img id="menu-icon-img" class="menu-close" src="img\Cross_Transparent.png" alt="X">
+     </figure>
+   </label>
+   <nav class="menuNav">
+     <a href="Index.html">
+       <button>
+         Front&nbsp;page
+       </button></a>
+     <a href="booking.html">
+       <button>
+       Booking
+     </button>
+     </a> 
+     <a href="cafe.html">
+       <button class="headerActive">
+         Reastaurant
+       </button>
+     </a>
+     <a href="Accessibility.html">
+       <button>
+         Accessibility
+       </button>
+     </a>
+     <a href="topical.html">
+       <button>
+         Topical
+       </button>
+     </a>
+   </nav>
+ </div>
+</header>
+<!-- Header Slutt -->
 
 </body>
 </html>

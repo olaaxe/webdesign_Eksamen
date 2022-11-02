@@ -6,8 +6,9 @@ h1{
 }
 
 
+/* NAVIGASJONSBAR */
 
-.navigasjon-bar-div{
+.nav-bar {
   background-color: rgb(225, 215, 196);
   width: auto;
   height: auto;
@@ -15,27 +16,18 @@ h1{
   padding-left: 100px;
   padding-right: 100px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 10px;
+  margin-top: 20px;
 }
-
-@media (max-width: 600px){
-  .navigasjon-bar-div {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    padding: 0px;
-  }
-}
-
-.navigasjon-bar-button-div {
+.nav-bar > div {
   background-color: rgb(225, 215, 196);
   height: auto;
   width: 1fr;
   margin: auto;
 }
-.navigasjon-bar-anchor {
+.nav-bar > div > a {
   width: 1fr;
 }
-.navigasjon-bar-button {
+.nav-bar > div > a > button {
   border: none;
   padding: 0px;
   height: 25px;
@@ -44,33 +36,34 @@ h1{
   color: rgb(21, 21, 21);
   transition: color 0.15s;
 }
-.navigasjon-bar-button:hover {
-  border: none;
-  padding: 0px;
-  height: 25px;
-  width: 1fr;
-  background-color: rgb(225, 215, 196);
+.nav-bar > div > a > button:hover {
   color: rgb(202, 67, 25);
   cursor: pointer;
 }
-.navigasjon-bar-button:active {
-  border: none;
-  padding: 0px;
-  height: 25px;
-  width: 1fr;
-  background-color: black;
+.nav-bar > div > a > button:active {
   color: rgb(241, 129, 95);
 }
-.navigasjon-bar-text {
+.nav-bar > div > a > button > h1 {
   font-size: 20px;
+  text-decoration: underline;
+}
+@media (max-width: 600px){
+  .nav-bar {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding: 0px;
+  }
 }
 
 
-.retter-div{
+
+/* MAIN */
+
+.retter-wrapper{
   background-color: rgb(168, 162, 149);
   padding-bottom: 1px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15px;
@@ -78,8 +71,9 @@ h1{
   width: min(1000px,90%);
 }
 
+/* RETTER HEADER */
 
-.retter-header-div {
+.retter-header {
   width: 1fr;
   background-color: rgb(202, 67, 25);
   height: 80px;
@@ -87,13 +81,13 @@ h1{
   text-align: center;
   border-radius: 5px;
 }
-.retter-header {
+.retter-header > h1 {
   padding-top: 20px;
 }
 
+/*RETTER CONTAINER */
 
-
-.retter-tab-div {
+.retter-container {
   width: 1fr;
   background-color: rgb(225, 215, 196);
   height: auto;
@@ -102,69 +96,44 @@ h1{
   grid-template-columns: 1fr 180px;
   border-radius: 5px;
 }
-@media (max-width: 400px){
-  .retter-tab-div {
-    grid-template-columns: 1fr;
-  }
-  .retter-tab-text-header-div {
-    width: min(400px,90%);
-  }
-  .retter-tab-text-beskrivelse-div {
-    width: min(400px,90%);
-  }
-  .retter-tab-text-alergener-div {
-    width: min(400px,90%);
-  }
-
-}
-.retter-tab-text-div {
+.retter-container > div:nth-child(1) {
   position: relative;
 }
-.retter-tab-text-header-div {
+.retter-container > div:nth-child(1) > h1 {
   width: 1fr;
   padding-right: 10px;
   height: auto;
-  /*background-color: blueviolet;*/
-  
-}
-.retter-tab-text-header {
   font-size: 25px;
   padding-top: 10px;
   padding-left: 15px;
   margin-bottom: 10px;
 }
-.retter-tab-text-beskrivelse-div {
-  /*background-color: rgb(166, 94, 233);*/
+.retter-container > div:nth-child(1) > p:nth-child(2) {
   width: 1fr;
   padding-right: 10px;
   height: auto;
-}
-.retter-tab-text-beskrivelse{
   padding-top: 10px;
   padding-left: 15px;
   font-size: 20px;
 }
-.retter-tab-text-alergener-div {
-  /*background-color: rgb(185, 149, 218);*/
+
+.retter-container > div:nth-child(1) > p:nth-child(3) {
   width: 1fr;
   padding-right: 10px;
   height: auto;
-}
-.retter-tab-text-alergener {
   padding-left: 15px;
   padding-top: 60px;
   padding-bottom: 10px;
   font-size: 20px;
   font-style: italic;
 }
-
-.retter-tab-img-div {
-  /*background-color: aquamarine;*/
+.retter-container > div:nth-child(2) {
   align-items: center;
   padding: auto;
+  margin: auto;
   display: flex;
 }
-.retter-tab-img{
+.retter-container > div:nth-child(2) > img {
   object-fit: cover;
   max-width:96%;
   max-height:96%;
@@ -172,3 +141,19 @@ h1{
   margin: 2px;
   border: solid;
 }
+@media (max-width: 400px){
+  .retter-container {
+    grid-template-columns: 1fr;
+  }
+  .retter-container > div:nth-child(1) > h1 {
+    width: min(400px,90%);
+  }
+  .retter-container > div:nth-child(1) > p:nth-child(2) {
+    width: min(400px,90%);
+  }
+  .retter-container > div:nth-child(1) > p:nth-child(3) {
+    width: min(400px,90%);
+  }
+}
+
+

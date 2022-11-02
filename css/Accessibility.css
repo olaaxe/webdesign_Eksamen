@@ -1,39 +1,96 @@
-.bakgrunnDiv{
-  background-color:rgb(225, 215, 196);
-}
+
+
 .tekstboks{
   display: flex;
+  flex-direction: column;
   color: rgb(225, 215, 196);
   padding: max(1vh, 1rem);
-  text-align: left;
+  justify-content: center;
 }
-.tekstinnhold{
+.tekstboks > h2{
+  padding-top: 2%;
+  justify-content: center;
+  text-align: center;
+  color: rgb(225, 215, 196);
+}
+.tekstboks > p{
+
   padding: 1rem 2rem;
+  width: 55ch;
+  margin:auto;
 }
+
 .bildeboks{
   display: flex;
   margin:auto;
-
+  width:55ch;
+  height: min(55ch, 90%);
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  max-width: 1000px;
+  
+  
 }
-.grid{
+.bildeboks > img{
+  padding: max(1vh, 1rem);
+  padding-bottom: 0;
+  width: 100%;
+}
+.bildeboks2{
+  display: flex;
+  margin:auto;
+  width: 55ch;
+  height: min(55ch, 90%);
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width:1000px;
+}
+
+.bildeboks2 > img{
+  width: 100%;
+}
+
+
+.container{
   background-color: rgb(46,46,46);
   display:grid;
   gap: 8px;
-  margin-left: max(5%, 2em);
-  margin-top: 2em;
-  margin-right: max(5%, 2em);
+  width: fit-content;
+  padding-left: 1fr;
+  padding-right: 1fr;
+  margin-top: 2rem;
   grid-template-columns: 1fr;
   border-radius: 2px ;
-}
-.bilder{
-  width:98%;
-  height:98%;
-  padding: max(1vh, 1rem);
-  padding-bottom: 0;
+  overflow-wrap:normal;
+  margin-inline: auto;
+ 
 }
 
-@media (min-width:40em) {
-  .grid{
-  grid-template-columns: 1fr 1fr;
+
+@media (max-width:900px), (handheld) {
+  .body{
+    background-color: rgb(46,46,46);
+
 }
+  .bildeboks > p{
+    width: min(85%, 500px);
+    height: auto;
+  }
+  .tekstboks > p{
+    width: min(85%, 500px);
+    height: min(85%, 500px);
+  }
+  .bildeboks > img{
+    padding: max(1vh, 1rem);
+    padding-bottom: 0;
+    max-width: 95%;
+  }
+}
+
+.bildecap{
+  padding-top: 2rem;
+  display: block;
 }
