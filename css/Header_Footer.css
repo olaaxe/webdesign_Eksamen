@@ -139,13 +139,16 @@
 .footerCointainer  h1 {
   text-align: center;
   color: white;
-  margin: 5px;
+  margin: 5px 0px 25px 0px;
 }
 .footerCointainer p {
   color: var(--clr-beige);
   vertical-align: middle;
   line-height: 40px;
   padding: 0;
+}
+.footerCointainer a {
+  text-decoration: none;
 }
 
 
@@ -175,6 +178,13 @@
 }
 .kontaktOss > div p {
   margin-left: 10px;
+  transition: color 0.15s;
+}
+.kontaktOss > div p:hover {
+  color: var(--clr-rød-hover);
+}
+.kontaktOss > div p:active {
+  color: var(--clr-rød-activate);
 }
 .kontaktOss > div figure img {
   height: 100%;
@@ -194,8 +204,11 @@
   margin-bottom: 10px;
   border-radius: 5px;
 }
-.adr > div > p {
-  
+.adr > div > a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--clr-beige);
+}
+.adr > div > a > p {
   line-height: 22px;
   font-style: italic;
 }
