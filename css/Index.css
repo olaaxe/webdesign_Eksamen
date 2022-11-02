@@ -1,30 +1,38 @@
 
 
 .BotIntroBox {
-  background-color:var(--clr-beige);
+  background-color:var(--clr-bakgrunn);
   color: var(--clr-sort);
   text-align: center;
 }
 
 .Introbox {
-  background-color: var(--clr-beige);
+  background-color: var(--clr-bakgrunn);
   color: var(--clr-sort);
   text-align: left;
-  margin-right: 20%;
-  margin-left: 20%;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   padding-top: min(40px, 95%);
   padding-bottom: min(20px, 95%);
-  gap: 100px;
+  gap: 50px;
 }
 
 @media (max-width: 1600px) {
   .Introbox {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
+@media (max-width: 900px) {
+  .Introbox {
+    display: grid;
     grid-template-columns: 1fr;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 20px;
+
   }
 }
 

@@ -9,7 +9,7 @@ h1{
 /* NAVIGASJONSBAR */
 
 .nav-bar {
-  background-color: var(--clr-beige);
+  background-color: var(--clr-bakgrunn);
   width: auto;
   height: auto;
   display: grid;
@@ -19,7 +19,7 @@ h1{
   margin-top: 20px;
 }
 .nav-bar > div {
-  background-color: var(--clr-beige);
+  background-color: var(--clr-bakgrunn);
   height: auto;
   width: 1fr;
   margin: auto;
@@ -32,7 +32,7 @@ h1{
   padding: 0px;
   height: 25px;
   width: 1fr;
-  background-color: var(--clr-beige);
+  background-color: var(--clr-bakgrunn);
   color: rgb(21, 21, 21);
   transition: color 0.15s;
 }
@@ -60,7 +60,7 @@ h1{
 /* MAIN */
 
 .retter-wrapper{
-  background-color: rgb(168, 162, 149);
+  background-color: var(--clr-beige-dark);
   padding-bottom: 1px;
   margin: auto;
   margin-top: 20px;
