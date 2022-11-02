@@ -1,26 +1,31 @@
-input[type="text"],
-textarea{
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.inputForm{
-  width: min(500px, 80%);
-  box-sizing: border-box;
-}
-.sendButton {
-  width: auto;
-  float: right;
-  cursor: pointer;
-  padding: 7px;
-}
-
 /*dadadddddddddddddddddddd*/
 .body{
   padding-top: 0px;
 }
-img{
-  width: 600px;
-  height: 300px;
+
+h1 span{
+  font-size: 48px;
+  color: rgb(44, 139, 0);
+}
+h2, h1{
+  font-size: 48px;
+}
+.førsteDelen{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4em;
+}
+.førsteDelen div{
+  flex: 1;
+}
+.førsteDelen figure{
+
+  flex: 1;
+
+}
+.førsteDelen figure img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  
 }
