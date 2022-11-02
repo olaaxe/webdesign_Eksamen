@@ -3,19 +3,19 @@
   
 }
 .bildecontainer{
-  background-color: rgb(46,46,46);
-  border: 1px solid black;
   border-radius: 2px;
-  padding-bottom: 10rem;
+  padding-bottom: 1rem;
 }
 .bildecontainer:nth-child(1){
   padding: 0px;
   margin: 0px;
 }
-.bildecontainer:nth-child(2){
+.bildecontainer > div{
   padding-left: 1rem;
+  background-color: rgb(46,46,46);
   color: var(--clr-beige);
 }
+
 
 .topicalGrid{
   /*background-color: rgb(46,46,46);*/
