@@ -130,40 +130,35 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
-  margin-top: 20px;
-  background-color: rgb(21, 21, 21);
-  color: rgb(225, 215, 196);
+  margin: 20px 0;
   height: auto;
+  max-width: 1600px;
   column-gap: 140px;
+
 }
 .footerCointainer  h1 {
   text-align: center;
   color: white;
   margin: 5px;
 }
-
-.åpningstider {
-  padding: 0 30px;
+.footerCointainer p {
+  color: rgb(225, 215, 196);
+  vertical-align: middle;
+  line-height: 40px;
+  padding: 0;
 }
 
-.footerCointainer .åpningstider > div{
+
+.åpningstider {
+  padding: 0;
+}
+.åpningstider > div{
   display: flex;
   justify-content: space-between;
   max-width: 400px;
+  margin-bottom: 5px;
 }
 
-.adr{
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 0 auto;
-
-}
-.adr iframe{
-  padding: 0 0 0 0;
-  border:0; 
-  border-radius: 10px;
-  overflow: hidden;
-}
 
 .kontaktOss {
   margin: 0 auto;
@@ -178,13 +173,30 @@
   max-height: 40px;
 }
 .kontaktOss > div p {
-  vertical-align: middle;
-  line-height: 40px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .kontaktOss > div figure img {
   height: 100%;
   width: 100%;
+}
+
+
+.adr{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+
+}
+.adr iframe{
+  padding: 0 0 0 0;
+  border:0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.adr > div > p {
+  
+  line-height: 22px;
+  font-style: italic;
 }
 
 
@@ -204,7 +216,7 @@
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 279px) {
+@media (max-width: 300px) {
   .adr iframe {
     display: none;
   }
