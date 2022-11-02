@@ -4,6 +4,7 @@
   --clr-footer: rgb(21, 21, 21);
   --clr-grå: rgb(46,46,46);
   --clr-sort: rgb(21, 21, 21);
+  --clr-grå: rgb(46, 46, 46);
   --clr-beige: rgb(225, 215, 196);
   --clr-beige-dark: rgb(168, 162, 149);
   --clr-rød: rgb(202, 67, 25);
@@ -63,5 +64,4 @@ footer {
 p{
   padding-bottom: 1rem;
   line-height: 1.5em;
-  
 }
