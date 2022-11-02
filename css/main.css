@@ -42,6 +42,7 @@ footer {
   flex-shrink: 0;
   background-color: rgb(21, 21, 21); /*<--Footer farge*/
   justify-content: center;
+  margin-top: 1em;
 }
 
 p{
