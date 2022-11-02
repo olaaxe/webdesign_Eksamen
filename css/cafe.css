@@ -44,7 +44,7 @@ h1{
   color: var(--clr-rød-activate);
 }
 .nav-bar > div > a > button > h1 {
-  font-size: 20px;
+  font-size: 2rem;
   text-decoration: underline;
 }
 @media (max-width: 600px){
@@ -82,7 +82,9 @@ h1{
   border-radius: 5px;
 }
 .retter-header > h1 {
-  padding-top: 20px;
+  line-height: 80px;
+  vertical-align: middle;
+  font-size: 3rem;
 }
 
 /*RETTER CONTAINER */
@@ -93,7 +95,7 @@ h1{
   height: auto;
   margin-bottom: 15px;
   display: grid;
-  grid-template-columns: 1fr 180px;
+  grid-template-columns: 1fr 200px;
   border-radius: 5px;
 }
 .retter-container > div:nth-child(1) {
@@ -103,7 +105,7 @@ h1{
   width: 1fr;
   padding-right: 10px;
   height: auto;
-  font-size: 25px;
+  font-size: 2.5rem;
   padding-top: 10px;
   padding-left: 15px;
   margin-bottom: 10px;
@@ -114,7 +116,7 @@ h1{
   height: auto;
   padding-top: 10px;
   padding-left: 15px;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .retter-container > div:nth-child(1) > p:nth-child(3) {
@@ -124,7 +126,7 @@ h1{
   padding-left: 15px;
   padding-top: 60px;
   padding-bottom: 10px;
-  font-size: 20px;
+  font-size: 2rem;
   font-style: italic;
 }
 .retter-container > div:nth-child(2) {
