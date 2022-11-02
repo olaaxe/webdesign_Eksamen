@@ -1,5 +1,20 @@
 .bakgrunnDiv{
   background-color: var(--clr-beige);
+  
+}
+.bildecontainer{
+  background-color: rgb(46,46,46);
+  border: 1px solid black;
+  border-radius: 2px;
+  padding-bottom: 10rem;
+}
+.bildecontainer:nth-child(1){
+  padding: 0px;
+  margin: 0px;
+}
+.bildecontainer:nth-child(2){
+  padding-left: 1rem;
+  color: var(--clr-beige);
 }
 
 .topicalGrid{
@@ -40,7 +55,11 @@ max-width: 100ch;
   padding: 1rem 2rem;
   text-align: left;
 }
-
+h1{
+  padding-bottom: 5rem;
+  font-size: 2.2rem;
+  text-align: center;
+}
 /*------------------------------------------*/
 
 
