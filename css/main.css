@@ -13,11 +13,12 @@ body{
 * {
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 2rem;
 }
 html{
   scroll-behavior: smooth;
   scroll-padding: 14px;
+  font-size: 62.5%;
 }
 
 .HeaderCenterButton {
@@ -42,9 +43,11 @@ footer {
   flex-shrink: 0;
   background-color: rgb(21, 21, 21); /*<--Footer farge*/
   justify-content: center;
+  margin-top: 1em;
 }
 
 p{
-  line-height: 1.5rem;
   padding-bottom: 1rem;
+  line-height: 1.5em;
+
 }
