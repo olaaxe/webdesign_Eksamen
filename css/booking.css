@@ -5,19 +5,28 @@ h1 span{
   color: rgb(44, 139, 0);
 }
 h2, h1{
-  font-size: 48px;
+  font-size: 30px;
 }
 main img{
-  height: 40px;
-  width: 40px;
-}
-.førsteDelen{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
 
 }
-.førsteDelen > *{
-  flex: 1;
-  min-width: 400px;
+.førsteDelen{
+  display: grid;
+  grid-template-areas: "tekst" "bildet";
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.førsteDelen figure{
+  max-width: fit-content;
+}
+.førsteDelen img{
+  width: 100%;
+}
+
+
+
+@media (max-width: 700px){
+  .førsteDelen{
+    grid-template-columns: 1fr;
+  }
 }
