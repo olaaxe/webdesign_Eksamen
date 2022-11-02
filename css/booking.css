@@ -2,7 +2,7 @@
 
 span{
   font-size: 48px;
-  color: rgb(44, 139, 0);
+  color: var(--clr-rød);
 }
 h2, h1{
   font-size: 30px;
@@ -23,12 +23,39 @@ h2::after{
   grid-template-areas: "tekst" "bildet";
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  
 }
 .førsteDelen figure{
   max-width: fit-content;
+  width: 20em;
+  height: 16em;
 }
 .førsteDelen img{
   width: 100%;
+  height: 100%;
+
+}
+.førsteDelen button{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 7px;
+  width: 100%;
+  padding-bottom: 7px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 1.5em;
+  background-color: var(--clr-rød);
+}
+/* ending på første delen*/
+.andreDelen{
+  padding-top: 3em;
+}
+.andreDelen p{
+  padding-bottom: 2em;
+}
+.treboksene{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 
