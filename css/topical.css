@@ -12,6 +12,7 @@
   grid-template-columns: 1fr;
 }
 
+
 .tekstBoksTopical {
   padding: max(1vh, 1rem);
 
@@ -21,6 +22,10 @@
   .topicalGrid{
     grid-template-columns: 1fr 1fr;
   }
+  .col-span-2{
+    grid-column: span 2;
+  }
+  
 }
 .topicalGrid > figure{
 max-width: 100ch;
