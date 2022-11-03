@@ -29,6 +29,7 @@ body{
   font-size: 2rem;
   font-family: Roboto, sans-serif;
 }
+
 html{
   scroll-behavior: smooth;
   scroll-padding: 1.4rem;
@@ -64,3 +65,8 @@ p{
   padding-bottom: 1rem;
   line-height: 1.5em;
 }
+sup{
+  font-size: 1.5rem;
+
+}
+

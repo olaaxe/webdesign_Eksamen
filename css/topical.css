@@ -9,11 +9,16 @@
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
+.bildecontainer > img{
+  border-radius: 5px 5px 0 0;
+}
+
 
 .bildecontainer > figcaption{
   padding-left: 1rem;
-  background-color: rgb(46,46,46);
+  background-color: rgb(46,46,46, 0.8);
   color: var(--clr-beige);
+  border-radius: 0 0 5px 5px;
 }
 
 .topicalGrid{
@@ -61,6 +66,18 @@ h1{
   padding-bottom: 5rem;
   font-size: 2.2rem;
   text-align: center;
+}
+a{
+  text-decoration: none;
+
+}
+
+ol
+{
+  padding-left: 2rem;
+}
+li{
+  font-size: 1.6rem;
 }
 /*------------------------------------------*/
 
