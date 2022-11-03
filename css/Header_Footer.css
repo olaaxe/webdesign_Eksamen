@@ -10,6 +10,7 @@
   max-width: 100%;
   transition: filter 0.25s;
 }
+
 @media (max-width: 448px) {
   .logo{
     display: flex;
