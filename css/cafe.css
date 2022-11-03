@@ -1,4 +1,4 @@
-/* NAVIGASJONSBAR */
+/* ------- NAVIGASJONSBAR ------- */
 .nav-bar {
   width: auto;
   height: auto;
@@ -35,7 +35,7 @@
   }
 }
 
-/* MAIN */
+/* ------- MAIN ------- */
 
 .retter-wrapper{
   margin: auto;
@@ -58,16 +58,11 @@ h1:after{
 }
 hr {
   margin: 15px 0 15px 0;
-  /* border-top: solid;
-  border-width: 1px;
-  border-bottom: none;
-  border-left: none;
-  border-right: none; */
   background-color: var(--clr-sort);
   opacity: 40%;
 }
 
-/* RETTER HEADER */
+/* ------- RETTER HEADER ------- */
 
 .retter-header {
   width: 1fr;
@@ -81,7 +76,7 @@ hr {
   font-size: 3rem;
 }
 
-/*RETTER CONTAINER */
+/* ------- RETTER CONTAINER ------- */
 
 .retter-container {
   width: 1fr;
