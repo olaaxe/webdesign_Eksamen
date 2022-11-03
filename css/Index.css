@@ -28,6 +28,10 @@
   grid-template-columns: 2fr 1fr;
 }
 
-.Indexparagraph {
+.Index_photo {
+size: 100%;  
+}
 
+.Photo_container {
+  width: 100px;
 }
