@@ -9,7 +9,7 @@ h1{
 /* NAVIGASJONSBAR */
 
 .nav-bar {
-  background-color: rgb(225, 215, 196);
+  background-color: var(--clr-bakgrunn);
   width: auto;
   height: auto;
   display: grid;
@@ -19,7 +19,7 @@ h1{
   margin-top: 20px;
 }
 .nav-bar > div {
-  background-color: rgb(225, 215, 196);
+  background-color: var(--clr-bakgrunn);
   height: auto;
   width: 1fr;
   margin: auto;
@@ -32,19 +32,19 @@ h1{
   padding: 0px;
   height: 25px;
   width: 1fr;
-  background-color: rgb(225, 215, 196);
+  background-color: var(--clr-bakgrunn);
   color: rgb(21, 21, 21);
   transition: color 0.15s;
 }
 .nav-bar > div > a > button:hover {
-  color: rgb(202, 67, 25);
+  color: var(--clr-rød);
   cursor: pointer;
 }
 .nav-bar > div > a > button:active {
-  color: rgb(241, 129, 95);
+  color: var(--clr-rød-activate);
 }
 .nav-bar > div > a > button > h1 {
-  font-size: 20px;
+  font-size: 2rem;
   text-decoration: underline;
 }
 @media (max-width: 600px){
@@ -60,7 +60,7 @@ h1{
 /* MAIN */
 
 .retter-wrapper{
-  background-color: rgb(168, 162, 149);
+  background-color: var(--clr-beige-dark);
   padding-bottom: 1px;
   margin: auto;
   margin-top: 20px;
@@ -75,25 +75,27 @@ h1{
 
 .retter-header {
   width: 1fr;
-  background-color: rgb(202, 67, 25);
+  background-color: var(--clr-rød);
   height: 80px;
   margin-bottom: 15px;
   text-align: center;
   border-radius: 5px;
 }
 .retter-header > h1 {
-  padding-top: 20px;
+  line-height: 80px;
+  vertical-align: middle;
+  font-size: 3rem;
 }
 
 /*RETTER CONTAINER */
 
 .retter-container {
   width: 1fr;
-  background-color: rgb(225, 215, 196);
+  background-color: var(--clr-beige);
   height: auto;
   margin-bottom: 15px;
   display: grid;
-  grid-template-columns: 1fr 180px;
+  grid-template-columns: 1fr 200px;
   border-radius: 5px;
 }
 .retter-container > div:nth-child(1) {
@@ -103,7 +105,7 @@ h1{
   width: 1fr;
   padding-right: 10px;
   height: auto;
-  font-size: 25px;
+  font-size: 2.5rem;
   padding-top: 10px;
   padding-left: 15px;
   margin-bottom: 10px;
@@ -114,7 +116,7 @@ h1{
   height: auto;
   padding-top: 10px;
   padding-left: 15px;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .retter-container > div:nth-child(1) > p:nth-child(3) {
@@ -124,7 +126,7 @@ h1{
   padding-left: 15px;
   padding-top: 60px;
   padding-bottom: 10px;
-  font-size: 20px;
+  font-size: 2rem;
   font-style: italic;
 }
 .retter-container > div:nth-child(2) {

@@ -1,23 +1,67 @@
+:root{
+  --clr-header: linear-gradient( 30deg, rgb(0, 0, 0) 0%, rgb(80, 80, 80) 100%);
+  --clr-bakgrunn: rgb(255, 250, 240);
+  --clr-footer: rgb(21, 21, 21);
+  --clr-grå: rgb(46,46,46);
+  --clr-sort: rgb(21, 21, 21);
+  --clr-beige: rgb(225, 215, 196);
+  --clr-beige-dark: rgb(168, 162, 149);
+  --clr-rød: rgb(202, 67, 25);
+  --clr-rød-hover: rgb(223, 109, 70);
+  --clr-rød-activate: rgb(241, 129, 95);
+}
+
+body, html {
+  height: 100%;
+}
 body{
   margin: 0px;
   position: relative;
-  padding-bottom: 400px;
   padding-top: 218px;
-  background-color: rgb(225, 215, 196);
+  /*background-color: rgb(250, 249, 246);*/
+  background-color: var(--clr-bakgrunn);
+  display: flex;
+  flex-direction: column;
 }
 * {
   margin: 0;
   padding: 0;
+  font-size: 2rem;
+  font-family: Roboto, sans-serif;
 }
-p{
-  font-size: 20px;
-}
-
 html{
   scroll-behavior: smooth;
   scroll-padding: 14px;
+  font-size: 62.5%;
 }
 
 .HeaderCenterButton {
   text-align: center;
+}
+main{
+  margin: 0 auto; 
+  max-width: 1000px;
+  flex: 1 0 auto;
+  padding-bottom: 10px;
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--clr-header);/*<--Header farge*/
+  box-sizing: border-box;
+}
+footer {
+  display: flex;
+  flex-shrink: 0;
+  background-color: var(--clr-footer); /*<--Footer farge*/
+  justify-content: center;
+  margin-top: 1em;
+}
+
+p{
+  padding-bottom: 1rem;
+  line-height: 1.5em;
+  
 }

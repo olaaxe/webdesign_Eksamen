@@ -1,9 +1,9 @@
 .bakgrunnDiv{
-  background-color:rgb(225, 215, 196);
+  background-color: var(--clr-beige);
 }
 
 .topicalGrid{
-  background-color: rgb(46,46,46);
+  /*background-color: rgb(46,46,46);*/
   display:grid;
   gap: 8px;
   margin-left: max(5%, 2em);
@@ -22,9 +22,19 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+.topicalGrid > figure{
+max-width: 100ch;
+}
 
-.tekstInnhold{
-  color: rgb(225, 215, 196);
+.topicalGrid > figure > img{
+  width: 100%;
+}
+
+.topicalGrid > p{
+ /* color: rgb(225, 215, 196);*/
   padding: 1rem 2rem;
   text-align: left;
 }
+/*------------------------------------------*/
+
+
