@@ -1,26 +1,147 @@
-input[type="text"],
-textarea{
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+/*dadadddddddddddddddddddd*/
+
+span{
+  font-size: 48px;
+  color: var(--clr-rød);
 }
-.inputForm{
-  width: min(500px, 80%);
-  box-sizing: border-box;
-}
-.sendButton {
-  width: auto;
-  float: right;
-  cursor: pointer;
-  padding: 7px;
+h2, h1{
+  font-size: 30px;
+  font-weight: bold;
 }
 
-/*dadadddddddddddddddddddd*/
-.body{
-  padding-top: 0px;
+h2:after{
+  display: inline-block;
+  content: "";
+  margin-left: 5px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: var(--clr-rød);
 }
-img{
-  width: 600px;
-  height: 300px;
+p, li{
+  color: var(--clr-grå);
+}
+.førsteDelen{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+}
+.førsteDelen >*{
+  flex: 1 1 45%;
+}
+.førsteDelen img{
+  width: 80%;
+  
+
+
+}
+.førsteDelen button{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 7px;
+  width: 100%;
+  padding-bottom: 7px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 1.5em;
+  background-color: var(--clr-rød);
+}
+/* ending på første delen*/
+
+
+
+.Cards-Flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content:center;
+}
+.Cards-Flex>*{
+  flex: 0 1 15em;
+}
+.Cards{
+  padding: 0.5rem;
+  border: solid 1px;
+  border-radius: 0 0 0 1rem;
+}
+[name="møterom"] h3, h2{
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.Cards > p{
+  padding-bottom: 2rem;
+}
+.Cards-funksjoner li{
+  display: flex;
+  gap: 1rem;
+}
+.Cards-funksjoner li img{
+  width: 2rem;
+  height: 2rem;
+}
+.Cards-funksjoner li p{
+  padding: 0;
+}
+.Cards button{
+
+}
+
+
+
+.infoSection{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  margin: 4rem 0;
+}
+.infoSection#reverse{
+  grid-template-columns: 2fr 1fr;
+}
+.infoSection .H-comment{
+  padding: 0;
+  font-size: 1.7rem;
+}
+.infoSection figure{
+  margin: auto 0;
+}
+.infoSection img{
+  width: 100%;
+}
+.infoSection > div > *:not(hr){
+  padding: 2rem 0; /* Endre????*/
+}
+.infoSection hr{
+  opacity: 40%;
+}
+
+.infoGrid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.infoGrid li{
+  display: flex;
+  flex: 1 1 26rem;
+  gap: 1rem;
+}
+.infoGrid li img{
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 700px){
+  .førsteDelen{
+    grid-template-columns: 1fr;
+  }
+
+  .infoSection{
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .infoSection#reverse{
+    grid-template-columns: 1fr;
+  }
+  .infoSection > figure{
+    display: none;
+  }
 }

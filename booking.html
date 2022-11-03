@@ -11,132 +11,252 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <script>
-            let saveFile = () => {
-            const name = document.getElementById("txtName");
-            const email = document.getElementById("txtEmail");
-            const date = document.getElementById("txtDate");
-            const msg = document.getElementById("msg");
-
-            let data = "\r Name: " + name.value + " \r\n " + "Email: " + email.value + " \r\n " + "Date: " + date.value +  " \r\n " + "Message: " + msg.value;
-            const textToBLOB = new Blob([data], { type: "text/plain" });
-            let newLink = document.createElement("a");
-            newLink.download = "Booking";
-            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-            newLink.click();
-            
-        };
-  </script>
 </head>
 
 
 <body>
+  <main>
 
-  <div class="main">
-    <div class="førsteDelen">
+    <section class="førsteDelen">
       <div>
-        <h1> Møte rom.</h1>
+        <h1> Møte rom<span>.</span></h1>
         <p>Møterommene våre er i alle større byer i verden, så du kan være vertskap uansett hvor du trenger. Imponer kunder, hold minneverdige workshops, eller lever et vinnende pitch i våre fullt betjente møteplasser. Bestill på forespørsel per time, og vårt dedikerte team vil være til stede for å sikre at møtet ditt går problemfritt.</p>
-        <button>Reserver nå</button>
-        <img src="img/cat.png" alt="katt med briller på">
-
+        <a href="#møterom"><button>Reserver nå</button></a>
       </div>
-    </div> <!--ending på første del-->
-    <div class="andreDelen">
-      <h2>Våre møterom.</h2>
-      <div>"Finn møterom du trenger for å imponere kunder, brainstorme med kolleger, holde minneverdige workshops eller levere et vinnende pitch. Bestill nedenfor eller bestill mens du er på farten med appen vår."</div>
-      <div class="treboksene">
-        <div class="førsteBoks">
-          <h2>konferanserom</h2>
-          <div class="kort-info">Rom utstyrt med toppmoderne presentasjonsutstyr, perfekt for ditt neste forretningsmøte.</div>
+      <figure>
+        <img src="img/cat.png" alt="katt med briller på">
+      </figure>
+    </section> <!--ending på første del-->
+
+
+    <section name="møterom" id="møterom">
+      <h2>Våre møterom</h2>
+      <p>Finn møterom du trenger for å imponere kunder, brainstorme med kolleger, holde minneverdige workshops eller levere et vinnende pitch. Bestill nedenfor eller bestill mens du er på farten med appen vår.</p>
+      
+      <div class="Cards-Flex">
+        <div class="Cards">
+          <h3>konferanserom</h3>
+          <p>Rom utstyrt med toppmoderne presentasjonsutstyr, perfekt for ditt neste forretningsmøte.</p>
+          <p>Funksjoner</p>
+          <ul class="Cards-funksjoner">
+            <li>
+              <img src="img/Telefon_icon.png" alt="telefon">
+              <p>Internett i bedriftsklasse</p>
+            </li>
+            <li>
+              <img src="img/Telefon_icon.png" alt="telefon">
+              <p>Konfigurer i henhold til behovene dine</p>
+            </li>
+            <li>
+              <img src="img/Telefon_icon.png" alt="telefon">
+              <p>Tusjtavler og projektorer</p>
+            </li>
+          </ul>
           <button>Reserver nå</button>
         </div> <!--ending på første boksen-->
-        <div class="andreBoks">andreBoks
-          <h2>Intervjurom</h2>
-          <div class="kort-info">Intervju kandidater i ditt valg av profesjonelle, inspirerende, avslappede eller diskrete rom.</div>
+
+        <div class="Cards">
+          <h3>Intervjurom</h3>
+          <p>Intervju kandidater i ditt valg av profesjonelle, inspirerende, avslappede eller diskrete rom.</p>
+          <p>Funksjoner</p>
+          <ul class="Cards-funksjoner">
+            <li>
+              <img src="img/Telefon_icon.png" alt="telefon">
+              <p>Bestill i 1 time eller mer</p>
+            </li>
+            <li>
+              <img src="img/Telefon_icon.png" alt="telefon">
+              <p>En resepsjonist tar imot kandidatene</p>
+            </li>
+            <li>
+              <img src="img/Telefon_icon.png" alt="telefon">
+              <p>Presentasjonsutstyr er tilgjengelig</p>
+            </li>
+          </ul>
           <button>Reserver nå</button>
         </div> <!--ending på andre boksen-->
-        <div class="tredjeBoks">tredjeBoks
-          <h2>Trening rom</h2>
-          <div class="kort-info">Spesialbygde rom, ideelle for treningsøkter, med catering og støtte på stedet.</div>
+
+        <div class="Cards">
+          <h3>Trening rom</h3>
+          <p>Spesialbygde rom, ideelle for treningsøkter, med catering og støtte på stedet.</p>
+          <p>Funksjoner</p>
+          <ul class="Cards-funksjoner">
+            <li>
+              <img src="img/Telefon_icon.png" alt="telefon">
+              <p>Tilgjengelige cateringalternativer</p>
+            </li>
+            <li>
+              <img src="img/Telefon_icon.png" alt="telefon">
+              <p>Supportteam på stedet</p>
+            </li>
+            <li>
+              <img src="img/Telefon_icon.png" alt="telefon">
+              <p>Pauseområder</p>
+            </li>
+          </ul>
           <button>Reserver nå</button>
         </div> <!--ending på tredje boksen-->
+
       </div> <!--ending på treboksene-->
-    </div> <!--ending på andre del-->
-    <div class="tredjeDelen"> 
-      <img src="img/cat.png" alt="katt med briller på">
-      <div class="innhold"> 
-        <p>Frihet til å velge</p>
-        <h2>Et rom for ethvert behov</h2>
+    </section> <!--ending på andre del-->
+
+
+
+    <section class="infoSection"> 
+      <figure>
+        <img src="img\Oluf_a_person_talking_to_people_in_an_auditorium_realistic_496e4bb2-b541-4ba0-b318-7a2adcb70a6b.png" alt="katt med briller på">
+      </figure>
+      <div> 
+        <div>
+          <p class="H-comment">Frihet til å velge</p>
+          <h2>Et rom for ethvert behov</h2>
+        </div>
         <p>Vårt brede utvalg av møterom lar deg velge det perfekte stedet og stedet for ditt neste møte. Vi hjelper deg med å finne det ideelle styrerommet for å være vertskap for et arrangement, et privat rom for å intervjue kandidater, eller et inspirerende sted å gjennomføre en treningsøkt.</p>
-        <div> Fullt utstyrte lokaler for sammenkomster i alle størrelser
-          Transportavstand
-          Møt i enhver større by, by eller transportknutepunkt
-          Arrangementsrom
-          Arrangementsrom, styrerom, treningsrom med mer
-          Business lounge
-          Komfortable, profesjonelle miljøer
-          
-          Bestill på dagen eller på forhånd via appen
-          Resepsjon
-          Erfarne rådgivere som hjelper deg med å finne riktig plass</div>
-      </div> <!--endign på innhold-->
-    </div> <!--ending på tredje delen-->
-    <div class="fjerdeDelen">
-      <div class="innhold2"> 
-        <p>Hva er inkludert</p>
-        <h2>Alt er tatt vare på.</h2>
+        <ul class="infoGrid">
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Fullt utstyrte plasser for samlinger av enhver størrelse</p>
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Ha møte i hvilken som helst by</p>              
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Arrangementslokaler, styrerom, kurslokaler og enda mer</p>
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Komfortable, profesjonelle miljøer</p>
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Bestill på dagen eller i forveien via appen</p>
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Erfarne rådgivere som hjelper deg med å finne riktig område</p>
+          </li>
+        </ul>
+        <hr>
+      </div>
+    </section>
+
+    <section class="infoSection" id="reverse">
+      <div> 
+        <div>
+          <p class="H-comment">Hva er inkludert</p>
+          <h2>Alt er tatt vare på</h2>
+        </div>
         <p>Rommene våre er fullt utstyrt med kvalitetsmøbler og videokonferanseutstyr, slik at du kan gå inn og kjøre produktive økter. Resepsjonistene våre vil hilse på gjestene dine, mens supportteamet vårt vil forberede rommet ditt og hjelpe alt til å gå på skinner.</p>
-        <div>Flatskjerm-TV, whiteboard og flippover
-          utbruddsområde
-          Utbruddsområder
-          fleksibel
-          Konfigurer møterom på din måte
-          Resepsjon
-          Profesjonelt mottaksteam for å hilse på gjester
-          wifi
-          Business-grade WiFi
-          Brukerstøtte
-          Erfarent internt supportteam</div>
-      </div> <!--ending på innhold2-->
-    </div> <!--ending på fjerde delen-->
-  
-  </div> <!--ending på main-->
+        <ul class="infoGrid">
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Flatskjerm-TV, tusjtavler og flipover</p>
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Pauseområder</p>              
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Konfigurer møterommet på din måte</p>
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Profesjonelt resepsjonistteam som tar imot gjester</p>
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Trådløst internett i bedriftskvalitet</p>
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Erfarent supportteam på stedet</p>
+          </li>
+        </ul>
+        <hr>
+      </div>
+      <figure>
+        <img src="img\Oluf_a_person_talking_to_people_in_an_auditorium_realistic_496e4bb2-b541-4ba0-b318-7a2adcb70a6b.png" alt="katt med briller på">
+      </figure>
+    </section> 
 
-  
+    <section class="infoSection">
+      <figure>
+        <img src="img\Oluf_a_person_talking_to_people_in_an_auditorium_realistic_496e4bb2-b541-4ba0-b318-7a2adcb70a6b.png" alt="Hunter">
+      </figure>
+      <div>
+        <div>
+          <p class="H-comment">Bredt spekter av tjenester</p>
+          <h2>Tjenestene du trenger, når du trenger dem</h2>
+        </div>
+        <p>Når du bestiller et av våre møterom, har du tilgang til en rekke tjenester for å hjelpe møtet ditt til en suksess. Bestill disse tjenestene på forhånd, så sørger vi for at alt er på plass og klart til bruk på dagen.</p>
+        <ul class="infoGrid">
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Support for IT- og teknisknologi</p>
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Hjelp til Administrative oppgaver</p>              
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Ytterligere arbeidsplasser ved behov</p>
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Cateringtjenester</p>
+          </li>
+          <li>
+            <img src="img/Telefon_icon.png" alt="telefon">
+            <p>Projektorer og annet møteutstyr</p>
+          </li>
+        </ul>
+        <hr>
+      </div>
+    </section>
 
-<!--Footer Start-->
+    
+  </main>
+
+
+
+
+
+  <!--Footer Start-->
 <footer>
   <div class="footerCointainer">
    <section class="kontaktOss">
-      <h1>Kontakt oss</h1>
+      <h2>Kontakt oss</h2>
       <div>
         <figure>
-          <img src="img/Telefon_icon.png" alt="Image missing">
+          <img src="img/Telefon_icon.png" alt="Telefon ikon">
         </figure>
         <a href="tel: +4712345678">
           <p>+47 123 45 678</p>
         </a>
         <figure>
-          <img src="img/Mail_icon.png" alt="Image missing">
+          <img src="img/Mail_icon.png" alt="E post ikon">
         </figure>
         <a href="mailto:c-sons@example.com">
           <p>E - Post</p>
         </a>
         <figure>
-          <img src="img/Instagram_icon.png" alt="Image missing">
+          <img src="img/Instagram_icon.png" alt="Instagram ikon">
         </figure>
         <a href="https://www.instagram.com/" target="_blank">
           <p>Instagram</p>
         </a>
         <figure>
-          <img src="img/Facebook_icon.png" alt="Image missing">
+          <img src="img/Facebook_icon.png" alt="Facebook ikon">
         </figure>
         <a href="https://facebook.com" target="_blank">
           <p>Facebook</p>
         </a>
         <figure>
-          <img src="img/Twitter_icon.png" alt="Image missing">
+          <img src="img/Twitter_icon.png" alt="Twitter ikon">
         </figure>
         <a href="https://twitter.com/" target="_blank">
           <p>Twitter</p>
@@ -145,7 +265,7 @@
     </section>
 
     <section class="åpningstider">
-      <h1>Åpningstider</h1>
+      <h2>Åpningstider</h2>
       <div>
         <p>Mandag - Torsdag:</p>
         <p>09-22</p>
@@ -165,7 +285,7 @@
     </section>
     
     <section class="adr">
-      <h1>Finn oss</h1>
+      <h2>Finn oss</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno" 
       width="300" 
       height="200" 
