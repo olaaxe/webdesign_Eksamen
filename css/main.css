@@ -46,7 +46,7 @@ main{
   margin: 0 auto; 
   max-width: 1000px;
   flex: 1 0 auto;
-  padding: 0 2rem 1rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
 }
 header{
   position: absolute;
@@ -74,6 +74,6 @@ sup{
 }
 @media (max-width: 319px) {
   main{
-    padding: 0 0 1rem 0;
+    padding: 1rem 0 1rem 0;
   }
 }
