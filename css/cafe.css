@@ -94,9 +94,6 @@ h1{
   grid-template-columns: 1fr 200px;
   border-radius: 5px;
 }
-.retter-container > div:nth-child(1) {
-  position: relative;
-}
 .retter-container > div:nth-child(1) > h3 {
   width: 1fr;
   padding-right: 10px;
