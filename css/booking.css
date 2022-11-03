@@ -41,52 +41,71 @@ p, li{
   border: none;
   margin-top: 1.5em;
   background-color: var(--clr-rød);
+  cursor: pointer;
+}
+.førsteDelen button:hover{
+  box-shadow: var(--shadow-box);
+  background-color: var(--clr-rød-hover)
 }
 /* ending på første delen*/
-
 
 
 .Cards-Flex{
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1em;
   gap: 2rem;
-  justify-content:center;
+  justify-content: center;
 }
 .Cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex: 0 1 16em;
   padding: 3rem;
-  border: solid 1px;
-  border-radius: 0 1rem 0 1rem;
-  margin-top: 1em;
+  border: solid 2px rgb(0, 0, 0, 40%);
+  border-radius: 0 2rem 0 2rem;
+  min-height: 100%;
 }
-.Cards > h3{
+.Cards:hover{
+  border: 0px;
+  box-shadow: var(--shadow-box);
+  background-color: var(--clr-hvit);
+}
+.Cards > div > h3{
   font-size: 3rem;
 }
-.Cards > p{
+.Cards > div > p{
   padding: 2rem 0;
 }
 .Cards-funksjoner li{
-  display: flex;
+  display: grid;
+  grid-template-columns: 20px 1fr;
   gap: 1rem;
 }
 .Cards-funksjoner li img{
-  flex: 0 0 10%;
   max-width: 100%;
 }
 .Cards-funksjoner li p{
   padding: 0;
-  flex: 1 1 80%;
 }
-.Cards button{
-width: 100%;
-background-color: var(--clr-rød);
-margin-top: 2em;
-border: none;
-border-radius: 3px;
-padding-top: 3px;
-padding-bottom: 3px;
-bottom: 0;
+.Cards > label{
+  margin-top: 3rem;
 }
+.Cards-button{
+  max-width: fit-content;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: var(--clr-rød);
+  color: var(--clr-bakgrunn);
+  font-weight: bold;
+}
+.Cards-button:hover{
+  box-shadow: var(--shadow-box);
+  background-color: var(--clr-rød-hover)
+}
+
 
 
 
@@ -194,7 +213,7 @@ bottom: 0;
   margin-right: 10px;
   cursor: pointer;
 }
-#form ~ .contactForm{
+.form ~ .contactForm{
   transform: scale(0);
   overflow: hidden;
   max-width: 0px;
@@ -204,17 +223,12 @@ bottom: 0;
               transform 0.8s cubic-bezier(0.25, 1, 0.35, 1);
 }
 
-#form:checked ~ .contactForm{
+.form:checked ~ .contactForm{
   transform: scale(1);
   max-height: 400px;
   max-width: 400px;
   transition: max-height 0.8s cubic-bezier(0.25, 1, 0.35, 1),
               max-width 0.8s cubic-bezier(0.25, 1, 0.35, 1),
               transform 0.8s cubic-bezier(0.25, 1, 0.35, 1);
-}
-.formKnapp{
-  background-color: var(--clr-rød);
-  height: 30px;
-  min-width: 30px;
 }
 /*---------------------------------------------*/

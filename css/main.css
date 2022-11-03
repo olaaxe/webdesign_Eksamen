@@ -10,6 +10,9 @@
   --clr-rød: rgb(202, 67, 25);
   --clr-rød-hover: rgb(223, 109, 70);
   --clr-rød-activate: rgb(241, 129, 95);
+  --clr-hvit: rgb(255, 253, 248);
+
+  --shadow-box: 2px 2px 20px 3px rgb(0, 0, 0, 0.2);
 }
 
 body, html {
@@ -43,7 +46,7 @@ main{
   margin: 0 auto; 
   max-width: 1000px;
   flex: 1 0 auto;
-  padding-bottom: 10px;
+  padding: 0 2rem 1rem 2rem;
 }
 header{
   position: absolute;
@@ -69,4 +72,8 @@ sup{
   font-size: 1.5rem;
 
 }
-
+@media (max-width: 319px) {
+  main{
+    padding: 0 0 1rem 0;
+  }
+}
