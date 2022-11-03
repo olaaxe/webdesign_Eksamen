@@ -1,5 +1,4 @@
 /*dadadddddddddddddddddddd*/
-
 span{
   font-size: 48px;
   color: var(--clr-rød);
@@ -11,7 +10,6 @@ h2, h1{
 
 h2:after{
   display: inline-block;
-  content: "";
   margin-left: 5px;
   border-radius: 50%;
   width: 8px;
@@ -31,9 +29,7 @@ p, li{
 }
 .førsteDelen img{
   width: 80%;
-  
-
-
+  margin-left: 5em;
 }
 .førsteDelen button{
   padding-left: 100px;
@@ -45,48 +41,75 @@ p, li{
   border: none;
   margin-top: 1.5em;
   background-color: var(--clr-rød);
+  cursor: pointer;
+}
+.førsteDelen button:hover{
+  box-shadow: var(--shadow-box);
+  background-color: var(--clr-rød-hover)
 }
 /* ending på første delen*/
-
 
 
 .Cards-Flex{
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1em;
   gap: 2rem;
-  justify-content:center;
-}
-.Cards-Flex>*{
-  flex: 0 1 15em;
+  justify-content: center;
 }
 .Cards{
-  padding: 0.5rem;
-  border: solid 1px;
-  border-radius: 0 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 16em;
+  padding: 3rem;
+  border: solid 2px rgb(0, 0, 0, 40%);
+  border-radius: 0 2rem 0 2rem;
+  min-height: 100%;
 }
-[name="møterom"] h3, h2{
+.Cards:hover{
+  border: 0px;
+  box-shadow: var(--shadow-box);
+  background-color: var(--clr-hvit);
+}
+.Cards > div > h3{
   font-size: 3rem;
-  padding-bottom: 2rem;
 }
-.Cards > p{
-  padding-bottom: 2rem;
+.Cards > div > p{
+  padding: 2rem 0;
 }
 .Cards-funksjoner li{
-  display: flex;
+  display: grid;
+  grid-template-columns: 20px 1fr;
   gap: 1rem;
 }
 .Cards-funksjoner li img{
-  width: 2rem;
-  height: 2rem;
+  max-width: 100%;
 }
 .Cards-funksjoner li p{
   padding: 0;
 }
-.Cards button{
-
+.Cards > label{
+  margin-top: 3rem;
+}
+.Cards-button{
+  max-width: fit-content;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: var(--clr-rød);
+  color: var(--clr-bakgrunn);
+  font-weight: bold;
+}
+.Cards-button:hover{
+  box-shadow: var(--shadow-box);
+  background-color: var(--clr-rød-hover)
 }
 
 
+
+
+/*ending på andre delen*/
 
 .infoSection{
   display: grid;
@@ -145,3 +168,67 @@ p, li{
     display: none;
   }
 }
+
+
+/*---------Contackt form--------*/
+#form{
+  display: none;
+}
+
+.contactForm{
+  border: solid 2px var(--clr-sort);
+  border-radius: 8px;
+  background-color: var(--clr-sort);
+  color: white;
+  margin: 0px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.contactForm > input, .contactForm > textarea{
+  width: 90%;
+  border:2px solid var(--clr-rød);
+  border-radius: 8px;   
+  height: 20px;
+  margin: 5px 0 5px 0;
+}
+.contactForm > textarea{
+  resize: vertical;
+  height: 150px;
+}
+.contactForm [type = "submit"]{
+  max-width: 200px;
+  cursor: pointer;
+}
+.contactForm [type = "submit"]:hover{
+  background-color: var(--clr-rød);
+}
+
+.sendForm{
+  display: flex;
+  color: white;
+}
+
+.sendForm > input[type="checkbox"]{
+  width: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.form ~ .contactForm{
+  transform: scale(0);
+  overflow: hidden;
+  max-width: 0px;
+  max-height: 0px;
+  transition: max-height 0.8s cubic-bezier(0.25, 1, 0.35, 1),
+              max-width 0.8s cubic-bezier(0.25, 1, 0.35, 1),
+              transform 0.8s cubic-bezier(0.25, 1, 0.35, 1);
+}
+
+.form:checked ~ .contactForm{
+  transform: scale(1);
+  max-height: 400px;
+  max-width: 400px;
+  transition: max-height 0.8s cubic-bezier(0.25, 1, 0.35, 1),
+              max-width 0.8s cubic-bezier(0.25, 1, 0.35, 1),
+              transform 0.8s cubic-bezier(0.25, 1, 0.35, 1);
+}
+/*---------------------------------------------*/
