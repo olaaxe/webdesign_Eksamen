@@ -10,6 +10,7 @@
   max-width: 100%;
   transition: filter 0.25s;
 }
+
 @media (max-width: 448px) {
   .logo{
     display: flex;
@@ -68,8 +69,9 @@
 .menuNav > a {
   width: 160px;
   text-align: center;
+  text-decoration: none;
 }
-.menuNav > a  button {
+.menuNav > a  p {
   background-color: transparent;
   color: var(--clr-beige); /*<--tekst farge header*/
   border: none;
@@ -77,10 +79,10 @@
   font-weight: bold;
   cursor: pointer;
 }
-.menuNav > a  button:hover {
+.menuNav > a  p:hover {
   color: var(--clr-rød);
 }
-.menuNav > a  button:active {
+.menuNav > a  p:active {
  color: var(--clr-rød-activate);
 }
 .menuNav > a .headerActive {
@@ -136,7 +138,7 @@
   column-gap: 140px;
 
 }
-.footerCointainer  h1 {
+.footerCointainer  h2 {
   text-align: center;
   color: white;
   margin: 5px 0px 25px 0px;
@@ -163,13 +165,11 @@
 }
 
 
-.kontaktOss {
-  margin: 0 auto;
-}
 .kontaktOss > div {
   display: grid;
   grid-template-columns: 40px 1fr;
-  row-gap: 5px;
+  gap: 5px 20px;
+  
 }
 .kontaktOss > div figure{
   max-width: 40px;
@@ -177,7 +177,7 @@
   background-color: var(--clr-beige)
 }
 .kontaktOss > div p {
-  margin-left: 10px;
+  margin-left: 0;
   transition: color 0.15s;
 }
 .kontaktOss > div p:hover {

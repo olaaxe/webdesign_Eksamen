@@ -18,35 +18,31 @@ h1{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 20px;
 }
-.nav-bar > div {
+.nav-bar > a {
   background-color: var(--clr-bakgrunn);
-  height: auto;
   width: 1fr;
   margin: auto;
-}
-.nav-bar > div > a {
-  width: 1fr;
-}
-.nav-bar > div > a > button {
   border: none;
   padding: 0px;
   height: 25px;
-  width: 1fr;
   background-color: var(--clr-bakgrunn);
+}
+.nav-bar > a > p {
+  font-size: 2rem;
+  text-decoration: underline;
   color: rgb(21, 21, 21);
   transition: color 0.15s;
+  font-weight: 700;
 }
-.nav-bar > div > a > button:hover {
+.nav-bar > a > p:hover {
   color: var(--clr-rød);
   cursor: pointer;
 }
-.nav-bar > div > a > button:active {
+.nav-bar > a > p:active {
   color: var(--clr-rød-activate);
 }
-.nav-bar > div > a > button > h1 {
-  font-size: 2rem;
-  text-decoration: underline;
-}
+
+
 @media (max-width: 600px){
   .nav-bar {
     grid-template-columns: 1fr 1fr;
@@ -81,7 +77,7 @@ h1{
   text-align: center;
   border-radius: 5px;
 }
-.retter-header > h1 {
+.retter-header > h2 {
   line-height: 80px;
   vertical-align: middle;
   font-size: 3rem;
@@ -101,7 +97,7 @@ h1{
 .retter-container > div:nth-child(1) {
   position: relative;
 }
-.retter-container > div:nth-child(1) > h1 {
+.retter-container > div:nth-child(1) > h3 {
   width: 1fr;
   padding-right: 10px;
   height: auto;

@@ -2,6 +2,7 @@
   --clr-header: linear-gradient( 30deg, rgb(0, 0, 0) 0%, rgb(80, 80, 80) 100%);
   --clr-bakgrunn: rgb(255, 250, 240);
   --clr-footer: rgb(21, 21, 21);
+  
   --clr-grå: rgb(46,46,46);
   --clr-sort: rgb(21, 21, 21);
   --clr-beige: rgb(225, 215, 196);
@@ -18,7 +19,6 @@ body{
   margin: 0px;
   position: relative;
   padding-top: 218px;
-  /*background-color: rgb(250, 249, 246);*/
   background-color: var(--clr-bakgrunn);
   display: flex;
   flex-direction: column;
@@ -29,6 +29,7 @@ body{
   font-size: 2rem;
   font-family: Roboto, sans-serif;
 }
+
 html{
   scroll-behavior: smooth;
   scroll-padding: 1.4rem;
@@ -64,3 +65,8 @@ p{
   padding-bottom: 1rem;
   line-height: 1.5em;
 }
+sup{
+  font-size: 1.5rem;
+
+}
+
