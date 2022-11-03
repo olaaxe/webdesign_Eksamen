@@ -163,13 +163,11 @@
 }
 
 
-.kontaktOss {
-  margin: 0 auto;
-}
 .kontaktOss > div {
   display: grid;
   grid-template-columns: 40px 1fr;
-  row-gap: 5px;
+  gap: 5px 20px;
+  
 }
 .kontaktOss > div figure{
   max-width: 40px;
@@ -177,7 +175,7 @@
   background-color: var(--clr-beige)
 }
 .kontaktOss > div p {
-  margin-left: 10px;
+  margin-left: 0;
   transition: color 0.15s;
 }
 .kontaktOss > div p:hover {
