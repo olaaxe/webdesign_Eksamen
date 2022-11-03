@@ -68,8 +68,9 @@
 .menuNav > a {
   width: 160px;
   text-align: center;
+  text-decoration: none;
 }
-.menuNav > a  button {
+.menuNav > a  p {
   background-color: transparent;
   color: var(--clr-beige); /*<--tekst farge header*/
   border: none;
@@ -77,10 +78,10 @@
   font-weight: bold;
   cursor: pointer;
 }
-.menuNav > a  button:hover {
+.menuNav > a  p:hover {
   color: var(--clr-rød);
 }
-.menuNav > a  button:active {
+.menuNav > a  p:active {
  color: var(--clr-rød-activate);
 }
 .menuNav > a .headerActive {
