@@ -6,16 +6,23 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  max-width: 100%;
+  justify-content: center;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  width: 95%;
 }
 .bildecontainer > img{
   border-radius: 5px 5px 0 0;
+  padding-bottom: 0;
+
 }
 
 
 .bildecontainer > figcaption{
-  padding-left: 1rem;
+  padding-left: auto;
+  padding-right: auto;
+  padding:  1rem;
   background-color: rgb(46,46,46, 0.8);
   color: var(--clr-beige);
   border-radius: 0 0 5px 5px;
@@ -25,32 +32,30 @@
   /*background-color: rgb(46,46,46);*/
   display:grid;
   gap: 8px;
-  margin-left: max(5%, 2rem);
   margin-top: 2em;
-  margin-right: max(5%, 2rem);
   grid-template-columns: 1fr;
-}
+  padding-left: auto;
+  padding-right: auto;
 
+}
 
 .tekstBoksTopical {
   padding: max(1vh, 1rem);
 
 }
 
-@media (min-width:40em) {
+@media (min-width: 700px) {
   .topicalGrid{
     grid-template-columns: 1fr 1fr;
   }
   .col-span-2{
     grid-column: span 2;
+    max-width: 90%;
   }
   .row-span-2{
     grid-row: span 2;
   }
   
-}
-.topicalGrid > figure{
-max-width: 100ch;
 }
 
 .topicalGrid > figure > img{
@@ -61,6 +66,7 @@ max-width: 100ch;
  /* color: rgb(225, 215, 196);*/
   padding: 1rem 2rem;
   text-align: left;
+  max-width: 90%;
 }
 h1{
   padding-bottom: 5rem;
@@ -69,15 +75,22 @@ h1{
 }
 a{
   text-decoration: none;
+  word-break: break-all;
 
 }
 
 ol
 {
   padding-left: 2rem;
+  max-width: 90%;
 }
 li{
   font-size: 1.6rem;
+  max-width: 90%;
+}
+li > p {
+  max-width: 90%;
+
 }
 /*------------------------------------------*/
 
