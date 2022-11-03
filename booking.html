@@ -77,18 +77,21 @@
       <h2>Våre møterom</h2>
       <p>Finn møterom du trenger for å imponere kunder, brainstorme med kolleger, holde minneverdige workshops eller levere et vinnende pitch. Bestill nedenfor eller bestill mens du er på farten med appen vår.</p>
       
+
+
+
       <div class="Cards-Flex">
         <div class="Cards">
-          <h3>konferanserom</h3>
+          <h3>Konferanserom</h3>
           <p>Rom utstyrt med toppmoderne presentasjonsutstyr, perfekt for ditt neste forretningsmøte.</p>
           <p>Funksjoner</p>
           <ul class="Cards-funksjoner">
             <li>
-              <img src="img/chechMark.png" alt="telefon">
+              <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
               <p>Internett i bedriftsklasse</p>
             </li>
             <li>
-              <img src="img/chechMark.png" alt="telefon">
+              <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
               <p>Konfigurer i henhold til behovene dine</p>
             </li>
             <li>
@@ -96,55 +99,85 @@
               <p>Tusjtavler og projektorer <br></br></p>
             </li>
           </ul>
-            <div class="button"style="display: flex; bottom: 0;">
-              <button>Reserver nå</button></div>
-        </div> <!--ending på første boksen-->
+          <label for="form">
+            <div class="formKnapp">Reserver</div>
+          </label>
+          <!-- <div class="button">
+            <button>Reserver nå</button>
+          </div> -->
+        </div>
+
+
+
+
+
+
+
+
         <div class="Cards">
           <h3>Trening rom</h3>
           <p>Spesialbygde rom, ideelle for treningsøkter, med catering og støtte på stedet.</p>
           <p>Funksjoner</p>
           <ul class="Cards-funksjoner">
             <li>
-              <img src="img/chechMark.png" alt="telefon">
+              <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
               <p>Tilgjengelige cateringalternativer</p>
             </li>
             <li>
-              <img src="img/chechMark.png" alt="telefon">
+              <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
               <p>Supportteam på stedet</p>
             </li>
             <li>
-              <img src="img/chechMark.png" alt="telefon">
+              <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
               <p>Pauseområder</p>
             </li>
           </ul>
-          <div class="button"style="display: flex; bottom: 0;">
-            <button>Reserver nå</button></div>
-        
+          <div class="button">
+            <button>Reserver nå</button>
+          </div>
         </div> <!--ending på andre boksen-->
+
         <div class="Cards">
           <h3>Intervjurom</h3>
           <p>Intervju kandidater i ditt valg av profesjonelle, inspirerende, avslappede eller diskrete rom.</p>
           <p>Funksjoner</p>
           <ul class="Cards-funksjoner">
             <li>
-              <img src="img/chechMark.png" alt="telefon">
+              <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
               <p>Bestill i 1 time eller mer</p>
             </li>
             <li>
-              <img src="img/chechMark.png" alt="telefon">
+              <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
               <p>En resepsjonist tar imot kandidatene</p>
             </li>
             <li>
-              <img src="img/chechMark.png" alt="telefon">
+              <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
               <p>Presentasjonsutstyr er tilgjengelig</p>
             </li>
           </ul>
           <button>Reserver nå</button>
-
         </div> <!--ending på tredje boksen-->
-
       </div> <!--ending på treboksene-->
     </section> <!--ending på andre del-->
+
+    <!--Contackt form start-->
+  <input type="checkbox" name="SpawnContactForm" id="form">
+  <!-- <label for="form">
+    <div class="formKnapp"></div>
+  </label> -->
+  <form class="contactForm">    
+    <h1>Kontakt oss her!</h1>  
+    <input type="text" name="name" placeholder="Name" required/>   
+    <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+    <input type="datetime-local" name="date" required>
+    <textarea name="text" placeholder="Exstra information"></textarea>
+    <div class="sendForm">
+      <input type="checkbox" name="checkbox" required>
+      <p>I agree to the Terms of Service</p> <!--lang link?-->
+    </div>
+    <input type="submit" value="SUBMIT"/>
+  </form>
+<!--Contackt form slutt-->
 
 
 
