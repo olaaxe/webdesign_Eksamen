@@ -62,14 +62,15 @@
 
   <main>
     <section class="førsteDelen">
+      <figure class="førsteBilde">
+        <img src="img\Booking-icons\Hotell.png" alt="katt med briller på">
+      </figure>
       <div>
-        <h1 class="overskrift"> Møte rom<span>.</span></h1>
+        <h1 class="overskrift"> Møterom<span>.</span></h1>
         <p>Møterommene våre er i alle større byer i verden, så du kan være vertskap uansett hvor du trenger. Imponer kunder, hold minneverdige workshops, eller lever et vinnende pitch i våre fullt betjente møteplasser. Bestill på forespørsel per time, og vårt dedikerte team vil være til stede for å sikre at møtet ditt går problemfritt.</p>
         <a href="#møterom"><button class = "overskrift">Reserver nå</button></a>
       </div>
-      <figure class="førsteBilde">
-        <img src="img/.png" alt="katt med briller på">
-      </figure>
+      <hr>
     </section> <!--ending på første del-->
       <br>
 
@@ -80,13 +81,13 @@
 
 
 
-      <div class="Cards-Flex">
+      <div class="Cards-Wrapper">
         <div class="Cards">
-          <div>
+          <div class="Cards__info">
             <h3 class="overskrift">Konferanserom</h3>
             <p>Rom utstyrt med toppmoderne presentasjonsutstyr, perfekt for ditt neste forretningsmøte.</p>
             <p>Funksjoner</p>
-            <ul class="Cards-funksjoner">
+            <ul class="Cards__info__funksjoner">
               <li>
                 <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
                 <p>Internett i bedriftsklasse</p>
@@ -102,18 +103,34 @@
             </ul>
           </div>
           <label for="form-konferanserom">
-            <div class="Cards-button">Reserver</div>
+            <div class="Cards__button">Reserver</div>
           </label>
         </div>
-
+        <!--Contackt form start-->
+        <input type="checkbox" name="SpawnContactForm" id="form-konferanserom">
+        <form class="contactForm-konferanse">    
+          <div class="contactform__innhold">
+            <h4 class="overskrift">Book Konferanserom</h4>  
+            <input type="text" name="name" placeholder="Name" required/>   
+            <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <input type="datetime-local" name="date" required>
+            <textarea name="text" placeholder="Exstra information"></textarea>
+            <div class="contactform__checkbox">
+              <input type="checkbox" name="checkbox" required>
+              <p>I agree to the Terms of Service</p> <!--lang link?-->
+            </div>
+          </div>
+          <input class="contactform__submit" type="submit" value="Book nå"/>
+        </form>
+        <!--Contackt form slutt-->
 
 
         <div class="Cards">
-          <div>
+          <div  class="Cards__info">
             <h3 class="overskrift">Treningsrom</h3>
             <p>Spesialbygde rom, ideelle for treningsøkter, med catering og støtte på stedet.</p>
             <p>Funksjoner</p>
-            <ul class="Cards-funksjoner">
+            <ul class="Cards__info__funksjoner">
               <li>
                 <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
                 <p>Tilgjengelige cateringalternativer</p>
@@ -129,18 +146,34 @@
             </ul>
           </div>
           <label for="form-treningrom">
-            <div class="Cards-button">Reserver</div>
+            <div class="Cards__button">Reserver</div>
           </label>
         </div>
-
+        <!--Contackt form start-->
+        <input type="checkbox" name="SpawnContactForm" id="form-treningrom">
+        <form class="contactForm-trening">    
+          <div class="contactform__innhold">
+            <h4 class="overskrift">Book Treningsrom</h4>  
+            <input type="text" name="name" placeholder="Name" required/>   
+            <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <input type="datetime-local" name="date" required>
+            <textarea name="text" placeholder="Exstra information"></textarea>
+            <div class="contactform__checkbox">
+              <input type="checkbox" name="checkbox" required>
+              <p>I agree to the Terms of Service</p> <!--lang link?-->
+            </div>
+          </div>
+          <input class="contactform__submit" type="submit" value="Book nå"/>
+        </form>
+        <!--Contackt form slutt-->
         
 
         <div class="Cards">
-          <div>
+          <div class="Cards__info">
             <h3 class="overskrift">Intervjurom</h3>
             <p>Intervju kandidater i ditt valg av profesjonelle, inspirerende, avslappede eller diskrete rom.</p>
             <p>Funksjoner</p>
-            <ul class="Cards-funksjoner">
+            <ul class="Cards__info__funksjoner">
               <li>
                 <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
                 <p>Bestill i 1 time eller mer</p>
@@ -155,20 +188,35 @@
               </li>
             </ul>
           </div>
-          <label for="form">
-            <div class="Cards-button">Reserver</div>
+          <label for="form-intervjurom">
+            <div class="Cards__button">Reserver</div>
           </label>
-        </div> <!--ending på tredje boksen-->
-      </div> <!--ending på treboksene-->
+        </div>
+        <!--Contackt form start-->
+        <input type="checkbox" name="SpawnContactForm" id="form-intervjurom">
+        <form class="contactForm-intervju">    
+          <div class="contactform__innhold">
+            <h4 class="overskrift">Book Intervjurom</h4>  
+            <input type="text" name="name" placeholder="Name" required/>   
+            <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <input type="datetime-local" name="date" required>
+            <textarea name="text" placeholder="Exstra information"></textarea>
+            <div class="contactform__checkbox">
+              <input type="checkbox" name="checkbox" required>
+              <p>I agree to the Terms of Service</p> <!--lang link?-->
+            </div>
+          </div>
+          <input class="contactform__submit" type="submit" value="Book nå"/>
+          </form>
+        <!--Contackt form slutt-->
+        
+      </div> <!-- Cards-Wrapper slutt -->
     </section> <!--ending på andre del-->
-
-
-
 
 
     <section class="infoSection"> 
       <figure>
-        <img src="img\Oluf_a_person_talking_to_people_in_an_auditorium_realistic_496e4bb2-b541-4ba0-b318-7a2adcb70a6b.png" alt="katt med briller på">
+        <img src="img\Booking-icons\møterom.png" alt="katt med briller på">
       </figure>
       <div> 
         <div>
@@ -178,27 +226,27 @@
         <p>Vårt brede utvalg av møterom lar deg velge det perfekte stedet og stedet for ditt neste møte. Vi hjelper deg med å finne det ideelle styrerommet for å være vertskap for et arrangement, et privat rom for å intervjue kandidater, eller et inspirerende sted å gjennomføre en treningsøkt.</p>
         <ul class="infoGrid">
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Scale.png" alt="telefon">
             <p>Fullt utstyrte plasser for samlinger av enhver størrelse</p>
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Location.png" alt="telefon">
             <p>Ha møte i hvilken som helst by</p>              
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\TV.png" alt="telefon">
             <p>Arrangementslokaler, styrerom, kurslokaler og enda mer</p>
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Sofa.png" alt="telefon">
             <p>Komfortable, profesjonelle miljøer</p>
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Mobile.png" alt="telefon">
             <p>Bestill på dagen eller i forveien via appen</p>
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Bufee.png" alt="telefon">
             <p>Erfarne rådgivere som hjelper deg med å finne riktig område</p>
           </li>
         </ul>
@@ -215,34 +263,34 @@
         <p>Rommene våre er fullt utstyrt med kvalitetsmøbler og videokonferanseutstyr, slik at du kan gå inn og kjøre produktive økter. Resepsjonistene våre vil hilse på gjestene dine, mens supportteamet vårt vil forberede rommet ditt og hjelpe alt til å gå på skinner.</p>
         <ul class="infoGrid">
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\TV.png" alt="telefon">
             <p>Flatskjerm-TV, tusjtavler og flipover</p>
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Chair.png" alt="telefon">
             <p>Pauseområder</p>              
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Scale.png" alt="telefon">
             <p>Konfigurer møterommet på din måte</p>
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Bufee.png" alt="telefon">
             <p>Profesjonelt resepsjonistteam som tar imot gjester</p>
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Wifi.png" alt="telefon"> 
             <p>Trådløst internett i bedriftskvalitet</p>
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Person.png" alt="telefon">
             <p>Erfarent supportteam på stedet</p>
           </li>
         </ul>
         <hr>
       </div>
       <figure>
-        <img src="img\Oluf_a_person_talking_to_people_in_an_auditorium_realistic_496e4bb2-b541-4ba0-b318-7a2adcb70a6b.png" alt="katt med briller på">
+        <img src="img\Booking-icons\hotellrommetnye.png" alt="Bilde av rommet">
       </figure>
     </section> 
 
@@ -258,23 +306,23 @@
         <p>Når du bestiller et av våre møterom, har du tilgang til en rekke tjenester for å hjelpe møtet ditt til en suksess. Bestill disse tjenestene på forhånd, så sørger vi for at alt er på plass og klart til bruk på dagen.</p>
         <ul class="infoGrid">
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Laptop.png" alt="telefon">
             <p>Support for IT- og teknisknologi</p>
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Paper.png" alt="telefon">
             <p>Hjelp til Administrative oppgaver</p>              
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Scale.png" alt="telefon">
             <p>Ytterligere arbeidsplasser ved behov</p>
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Cafe.png" alt="telefon">
             <p>Cateringtjenester</p>
           </li>
           <li>
-            <img src="img/Telefon_icon.png" alt="telefon">
+            <img src="img\Booking-icons\Projector.png" alt="telefon">
             <p>Projektorer og annet møteutstyr</p>
           </li>
         </ul>
