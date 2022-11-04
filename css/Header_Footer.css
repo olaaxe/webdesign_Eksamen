@@ -10,6 +10,7 @@
 }
 .logo > a {
   display: flex;
+  align-items: center;
   width: auto;
   height: 100%;
 }
