@@ -42,6 +42,7 @@ p, li{
   border: none;
   margin-top: 1.5em;
   background-color: var(--clr-rød);
+  color: var(--clr-knapper);
   cursor: pointer;
   color: var(--clr-bakgrunn);
   text-align: center;
@@ -51,7 +52,9 @@ p, li{
 }
 .førsteDelen button:hover{
   box-shadow: var(--shadow-box);
-  background-color: var(--clr-rød-hover)
+}
+.førsteDelen button:active{
+  background-color: var(--clr-rød-hover);
 }
 /* ending på første delen*/
 
@@ -72,14 +75,24 @@ p, li{
   justify-content: space-between;
   flex: 0 1 16em;
   padding: 3rem;
-  border: solid 2px rgb(0, 0, 0, 40%);
+  border: solid 1px rgb(0, 0, 0, 40%);
   border-radius: 0 2rem 0 2rem;
   min-height: 100%;
   background-color: var(--clr-hvit);
 }
+
+
+@media (prefers-color-scheme: dark){
+  .Cards {
+    border: solid 1px rgb(202, 67, 25);
+  }
+}
 .Cards:hover{
   border: 0px;
-  box-shadow: var(--shadow-box);  
+  box-shadow: var(--shadow-box);
+  background-color: var(--clr-hvit);
+  margin-left: 2px;
+  transition: box-shadow 0.2s;
 }
 .Cards__info > h3{
   font-size: 3rem;
@@ -107,12 +120,18 @@ p, li{
   padding: 1rem 2rem;
   cursor: pointer;
   background-color: var(--clr-rød);
-  color: var(--clr-bakgrunn);
+  color: var(--clr-knapper);
   font-weight: bold;
+  transition: box-shadow 0.2s;
 }
 .Cards__button:hover{
-  box-shadow: var(--shadow-box);
+  box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.705);
 }
+
+.Cards__button:active {
+ background-color: var(--clr-rød-hover);
+}
+
 
 
 /*---------Contackt form--------*/
