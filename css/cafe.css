@@ -16,7 +16,6 @@
 .nav-bar > a > p {
   font-size: 2rem;
   text-decoration: underline;
-  color: rgb(21, 21, 21);
   transition: color 0.15s;
   font-weight: 700;
 }
@@ -78,6 +77,10 @@ h1:after{
 
 /* ------- RETTER CONTAINER ------- */
 
+
+.retter-overskrift {
+  color: var(--clr-retter-overskrift);
+}
 .retter-container {
   width: 1fr;
   height: auto;
