@@ -1,24 +1,15 @@
 
 
-.tekstboks{
-  display: flex;
-  flex-direction: column;
-  padding: max(1vh, 1rem);
-  justify-content: center;
-}
-h1 {
-  font-size: 3rem;
-}
-.tekstboks > h2{
-  padding-top: 2%;
-  justify-content: center;
-  text-align: center;
-}
-.tekstboks > p{
 
-  padding: 1rem 2rem;
-  width: 55ch;
-  margin:auto;
+.accesibilityGrid > h1 {
+  font-size: 3rem;
+  justify-self: center;
+  justify-content: center;
+}
+.accesibilityGrid > p{
+  width: 100%;
+  margin: auto;
+  padding-top: min(5%, 5rem);
 }
 
 .bildeboks{
@@ -26,17 +17,18 @@ h1 {
   flex-direction: column;
   border-radius: 10px;
   max-width: 100%;
-  justify-content: center;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  width: 95%;
+  
+  justify-self: center;
+
 }
 .bildeboks > img{
   border-radius: 5px 5px 0 0;
   padding-bottom: 0;
+  max-width: 100%;
 
 }
-.bildecontainer > figcaption{
+
+.bildeboks > figcaption{
   padding-left: auto;
   padding-right: auto;
   padding:  1rem;
@@ -49,16 +41,13 @@ h1 {
 
 .accesibilityGrid{
   display:grid;
-  gap: 8px;
-  width: fit-content;
-  padding-left: 1fr;
-  padding-right: 1fr;
+  gap: 1rem;
   margin-top: 2rem;
   grid-template-columns: 1fr;
   border-radius: 2px ;
-  overflow-wrap:normal;
-  margin-inline: auto;
- 
+  max-width: 90%;
+  justify-content: center;
+  margin:auto;
 }
 .accesibilityGrid > p{
   /* color: rgb(225, 215, 196);*/
@@ -70,13 +59,9 @@ h1 {
 @media (min-width: 700px) {
   .accesibilityGrid{
     grid-template-columns: 1fr 1fr;
-    max-width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
   }
   .col-span-2{
     grid-column: span 2;
-    max-width: 90%;
   }
   .row-span-2{
     grid-row: span 2;
