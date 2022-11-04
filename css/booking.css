@@ -192,31 +192,48 @@ p, li{
   border: 0px;
   box-shadow: var(--shadow-box);  
 }
-.contactform__innhold  input, .contactform__innhold  textarea{
-  width: 90%;
+.contactform__innhold  input,
+.contactform__innhold  textarea{
+  width: 100%;
+  outline: none;
   border: 1px solid var(--clr-grå);
   border-radius: 8px;   
-  height: 20px;
+  height: fit-content;
+  padding: 0.5rem;
   margin: 5px 0 5px 0;
 }
+.contactform__innhold > h3{
+  font-size: 3rem;
+}
 .contactform__innhold  textarea{
-  resize: vertical;
-  height: 150px;
+  resize: none;
+  min-height: 10rem;
 }
-.contactform__innhold [type = "submit"]{
-  max-width: 200px;
+.contactform__innhold  input:focus,
+.contactform__innhold  textarea:focus{
+  outline: none;
+  border: 2px solid var(--clr-rød);
+}
+.contactform__submit{
+  max-width: fit-content;
+  border-radius: 10px;
+  padding: 1rem 2rem;
   cursor: pointer;
-}
-.contactform__innhold [type = "submit"]:hover{
   background-color: var(--clr-rød);
+  color: var(--clr-bakgrunn);
+  border: 0;
+  font-weight: bold;
+}
+.contactform__submit:hover{
+  box-shadow: var(--shadow-box);
 }
 
-.sendForm{
+.contactform__checkbox{
   display: flex;
   color: white;
 }
 
-.sendForm > input[type="checkbox"]{
+.contactform__checkbox > input[type="checkbox"]{
   width: 15px;
   margin-right: 10px;
   cursor: pointer;
@@ -245,14 +262,14 @@ p, li{
   max-height: 400px;
   max-width: 400px;
 } */
-#form-intervjurom ~ .contactForm{
+/* #form-intervjurom ~ .contactForm{
   display: none;
   overflow: hidden;
   max-width: 0px;
   max-height: 0px;
-}
+} */
 
-#form-intervjurom:checked ~ .contactForm{
+#form-intervjurom ~ .contactForm{
   display: flex;
   max-height: 400px;
   max-width: 400px;
