@@ -81,13 +81,13 @@
 
 
 
-      <div class="Cards-Flex">
+      <div class="Cards-Wrapper">
         <div class="Cards">
-          <div>
+          <div class="Cards__info">
             <h3>Konferanserom</h3>
             <p>Rom utstyrt med toppmoderne presentasjonsutstyr, perfekt for ditt neste forretningsmøte.</p>
             <p>Funksjoner</p>
-            <ul class="Cards-funksjoner">
+            <ul class="Cards__info__funksjoner">
               <li>
                 <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
                 <p>Internett i bedriftsklasse</p>
@@ -103,19 +103,19 @@
             </ul>
           </div>
           <label for="form-konferanserom">
-            <div class="Cards-button">Reserver</div>
+            <div class="Cards__button">Reserver</div>
           </label>
         </div>
         <!--Contackt form start-->
-        <input type="checkbox" name="SpawnContactForm" id="form-konferanserom" class="form">
-        <form class="contactForm">    
+        <input type="checkbox" name="SpawnContactForm" id="form-konferanserom">
+        <form class="contactForm-konferanse">    
           <div class="contactform__innhold">
-            <h1>Kontakt oss her!</h1>  
+            <h1>Book Konferanserom</h1>  
             <input type="text" name="name" placeholder="Name" required/>   
             <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
             <input type="datetime-local" name="date" required>
             <textarea name="text" placeholder="Exstra information"></textarea>
-            <div class="sendForm">
+            <div class="contactform__checkbox">
               <input type="checkbox" name="checkbox" required>
               <p>I agree to the Terms of Service</p> <!--lang link?-->
             </div>
@@ -126,11 +126,11 @@
 
 
         <div class="Cards">
-          <div>
-            <h3>Trening rom</h3>
+          <div  class="Cards__info">
+            <h3>Treningsrom</h3>
             <p>Spesialbygde rom, ideelle for treningsøkter, med catering og støtte på stedet.</p>
             <p>Funksjoner</p>
-            <ul class="Cards-funksjoner">
+            <ul class="Cards__info__funksjoner">
               <li>
                 <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
                 <p>Tilgjengelige cateringalternativer</p>
@@ -146,32 +146,34 @@
             </ul>
           </div>
           <label for="form-treningrom">
-            <div class="Cards-button">Reserver</div>
+            <div class="Cards__button">Reserver</div>
           </label>
         </div>
         <!--Contackt form start-->
-        <input type="checkbox" name="SpawnContactForm" id="form-treningrom" class="form">
-        <form class="contactForm">    
-          <h1>Kontakt oss her!</h1>  
-          <input type="text" name="name" placeholder="Name" required/>   
-          <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-          <input type="datetime-local" name="date" required>
-          <textarea name="text" placeholder="Exstra information"></textarea>
-          <div class="sendForm">
-            <input type="checkbox" name="checkbox" required>
-            <p>I agree to the Terms of Service</p> <!--lang link?-->
+        <input type="checkbox" name="SpawnContactForm" id="form-treningrom">
+        <form class="contactForm-trening">    
+          <div class="contactform__innhold">
+            <h1>Book Treningsrom</h1>  
+            <input type="text" name="name" placeholder="Name" required/>   
+            <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <input type="datetime-local" name="date" required>
+            <textarea name="text" placeholder="Exstra information"></textarea>
+            <div class="contactform__checkbox">
+              <input type="checkbox" name="checkbox" required>
+              <p>I agree to the Terms of Service</p> <!--lang link?-->
+            </div>
           </div>
-          <input type="submit" value="SUBMIT"/>
+          <input class="contactform__submit" type="submit" value="Book nå"/>
         </form>
         <!--Contackt form slutt-->
         
 
         <div class="Cards">
-          <div>
+          <div class="Cards__info">
             <h3>Intervjurom</h3>
             <p>Intervju kandidater i ditt valg av profesjonelle, inspirerende, avslappede eller diskrete rom.</p>
             <p>Funksjoner</p>
-            <ul class="Cards-funksjoner">
+            <ul class="Cards__info__funksjoner">
               <li>
                 <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
                 <p>Bestill i 1 time eller mer</p>
@@ -187,14 +189,14 @@
             </ul>
           </div>
           <label for="form-intervjurom">
-            <div class="Cards-button">Reserver</div>
+            <div class="Cards__button">Reserver</div>
           </label>
         </div>
         <!--Contackt form start-->
         <input type="checkbox" name="SpawnContactForm" id="form-intervjurom">
-        <form class="contactForm">    
+        <form class="contactForm-intervju">    
           <div class="contactform__innhold">
-            <h1>Intervjurom</h1>  
+            <h3>Book Intervjurom</h3>  
             <input type="text" name="name" placeholder="Name" required/>   
             <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
             <input type="datetime-local" name="date" required>
@@ -207,7 +209,8 @@
           <input class="contactform__submit" type="submit" value="Book nå"/>
           </form>
         <!--Contackt form slutt-->
-      </div> <!--ending på treboksene-->
+        
+      </div> <!-- Cards-Wrapper slutt -->
     </section> <!--ending på andre del-->
 
 
