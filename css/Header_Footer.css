@@ -1,13 +1,21 @@
 /*--------- Header-------- */
 .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   height: 120px;
   width: auto;
   padding: 32px 0px 32px 0px;
 }
+.logo > a {
+  display: flex;
+  width: auto;
+  height: 100%;
+}
 .logo > a > img {
   height: 100%;
-  max-width: 100%;
+  width: 100%;
   transition: filter 0.25s;
 }
 
@@ -17,6 +25,9 @@
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .logo > a {
+    height: auto;
   }
 }
 .logo > a > img:hover {

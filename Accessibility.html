@@ -62,61 +62,71 @@
   </header>
   <!-- Header Slutt -->
 <main>
-  <article class="container">
-
-    <div class="tekstboks">
-      <h2>Oppsummering av tiltatk vi har gjort for inkluderende design:</h2>
+  <article class="accesibilityGrid">
+    <h1 class="col-span-2">Inkluderende design</h1>
       <p>
-        For å passe på at nettsiden vår er leselig har vi brukt en utvidelse som heter WAVE, 
-        som er ett verktøy vi bruker til å hjelpe oss å finne problemer folk med forskjellige
-        funksjonsnedsettelser kan møte på når de forsøker å bruke websiden. WAVE hjelper å identifisere
-        flere problemer som gjør netttet mindre tilgjengelig for folk med funksjonsnedsettelser og <abbr title="Web Content Accessibility Guideline"> WCAG</abbr> feil
+        Vi åpnet nettsiden vår i polypane for å lete etter problemer knyttet til inkluderende design. 
+        Polypane hadde en egen side for å gi oss feilmeldinger knyttet opp mot det. Feil vi fant var blant 
+        annet at vi hadde brukt H1 flere enn ett sted på samme side, eller at vi brukte image i 
+        bildeteksten til bildene våre, når skjermlesere allerede leser opp at den leser bildetekst.
       </p>
-    </div>
+
     <figure class="bildeboks">
-      <img src="img\accessability-images\Wave_eksempel1.png" alt="img\accessability-images\Wave_eksempel1.png">
+      <img src="img\accessability-images\H1_error.png" alt="">
+      <figcaption>dette er en error</figcaption>
     </figure>
 
-
-    <div class="tekstboks">
-      <p>
-        Vi valgte en kombinasjon av tekstfarge og bakgrunnsfarge med en kontrast som gjør det leselig. I bildet over kan du se hvordan 
-        WAVE ville reagert om vi hadde lavere kontrast imellom bakgrunnen og tekstfargen.
-      </p>
-      <p>
-        
-      </p>
-    </div>
-    <figure class="bildeboks2">
-      <img class="kodeeksempel" src="img\accessability-images\Label_error_image.PNG" alt="img\accessability-images\Label_error_image.PNG">
+    <figure class="bildeboks row-span-2">
+      <img  src="img\accessability-images\Imagetekst_redundant.png" alt="">
+      <figcaption>Eksempel av en feilmelding vi fikk; vi hadde skrevet image i bildebeskrivelsen, noe som skjermlesere allerede leser opp</figcaption>
     </figure>
 
-
-    <div class="tekstboks">
+    
       <p>
-        Under testing, fant vi f.eks en feil i en burgermeny som kommer når skjermen blir for trang til å ha en menybar
-        da hadde vi en &#60;label&#62; tag, som vi hadde bilder i for menyknapper, men siden menyknappene ikke hadde bildetekst, stod den som empty
-        vi la inn bildetekst, som en evt tekstleser kan lese om folk med nedsatt synsevne skal ta ibruk  nettsiden
+        vi var allerede obs på bruken av font farger som hadde bra kontrast med bakgrunnen før vi startet så vi fikk ingen
+        feilmeldinger på det når vi kjørte programmet for å teste tilgjengligheten, vi var også obs på å passe på at avsnittene
+        våre ikke ble for brede eller lange, for at det skulle være enkelt å skumme innholdet
+        Utenom det var det mye vi ikke tenkte på, som vi fikk bedre kunnskap om når vi brukte 
+        polypane, f.eks at man ikke trenger å skrive bilde (eller image på engelsk) i bildeteksten, siden
+        en skjermleser allerede leser opp at det er ett bilde den beskriver, noe som ville gjort at brukere 
+        med skjermleser ville fått den informasjone dobbelt. 
+      
       </p>
-    </div>
-    <div class="bildeboks2">
-      <img src="img\accessability-images\Label_error_fix_image.PNG" alt="Image of fixed code">
-    </div>
-
-
-    <div class="tekstboks">
       <p>
-        For å gjøre nettsiden bedre for de med nedsatt syn satte vi en standard på font-size brukt i alle elementer til 10px (se font-size i bildet til høyre). Deretter kunne 
-        vi bruke enheten <i>rem</i> for å sette en størrelse på alle tekstelementene i dokumentet. <i>Rem</i> tillater forskjellig programvare som f.eks. windows å endre størelsen på fonten 
-        om brukeren benytter seg av funksjoner som hjelper dem å lese tekst bedre.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur quod porro dolor eaque libero aut asperiores ex fugit repudiandae nulla sit quo illo cumque eveniet, consequatur nemo, ad nostrum tempora!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ea consequatur, modi laudantium eveniet maiores amet quibusdam asperiores molestias reprehenderit, deleniti qui exercitationem unde repudiandae blanditiis eius impedit assumenda dolor?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ea minus esse, iste, aperiam, itaque debitis quo repellendus consequuntur est quis eligendi eaque ducimus recusandae nam distinctio eveniet sint nostrum!
       </p>
-    </div>
-    <div class="bildeboks2">
+    
+      
+      <figure class="bildeboks row-span-2 col-span-2">
+        <img  src="img\accessability-images\Focus_page_order.png" alt="">
+        <figcaption>
+          Her ser vi at rekkefølgen hadde ført en bruker som navigerte med tastatur/skjermleser til 
+          bunnen av siden rett etter navigasjonsbaren, for så å navigere til toppen av det faktiske innholdet tilslutt
+        </figcaption>
+      </figure>
+
+      <p>
+        Polypane hjalp oss også med å gjøre siden enklere å navigere igjennom, ved at vi kunne se hvor rekkefølgen
+        av elementene som en browser ser. dette hjelper ved at en bruker som navigerer med tastatur og/eller en skjermleser
+        får navigert igjennom netsiden i riktig rekkefølge, og blir for eksempel ikke sendt til bunnen av siden rett etter
+        toppen, men heller at den hopper til neste logiske element.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo ipsa quaerat quo nobis suscipit sequi nemo illum impedit cum libero similique autem facere, cumque vel, sit, quam laboriosam voluptatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, exercitationem! Soluta, id ex debitis sequi facilis odit. Aperiam corrupti harum reiciendis alias, quisquam eaque dolores. Expedita quod perferendis nesciunt quasi.
+      </p>
+
+
+    <figure class="bildeboks col-span-2">
       <img src="img\accessability-images\Standarisert-Font-size.png" alt="Image of fixed code">
-    </div>
+      <figcaption>her er det nissejobb</figcaption>
+    </figure>
 
 
-  </div>
+  
   </article>
 </main>
 
