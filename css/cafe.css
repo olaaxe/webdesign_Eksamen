@@ -16,7 +16,6 @@
 .nav-bar > a > p {
   font-size: 2rem;
   text-decoration: underline;
-  color: rgb(21, 21, 21);
   transition: color 0.15s;
   font-weight: 700;
 }
@@ -56,10 +55,9 @@ h1:after{
   height: 8px;
   background-color: var(--clr-rød);
 }
-hr {
+.retter-wrapper hr {
   margin: 15px 0 15px 0;
-  background-color: var(--clr-sort);
-  opacity: 40%;
+  border-color: rgba(0, 0, 0, 40%);
 }
 
 /* ------- RETTER HEADER ------- */
@@ -79,6 +77,10 @@ hr {
 
 /* ------- RETTER CONTAINER ------- */
 
+
+.retter-overskrift {
+  color: var(--clr-retter-overskrift);
+}
 .retter-container {
   width: 1fr;
   height: auto;

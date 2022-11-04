@@ -92,7 +92,17 @@ a{
   max-width: 80%;
   margin: auto;
 }
+.topicalGrid > ol > li{
+  font-size: 1.6rem;
+  max-width: 90%;
+}
 
+
+@media (prefers-color-scheme: dark){
+  li {
+    color: var(--clr-beige)
+    }
+  }
 /*------------------------------------------*/
 
 

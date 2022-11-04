@@ -10,6 +10,7 @@
 }
 .logo > a {
   display: flex;
+  align-items: center;
   width: auto;
   height: 100%;
 }
@@ -122,6 +123,13 @@
     width: 100%;
     background-color: var(--clr-grå); /*<--Dropdown meny farge*/
     text-decoration: none;
+  }
+
+  @media (prefers-color-scheme: dark){
+    .menuNav > a {
+      background-color: var(--clr-footer);
+    }
+
   }
   .menuNav > a .headerActive {
     background-color: transparent;
