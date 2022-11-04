@@ -67,12 +67,12 @@ hr {
 .retter-header {
   width: 1fr;
   background-color: var(--clr-rød);
-  height: 80px;
+  height: 65px;
   text-align: center;
   border-radius: 5px;
 }
 .retter-header > h2 {
-  line-height: 80px;
+  line-height: 65px;
   vertical-align: middle;
   font-size: 3rem;
 }
