@@ -1,26 +1,15 @@
 /*--------- Header-------- */
 .logo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 120px;
-  width: auto;
+  max-width: 427px; 
+  margin: 0 auto;
   padding: 32px 0px 32px 0px;
 }
-.logo > a {
-  display: flex;
-  align-items: center;
-  width: auto;
-  height: 100%;
-}
-.logo > a > img {
-  height: 100%;
+.logo__bildet {
   width: 100%;
   transition: filter 0.25s;
 }
 
-@media (max-width: 448px) {
+/* @media (max-width: 448px) {
   .logo{
     display: flex;
     align-items: center;
@@ -30,12 +19,12 @@
   .logo > a {
     height: auto;
   }
-}
-.logo > a > img:hover {
+} */
+.logo__bildet:hover {
   filter: saturate(135%);
   cursor: pointer;
 }
-.logo > a > img:active {
+.logo__bildet:active {
   filter: saturate(100%);
   transition: 0;
 }
