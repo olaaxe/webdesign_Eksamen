@@ -43,7 +43,7 @@ p, li{
   cursor: pointer;
   color: var(--clr-bakgrunn);
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 .førsteDelen button:hover{
   box-shadow: var(--shadow-box);
@@ -51,9 +51,7 @@ p, li{
 }
 /* ending på første delen*/
 
-section#møterom{
-  margin-top: 50px;
-}
+
 .Cards-Flex{
   display: flex;
   flex-wrap: wrap;
@@ -74,8 +72,7 @@ section#møterom{
 }
 .Cards:hover{
   border: 0px;
-  box-shadow: var(--shadow-box);
-  
+  box-shadow: var(--shadow-box);  
 }
 .Cards > div > h3{
   font-size: 3rem;
@@ -105,12 +102,11 @@ section#møterom{
   background-color: var(--clr-rød);
   color: var(--clr-bakgrunn);
   font-weight: bold;
-  margin: 2px;
 }
 .Cards-button:hover{
   box-shadow: var(--shadow-box);
 }
-/*sSsS*/
+
 
 
 
@@ -176,27 +172,35 @@ section#møterom{
 
 
 /*---------Contackt form--------*/
-#form{
+#form-konferanserom,
+#form-treningrom,
+#form-intervjurom{
   display: none;
 }
 
 .contactForm{
-  border: solid 2px var(--clr-sort);
-  border-radius: 8px;
-  background-color: var(--clr-sort);
-  color: white;
-  margin: 0px;
-  padding-left: 10px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 16em;
+  padding: 3rem;
+  border: solid 2px rgb(0, 0, 0, 40%);
+  border-radius: 0 2rem 0 2rem;
+  min-height: 100%;
+  background-color: var(--clr-hvit);
 }
-.contactForm > input, .contactForm > textarea{
+.contactForm:hover{
+  border: 0px;
+  box-shadow: var(--shadow-box);  
+}
+.contactForm  input, .contactForm  textarea{
   width: 90%;
-  border:2px solid var(--clr-rød);
+  border: 1px solid var(--clr-grå);
   border-radius: 8px;   
   height: 20px;
   margin: 5px 0 5px 0;
 }
-.contactForm > textarea{
+.contactForm  textarea{
   resize: vertical;
   height: 150px;
 }
@@ -218,22 +222,40 @@ section#møterom{
   margin-right: 10px;
   cursor: pointer;
 }
-.form ~ .contactForm{
-  transform: scale(0);
+#form-konferanserom ~ .contactForm{
+  display: none;
   overflow: hidden;
   max-width: 0px;
   max-height: 0px;
-  transition: max-height 0.8s cubic-bezier(0.25, 1, 0.35, 1),
-              max-width 0.8s cubic-bezier(0.25, 1, 0.35, 1),
-              transform 0.8s cubic-bezier(0.25, 1, 0.35, 1);
 }
 
-.form:checked ~ .contactForm{
-  transform: scale(1);
+#form-konferanserom:checked ~ .contactForm{
+  display: inline;
   max-height: 400px;
   max-width: 400px;
-  transition: max-height 0.8s cubic-bezier(0.25, 1, 0.35, 1),
-              max-width 0.8s cubic-bezier(0.25, 1, 0.35, 1),
-              transform 0.8s cubic-bezier(0.25, 1, 0.35, 1);
+}
+#form-treningrom ~ .contactForm{
+  display: none;
+  overflow: hidden;
+  max-width: 0px;
+  max-height: 0px;
+}
+
+#form-treningrom:checked ~ .contactForm{
+  display: inline;
+  max-height: 400px;
+  max-width: 400px;
+}
+#form-intervjurom ~ .contactForm{
+  display: none;
+  overflow: hidden;
+  max-width: 0px;
+  max-height: 0px;
+}
+
+#form-intervjurom:checked ~ .contactForm{
+  display: inline;
+  max-height: 400px;
+  max-width: 400px;
 }
 /*---------------------------------------------*/
