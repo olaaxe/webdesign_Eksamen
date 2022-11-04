@@ -43,7 +43,7 @@ p, li{
   cursor: pointer;
   color: var(--clr-bakgrunn);
   text-align: center;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 .førsteDelen button:hover{
   box-shadow: var(--shadow-box);
@@ -51,7 +51,9 @@ p, li{
 }
 /* ending på første delen*/
 
-
+section#møterom{
+  margin-top: 50px;
+}
 .Cards-Flex{
   display: flex;
   flex-wrap: wrap;
