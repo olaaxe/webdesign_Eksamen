@@ -15,6 +15,25 @@
   --shadow-box: 2px 2px 20px 3px rgb(0, 0, 0, 0.2);
 }
 
+@media (prefers-color-scheme: dark){ /*---Endre fargen hvis i darkmode---*/
+  :root{
+    --clr-header: linear-gradient( 30deg, rgb(0, 0, 0) 0%, rgb(80, 80, 80) 100%);
+    --clr-bakgrunn: rgb(94, 64, 6);
+    --clr-footer: rgb(21, 21, 21);
+    
+    --clr-grå: rgb(46,46,46);
+    --clr-sort: rgb(21, 21, 21);
+    --clr-beige: rgb(225, 215, 196);
+    --clr-beige-dark: rgb(168, 162, 149);
+    --clr-rød: rgb(202, 67, 25);
+    --clr-rød-hover: rgb(223, 109, 70);
+    --clr-rød-activate: rgb(241, 129, 95);
+    --clr-hvit: rgb(255, 253, 248);
+
+    --shadow-box: 2px 2px 20px 3px rgb(0, 0, 0, 0.2);
+  }
+}
+
 body, html {
   height: 100%;
 }
