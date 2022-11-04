@@ -103,6 +103,7 @@ p, li{
   background-color: var(--clr-rød);
   color: var(--clr-bakgrunn);
   font-weight: bold;
+  margin: 2px;
 }
 .Cards-button:hover{
   box-shadow: var(--shadow-box);
