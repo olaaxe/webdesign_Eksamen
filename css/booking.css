@@ -179,7 +179,6 @@ p, li{
 }
 
 .contactForm{
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 0 1 16em;
@@ -193,22 +192,22 @@ p, li{
   border: 0px;
   box-shadow: var(--shadow-box);  
 }
-.contactForm  input, .contactForm  textarea{
+.contactform__innhold  input, .contactform__innhold  textarea{
   width: 90%;
   border: 1px solid var(--clr-grå);
   border-radius: 8px;   
   height: 20px;
   margin: 5px 0 5px 0;
 }
-.contactForm  textarea{
+.contactform__innhold  textarea{
   resize: vertical;
   height: 150px;
 }
-.contactForm [type = "submit"]{
+.contactform__innhold [type = "submit"]{
   max-width: 200px;
   cursor: pointer;
 }
-.contactForm [type = "submit"]:hover{
+.contactform__innhold [type = "submit"]:hover{
   background-color: var(--clr-rød);
 }
 
@@ -254,7 +253,7 @@ p, li{
 }
 
 #form-intervjurom:checked ~ .contactForm{
-  display: inline;
+  display: flex;
   max-height: 400px;
   max-width: 400px;
 }
