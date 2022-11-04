@@ -45,13 +45,9 @@ p, li{
   cursor: pointer;
   color: var(--clr-bakgrunn);
   text-align: center;
-<<<<<<< HEAD
   margin-bottom: 2em;
   padding-left: 10px;
   padding-right: 10px;
-=======
-  margin-bottom: 3em;
->>>>>>> a818094151057699fca5714b2b768bbbcb6e1b2a
 }
 .førsteDelen button:hover{
   box-shadow: var(--shadow-box);
