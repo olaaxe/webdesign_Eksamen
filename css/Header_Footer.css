@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 32px 0px 32px 0px;
 }
-.logo  img {
+.logo__bildet {
   width: 100%;
   transition: filter 0.25s;
 }
@@ -20,11 +20,11 @@
     height: auto;
   }
 } */
-.logo > a > img:hover {
+.logo__bildet:hover {
   filter: saturate(135%);
   cursor: pointer;
 }
-.logo > a > img:active {
+.logo__bildet:active {
   filter: saturate(100%);
   transition: 0;
 }
