@@ -4,6 +4,12 @@
   font-size: 2.5rem;
 }
 
+@media (prefers-color-scheme: dark){
+  .Indeks_Intro {
+    color: var(--clr-overskrift);
+  }
+}
+
 
 .BotIntroBox {
   background-color:var(--clr-bakgrunn);

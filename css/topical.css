@@ -92,6 +92,12 @@ li > p {
   max-width: 90%;
 
 }
+
+@media (prefers-color-scheme: dark){
+  li {
+    color: var(--clr-beige)
+    }
+  }
 /*------------------------------------------*/
 
 

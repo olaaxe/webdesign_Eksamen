@@ -2,7 +2,7 @@
   --clr-header: linear-gradient( 30deg, rgb(0, 0, 0) 0%, rgb(80, 80, 80) 100%);
   --clr-bakgrunn: rgb(255, 250, 240);
   --clr-footer: rgb(21, 21, 21);
-  
+  --clr-knapper: rgb(255, 255, 255);
   --clr-grå: rgb(46,46,46);
   --clr-sort: rgb(21, 21, 21);
   --clr-beige: rgb(225, 215, 196);
@@ -11,28 +11,41 @@
   --clr-rød-hover: rgb(223, 109, 70);
   --clr-rød-activate: rgb(241, 129, 95);
   --clr-hvit: rgb(255, 253, 248);
+  --clr-overskrift: rgb(0,0,0);
+  --clr-retter-overskrift: rgb(0.0.0);
 
-  --shadow-box: 2px 2px 20px 3px rgb(0, 0, 0, 0.2);
+  --shadow-box: -5px 5px 20px 0px rgba(0, 0, 0, 0.596);
+}
+p,a {
+  color: var(--clr-sort);
 }
 
 @media (prefers-color-scheme: dark){ /*---Endre fargen hvis i darkmode---*/
   :root{
-    --clr-header: linear-gradient( 30deg, rgb(0, 0, 0) 0%, rgb(80, 80, 80) 100%);
-    --clr-bakgrunn: rgb(94, 64, 6);
+    --clr-header: linear-gradient( 30deg, rgb(0, 0, 0) 0%, rgb(32, 32, 32) 100%);
+    --clr-bakgrunn: rgb(31, 31, 31);
     --clr-footer: rgb(21, 21, 21);
-    
-    --clr-grå: rgb(46,46,46);
-    --clr-sort: rgb(21, 21, 21);
+    --clr-grå: rgb(168, 162, 149);
+    --clr-knapper: rgb(255, 250, 240);
+    --clr-sort: rgb(225, 215, 196);
     --clr-beige: rgb(225, 215, 196);
     --clr-beige-dark: rgb(168, 162, 149);
     --clr-rød: rgb(202, 67, 25);
     --clr-rød-hover: rgb(223, 109, 70);
     --clr-rød-activate: rgb(241, 129, 95);
-    --clr-hvit: rgb(255, 253, 248);
+    --clr-hvit: rgb(26, 26, 26);
+    --clr-overskrift: rgb(225, 215, 196);
+    --clr-retter-overskrift: rgb(255, 250, 240);
 
-    --shadow-box: 2px 2px 20px 3px rgb(0, 0, 0, 0.2);
+    --shadow-box: -5px 5px 20px 0px rgba(0, 0, 0, 0.596);
+    
+  }
+  p,a {
+    color: var(--clr-beige);
   }
 }
+
+
 
 body, html {
   height: 100%;
@@ -56,6 +69,11 @@ html{
   scroll-behavior: smooth;
   scroll-padding: 1.4rem;
   font-size: 62.5%;
+}
+
+.overskrift {
+  color: var(--clr-overskrift);
+  font-weight: bold;
 }
 
 .HeaderCenterButton {
