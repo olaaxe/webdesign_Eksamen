@@ -1,29 +1,15 @@
-p{
-  font-family: Arial, Helvetica, sans-serif;
-}
-h1{
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* NAVIGASJONSBAR */
-
+/* ------- NAVIGASJONSBAR ------- */
 .nav-bar {
-  background-color: var(--clr-bakgrunn);
   width: auto;
   height: auto;
   display: grid;
-  padding-left: 100px;
-  padding-right: 100px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
 }
 .nav-bar > a {
-  background-color: var(--clr-bakgrunn);
   width: 1fr;
   margin: auto;
   border: none;
-  padding: 0px;
   height: 25px;
   background-color: var(--clr-bakgrunn);
 }
@@ -41,8 +27,6 @@ h1{
 .nav-bar > a > p:active {
   color: var(--clr-rød-activate);
 }
-
-
 @media (max-width: 600px){
   .nav-bar {
     grid-template-columns: 1fr 1fr;
@@ -51,31 +35,40 @@ h1{
   }
 }
 
-
-
-/* MAIN */
+/* ------- MAIN ------- */
 
 .retter-wrapper{
-  background-color: var(--clr-beige-dark);
-  padding-bottom: 1px;
   margin: auto;
   margin-top: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  border-radius: 5px;
+  padding: 15px 15px 1px 15px;
   width: min(1000px,90%);
 }
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+h1:after{
+  display: inline-block;
+  content: "";
+  margin-left: 5px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: var(--clr-rød);
+}
+hr {
+  margin: 15px 0 15px 0;
+  background-color: var(--clr-sort);
+  opacity: 40%;
+}
 
-/* RETTER HEADER */
+/* ------- RETTER HEADER ------- */
 
 .retter-header {
   width: 1fr;
   background-color: var(--clr-rød);
   height: 80px;
-  margin-bottom: 15px;
   text-align: center;
-  border-radius: 5px;
 }
 .retter-header > h2 {
   line-height: 80px;
@@ -83,42 +76,32 @@ h1{
   font-size: 3rem;
 }
 
-/*RETTER CONTAINER */
+/* ------- RETTER CONTAINER ------- */
 
 .retter-container {
   width: 1fr;
-  background-color: var(--clr-beige);
   height: auto;
-  margin-bottom: 15px;
   display: grid;
   grid-template-columns: 1fr 200px;
-  border-radius: 5px;
 }
 .retter-container > div:nth-child(1) > h3 {
   width: 1fr;
-  padding-right: 10px;
   height: auto;
   font-size: 2.5rem;
-  padding-top: 10px;
-  padding-left: 15px;
   margin-bottom: 10px;
+  padding: 10px 10px 0 0px;
 }
 .retter-container > div:nth-child(1) > p:nth-child(2) {
   width: 1fr;
-  padding-right: 10px;
   height: auto;
-  padding-top: 10px;
-  padding-left: 15px;
+  padding: 10px 10px 0 0px;
 }
 
 .retter-container > div:nth-child(1) > p:nth-child(3) {
   width: 1fr;
-  padding-right: 10px;
   height: auto;
-  padding-left: 15px;
-  padding-top: 60px;
-  padding-bottom: 10px;
   font-style: italic;
+  padding: 60px 10px 10px 0px;
 }
 .retter-container > div:nth-child(2) {
   align-items: center;
