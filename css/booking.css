@@ -68,11 +68,12 @@ p, li{
   border: solid 2px rgb(0, 0, 0, 40%);
   border-radius: 0 2rem 0 2rem;
   min-height: 100%;
+  background-color: var(--clr-hvit);
 }
 .Cards:hover{
   border: 0px;
   box-shadow: var(--shadow-box);
-  background-color: var(--clr-hvit);
+  
 }
 .Cards > div > h3{
   font-size: 3rem;
@@ -105,7 +106,6 @@ p, li{
 }
 .Cards-button:hover{
   box-shadow: var(--shadow-box);
-  background-color: var(--clr-rød-hover)
 }
 
 
