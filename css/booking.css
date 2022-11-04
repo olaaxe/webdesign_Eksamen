@@ -229,11 +229,11 @@ p, li{
   max-height: 0px;
 }
 
-#form-konferanserom:checked ~ .contactForm{
+/* #form-konferanserom:checked ~ .contactForm{
   display: inline;
   max-height: 400px;
   max-width: 400px;
-}
+} */
 #form-treningrom ~ .contactForm{
   display: none;
   overflow: hidden;
@@ -241,11 +241,11 @@ p, li{
   max-height: 0px;
 }
 
-#form-treningrom:checked ~ .contactForm{
+/* #form-treningrom:checked ~ .contactForm{
   display: inline;
   max-height: 400px;
   max-width: 400px;
-}
+} */
 #form-intervjurom ~ .contactForm{
   display: none;
   overflow: hidden;
