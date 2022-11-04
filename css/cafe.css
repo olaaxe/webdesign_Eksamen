@@ -56,10 +56,9 @@ h1:after{
   height: 8px;
   background-color: var(--clr-rød);
 }
-hr {
+.retter-wrapper hr {
   margin: 15px 0 15px 0;
-  background-color: var(--clr-sort);
-  opacity: 40%;
+  border-color: rgba(0, 0, 0, 40%);
 }
 
 /* ------- RETTER HEADER ------- */
