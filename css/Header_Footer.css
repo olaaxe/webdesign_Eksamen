@@ -1,13 +1,20 @@
 /*--------- Header-------- */
 .logo{
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   width: auto;
   padding: 32px 0px 32px 0px;
+  display: flex;
+}
+.logo > a{
+  align-self: center;
+  max-width: 100%;
+  height: 100%;
 }
 .logo > a > img {
   height: 100%;
-  max-width: 100%;
+  width: 100%;
   transition: filter 0.25s;
 }
 
