@@ -1,14 +1,15 @@
 /*--------- Header-------- */
 .logo{
+  display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 120px;
   width: auto;
   padding: 32px 0px 32px 0px;
-  display: flex;
 }
-.logo > a{
-  align-self: center;
+.logo > a {
+  display: flex;
   max-width: 100%;
   height: 100%;
 }
@@ -24,6 +25,9 @@
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .logo > a {
+    height: auto;
   }
 }
 .logo > a > img:hover {
