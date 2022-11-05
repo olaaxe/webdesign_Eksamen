@@ -1,21 +1,25 @@
 .Card-Flex{
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  /* gap: 1rem; */
   justify-content: center;
+  box-sizing: border-box;
+  
 }
 
 .Card{
   display: grid;
+  box-sizing: border-box;
   /* flex-wrap: wrap; */
   grid-template-columns: 1fr auto;
   background-color: var(--clr-bakgrunn);
   border: solid 1px rgb(202, 67, 25);
   border-radius: 0 2rem 0 2rem;
-  gap: 2rem;
+  /* gap: 2rem; */
   justify-content: space-between;
-  flex: 0 1 28%;
-  padding: 2rem;
+  flex: 0 1 33%;
+  margin: 1rem;
+  width: auto;
 }
 @media (max-width: 450px) {
   .Card{
@@ -41,6 +45,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 2rem;
 }
 .Cards__info__funksjoner li{
   display: grid;
@@ -52,7 +57,8 @@
 }
 
 .Card__form__tos{
-  display: flex;
+  display: grid;
+  grid-template-columns: 10px 1fr;
 }
 input#form, input#form1{
   display: none;
@@ -65,8 +71,43 @@ input#form, input#form1{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 2rem;
+}
+.Card__form input,
+.Card__form  textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--clr-grå);
+  border-radius: 8px;   
+  height: fit-content;
+  padding: 0.5rem;
+  margin: 5px 0 5px 0;
 }
 
+.Card__form  textarea{
+  resize: none;
+  min-height: 10rem;
+}
+
+
+
+.Cards__button{
+  max-width: fit-content;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: var(--clr-rød);
+  color: var(--clr-knapper);
+  font-weight: bold;
+  transition: box-shadow 0.2s;
+}
+.Cards__button:hover{
+  box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.705);
+}
+
+.Cards__button:active {
+ background-color: var(--clr-rød-hover);
+}
 
 /* 
 .Cards-Wrapper{
