@@ -32,28 +32,25 @@ p, li{
   margin-bottom: 2em;
   
 }
-.førsteDelen button{
-  padding-top: 7px;
-  width: 15%;
+.førsteDelen a{
   width: fit-content;
   text-align: center;
-  padding-bottom: 7px;
+  padding: 10px 30px 10px 30px;
   border-radius: 10px;
   border: none;
-  margin-top: 1.5em;
   background-color: var(--clr-rød);
   color: var(--clr-knapper);
+  font-weight: bold;
   cursor: pointer;
-  color: var(--clr-bakgrunn);
   text-align: center;
-  margin-bottom: 2em;
-  padding-left: 10px;
-  padding-right: 10px;
+  text-decoration: none;
+  margin: 4rem 0;
+
 }
-.førsteDelen button:hover{
+.førsteDelen a:hover{
   box-shadow: var(--shadow-box);
 }
-.førsteDelen button:active{
+.førsteDelen a:active{
   background-color: var(--clr-rød-hover);
 }
 /* ending på første delen*/
