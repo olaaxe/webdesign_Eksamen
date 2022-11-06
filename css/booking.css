@@ -16,34 +16,22 @@ h2, h1{
   margin-bottom: 2em;
   
 }
-.intro-booking a{
-  width: fit-content;
-  text-align: center;
-  padding: 10px 30px 10px 30px;
-  border-radius: 10px;
-  border: none;
-  background-color: var(--clr-rød);
-  color: var(--clr-knapper);
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
+.intro-booking__info{
+  margin: 0 0 4rem 0;
+}
+.intro-booking__info p{
+  padding: 0 0 3rem 0;
+}
+.intro-booking__info a{
   text-decoration: none;
-  margin: 4rem 0;
-
+  padding: 1rem 5rem;
+  margin: 1rem 0;
 }
-.intro-booking a:hover{
-  box-shadow: var(--shadow-box);
-}
-.intro-booking a:active{
-  background-color: var(--clr-rød__hover);
-}
-/* ending på første delen*/
 
 
 .Card-Flex{
   display: flex;
   flex-wrap: wrap;
-  /* gap: 1rem; */
   justify-content: center;
   box-sizing: border-box;
   flex-basis: min-content;
