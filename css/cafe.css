@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 .nav-bar > a > p:active {
-  color: var(--clr-rød-activate);
+  color: var(--clr-rød__activate);
 }
 @media (max-width: 600px){
   .nav-bar {
@@ -46,15 +46,7 @@ h1 {
   text-align: center;
   font-size: 4rem;
 }
-h1:after{
-  display: inline-block;
-  content: "";
-  margin-left: 5px;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  background-color: var(--clr-rød);
-}
+
 .retter-wrapper hr {
   margin: 15px 0 15px 0;
   border-color: rgba(0, 0, 0, 40%);
@@ -73,12 +65,13 @@ h1:after{
   line-height: 65px;
   vertical-align: middle;
   font-size: 3rem;
+  color: var(--clr-knapper)
 }
 
 /* ------- RETTER CONTAINER ------- */
 
 
-.retter-overskrift {
+main h3{
   color: var(--clr-retter-overskrift);
 }
 .retter-container {

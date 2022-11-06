@@ -1,29 +1,22 @@
 /*dadadddddddddddddddddddd*/
-span{
-  font-size: 48px;
-  color: var(--clr-rød);
-}
 h2, h1{
   font-size: 30px;
   font-weight: bold;
 }
-p, li{
-  color: var(--clr-grå);
-}
-.førsteDelen{
+.intro-booking{
   flex-wrap: wrap-reverse;
   gap: 2rem;
   padding-top: 40px;
 }
-.førsteDelen >*{
+.intro-booking >*{
   flex: 1 1 45%;
 }
-.førsteDelen img{
+.intro-booking img{
   width: 100%;
   margin-bottom: 2em;
   
 }
-.førsteDelen a{
+.intro-booking a{
   width: fit-content;
   text-align: center;
   padding: 10px 30px 10px 30px;
@@ -38,11 +31,11 @@ p, li{
   margin: 4rem 0;
 
 }
-.førsteDelen a:hover{
+.intro-booking a:hover{
   box-shadow: var(--shadow-box);
 }
-.førsteDelen a:active{
-  background-color: var(--clr-rød-hover);
+.intro-booking a:active{
+  background-color: var(--clr-rød__hover);
 }
 /* ending på første delen*/
 
@@ -60,7 +53,7 @@ p, li{
 .Card{
   display: grid;
   grid-template-columns: 1fr auto;
-  background-color: var(--clr-hvit);
+  background-color: var(--clr-boocking__card);
   border: solid 1px rgb(0, 0, 0, 40%);
   border-radius: 0 2rem 0 2rem;
   justify-content: space-between;
@@ -70,13 +63,13 @@ p, li{
 .Card:hover{
   border: 0px;
   box-shadow: var(--shadow-box);
-  background-color: var(--clr-hvit);
+  background-color: var(--clr-boocking__card);
   margin-left: 2px;
   transition: box-shadow 0.2s;
 }
 @media (prefers-color-scheme: dark){
   .Card {
-    border: solid 1px rgb(202, 67, 25);
+    border: solid 1px var(--clr-rød);
   }
 }
 
@@ -114,7 +107,6 @@ p, li{
   padding-bottom: 4rem;
 }
 .Card p{
-  color: var(--clr-grå);
   padding-bottom: 3rem;
 }
 .Card p:nth-child(3){
@@ -205,7 +197,7 @@ input#form, input#form2, input#form3{
 }
 
 .Cards__button:active {
- background-color: var(--clr-rød-hover);
+  background-color: var(h--clr-rød__over);
 }
 .Cards__button[type="submit"]{
   border: 0;

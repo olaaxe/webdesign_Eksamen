@@ -9,17 +9,6 @@
   transition: filter 0.25s;
 }
 
-/* @media (max-width: 448px) {
-  .logo{
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .logo > a {
-    height: auto;
-  }
-} */
 .logo__bildet:hover {
   filter: saturate(135%);
   cursor: pointer;
@@ -49,10 +38,10 @@
   display: none;
 }
 .menu-icon-img:hover{
-  background-color: var(--clr-rød-hover);
+  background-color: var(--clr-rød__hover);
 }
 .menu-icon-img:active{
-  background-color: var(--clr-rød-activate);
+  background-color: var(--clr-rød__activate);
 }
 #menu-checkbox-toggle:checked + .menu-icon-container>figure>.menu-open{
   display: none;
@@ -84,7 +73,7 @@
   color: var(--clr-rød);
 }
 .menuNav > a  p:active {
- color: var(--clr-rød-activate);
+  color: var(--clr-rød__activate);
 }
 .menuNav > a .headerActive {
   background-color: var(--clr-bakgrunn); /*<--tab meny farge*/
@@ -189,10 +178,10 @@
   transition: color 0.15s;
 }
 .kontaktOss > div p:hover {
-  color: var(--clr-rød-hover);
+  color: var(--clr-rød__hover);
 }
 .kontaktOss > div p:active {
-  color: var(--clr-rød-activate);
+  color: var(--clr-rød__activate);
 }
 .kontaktOss > div figure img {
   height: 100%;

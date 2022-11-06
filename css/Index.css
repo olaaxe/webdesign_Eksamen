@@ -1,34 +1,11 @@
-.Indeks_Intro {
+.intro__overskrift{
   padding-top: 1rem;
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
 }
 
-@media (prefers-color-scheme: dark){
-  .Indeks_Intro {
-    color: var(--clr-overskrift);
-  }
-}
 
-
-.BotIntroBox {
-  background-color:var(--clr-bakgrunn);
-  color: var(--clr-sort);
-  text-align: center;
-}
-
-.Introbox1 {
-  background-color: var(--clr-bakgrunn);
-  color: var(--clr-sort);
-  text-align: left;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-top: min(40px, 95%);
-  padding-bottom: min(20px, 95%);
-  gap: 30px;
-}
-
-.Introbox {
+.intro-wrapper {
   display: flex;
   flex-wrap: wrap-reverse;
   padding-top: min(40px, 95%);
@@ -36,29 +13,11 @@
   gap: 30px;
 }
 
-.Introbox > * {
+.intro-wrapper > * {
   flex: 1 1 48%;
 }
 
-@media (max-width: 900px) {
-  .Introbox1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-left: 10%;
-    padding-right: 10%;
-    gap: 20px;
-    
-
-  }
-}
-
-.Introbox  p {
-  margin-bottom: 20px;
-  color: var(--clr-grå);
-  line-height: 1.5;
-}
-
-.Index_photo {
+.intro__img {
   width: 100%;
   border-radius: 4px;  
 }

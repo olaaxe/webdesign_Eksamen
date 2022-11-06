@@ -1,6 +1,3 @@
-
-
-
 .accesibilityGrid > h1 {
   font-size: 3rem;
   justify-self: center;
@@ -17,7 +14,6 @@
   flex-direction: column;
   border-radius: 10px;
   max-width: 100%;
-  
   justify-self: center;
 
 }
@@ -50,10 +46,9 @@
   margin:auto;
 }
 .accesibilityGrid > p{
-  /* color: rgb(225, 215, 196);*/
-   padding: 1rem 2rem;
-   text-align: left;
-   max-width: 90%;
+  padding: 1rem 2rem;
+  text-align: left;
+  max-width: 90%;
 }
 
 @media (min-width: 700px) {
