@@ -59,46 +59,90 @@ p, li{
 /* ending på første delen*/
 
 
-.Cards-Wrapper{
+.Card-Flex{
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1em;
-  gap: 2rem;
+  /* gap: 1rem; */
   justify-content: center;
+  box-sizing: border-box;
+  flex-basis: min-content;
+  
 }
-.Cards-Wrapper>*{
-  flex: 0 1 16em;
-}
-.Cards{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 1 16em;
-  padding: 3rem;
+
+.Card{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: var(--clr-hvit);
   border: solid 1px rgb(0, 0, 0, 40%);
   border-radius: 0 2rem 0 2rem;
-  min-height: 100%;
-  background-color: var(--clr-hvit);
+  justify-content: space-between;
+  flex: 0 1 min-content;
+  margin: 0.5rem;
 }
-
-
-@media (prefers-color-scheme: dark){
-  .Cards {
-    border: solid 1px rgb(202, 67, 25);
-  }
-}
-.Cards:hover{
+.Card:hover{
   border: 0px;
   box-shadow: var(--shadow-box);
   background-color: var(--clr-hvit);
   margin-left: 2px;
   transition: box-shadow 0.2s;
 }
-.Cards__info > h3{
-  font-size: 3rem;
+@media (prefers-color-scheme: dark){
+  .Cards {
+    border: solid 1px rgb(202, 67, 25);
+  }
 }
-.Cards__info > p{
-  padding: 2rem 0;
+
+@media (max-width: 659px) {
+  .Card{
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 639px) {
+  .Card{
+    margin: 0.5rem 0;
+  }
+}
+@media (max-width: 350px){
+  .Card__form,
+  #form:checked ~.Card__form,
+  #form2:checked ~.Card__form,
+  #form3:checked ~.Card__form,
+  .Card__info{
+    min-width: 260px !important;
+  }
+}
+@media (max-width: 300px){
+  .Card__form,
+  #form:checked ~.Card__form,
+  #form2:checked ~.Card__form,
+  #form3:checked ~.Card__form,
+  .Card__info{
+    min-width: 240px !important;
+  }
+}
+
+.Card h3{
+  font-size: 2.5rem;
+  padding-bottom: 4rem;
+}
+.Card p{
+  color: var(--clr-grå);
+  padding-bottom: 3rem;
+}
+.Card p:nth-child(3){
+  padding-bottom: 1rem;
+}
+.Card li p{
+  padding: 0px;
+}
+
+.Card__info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2rem 0 2rem 1rem;
+  min-width: 288px;
+
 }
 .Cards__info__funksjoner li{
   display: grid;
@@ -108,12 +152,55 @@ p, li{
 .Cards__info__funksjoner li img{
   max-width: 100%;
 }
-.Cards__info__funksjoner li p{
-  padding: 0;
+
+.Card__form__tos{
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 1rem;
 }
-.Cards > label{
-  margin-top: 3rem;
+input#form, input#form2, input#form3{
+  display: none;
 }
+
+#form ~.Card__form,
+#form2 ~.Card__form,
+#form3 ~.Card__form{
+  display: none;
+}
+#form:checked ~.Card__form,
+#form2:checked ~.Card__form,
+#form3:checked ~.Card__form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 0 2rem 2rem;
+  min-width: 288px;
+}
+.Card__form >*{
+  width: 100%;
+}
+.Card__form input,
+.Card__form  textarea{
+  width: 90%;
+  outline: none;
+  border: 1px solid var(--clr-grå);
+  border-radius: 8px;   
+  height: fit-content;
+  padding: 0.3rem;
+  margin: 5px 0 5px 0;
+}
+
+.Card__form  textarea{
+  resize: none;
+  min-height: 6rem;
+}
+
+.Card__form  input:focus,
+.Card__form  textarea:focus{
+  outline: none;
+  border: 2px solid var(--clr-rød);
+}
+
 .Cards__button{
   max-width: fit-content;
   border-radius: 10px;
@@ -123,6 +210,7 @@ p, li{
   color: var(--clr-knapper);
   font-weight: bold;
   transition: box-shadow 0.2s;
+  margin-top: 4rem;
 }
 .Cards__button:hover{
   box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.705);
@@ -131,139 +219,11 @@ p, li{
 .Cards__button:active {
  background-color: var(--clr-rød-hover);
 }
-
-
-
-/*---------Contackt form--------*/
-#form-konferanserom,
-#form-treningrom,
-#form-intervjurom{
-  display: none;
-}
-.contactForm-konferanse{
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 1 16em;
-  padding: 3rem;
-  border: solid 2px rgb(0, 0, 0, 40%);
-  border-radius: 0 2rem 0 2rem;
-  min-height: 100%;
-  background-color: var(--clr-hvit);
-}
-.contactForm-konferanse:hover{
-  border: 0px;
-  box-shadow: var(--shadow-box);  
-}.contactForm-trening{
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 1 16em;
-  padding: 3rem;
-  border: solid 2px rgb(0, 0, 0, 40%);
-  border-radius: 0 2rem 0 2rem;
-  min-height: 100%;
-  background-color: var(--clr-hvit);
-}
-.contactForm-trening:hover{
-  border: 0px;
-  box-shadow: var(--shadow-box);  
-}
-.contactForm-intervju{
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 1 16em;
-  padding: 3rem;
-  border: solid 2px rgb(0, 0, 0, 40%);
-  border-radius: 0 2rem 0 2rem;
-  min-height: 100%;
-  background-color: var(--clr-hvit);
-}
-.contactForm-intervju:hover{
-  border: 0px;
-  box-shadow: var(--shadow-box);  
-}
-
-.contactform__innhold  input,
-.contactform__innhold  textarea{
-  width: 100%;
-  outline: none;
-  border: 1px solid var(--clr-grå);
-  border-radius: 8px;   
-  height: fit-content;
-  padding: 0.5rem;
-  margin: 5px 0 5px 0;
-}
-.contactform__innhold > h3{
-  font-size: 3rem;
-  padding-bottom: 2rem;
-}
-.contactform__innhold  textarea{
-  resize: none;
-  min-height: 10rem;
-}
-.contactform__innhold  input:focus,
-.contactform__innhold  textarea:focus{
-  outline: none;
-  border: 2px solid var(--clr-rød);
-}
-.contactform__submit{
-  max-width: fit-content;
-  border-radius: 10px;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  background-color: var(--clr-rød);
-  color: var(--clr-bakgrunn);
+.Cards__button[type="submit"]{
   border: 0;
-  font-weight: bold;
-}
-.contactform__submit:hover{
-  box-shadow: var(--shadow-box);
-}
-
-.contactform__checkbox{
-  display: flex;
-  color: white;
-}
-
-.contactform__checkbox > input[type="checkbox"]{
-  width: 15px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-#form-konferanserom ~ .contactForm-konferanse{
-  display: none;
-  overflow: hidden;
-  max-width: 0px;
-  max-height: 0px;
-}
-
-#form-konferanserom:checked ~ .contactForm-konferanse{
-  display: flex;
-  max-height: 400px;
-  max-width: 400px;
-}
-#form-treningrom ~ .contactForm-trening{
-  display: none;
-  overflow: hidden;
-  max-width: 0px;
-  max-height: 0px;
-}
-
-#form-treningrom:checked ~ .contactForm-trening{
-  display: flex;
-  max-height: 400px;
-  max-width: 400px;
-}
-#form-intervjurom ~ .contactForm-intervju{
-  display: none;
-  overflow: hidden;
-  max-width: 0px;
-  max-height: 0px;
-} 
-
-#form-intervjurom:checked ~ .contactForm-intervju{
-  display: flex;
-  max-height: 400px;
-  max-width: 400px;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin: 0;
 }
 /*---------------------------------------------*/
 
