@@ -87,7 +87,7 @@ p, li{
   transition: box-shadow 0.2s;
 }
 @media (prefers-color-scheme: dark){
-  .Cards {
+  .Card {
     border: solid 1px rgb(202, 67, 25);
   }
 }
