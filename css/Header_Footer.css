@@ -101,6 +101,7 @@
     width: 100%;
     background-color: var(--clr-grå); /*<--Dropdown meny farge*/
     text-decoration: none;
+    z-index: 1;
   }
 
   @media (prefers-color-scheme: dark){
