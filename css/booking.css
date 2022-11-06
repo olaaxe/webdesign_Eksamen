@@ -7,15 +7,6 @@ h2, h1{
   font-size: 30px;
   font-weight: bold;
 }
-
-h2:after{
-  display: inline-block;
-  margin-left: 5px;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  background-color: var(--clr-rød);
-}
 p, li{
   color: var(--clr-grå);
 }
@@ -136,7 +127,7 @@ p, li{
 .Card__info{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 2rem 0 2rem 1rem;
   min-width: 288px;
 

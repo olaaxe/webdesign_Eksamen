@@ -48,6 +48,16 @@ p,a {
     color: var(--clr-grå);
   }
 }
+main h1:after,
+main h2:after{
+  display: inline-block;
+  content: "";
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: var(--clr-rød);
+  transform: translate(2px, 2px);
+}
 
 
 
