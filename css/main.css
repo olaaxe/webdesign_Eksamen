@@ -47,7 +47,7 @@ main h2:after{
   width: 8px;
   height: 8px;
   background-color: var(--clr-rød);
-  transform: translate(2px, 2px);
+  transform: translate(3px, 2px);
 }
 
 
