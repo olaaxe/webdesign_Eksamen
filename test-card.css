@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   /* gap: 1rem; */
-  justify-content: center;
+  justify-content: flex-start;
   box-sizing: border-box;
   
 }
@@ -17,9 +17,8 @@
   border-radius: 0 2rem 0 2rem;
   /* gap: 2rem; */
   justify-content: space-between;
-  flex: 0 1 33%;
-  margin: 1rem;
-  width: auto;
+  flex: 0 1 3%;
+  margin: 0.5rem;
 }
 @media (max-width: 450px) {
   .Card{
@@ -45,7 +44,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 2rem;
+  margin: 2rem 0 2rem 1rem;
+  min-width: 288px;
+
 }
 .Cards__info__funksjoner li{
   display: grid;
@@ -60,18 +61,24 @@
   display: grid;
   grid-template-columns: 10px 1fr;
 }
-input#form, input#form1{
+input#form, input#form2, input#form3{
   display: none;
 }
 
-#form ~.Card__form, #form1 ~.Card__form{
+#form ~.Card__form,
+#form2 ~.Card__form,
+#form3 ~.Card__form{
   display: none;
 }
-#form:checked ~.Card__form, #form1:checked ~.Card__form{
+#form:checked ~.Card__form,
+#form2:checked ~.Card__form,
+#form3:checked ~.Card__form{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 2rem;
+  min-width: 288px;
+
 }
 .Card__form input,
 .Card__form  textarea{
@@ -80,13 +87,13 @@ input#form, input#form1{
   border: 1px solid var(--clr-grå);
   border-radius: 8px;   
   height: fit-content;
-  padding: 0.5rem;
+  padding: 0.3rem;
   margin: 5px 0 5px 0;
 }
 
 .Card__form  textarea{
   resize: none;
-  min-height: 10rem;
+  min-height: 6rem;
 }
 
 
