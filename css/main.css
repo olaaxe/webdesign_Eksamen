@@ -40,10 +40,15 @@ p,a {
     --shadow-box: -5px 5px 20px 0px rgba(0, 0, 0, 0.596);
     
   }
-  p,a {
+
+  body #Dark :is(h3) {
     color: var(--clr-beige);
   }
+  body #Dark :is(p, a) {
+    color: var(--clr-grå);
+  }
 }
+
 
 
 

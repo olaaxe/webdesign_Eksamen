@@ -8,10 +8,53 @@
   <title>Document</title>
   <link rel="stylesheet" href="test-card.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/Header_Footer.css">
 </head>
 
-<body>
-  <main style="background-color: var(--clr-grå);">
+<body >
+  <main id="Dark" style="background-color: var(--clr-bakgrunn);">
+    <!-- Header Start -->
+    <header>
+      <section class="logo">
+        <img class="logo__bildet" src="img\Logo_new.transparent.png" alt="C-SONS Logo">
+      </section>
+    <div>
+      <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
+      <label class='menu-icon-container' for="menu-checkbox-toggle">
+        <figure>
+          <img class="menu-open menu-icon-img" src="img\Burgermeny_transparent.png" alt="Åpne burgermeny">
+          <img class="menu-close menu-icon-img" src="img\Cross_Transparent.png" alt="Lukk Burgermeny">
+        </figure>
+      </label>
+      <nav class="menuNav" aria-label="Side Header">
+        <a href="index.html">
+          <p class="headerActive">
+            Front&nbsp;page
+          </p></a>
+        <a href="booking.html">
+          <p>
+          Booking
+        </p>
+        </a> 
+        <a href="cafe.html">
+          <p>
+            Restaurant
+          </p>
+        </a>
+        <a href="Accessibility.html">
+          <p>
+            Accessibility
+          </p>
+        </a>
+        <a href="topical.html">
+          <p>
+            Topical
+          </p>
+        </a>
+      </nav>
+    </div>
+    </header>
+    <!-- Header Slutt -->
 
     <section class="Card-Flex">
       <div class="Card">
@@ -43,7 +86,8 @@
         <input type="checkbox" name="SpawnContactForm" id="form"> <!-- Form checkboks -->
         <div class="Card__form">
           <div>
-            <h3>Book Konferanserom</h3>
+
+            <h3>Book</h3>
             <input type="text" name="name" placeholder="Name" required />
             <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               required>
@@ -53,32 +97,31 @@
           <div>
             <div class="Card__form__tos">
               <input type="checkbox" name="checkbox" required>
-              <div>I agree to the Terms of Service</div>
+              <p>I agree to the Terms of Service</p>
             </div>
-            <input type="submit" value="Book nå" />
+            <input class="Cards__button" type="submit" value="Book nå" />
           </div>
         </div>
       </div>
       <!--  -->
-
       <div class="Card">
         <div class="Card__info">
           <div>
-            <h3>Konferanserom</h3>
-            <p>Rom utstyrt med toppmoderne presentasjonsutstyr, perfekt for ditt neste forretningsmøte.</p>
+            <h3>Treningsrom</h3>
+            <p>Spesialbygde rom, ideelle for treningsøkter, med catering og støtte på stedet.</p>
             <p>Funksjoner</p>
             <ul class="Cards__info__funksjoner">
               <li>
                 <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
-                <p>Internett i bedriftsklasse</p>
+                <p>Tilgjengelige cateringalternativer</p>
               </li>
               <li>
                 <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
-                <p>Konfigurer i henhold til behovene dine</p>
+                <p>Supportteam på stedet</p>
               </li>
               <li>
                 <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
-                <p>Tusjtavler og projektorer</p>
+                <p>Pauseområder</p>
               </li>
             </ul>
             <label for="form2">
@@ -90,7 +133,8 @@
         <input type="checkbox" name="SpawnContactForm" id="form2"> <!-- Form checkboks -->
         <div class="Card__form">
           <div>
-            <h3>Book Konferanserom</h3>
+
+            <h3>Book</h3>
             <input type="text" name="name" placeholder="Name" required />
             <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               required>
@@ -100,9 +144,9 @@
           <div>
             <div class="Card__form__tos">
               <input type="checkbox" name="checkbox" required>
-              <div>I agree to the Terms of Service</div>
+              <p>I agree to the Terms of Service</p>
             </div>
-            <input type="submit" value="Book nå" />
+            <input class="Cards__button" type="submit" value="Book nå" />
           </div>
         </div>
       </div>
@@ -110,21 +154,21 @@
       <div class="Card">
         <div class="Card__info">
           <div>
-            <h3>Konferanserom</h3>
-            <p>Rom utstyrt med toppmoderne presentasjonsutstyr, perfekt for ditt neste forretningsmøte.</p>
+            <h3>Intervjurom</h3>
+            <p>Intervju kandidater i ditt valg av profesjonelle, inspirerende, avslappede eller diskrete rom.</p>
             <p>Funksjoner</p>
             <ul class="Cards__info__funksjoner">
               <li>
                 <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
-                <p>Internett i bedriftsklasse</p>
+                <p>Bestill i 1 time eller mer</p>
               </li>
               <li>
                 <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
-                <p>Konfigurer i henhold til behovene dine</p>
+                <p>En resepsjonist tar imot kandidatene</p>
               </li>
               <li>
                 <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
-                <p>Tusjtavler og projektorer</p>
+                <p>Presentasjonsutstyr er tilgjengelig</p>
               </li>
             </ul>
             <label for="form3">
@@ -136,7 +180,8 @@
         <input type="checkbox" name="SpawnContactForm" id="form3"> <!-- Form checkboks -->
         <div class="Card__form">
           <div>
-            <h3>Book Konferanserom</h3>
+
+            <h3>Book</h3>
             <input type="text" name="name" placeholder="Name" required />
             <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               required>
@@ -146,73 +191,13 @@
           <div>
             <div class="Card__form__tos">
               <input type="checkbox" name="checkbox" required>
-              <div>I agree to the Terms of Service</div>
+              <p>I agree to the Terms of Service</p>
             </div>
-            <input type="submit" value="Book nå" />
+            <input class="Cards__button" type="submit" value="Book nå" />
           </div>
         </div>
       </div>
-      <!--  -->
     </section>
-
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
-
-
-    <div class="Cards-Wrapper">
-      <div class="Cards">
-        <div class="Cards__info">
-          <h3 class="overskrift">Konferanserom</h3>
-          <p>Rom utstyrt med toppmoderne presentasjonsutstyr, perfekt for ditt neste forretningsmøte.</p>
-          <p>Funksjoner</p>
-          <ul class="Cards__info__funksjoner">
-            <li>
-              <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
-              <p>Internett i bedriftsklasse</p>
-            </li>
-            <li>
-              <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
-              <p>Konfigurer i henhold til behovene dine</p>
-            </li>
-            <li>
-              <img src="img\Booking-icons\Checkmark.png" alt="chechMark">
-              <p>Tusjtavler og projektorer</p>
-            </li>
-          </ul>
-        </div>
-        <label for="form-konferanserom">
-          <div class="Cards__button">Reserver</div>
-        </label>
-      </div>
-      <!--Contackt form start-->
-      <input type="checkbox" name="SpawnContactForm" id="form-konferanserom">
-      <form class="contactForm-konferanse">
-        <div class="contactform__innhold">
-          <h4 class="overskrift">Book Konferanserom</h4>
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            required>
-          <input type="datetime-local" name="date" required>
-          <textarea name="text" placeholder="Ekstra information"></textarea>
-          <div class="contactform__checkbox">
-            <input type="checkbox" name="checkbox" required>
-            <p>I agree to the Terms of Service</p>
-            <!--lang link?-->
-          </div>
-        </div>
-        <input class="contactform__submit" type="submit" value="Book nå" />
-      </form>
-      <!--Contackt form slutt-->
-    </div>
   </main>
 </body>
 
