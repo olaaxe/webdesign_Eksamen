@@ -16,34 +16,22 @@ h2, h1{
   margin-bottom: 2em;
   
 }
-.intro-booking a{
-  width: fit-content;
-  text-align: center;
-  padding: 10px 30px 10px 30px;
-  border-radius: 10px;
-  border: none;
-  background-color: var(--clr-rød);
-  color: var(--clr-knapper);
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
+.intro-booking__info{
+  margin: 0 0 4rem 0;
+}
+.intro-booking__info p{
+  padding: 0 0 3rem 0;
+}
+.intro-booking__info a{
   text-decoration: none;
-  margin: 4rem 0;
-
+  padding: 1rem 5rem;
+  margin: 1rem 0;
 }
-.intro-booking a:hover{
-  box-shadow: var(--shadow-box);
-}
-.intro-booking a:active{
-  background-color: var(--clr-rød__hover);
-}
-/* ending på første delen*/
 
 
 .Card-Flex{
   display: flex;
   flex-wrap: wrap;
-  /* gap: 1rem; */
   justify-content: center;
   box-sizing: border-box;
   flex-basis: min-content;
@@ -55,7 +43,7 @@ h2, h1{
   grid-template-columns: 1fr auto;
   background-color: var(--clr-boocking__card);
   border: solid 1px rgb(0, 0, 0, 40%);
-  border-radius: 0 2rem 0 2rem;
+  border-radius: 0 20px 0 20px;
   justify-content: space-between;
   flex: 0 1 min-content;
   margin: 0.5rem;
@@ -164,7 +152,7 @@ input#form, input#form2, input#form3{
   width: 90%;
   outline: none;
   border: 1px solid var(--clr-grå);
-  border-radius: 8px;   
+  border-radius: 10px;   
   height: fit-content;
   padding: 0.3rem;
   margin: 5px 0 5px 0;
@@ -199,10 +187,9 @@ input#form, input#form2, input#form3{
 .Cards__button:active {
   background-color: var(h--clr-rød__over);
 }
-.Cards__button[type="submit"]{
+.Cards__button#submit{
   border: 0;
   padding: 1rem 2rem;
-  border-radius: 10px;
   margin: 0;
 }
 /*---------------------------------------------*/
