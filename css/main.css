@@ -20,7 +20,7 @@
 :is(h3, h2, h1) {
   color: var(--clr-overskrift);
 }
-:is(p, a) {
+:is(p, a, li) {
   color: var(--clr-tekst);
 }
 
