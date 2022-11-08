@@ -9,9 +9,14 @@
   transition: filter 0.25s;
 } */
 
+
 .logo{
+  display: flex;
+  justify-content: center;
+}
+.logo a{
+  display: inline-block;
   overflow: hidden;
-  margin: 0 auto;
 }
 .logo img{
   width: 100%;
