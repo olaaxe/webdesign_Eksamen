@@ -9,11 +9,11 @@
   transition: filter 0.25s;
 } */
 
-.logo{
+.header__logo{
   overflow: hidden;
   margin: 0 auto;
 }
-.logo img{
+.header__logo img{
   width: 100%;
   max-height: 124px;
   aspect-ratio: 3.57 /1 ;
@@ -22,17 +22,17 @@
   padding: 2rem 0;
 }
 
-.logo__bildet:hover {
+.header__logo img:hover {
   filter: saturate(135%);
   cursor: pointer;
 }
-.logo__bildet:active {
+.header__logo img:active {
   filter: saturate(100%);
   transition: 0;
 }
 
 /*Hamburgermeny knappen */
-.menu-icon-container { 
+.header__content__icon-container { 
   display: none;
   height: 30px;
   width: 30px;
@@ -56,25 +56,25 @@
 .menu-icon-img:active{
   background-color: var(--clr-rød__activate);
 }
-#menu-checkbox-toggle:checked + .menu-icon-container>figure>.menu-open{
+#menu-checkbox-toggle:checked + .header__content__icon-container>figure>.menu-open{
   display: none;
 }
-#menu-checkbox-toggle:checked + .menu-icon-container>figure>.menu-close{
+#menu-checkbox-toggle:checked + .header__content__icon-container>figure>.menu-close{
   display: inline-block;
 }
 
 /*Knappene i menyen*/
-.menuNav {
+.header__content__nav {
   display: flex;
   justify-content:space-around;
   padding: 0 4%;
 }
-.menuNav > a {
+.header__content__nav__button{
   width: 160px;
   text-align: center;
   text-decoration: none;
 }
-.menuNav > a  p {
+.header__content__nav__button p {
   background-color: transparent;
   color: var(--clr-beige); /*<--tekst farge header*/
   border: none;
@@ -82,13 +82,13 @@
   font-weight: bold;
   cursor: pointer;
 }
-.menuNav > a  p:hover {
+.header__content__nav__button p:hover {
   color: var(--clr-rød);
 }
-.menuNav > a  p:active {
+.header__content__nav__button p:active {
   color: var(--clr-rød__activate);
 }
-.menuNav > a .headerActive {
+.header__content__nav__button .headerActive {
   background-color: var(--clr-bakgrunn); /*<--tab meny farge*/
   color: var(--clr-rød);
   text-decoration: underline;
@@ -99,16 +99,16 @@
 /*Endrer kanppene til hamburgermeny*/
 @media (max-width: 900px) {
   /*Hamburgermeny knappen skrus på */
-  .menu-icon-container { 
+  .header__content__icon-container { 
     display: inline-block;
   }
-  .menuNav {
+  .header__content__nav {
     position: absolute;
     flex-direction: column;
     padding: 0;
     width: 100%;
   }
-  .menuNav > a {
+  .header__content__nav__button{
     overflow: hidden;
     justify-content: center;
     width: 100%;
@@ -118,20 +118,20 @@
   }
 
   @media (prefers-color-scheme: dark){
-    .menuNav > a {
+    .header__content__nav__button{
       background-color: var(--clr-footer);
     }
 
   }
-  .menuNav > a .headerActive {
+  .header__content__nav__button .headerActive {
     background-color: transparent;
   }
   /*animasjon for menyen*/
-  #menu-checkbox-toggle ~ .menuNav a {
+  #menu-checkbox-toggle ~ .header__content__nav a {
     height: 0;
     transition: height 500ms cubic-bezier(0.25, 1, 0.35, 1);
   }
-  #menu-checkbox-toggle:checked ~ .menuNav a {
+  #menu-checkbox-toggle:checked ~ .header__content__nav a {
     height: 40px;
     padding: 5px;
     transition: height 500ms cubic-bezier(0.25, 1, 0.35, 1);
