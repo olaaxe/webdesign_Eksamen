@@ -27,11 +27,11 @@
   padding: 2rem 0;
 }
 
-.logo__bildet:hover {
+.logo img:hover {
   filter: saturate(135%);
   cursor: pointer;
 }
-.logo__bildet:active {
+.logo img:active {
   filter: saturate(100%);
   transition: 0;
 }
