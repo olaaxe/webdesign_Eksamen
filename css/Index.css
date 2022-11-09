@@ -19,11 +19,6 @@ p {
   padding-top: 2rem;
 }
 
-/* .intro__img img{
-  width: 100%;
-  border-radius: 5px;  
-} */
-
 .intro__img{
   overflow: hidden;
   align-self: center;
