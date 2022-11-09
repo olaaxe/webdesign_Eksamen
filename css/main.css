@@ -55,6 +55,10 @@ p{
 body, html {
   height: 100%;
 }
+body ::selection{
+  background-color: rgb(202, 67, 25);
+  color: whitesmoke;}
+  
 body{
   margin: 0px;
   position: relative;
@@ -63,6 +67,7 @@ body{
   display: flex;
   flex-direction: column;
 }
+
 * {
   margin: 0;
   padding: 0;
