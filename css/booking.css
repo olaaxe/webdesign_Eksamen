@@ -1,6 +1,6 @@
 /*dadadddddddddddddddddddd*/
-h2, h1{
-  font-weight: bold;
+h2 {
+  font-size: 3rem;
 }
 .intro-booking{
   flex-wrap: wrap-reverse;
