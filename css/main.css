@@ -45,6 +45,9 @@ main h2:after{
   background-color: var(--clr-rød);
   transform: translate(3px, 2px);
 }
+main a:hover{
+  color: var(--clr-rød__hover);
+}
 
 p{
   padding-bottom: 1rem;
