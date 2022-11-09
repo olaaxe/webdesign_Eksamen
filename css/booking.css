@@ -33,6 +33,9 @@ h2 {
   padding: 1rem 5rem;
   margin: 1rem 0;
 }
+.intro-booking__info a:hover{
+  color: var(--clr-knapper);
+}
 
 .Card-introtekst{
   margin: 2rem 0 0;
