@@ -7,13 +7,16 @@
 .intro-wrapper {
   display: flex;
   flex-wrap: wrap-reverse;
-  padding-top: min(40px, 95%);
   padding-bottom: min(20px, 95%);
   gap: 30px;
+  
 }
 
 .intro-wrapper > * {
   flex: 1 1 48%;
+}
+p {
+  padding-top: 2rem;
 }
 
 /* .intro__img img{
@@ -23,21 +26,24 @@
 
 .intro__img{
   overflow: hidden;
+  align-self: center;
 }
 
-p {
-  padding-top: 2rem;
-}
 .intro__img img{
   width: 100%;
-  min-height: 388px;
-  aspect-ratio: 5 / 4;
+  height: 100%;
+  aspect-ratio: 1 / 0.8;
   object-fit: cover;
   border-radius: 5px;
 }
-@media(max-width: 789px){
+@media(max-width: 929px){
   .intro__img img{
     min-height: auto;
+    aspect-ratio: 5 / 2;
     max-height: 300px;
   }
+  .intro-wrapper > * {
+    flex: 1 1 100%;
+  }
+
 }

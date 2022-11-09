@@ -5,7 +5,6 @@ h2 {
 .intro-booking{
   flex-wrap: wrap-reverse;
   gap: 2rem;
-  padding-top: 40px;
 }
 .intro-booking >*{
   flex: 1 1 45%;
@@ -18,13 +17,13 @@ h2 {
   /* width: 100%;
   margin-bottom: 2em; */
   width: 100%;
-  max-height: 500px;
+  max-height: 400px;
   aspect-ratio: 5 / 3;
   object-fit: cover;
   border-radius: 5px;
 }
 .intro-booking__info{
-  margin: 0 0 4rem 0;
+  margin: 3rem 0 4rem 0;
 }
 .intro-booking__info p{
   padding: 0 0 3rem 0;
@@ -34,7 +33,16 @@ h2 {
   padding: 1rem 5rem;
   margin: 1rem 0;
 }
+.intro-booking__info a:hover{
+  color: var(--clr-knapper);
+}
 
+.Card-introtekst{
+  margin: 2rem 0 0;
+}
+.Card-introtekst >*{
+  margin-bottom: 1.5rem;
+}
 
 .Card-Flex{
   display: flex;
@@ -97,8 +105,8 @@ h2 {
   }
 }
 
-.Card h3{
-  font-size: 2.5rem;
+.Card :is(h3, h4){
+  font-size: 3rem;
   padding-bottom: 4rem;
 }
 .Card p{
@@ -273,5 +281,6 @@ input#form, input#form2, input#form3{
     display: none;
   }
 }
+
 
 

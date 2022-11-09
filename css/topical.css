@@ -11,7 +11,6 @@
 .bildecontainer > img{
   border-radius: 5px 5px 0 0;
   padding-bottom: 0;
-
 }
 
 
@@ -26,13 +25,19 @@
 h1{
   text-align: center;
 }
+h2{
+  padding-top: 1rem;
+}
+.overskrift-undertekst{
+  margin-left: 1rem;
+}
 
 .topicalGrid{
   /*background-color: rgb(46,46,46);*/
   display:grid;
   gap: 8px;
-  margin-top: 2em;
-  grid-template-columns: 1fr;
+  margin-bottom: 2em;
+  grid-template-columns: 1fr 1fr;
   padding-left: auto;
   padding-right: auto;
 
@@ -42,21 +47,33 @@ h1{
   padding: max(1vh, 1rem);
 
 }
+  
+.topicalGrid > p{
+  max-width: 80%;
+}
+.col-span-2{
+  grid-column: span 2;
+}
+.row-span-2{
+  grid-row: span 2;
+}
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   .topicalGrid{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
+
   .col-span-2{
-    grid-column: span 2;
+    grid-column: span 1;
   }
   .row-span-2{
-    grid-row: span 2;
+    grid-row: span 1
   }
-  
-  .topicalGrid > p{
-    max-width: 80%;
+  .display-none-max-700px{
+    display: none;
   }
+
+
 }
 
 .topicalGrid > figure > img{

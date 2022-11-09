@@ -6,7 +6,6 @@
   --clr-tekst: rgb(46, 46, 46);
   --clr-knapper: rgb(255, 255, 255);
   --clr-boocking__card: rgb(255, 253, 248);
-  --clr-retter-overskrift: rgb(0, 0, 0);
 
   --clr-grå: rgb(46,46,46);
   --clr-beige: rgb(225, 215, 196);
@@ -32,7 +31,6 @@
     --clr-tekst: rgb(225, 215, 196);
     --clr-knapper: rgb(255, 250, 240);
     --clr-boocking__card: rgb(26, 26, 26);
-    --clr-retter-overskrift: rgb(255, 250, 240);
   }
 }
 main h1:after,
@@ -44,6 +42,9 @@ main h2:after{
   height: 8px;
   background-color: var(--clr-rød);
   transform: translate(3px, 2px);
+}
+main a:hover{
+  color: var(--clr-rød__hover);
 }
 
 p{
@@ -58,6 +59,10 @@ h1 {
 body, html {
   height: 100%;
 }
+body ::selection{
+  background-color: rgb(202, 67, 25);
+  color: whitesmoke;}
+
 body{
   margin: 0px;
   position: relative;
@@ -67,6 +72,7 @@ body{
   display: flex;
   flex-direction: column;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -86,10 +92,10 @@ html{
 }
 
 main{
-  margin: 0 auto; 
+  margin: 0 auto;
   max-width: 1000px;
   flex: 1 0 auto;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 4rem 2rem 1rem 2rem;
 }
 
 .hr_opacity {
@@ -101,7 +107,7 @@ header{
   /* position: absolute;
   top: 0;
   left: 0;
-  right: 0; */ 
+  right: 0; */
   /* Fjerner pga test endring av header fiks ved å fjerne denne lina + 1 til */
   background: var(--clr-header);/*<--Header farge*/
   box-sizing: border-box;
@@ -122,4 +128,5 @@ sup{
   main{
     padding: 1rem 0 1rem 0;
   }
+
 }
