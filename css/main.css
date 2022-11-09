@@ -50,6 +50,9 @@ p{
   padding-bottom: 1rem;
   line-height: 1.5em;
 }
+h1 {
+  font-size: 4rem;
+}
 
 
 body, html {
@@ -82,9 +85,6 @@ html{
   font-weight: bold;
 }
 
-.HeaderCenterButton {
-  text-align: center;
-}
 main{
   margin: 0 auto; 
   max-width: 1000px;
