@@ -6,7 +6,6 @@
   --clr-tekst: rgb(46, 46, 46);
   --clr-knapper: rgb(255, 255, 255);
   --clr-boocking__card: rgb(255, 253, 248);
-  --clr-retter-overskrift: rgb(0, 0, 0);
 
   --clr-grå: rgb(46,46,46);
   --clr-beige: rgb(225, 215, 196);
@@ -32,7 +31,6 @@
     --clr-tekst: rgb(225, 215, 196);
     --clr-knapper: rgb(255, 250, 240);
     --clr-boocking__card: rgb(26, 26, 26);
-    --clr-retter-overskrift: rgb(255, 250, 240);
   }
 }
 main h1:after,
