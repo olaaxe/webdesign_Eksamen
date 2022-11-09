@@ -25,6 +25,10 @@
 .intro__img{
   overflow: hidden;
 }
+
+p {
+  padding-top: 2rem;
+}
 .intro__img img{
   width: 100%;
   min-height: 388px;
