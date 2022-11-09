@@ -8,10 +8,13 @@
   width: 100%;
   transition: filter 0.25s;
 } */
-
 .header__logo{
+  display: flex;
+  justify-content: center;
+}
+.header__logo a{
+  display: inline-block;
   overflow: hidden;
-  margin: 0 auto;
 }
 .header__logo img{
   width: 100%;
