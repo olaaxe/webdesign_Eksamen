@@ -11,10 +11,7 @@
 .bildecontainer > img{
   border-radius: 5px 5px 0 0;
   padding-bottom: 0;
-
 }
-
-
 
 .bildecontainer > figcaption{
   padding-left: auto;
@@ -26,6 +23,9 @@
 }
 h1{
   text-align: center;
+}
+.overskrift-undertekst{
+  margin-left: 1rem;
 }
 
 .topicalGrid{
