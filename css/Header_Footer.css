@@ -145,7 +145,6 @@
 }
 
 /*--------- Footer-------- */
-
 .footerCointainer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -154,8 +153,9 @@
   height: auto;
   max-width: 1600px;
   column-gap: 140px;
+
 }
-.footerCointainer h2 {
+.footerCointainer  h2 {
   text-align: center;
   color: white;
   margin: 5px 0px 25px 0px;
@@ -170,52 +170,50 @@
   text-decoration: none;
 }
 
-/* Kontakt oss / Sosiale medier */
-
-.kontaktOss__sosialemedier {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  gap: 5px 20px;
-  
-}
-.kontaktOss__sosialemedier p {
-  margin-left: 0;
-  transition: color 0.15s;
-}
-.kontaktOss__sosialemedier p:hover {
-  color: var(--clr-rød__hover);
-}
-.kontaktOss__sosialemedier p:active {
-  color: var(--clr-rød__activate);
-}
-.kontaktOss__sosialemedier__bilde {
-  max-width: 40px;
-  max-height: 40px;
-  background-color: var(--clr-beige)
-}
-.kontaktOss__sosialemedier__bilde img {
-  height: 100%;
-  width: 100%;
-}
-
-/* Åpningstider */
 
 .åpningstider {
   padding: 0;
 }
-.åpningstider__tidspunkt {
+.åpningstider > div{
   display: flex;
   justify-content: space-between;
   max-width: 400px;
   margin-bottom: 5px;
 }
 
-/* Adresse og google iframe */
+
+.kontaktOss > div {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 5px 20px;
+  
+}
+.kontaktOss > div figure{
+  max-width: 40px;
+  max-height: 40px;
+  background-color: var(--clr-beige)
+}
+.kontaktOss > div p {
+  margin-left: 0;
+  transition: color 0.15s;
+}
+.kontaktOss > div p:hover {
+  color: var(--clr-rød__hover);
+}
+.kontaktOss > div p:active {
+  color: var(--clr-rød__activate);
+}
+.kontaktOss > div figure img {
+  height: 100%;
+  width: 100%;
+}
+
 
 .adr{
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
+
 }
 .adr iframe{
   padding: 0 0 0 0;
@@ -223,14 +221,16 @@
   margin-bottom: 10px;
   border-radius: 5px;
 }
-.adresse__link:hover {
+.adr > div > a:hover {
   text-decoration: underline;
   text-decoration-color: var(--clr-beige);
 }
-.adresse__link > p {
+.adr > div > a > p {
   line-height: 22px;
   font-style: italic;
 }
+
+
 @media (max-width: 1500px) {
   .footerCointainer{
     grid-template-columns: 1fr 1fr 1fr;
