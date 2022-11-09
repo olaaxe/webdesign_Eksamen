@@ -28,7 +28,7 @@
   :root{
     --clr-header: linear-gradient( 30deg, rgb(0, 0, 0) 0%, rgb(32, 32, 32) 100%);
     --clr-bakgrunn: rgb(31, 31, 31);
-    --clr-overskrift: rgb(225, 215, 196);
+    --clr-overskrift: rgb(255, 250, 240);
     --clr-tekst: rgb(225, 215, 196);
     --clr-knapper: rgb(255, 250, 240);
     --clr-boocking__card: rgb(26, 26, 26);
@@ -49,6 +49,9 @@ main h2:after{
 p{
   padding-bottom: 1rem;
   line-height: 1.5em;
+}
+h1 {
+  font-size: 4rem;
 }
 
 
@@ -82,9 +85,6 @@ html{
   font-weight: bold;
 }
 
-.HeaderCenterButton {
-  text-align: center;
-}
 main{
   margin: 0 auto; 
   max-width: 1000px;
