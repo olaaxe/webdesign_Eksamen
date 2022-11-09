@@ -14,47 +14,47 @@
 </head>
 <body>
   <!-- Header Start -->
-  <header>
-    <section class="logo">
+  <header class="header">
+    <section class="header__logo">
       <a href="index.html">
         <img src="img\header-images\Logo_new.transparent.png" alt="C-SONS Logo">
       </a>
     </section>
-    <div>
+    <section class="header__content">
       <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
-      <label class='menu-icon-container' for="menu-checkbox-toggle">
+      <label class='header__content__icon-container' for="menu-checkbox-toggle">
         <figure>
           <img class="menu-open menu-icon-img" src="img\header-images\Burgermeny_transparent.png" alt="Åpne burgermeny">
           <img class="menu-close menu-icon-img" src="img\header-images\Cross_Transparent.png" alt="Lukk Burgermeny">
         </figure>
       </label>
-      <nav class="menuNav" aria-label="Side Header">
-        <a href="index.html">
+      <nav class="header__content__nav" aria-label="Side Header">
+        <a class="header__content__nav__button" href="index.html">
           <p>
-            Front&nbsp;page
+            Hjemmeside
           </p></a>
-        <a href="booking.html">
+        <a class="header__content__nav__button" href="booking.html">
           <p>
-          Booking
-        </p>
+            Reserver
+          </p>
         </a> 
-        <a href="cafe.html">
+        <a class="header__content__nav__button" href="cafe.html">
           <p class="headerActive">
             Restaurant
           </p>
         </a>
-        <a href="Accessibility.html">
+        <a class="header__content__nav__button" href="Accessibility.html">
           <p>
-            Accessibility
+            Inkludering
           </p>
         </a>
-        <a href="topical.html">
+        <a class="header__content__nav__button" href="topical.html">
           <p>
-            Topical
+            Aktuelt
           </p>
         </a>
       </nav>
-    </div>
+    </section>
   </header>
   <!-- Header Slutt -->
 
@@ -258,61 +258,61 @@
     <div class="footerCointainer">
       <section class="kontaktOss">
         <h2>Kontakt oss</h2>
-        <div>
-          <figure>
+        <div class="kontaktOss__sosialemedier">
+          <figure class="kontaktOss__sosialemedier__bilde">
             <img src="img\footer-images\Telefon_icon.png" alt="Telefon ikon">
           </figure>
           <a href="tel: +4712345678">
             <p>+47 123 45 678</p>
           </a>
-          <figure>
+          <figure class="kontaktOss__sosialemedier__bilde">
             <img src="img\footer-images\Mail_icon.png" alt="E post ikon">
           </figure>
           <a href="mailto:c-sons@example.com">
             <p>c-sons@example.com</p>
           </a>
-          <figure>
+          <figure class="kontaktOss__sosialemedier__bilde">
             <img src="img\footer-images\Instagram_icon.png" alt="Instagram ikon">
           </figure>
           <a href="https://www.instagram.com/" target="_blank" rel="noopener">
             <p>Instagram</p>
           </a>
-          <figure>
+          <figure class="kontaktOss__sosialemedier__bilde">
             <img src="img\footer-images\Facebook_icon.png" alt="Facebook ikon">
           </figure>
           <a href="https://facebook.com" target="_blank" rel="noopener">
             <p>Facebook</p>
           </a>
-          <figure>
+          <figure class="kontaktOss__sosialemedier__bilde">
             <img src="img\footer-images\Twitter_icon.png" alt="Twitter ikon">
           </figure>
           <a href="https://twitter.com/" target="_blank" rel="noopener">
             <p>Twitter</p>
           </a>
-      </div>
+        </div>
       </section>
 
       <section class="åpningstider">
         <h2>Åpningstider</h2>
-        <div>
+        <div class="åpningstider__tidspunkt">
           <p>Mandag - Torsdag:</p>
           <p>09-22</p>
         </div>
-        <div>
+        <div class="åpningstider__tidspunkt">
           <p>Fredag:</p>
           <p>09-23</p>
         </div>
-        <div>
+        <div class="åpningstider__tidspunkt">
           <p>Lørdag:</p>
           <p>10-23</p>
         </div>
-        <div>
+        <div class="åpningstider__tidspunkt">
           <p>Søndag:</p>
           <p>10-20</p>
         </div>
       </section>
       
-      <section class="adr">
+      <section class="adresse">
         <h2>Finn oss</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno" 
         width="300" 
@@ -322,18 +322,15 @@
         loading="lazy" 
         referrerpolicy="no-referrer-when-downgrade"
         aria-label="Google maps"></iframe>
-        <div>
-          <a href="https://goo.gl/maps/tBUQerRK4z7mX8H1A" target="_blank" rel="noopener">
-            <p>Ellen Gleditschs hus</p>
-            <p>Pilestredet 35</p>
-            <p>0166 Oslo</p>
-          </a>
-        </div>
-      
+        <a href="https://goo.gl/maps/tBUQerRK4z7mX8H1A" target="_blank" rel="noopener" class="adresse__link">
+          <p>Ellen Gleditschs hus</p>
+          <p>Pilestredet 35</p>
+          <p>0166 Oslo</p>
+        </a>
+
       </section>
     </div>
   </footer>
   <!--Footer slutt-->
-
 </body>
 </html>

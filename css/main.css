@@ -59,6 +59,10 @@ h1 {
 body, html {
   height: 100%;
 }
+body ::selection{
+  background-color: rgb(202, 67, 25);
+  color: whitesmoke;}
+  
 body{
   margin: 0px;
   position: relative;
@@ -68,6 +72,7 @@ body{
   display: flex;
   flex-direction: column;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -90,7 +95,7 @@ main{
   margin: 0 auto; 
   max-width: 1000px;
   flex: 1 0 auto;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 4rem 2rem 1rem 2rem;
 }
 
 .hr_opacity {

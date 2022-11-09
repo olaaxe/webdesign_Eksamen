@@ -32,7 +32,7 @@ h1{
   /*background-color: rgb(46,46,46);*/
   display:grid;
   gap: 8px;
-  margin-top: 2em;
+  margin-bottom: 2em;
   grid-template-columns: 1fr 1fr;
   padding-left: auto;
   padding-right: auto;
