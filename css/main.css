@@ -107,7 +107,6 @@ header{
   /* position: absolute;
   top: 0;
   left: 0;
-  right: 0; */ 
   /* Fjerner pga test endring av header fiks ved å fjerne denne lina + 1 til */
   background: var(--clr-header);/*<--Header farge*/
   box-sizing: border-box;
