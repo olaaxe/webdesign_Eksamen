@@ -5,7 +5,6 @@ h2 {
 .intro-booking{
   flex-wrap: wrap-reverse;
   gap: 2rem;
-  padding-top: 40px;
 }
 .intro-booking >*{
   flex: 1 1 45%;
