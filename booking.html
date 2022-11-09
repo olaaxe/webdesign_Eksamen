@@ -15,6 +15,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="website icon" type="png" href="img\header-images\Logo_web_icon.png">
+  <script src='loadIn.js' defer></script>
+  <noscript>
+    <style>
+      .venstre,
+      .høyre{
+        transform: translateX(0);
+        opacity: 1;
+      }
+    </style>
+  </noscript>
 </head>
 
 
@@ -241,11 +251,11 @@
 
 
     <section class="info-Section"> 
-      <figure class="info-Section__img">
+      <figure class="info-Section__img slide-in slide-venstre"> <!-- Bildet venste side -->
         <img src="img\booking-images\møterom.png" alt="Ett av møterommene">
         <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
       </figure>
-      <div class="info-Section__info"> 
+      <div class="info-Section__info slide-in slide-høyre slide-delay"> <!-- Teskt høyre side -->
         <div class="info-Section__info__header">
           <p>Frihet til å velge</p>
           <h2>Et rom for ethvert behov</h2>
@@ -284,7 +294,7 @@
     </section>
 
     <section class="info-Section" id="reverse">
-      <div class="info-Section__info"> 
+      <div class="info-Section__info  slide-in slide-venstre slide-delay"> 
         <div class="info-Section__info__header">
           <p>Hva er inkludert</p>
           <h2>Alt er tatt vare på</h2>
@@ -294,44 +304,44 @@
           ditt og hjelpe alt til å gå på skinner.</p>
         <ul class="info-Section__info__flex">
           <li>
-            <img src="img\Booking-icons\TV.png" alt="TV">
+            <img src="img\Booking-icons\TV.png" loading="lazy" alt="TV">
             <p>Flatskjerm-TV, tusjtavler og flipover</p>
           </li>
           <li>
-            <img src="img\Booking-icons\Chair.png" alt="Stol">
+            <img src="img\Booking-icons\Chair.png" loading="lazy" alt="Stol">
             <p>Pauseområder</p>              
           </li>
           <li>
-            <img src="img\Booking-icons\Scale.png" alt="Konfigurer rom">
+            <img src="img\Booking-icons\Scale.png" loading="lazy" alt="Konfigurer rom">
             <p>Konfigurer møterommet på din måte</p>
           </li>
           <li>
-            <img src="img\Booking-icons\Bufee.png" alt="Service">
+            <img src="img\Booking-icons\Bufee.png" loading="lazy" alt="Service">
             <p>Profesjonelt resepsjonistteam som tar imot gjester</p>
           </li>
           <li>
-            <img src="img\Booking-icons\Wifi.png" alt="Wifi"> 
+            <img src="img\Booking-icons\Wifi.png" loading="lazy" alt="Wifi"> 
             <p>Trådløst internett i bedriftskvalitet</p>
           </li>
           <li>
-            <img src="img\Booking-icons\Person.png" alt="Person">
+            <img src="img\Booking-icons\Person.png" loading="lazy" alt="Person">
             <p>Erfarent supportteam på stedet</p>
           </li>
         </ul>
         <hr>
       </div>
-      <figure class="info-Section__img">
-        <img src="img\booking-images\hotellrommetnye.png" alt="Ett av hotellrommene">
+      <figure class="info-Section__img slide-in slide-høyre">
+        <img src="img\booking-images\hotellrommetnye.png" loading="lazy" alt="Ett av hotellrommene">
         <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
       </figure>
     </section> 
 
     <section class="info-Section">
-      <figure class="info-Section__img">
-        <img src="img\booking-images\Delicious_food.png" alt="En av våre delikate retter">
+      <figure class="info-Section__img slide-in slide-venstre">
+        <img src="img\booking-images\Delicious_food.png" loading="lazy" alt="En av våre delikate retter">
         <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
       </figure>
-      <div class="info-Section__info"> 
+      <div class="info-Section__info slide-in slide-høyre slide-delay"> 
         <div class="info-Section__info__header">
           <p>Bredt spekter av tjenester</p>
           <h2>Tjenestene du trenger, når du trenger dem</h2>
@@ -341,23 +351,23 @@
         </p>
         <ul class="info-Section__info__flex">
           <li>
-            <img src="img\Booking-icons\Laptop.png" alt="Laptop">
+            <img src="img\Booking-icons\Laptop.png" loading="lazy" alt="Laptop">
             <p>Support for IT- og teknisknologi</p>
           </li>
           <li>
-            <img src="img\Booking-icons\Paper.png" alt="Papir">
+            <img src="img\Booking-icons\Paper.png" loading="lazy" alt="Papir">
             <p>Hjelp til Administrative oppgaver</p>              
           </li>
           <li>
-            <img src="img\Booking-icons\Scale.png" alt="Diagonal linje">
+            <img src="img\Booking-icons\Scale.png" loading="lazy" alt="Diagonal linje">
             <p>Ytterligere arbeidsplasser ved behov</p>
           </li>
           <li>
-            <img src="img\Booking-icons\Cafe.png" alt="Cafe">
+            <img src="img\Booking-icons\Cafe.png" loading="lazy" alt="Cafe">
             <p>Cateringtjenester</p>
           </li>
           <li>
-            <img src="img\Booking-icons\Projector.png" alt="Projektor">
+            <img src="img\Booking-icons\Projector.png" loading="lazy" alt="Projektor">
             <p>Projektorer og annet møteutstyr</p>
           </li>
         </ul>
