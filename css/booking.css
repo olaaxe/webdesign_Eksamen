@@ -280,6 +280,7 @@ main{
   transition: opacity 250ms ease-in, transform 500ms ease-in;
   
 }
+
 .slide-delay{
   transition-delay: 250ms;
 }
