@@ -210,12 +210,12 @@
 
 /* Adresse og google iframe */
 
-.adr{
+.adresse{
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
 }
-.adr iframe{
+.adresse iframe{
   padding: 0 0 0 0;
   border:0;
   margin-bottom: 10px;
@@ -246,7 +246,7 @@
   }
 }
 @media (max-width: 300px) {
-  .adr iframe {
+  .adresse iframe {
     display: none;
   }
 }
