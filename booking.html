@@ -16,47 +16,47 @@
 
 <body>
   <!-- Header Start -->
-  <header>
-    <section class="logo">
+  <header class="header">
+    <section class="header__logo">
       <a href="index.html">
         <img src="img\header-images\Logo_new.transparent.png" alt="C-SONS Logo">
       </a>
     </section>
-    <div>
+    <section class="header__content">
       <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
-      <label class='menu-icon-container' for="menu-checkbox-toggle">
+      <label class='header__content__icon-container' for="menu-checkbox-toggle">
         <figure>
           <img class="menu-open menu-icon-img" src="img\header-images\Burgermeny_transparent.png" alt="Åpne burgermeny">
           <img class="menu-close menu-icon-img" src="img\header-images\Cross_Transparent.png" alt="Lukk Burgermeny">
         </figure>
       </label>
-      <nav class="menuNav" aria-label="Side Header">
-        <a href="index.html">
+      <nav class="header__content__nav" aria-label="Side Header">
+        <a class="header__content__nav__button" href="index.html">
           <p>
             Front&nbsp;page
           </p></a>
-        <a href="booking.html">
+        <a class="header__content__nav__button" href="booking.html">
           <p class="headerActive">
           Booking
         </p>
         </a> 
-        <a href="cafe.html">
+        <a class="header__content__nav__button" href="cafe.html">
           <p>
             Restaurant
           </p>
         </a>
-        <a href="Accessibility.html">
+        <a class="header__content__nav__button" href="Accessibility.html">
           <p>
             Accessibility
           </p>
         </a>
-        <a href="topical.html">
+        <a class="header__content__nav__button" href="topical.html">
           <p>
             Topical
           </p>
         </a>
       </nav>
-    </div>
+    </section>
   </header>
   <!-- Header Slutt -->
 
@@ -112,11 +112,14 @@
             </label>
           </div><!-- Card__info -->
           <input type="checkbox" name="SpawnContactForm" id="form"> <!-- Form checkboks -->
-          <form class="Card__form">
+          <form class="Card__form" action="https://formsubmit.co/4196f20562bac6a16f89faeeda50d84c" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/booking.html">
+            <input type="hidden" name="_subject" value="New submission, Konferanserom">
             <div>
               <h3>Book</h3>
               <input type="text" name="name" placeholder="Name" required />
-              <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              <input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 required>
               <input type="datetime-local" name="date" required>
               <textarea name="text" placeholder="Ekstra information"></textarea>
@@ -158,11 +161,14 @@
             </label>
           </div><!-- Card__info -->
           <input type="checkbox" name="SpawnContactForm" id="form2"> <!-- Form checkboks -->
-          <form class="Card__form">
+          <form class="Card__form" action="https://formsubmit.co/4196f20562bac6a16f89faeeda50d84c" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/booking.html">
+            <input type="hidden" name="_subject" value="New submission, Treningsrom">
             <div>
               <h3>Book</h3>
               <input type="text" name="name" placeholder="Name" required />
-              <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              <input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 required>
               <input type="datetime-local" name="date" required>
               <textarea name="text" placeholder="Ekstra information"></textarea>
@@ -204,11 +210,14 @@
             </label>
           </div><!-- Card__info -->
           <input type="checkbox" name="SpawnContactForm" id="form3"> <!-- Form checkboks -->
-          <form class="Card__form">
+          <form class="Card__form" action="https://formsubmit.co/4196f20562bac6a16f89faeeda50d84c" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/booking.html">
+            <input type="hidden" name="_subject" value="New submission, Intervjurom">
             <div>
               <h3>Book</h3>
               <input type="text" name="name" placeholder="Name" required />
-              <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              <input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 required>
               <input type="datetime-local" name="date" required>
               <textarea name="text" placeholder="Ekstra information"></textarea>

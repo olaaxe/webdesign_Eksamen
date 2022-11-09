@@ -18,47 +18,47 @@
 <body class="body">
 
   <!-- Header Start -->
-  <header>
-    <section class="logo">
+  <header class="header">
+    <section class="header__logo">
       <a href="index.html">
         <img src="img\header-images\Logo_new.transparent.png" alt="C-SONS Logo">
       </a>
     </section>
-    <div>
+    <section class="header__content">
       <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
-      <label class='menu-icon-container' for="menu-checkbox-toggle">
+      <label class='header__content__icon-container' for="menu-checkbox-toggle">
         <figure>
           <img class="menu-open menu-icon-img" src="img\header-images\Burgermeny_transparent.png" alt="Åpne burgermeny">
           <img class="menu-close menu-icon-img" src="img\header-images\Cross_Transparent.png" alt="Lukk Burgermeny">
         </figure>
       </label>
-      <nav class="menuNav" aria-label="Side Header">
-        <a href="index.html">
+      <nav class="header__content__nav" aria-label="Side Header">
+        <a class="header__content__nav__button" href="index.html">
           <p>
             Front&nbsp;page
           </p></a>
-        <a href="booking.html">
+        <a class="header__content__nav__button" href="booking.html">
           <p>
           Booking
         </p>
         </a> 
-        <a href="cafe.html">
+        <a class="header__content__nav__button" href="cafe.html">
           <p>
             Restaurant
           </p>
         </a>
-        <a href="Accessibility.html">
+        <a class="header__content__nav__button" href="Accessibility.html">
           <p class="headerActive">
             Accessibility
           </p>
         </a>
-        <a href="topical.html">
+        <a class="header__content__nav__button" href="topical.html">
           <p>
             Topical
           </p>
         </a>
       </nav>
-    </div>
+    </section>
   </header>
   <!-- Header Slutt -->
 <main>
@@ -117,12 +117,10 @@
       </p>
 
       <p>
-
-
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo ipsa quaerat quo nobis suscipit sequi nemo illum impedit cum libero similique autem facere, cumque vel, sit, quam laboriosam voluptatibus.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, exercitationem! Soluta, id ex debitis sequi facilis odit. Aperiam corrupti harum reiciendis alias, quisquam eaque dolores. Expedita quod perferendis nesciunt quasi.
-      
-      
+        Vi valgte å bruke REM for de forskjellige font-størrelsene våre, istedenfor å bruke en fastlåst størrelse som px, 
+        dette gjør at nettsiden endrer seg om noen bruker en annen en default font størrelse på sin enhet. Default størrelse 
+        er 16px, så for å gjøre det lett for oss å konvertere fra px har vi satt font-størrelse i HTML taggen til 62.5%. 
+        Dette gjør at 1 rem blir lik 10px. Om en bruker da har satt sin font-størrelse til for eksempel 32px vil teksten vår også dobble seg.
       </p>
 
 
