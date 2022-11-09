@@ -16,66 +16,74 @@
 
 <body>
   <!-- Header Start -->
-  <header>
-    <section class="logo">
-      <img class="logo__bildet" src="img\Logo_new.transparent.png" alt="C-SONS Logo">
+  <header class="header">
+    <section class="header__logo">
+      <a href="index.html">
+        <img src="img\header-images\Logo_new.transparent.png" alt="C-SONS Logo">
+      </a>
     </section>
-    <div>
+    <section class="header__content">
       <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
-      <label class='menu-icon-container' for="menu-checkbox-toggle">
+      <label class='header__content__icon-container' for="menu-checkbox-toggle">
         <figure>
-          <img class="menu-open menu-icon-img" src="img\Burgermeny_transparent.png" alt="Åpne burgermeny">
-          <img class="menu-close menu-icon-img" src="img\Cross_Transparent.png" alt="Lukk Burgermeny">
+          <img class="menu-open menu-icon-img" src="img\header-images\Burgermeny_transparent.png" alt="Åpne burgermeny">
+          <img class="menu-close menu-icon-img" src="img\header-images\Cross_Transparent.png" alt="Lukk Burgermeny">
         </figure>
       </label>
-    <nav class="menuNav" aria-label="Side Header">
-      <a href="index.html">
-        <p>
-          Front&nbsp;page
-        </p></a>
-      <a href="booking.html">
-        <p class="headerActive">
-        Booking
-      </p>
-      </a> 
-      <a href="cafe.html">
-        <p>
-          Restaurant
-        </p>
-      </a>
-      <a href="Accessibility.html">
-        <p>
-          Accessibility
-        </p>
-      </a>
-      <a href="topical.html">
-        <p>
-          Topical
-        </p>
-      </a>
-    </nav>
-  </div>
+      <nav class="header__content__nav" aria-label="Side Header">
+        <a class="header__content__nav__button" href="index.html">
+          <p>
+            Hjemmeside
+          </p></a>
+        <a class="header__content__nav__button" href="booking.html">
+          <p class="headerActive">
+            Reserver
+          </p>
+        </a> 
+        <a class="header__content__nav__button" href="cafe.html">
+          <p>
+            Restaurant
+          </p>
+        </a>
+        <a class="header__content__nav__button" href="Accessibility.html">
+          <p>
+            Inkludering
+          </p>
+        </a>
+        <a class="header__content__nav__button" href="topical.html">
+          <p>
+            Aktuelt
+          </p>
+        </a>
+      </nav>
+    </section>
   </header>
   <!-- Header Slutt -->
 
   <main>
     <section class="intro-booking">
-      <figure>
-        <img src="img\Booking-icons\Hotell.png" alt="katt med briller på">
+      <figure class="intro-booking__img">
+        <img src="img\Booking-images\Hotell.png" alt="Utenfor konferansebygget">
       </figure>
       <div class="intro-booking__info">
         <h1> Møterom</h1>
-        <p>Våre møterom er lokalisert i de fleste store byene i verden, slik at vi er tilgjengelige hver gang du har lyst til å holde et møte. Imponer kundene dine, arranger minneverdige workshops, eller lever en vinnende pitch i våre velutstyrte møterom. Bestill timebasert på forespørsel. Et dedikert team vil være til stede for å hjelpe deg med å holde møtet ditt.</p>
+        <p>Våre møterom er lokalisert i de fleste store byene i verden, slik at vi er tilgjengelige hver gang du har 
+          lyst til å holde et møte. Imponer kundene dine, arranger minneverdige workshops, eller lever en vinnende pitch 
+          i våre velutstyrte møterom. Bestill timebasert på forespørsel. Et dedikert team vil være til stede for å hjelpe 
+          deg med å holde møtet ditt.</p>
         <a class="Cards__button" href="#møterom">Reserver nå</a>
       </div>
-      <hr>
+      <hr class ="hr_opacity">
     </section> <!--ending på første del-->
-      <br><!-- Fjern? legg inn padding isteden? -->
+    
 
-    <section name="møterom" id="møterom">
+    <section class="Card-introtekst" name="møterom" id="møterom">
       <h2>Våre møterom</h2>
-      <p>Vi tilbyr møterom for en rekke forretningsbehov. Les om dem nedenfor og reserver deretter en plass som passer deg eller legg inn en bestilling på farten gjennom appen vår.</p>
+      <p>Vi tilbyr møterom for en rekke forretningsbehov. Les om dem nedenfor og reserver deretter en plass som passer 
+        deg eller legg inn en bestilling på farten gjennom appen vår.</p>
       
+
+      <!-- Cards section -->
       <section class="Card-Flex">
         <div class="Card">
           <div class="Card__info">
@@ -104,11 +112,14 @@
             </label>
           </div><!-- Card__info -->
           <input type="checkbox" name="SpawnContactForm" id="form"> <!-- Form checkboks -->
-          <form class="Card__form">
+          <form class="Card__form" action="https://formsubmit.co/4196f20562bac6a16f89faeeda50d84c" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/booking.html">
+            <input type="hidden" name="_subject" value="New submission, Konferanserom">
             <div>
               <h3>Book</h3>
               <input type="text" name="name" placeholder="Name" required />
-              <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              <input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 required>
               <input type="datetime-local" name="date" required>
               <textarea name="text" placeholder="Ekstra information"></textarea>
@@ -150,11 +161,14 @@
             </label>
           </div><!-- Card__info -->
           <input type="checkbox" name="SpawnContactForm" id="form2"> <!-- Form checkboks -->
-          <form class="Card__form">
+          <form class="Card__form" action="https://formsubmit.co/4196f20562bac6a16f89faeeda50d84c" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/booking.html">
+            <input type="hidden" name="_subject" value="New submission, Treningsrom">
             <div>
               <h3>Book</h3>
               <input type="text" name="name" placeholder="Name" required />
-              <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              <input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 required>
               <input type="datetime-local" name="date" required>
               <textarea name="text" placeholder="Ekstra information"></textarea>
@@ -196,11 +210,14 @@
             </label>
           </div><!-- Card__info -->
           <input type="checkbox" name="SpawnContactForm" id="form3"> <!-- Form checkboks -->
-          <form class="Card__form">
+          <form class="Card__form" action="https://formsubmit.co/4196f20562bac6a16f89faeeda50d84c" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/booking.html">
+            <input type="hidden" name="_subject" value="New submission, Intervjurom">
             <div>
               <h3>Book</h3>
               <input type="text" name="name" placeholder="Name" required />
-              <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              <input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 required>
               <input type="datetime-local" name="date" required>
               <textarea name="text" placeholder="Ekstra information"></textarea>
@@ -215,20 +232,22 @@
           </form>
         </div>
       </section>
-    </section> <!--ending på andre del-->
+    </section> <!--ending på Cards-->
 
 
-    <section class="infoSection"> 
-      <figure>
-        <img src="img\Booking-icons\møterom.png" alt="katt med briller på">
+    <section class="info-Section"> 
+      <figure class="info-Section__img">
+        <img src="img\booking-images\møterom.png" alt="Ett av møterommene">
       </figure>
-      <div> 
-        <div>
-          <p class="H-comment">Frihet til å velge</p>
+      <div class="info-Section__info"> 
+        <div class="info-Section__info__header">
+          <p>Frihet til å velge</p>
           <h2>Et rom for ethvert behov</h2>
         </div>
-        <p>Velg fra et bredt utvalg av møterom for å finne den perfekte beliggenheten og stedet for ditt neste møte. Vi gleder oss til å hjelpe deg med å finne det perfekte styrerommet for arrangementet ditt, det perfekte private rommet for å intervjue kandidater, eller et inspirerende sted for en treningsøkt.</p>
-        <ul class="infoGrid">
+        <p>Velg fra et bredt utvalg av møterom for å finne den perfekte beliggenheten og stedet for ditt neste møte. 
+          Vi gleder oss til å hjelpe deg med å finne det perfekte styrerommet for arrangementet ditt, det perfekte private 
+          rommet for å intervjue kandidater, eller et inspirerende sted for en treningsøkt.</p>
+        <ul class="info-Section__info__flex">
           <li>
             <img src="img\Booking-icons\Scale.png" alt="telefon">
             <p>Fullt utstyrte plasser for samlinger av enhver størrelse</p>
@@ -258,14 +277,16 @@
       </div>
     </section>
 
-    <section class="infoSection" id="reverse">
-      <div> 
-        <div>
-          <p class="H-comment">Hva er inkludert</p>
+    <section class="info-Section" id="reverse">
+      <div class="info-Section__info"> 
+        <div class="info-Section__info__header">
+          <p>Hva er inkludert</p>
           <h2>Alt er tatt vare på</h2>
         </div>
-        <p>Rommene våre er fullt utstyrt med kvalitetsmøbler og videokonferanseutstyr, slik at du kan gå inn og kjøre produktive økter. Resepsjonistene våre vil hilse på gjestene dine, mens supportteamet vårt vil forberede rommet ditt og hjelpe alt til å gå på skinner.</p>
-        <ul class="infoGrid">
+        <p>Rommene våre er fullt utstyrt med kvalitetsmøbler og videokonferanseutstyr, slik at du kan gå inn og kjøre produktive økter. 
+          Resepsjonistene våre vil hilse på gjestene dine, mens supportteamet vårt vil forberede rommet 
+          ditt og hjelpe alt til å gå på skinner.</p>
+        <ul class="info-Section__info__flex">
           <li>
             <img src="img\Booking-icons\TV.png" alt="telefon">
             <p>Flatskjerm-TV, tusjtavler og flipover</p>
@@ -293,24 +314,24 @@
         </ul>
         <hr>
       </div>
-      <figure>
-        <img src="img\Booking-icons\hotellrommetnye.png" alt="Bilde av rommet">
+      <figure class="info-Section__img">
+        <img src="img\booking-images\hotellrommetnye.png" alt="Ett av hotellrommene">
       </figure>
     </section> 
 
-    <section class="infoSection">
-      <figure>
-        <img src="img\Delicious_food.png" alt="Hunter">
+    <section class="info-Section">
+      <figure class="info-Section__img">
+        <img src="img\booking-images\Delicious_food.png" alt="En av våre delikate retter">
       </figure>
-      <div>
-        <div>
-          <p class="H-comment">Bredt spekter av tjenester</p>
+      <div class="info-Section__info"> 
+        <div class="info-Section__info__header">
+          <p>Bredt spekter av tjenester</p>
           <h2>Tjenestene du trenger, når du trenger dem</h2>
         </div>
-        <p>Å bestille et møterom gir deg tilgang til en rekke tjenester som kan bidra til å gjøre møtet ditt til en suksess. Tjenestene kan du bestille på forhånd, så har vi alt satt opp og klart til bruk samme dag.
-
+        <p>Å bestille et møterom gir deg tilgang til en rekke tjenester som kan bidra til å gjøre møtet ditt til en suksess. 
+          Tjenestene kan du bestille på forhånd, så har vi alt satt opp og klart til bruk samme dag.
         </p>
-        <ul class="infoGrid">
+        <ul class="info-Section__info__flex">
           <li>
             <img src="img\Booking-icons\Laptop.png" alt="telefon">
             <p>Support for IT- og teknisknologi</p>
@@ -335,95 +356,91 @@
         <hr>
       </div>
     </section>
-
-    
   </main>
 
 
 
 
 
-<!--Footer Start-->
-<footer>
-  <div class="footerCointainer">
-    <section class="kontaktOss">
-      <h2>Kontakt oss</h2>
-      <div>
-        <figure>
-          <img src="img/Telefon_icon.png" alt="Telefon ikon">
-        </figure>
-        <a href="tel: +4712345678">
-          <p>+47 123 45 678</p>
-        </a>
-        <figure>
-          <img src="img/Mail_icon.png" alt="E post ikon">
-        </figure>
-        <a href="mailto:c-sons@example.com">
-          <p>E - Post</p>
-        </a>
-        <figure>
-          <img src="img/Instagram_icon.png" alt="Instagram ikon">
-        </figure>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-          <p>Instagram</p>
-        </a>
-        <figure>
-          <img src="img/Facebook_icon.png" alt="Facebook ikon">
-        </figure>
-        <a href="https://facebook.com" target="_blank" rel="noopener">
-          <p>Facebook</p>
-        </a>
-        <figure>
-          <img src="img/Twitter_icon.png" alt="Twitter ikon">
-        </figure>
-        <a href="https://twitter.com/" target="_blank" rel="noopener">
-          <p>Twitter</p>
-        </a>
-    </div>
-    </section>
+  <!--Footer Start-->
+  <footer>
+    <div class="footerCointainer">
+      <section class="kontaktOss">
+        <h2>Kontakt oss</h2>
+        <div class="kontaktOss__sosialemedier">
+          <figure class="kontaktOss__sosialemedier__bilde">
+            <img src="img\footer-images\Telefon_icon.png" alt="Telefon ikon">
+          </figure>
+          <a href="tel: +4712345678">
+            <p>+47 123 45 678</p>
+          </a>
+          <figure class="kontaktOss__sosialemedier__bilde">
+            <img src="img\footer-images\Mail_icon.png" alt="E post ikon">
+          </figure>
+          <a href="mailto:c-sons@example.com">
+            <p>c-sons@example.com</p>
+          </a>
+          <figure class="kontaktOss__sosialemedier__bilde">
+            <img src="img\footer-images\Instagram_icon.png" alt="Instagram ikon">
+          </figure>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+            <p>Instagram</p>
+          </a>
+          <figure class="kontaktOss__sosialemedier__bilde">
+            <img src="img\footer-images\Facebook_icon.png" alt="Facebook ikon">
+          </figure>
+          <a href="https://facebook.com" target="_blank" rel="noopener">
+            <p>Facebook</p>
+          </a>
+          <figure class="kontaktOss__sosialemedier__bilde">
+            <img src="img\footer-images\Twitter_icon.png" alt="Twitter ikon">
+          </figure>
+          <a href="https://twitter.com/" target="_blank" rel="noopener">
+            <p>Twitter</p>
+          </a>
+        </div>
+      </section>
 
-    <section class="åpningstider">
-      <h2>Åpningstider</h2>
-      <div>
-        <p>Mandag - Torsdag:</p>
-        <p>09-22</p>
-      </div>
-      <div>
-        <p>Fredag:</p>
-        <p>09-23</p>
-      </div>
-      <div>
-        <p>Lørdag:</p>
-        <p>10-23</p>
-      </div>
-      <div>
-        <p>Søndag:</p>
-        <p>10-20</p>
-      </div>
-    </section>
-    
-    <section class="adr">
-      <h2>Finn oss</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno" 
-      width="300" 
-      height="200" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade"
-      aria-label="Google maps"></iframe>
-      <div>
-        <a href="https://goo.gl/maps/tBUQerRK4z7mX8H1A" target="_blank" rel="noopener">
+      <section class="åpningstider">
+        <h2>Åpningstider</h2>
+        <div class="åpningstider__tidspunkt">
+          <p>Mandag - Torsdag:</p>
+          <p>09-22</p>
+        </div>
+        <div class="åpningstider__tidspunkt">
+          <p>Fredag:</p>
+          <p>09-23</p>
+        </div>
+        <div class="åpningstider__tidspunkt">
+          <p>Lørdag:</p>
+          <p>10-23</p>
+        </div>
+        <div class="åpningstider__tidspunkt">
+          <p>Søndag:</p>
+          <p>10-20</p>
+        </div>
+      </section>
+      
+      <section class="adresse">
+        <h2>Finn oss</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno" 
+        width="300" 
+        height="200" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        aria-label="Google maps"></iframe>
+        <a href="https://goo.gl/maps/tBUQerRK4z7mX8H1A" target="_blank" rel="noopener" class="adresse__link">
           <p>Ellen Gleditschs hus</p>
           <p>Pilestredet 35</p>
           <p>0166 Oslo</p>
         </a>
-      </div>
-    
-    </section>
-  </div>
-</footer>
-<!--Footer slutt-->
+
+      </section>
+    </div>
+  </footer>
+  <!--Footer slutt-->
 </body>
 
   

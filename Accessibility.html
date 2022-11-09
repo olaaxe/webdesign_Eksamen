@@ -18,45 +18,47 @@
 <body class="body">
 
   <!-- Header Start -->
-  <header>
-    <section class="logo">
-      <img class="logo__bildet" src="img\Logo_new.transparent.png" alt="C-SONS Logo">
+  <header class="header">
+    <section class="header__logo">
+      <a href="index.html">
+        <img src="img\header-images\Logo_new.transparent.png" alt="C-SONS Logo">
+      </a>
     </section>
-    <div>
+    <section class="header__content">
       <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
-      <label class='menu-icon-container' for="menu-checkbox-toggle">
+      <label class='header__content__icon-container' for="menu-checkbox-toggle">
         <figure>
-          <img class="menu-open menu-icon-img" src="img\Burgermeny_transparent.png" alt="Åpne burgermeny">
-          <img class="menu-close menu-icon-img" src="img\Cross_Transparent.png" alt="Lukk Burgermeny">
+          <img class="menu-open menu-icon-img" src="img\header-images\Burgermeny_transparent.png" alt="Åpne burgermeny">
+          <img class="menu-close menu-icon-img" src="img\header-images\Cross_Transparent.png" alt="Lukk Burgermeny">
         </figure>
       </label>
-    <nav class="menuNav" aria-label="Side Header">
-      <a href="index.html">
-        <p>
-          Front&nbsp;page
-        </p></a>
-      <a href="booking.html">
-        <p>
-        Booking
-      </p>
-      </a> 
-      <a href="cafe.html">
-        <p>
-          Restaurant
-        </p>
-      </a>
-      <a href="Accessibility.html">
-        <p class="headerActive">
-          Accessibility
-        </p>
-      </a>
-      <a href="topical.html">
-        <p>
-          Topical
-        </p>
-      </a>
-    </nav>
-  </div>
+      <nav class="header__content__nav" aria-label="Side Header">
+        <a class="header__content__nav__button" href="index.html">
+          <p>
+            Hjemmeside
+          </p></a>
+        <a class="header__content__nav__button" href="booking.html">
+          <p>
+            Reserver
+          </p>
+        </a> 
+        <a class="header__content__nav__button" href="cafe.html">
+          <p>
+            Restaurant
+          </p>
+        </a>
+        <a class="header__content__nav__button" href="Accessibility.html">
+          <p class="headerActive">
+            Inkludering
+          </p>
+        </a>
+        <a class="header__content__nav__button" href="topical.html">
+          <p>
+            Aktuelt
+          </p>
+        </a>
+      </nav>
+    </section>
   </header>
   <!-- Header Slutt -->
 <main>
@@ -70,35 +72,37 @@
       </p>
 
     <figure class="bildeboks">
-      <img src="img\accessability-images\H1_error.png" alt="">
-      <figcaption>dette er en error</figcaption>
+      <img src="img\accessability-images\H1_error.png" alt="Feilmelding som  ber oss bruke bare 1 H1 per side">
+      <figcaption>Eksempel på en enkel feilmelding vi fikk</figcaption>
     </figure>
 
     <figure class="bildeboks row-span-2">
-      <img  src="img\accessability-images\Imagetekst_redundant.png" alt="">
+      <img  src="img\accessability-images\Imagetekst_redundant.png" alt="Skjermbilde av feilmelding for bruk av bildetekst">
       <figcaption>Eksempel av en feilmelding vi fikk; vi hadde skrevet image i bildebeskrivelsen, noe som skjermlesere allerede leser opp</figcaption>
     </figure>
 
     
       <p>
-        vi var allerede obs på bruken av font farger som hadde bra kontrast med bakgrunnen før vi startet så vi fikk ingen
+        Vi var allerede obs på bruken av font farger som hadde bra kontrast med bakgrunnen før vi startet så vi fikk ingen
         feilmeldinger på det når vi kjørte programmet for å teste tilgjengligheten, vi var også obs på å passe på at avsnittene
         våre ikke ble for brede eller lange, for at det skulle være enkelt å skumme innholdet
-        Utenom det var det mye vi ikke tenkte på, som vi fikk bedre kunnskap om når vi brukte 
+        utenom det var det mye vi ikke tenkte på, som vi fikk bedre kunnskap om når vi brukte 
         polypane, f.eks at man ikke trenger å skrive bilde (eller image på engelsk) i bildeteksten, siden
         en skjermleser allerede leser opp at det er ett bilde den beskriver, noe som ville gjort at brukere 
         med skjermleser ville fått den informasjone dobbelt. 
       
       </p>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur quod porro dolor eaque libero aut asperiores ex fugit repudiandae nulla sit quo illo cumque eveniet, consequatur nemo, ad nostrum tempora!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ea consequatur, modi laudantium eveniet maiores amet quibusdam asperiores molestias reprehenderit, deleniti qui exercitationem unde repudiandae blanditiis eius impedit assumenda dolor?
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ea minus esse, iste, aperiam, itaque debitis quo repellendus consequuntur est quis eligendi eaque ducimus recusandae nam distinctio eveniet sint nostrum!
+        Vi fikk forståelse for at det ikke bare holdt å skrive «Image missing» som bilde tekst, men at vi skulle 
+        ha en ordentlig beskrivelse av bildet. Dette er pågrunn av at skjermleser skal kunne lese opp en beskrivelse 
+        av bildet, om svaksynte skal bruke nettsiden vår. Vi fant også da ut at vi ikke trengte å bruke «Image» eller 
+        «Bilde» på norsk for å beskrive bildet, da de skjermleseren som er laget for svaksynte allerede gjør det. Derav 
+        feilmeldingen «Redundant» som vi fikk i Polypane
       </p>
     
       
       <figure class="bildeboks row-span-2 col-span-2">
-        <img  src="img\accessability-images\Focus_page_order.png" alt="">
+        <img  src="img\accessability-images\Focus_page_order.png" alt="Skjermbilde av streker på nettsiden som viser rekkeføgen nettleseren forstår at siden er i">
         <figcaption>
           Her ser vi at rekkefølgen hadde ført en bruker som navigerte med tastatur/skjermleser til 
           bunnen av siden rett etter navigasjonsbaren, for så å navigere til toppen av det faktiske innholdet tilslutt
@@ -113,8 +117,10 @@
       </p>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo ipsa quaerat quo nobis suscipit sequi nemo illum impedit cum libero similique autem facere, cumque vel, sit, quam laboriosam voluptatibus.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, exercitationem! Soluta, id ex debitis sequi facilis odit. Aperiam corrupti harum reiciendis alias, quisquam eaque dolores. Expedita quod perferendis nesciunt quasi.
+        Vi valgte å bruke REM for de forskjellige font-størrelsene våre, istedenfor å bruke en fastlåst størrelse som px, 
+        dette gjør at nettsiden endrer seg om noen bruker en annen en default font størrelse på sin enhet. Default størrelse 
+        er 16px, så for å gjøre det lett for oss å konvertere fra px har vi satt font-størrelse i HTML taggen til 62.5%. 
+        Dette gjør at 1 rem blir lik 10px. Om en bruker da har satt sin font-størrelse til for eksempel 32px vil teksten vår også dobble seg.
       </p>
 
 
@@ -128,86 +134,84 @@
   </article>
 </main>
 
-<!--Footer Start-->
-<footer>
-  <div class="footerCointainer">
-   <section class="kontaktOss">
-      <h2>Kontakt oss</h2>
-      <div>
-        <figure>
-          <img src="img/Telefon_icon.png" alt="Telefon ikon">
-        </figure>
-        <a href="tel: +4712345678">
-          <p>+47 123 45 678</p>
-        </a>
-        <figure>
-          <img src="img/Mail_icon.png" alt="E post ikon">
-        </figure>
-        <a href="mailto:c-sons@example.com">
-          <p>E - Post</p>
-        </a>
-        <figure>
-          <img src="img/Instagram_icon.png" alt="Instagram ikon">
-        </figure>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-          <p>Instagram</p>
-        </a>
-        <figure>
-          <img src="img/Facebook_icon.png" alt="Facebook ikon">
-        </figure>
-        <a href="https://facebook.com" target="_blank" rel="noopener">
-          <p>Facebook</p>
-        </a>
-        <figure>
-          <img src="img/Twitter_icon.png" alt="Twitter ikon">
-        </figure>
-        <a href="https://twitter.com/" target="_blank" rel="noopener">
-          <p>Twitter</p>
-        </a>
-    </div>
-    </section>
+  <!--Footer Start-->
+  <footer>
+    <div class="footerCointainer">
+      <section class="kontaktOss">
+        <h2>Kontakt oss</h2>
+        <div class="kontaktOss__sosialemedier">
+          <figure class="kontaktOss__sosialemedier__bilde">
+            <img src="img\footer-images\Telefon_icon.png" alt="Telefon ikon">
+          </figure>
+          <a href="tel: +4712345678">
+            <p>+47 123 45 678</p>
+          </a>
+          <figure class="kontaktOss__sosialemedier__bilde">
+            <img src="img\footer-images\Mail_icon.png" alt="E post ikon">
+          </figure>
+          <a href="mailto:c-sons@example.com">
+            <p>c-sons@example.com</p>
+          </a>
+          <figure class="kontaktOss__sosialemedier__bilde">
+            <img src="img\footer-images\Instagram_icon.png" alt="Instagram ikon">
+          </figure>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+            <p>Instagram</p>
+          </a>
+          <figure class="kontaktOss__sosialemedier__bilde">
+            <img src="img\footer-images\Facebook_icon.png" alt="Facebook ikon">
+          </figure>
+          <a href="https://facebook.com" target="_blank" rel="noopener">
+            <p>Facebook</p>
+          </a>
+          <figure class="kontaktOss__sosialemedier__bilde">
+            <img src="img\footer-images\Twitter_icon.png" alt="Twitter ikon">
+          </figure>
+          <a href="https://twitter.com/" target="_blank" rel="noopener">
+            <p>Twitter</p>
+          </a>
+        </div>
+      </section>
 
-    <section class="åpningstider">
-      <h2>Åpningstider</h2>
-      <div>
-        <p>Mandag - Torsdag:</p>
-        <p>09-22</p>
-      </div>
-      <div>
-        <p>Fredag:</p>
-        <p>09-23</p>
-      </div>
-      <div>
-        <p>Lørdag:</p>
-        <p>10-23</p>
-      </div>
-      <div>
-        <p>Søndag:</p>
-        <p>10-20</p>
-      </div>
-    </section>
-    
-    <section class="adr">
-      <h2>Finn oss</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno" 
-      width="300" 
-      height="200" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade"
-      aria-label="Google maps"></iframe>
-      <div>
-        <a href="https://goo.gl/maps/tBUQerRK4z7mX8H1A" target="_blank" rel="noopener">
+      <section class="åpningstider">
+        <h2>Åpningstider</h2>
+        <div class="åpningstider__tidspunkt">
+          <p>Mandag - Torsdag:</p>
+          <p>09-22</p>
+        </div>
+        <div class="åpningstider__tidspunkt">
+          <p>Fredag:</p>
+          <p>09-23</p>
+        </div>
+        <div class="åpningstider__tidspunkt">
+          <p>Lørdag:</p>
+          <p>10-23</p>
+        </div>
+        <div class="åpningstider__tidspunkt">
+          <p>Søndag:</p>
+          <p>10-20</p>
+        </div>
+      </section>
+      
+      <section class="adresse">
+        <h2>Finn oss</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno" 
+        width="300" 
+        height="200" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        aria-label="Google maps"></iframe>
+        <a href="https://goo.gl/maps/tBUQerRK4z7mX8H1A" target="_blank" rel="noopener" class="adresse__link">
           <p>Ellen Gleditschs hus</p>
           <p>Pilestredet 35</p>
           <p>0166 Oslo</p>
         </a>
-      </div>
-    
-    </section>
-  </div>
-</footer>
-<!--Footer slutt-->
+
+      </section>
+    </div>
+  </footer>
+  <!--Footer slutt-->
 </body>
 </html>

@@ -1,14 +1,12 @@
 .intro__overskrift{
   padding-top: 1rem;
   padding-bottom: 1.5rem;
-  font-size: 2.5rem;
 }
 
 
 .intro-wrapper {
   display: flex;
   flex-wrap: wrap-reverse;
-  padding-top: min(40px, 95%);
   padding-bottom: min(20px, 95%);
   gap: 30px;
 }
@@ -17,7 +15,28 @@
   flex: 1 1 48%;
 }
 
-.intro__img {
+/* .intro__img img{
   width: 100%;
   border-radius: 5px;  
+} */
+
+.intro__img{
+  overflow: hidden;
+}
+
+p {
+  padding-top: 2rem;
+}
+.intro__img img{
+  width: 100%;
+  min-height: 388px;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  border-radius: 5px;
+}
+@media(max-width: 789px){
+  .intro__img img{
+    min-height: auto;
+    max-height: 300px;
+  }
 }

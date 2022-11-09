@@ -15,6 +15,7 @@
 }
 
 
+
 .bildecontainer > figcaption{
   padding-left: auto;
   padding-right: auto;
@@ -24,7 +25,6 @@
   border-radius: 0 0 5px 5px;
 }
 h1{
-  font-size: 5rem;
   text-align: center;
 }
 
@@ -32,8 +32,8 @@ h1{
   /*background-color: rgb(46,46,46);*/
   display:grid;
   gap: 8px;
-  margin-top: 2em;
-  grid-template-columns: 1fr;
+  margin-bottom: 2em;
+  grid-template-columns: 1fr 1fr;
   padding-left: auto;
   padding-right: auto;
 
@@ -43,21 +43,33 @@ h1{
   padding: max(1vh, 1rem);
 
 }
+  
+.topicalGrid > p{
+  max-width: 80%;
+}
+.col-span-2{
+  grid-column: span 2;
+}
+.row-span-2{
+  grid-row: span 2;
+}
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   .topicalGrid{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
+
   .col-span-2{
-    grid-column: span 2;
+    grid-column: span 1;
   }
   .row-span-2{
-    grid-row: span 2;
+    grid-row: span 1
   }
-  
-  .topicalGrid > p{
-    max-width: 80%;
+  .display-none-max-700px{
+    display: none;
   }
+
+
 }
 
 .topicalGrid > figure > img{

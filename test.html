@@ -12,50 +12,57 @@
 </head>
 
 <body >
-  <main id="Dark" style="background-color: var(--clr-bakgrunn);">
-    <!-- Header Start -->
-    <header>
-      <section class="logo">
-        <img class="logo__bildet" src="img\Logo_new.transparent.png" alt="C-SONS Logo">
-      </section>
-    <div>
+  <!-- Header Start -->
+  <header class="header">
+    <section class="header__logo">
+      <a href="test.html">
+        <img src="img\header-images\Logo_new.transparent.png" alt="C-SONS Logo">
+      </a>
+    </section>
+    <section class="header__content">
       <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
-      <label class='menu-icon-container' for="menu-checkbox-toggle">
+      <label class='header__content__icon-container' for="menu-checkbox-toggle">
         <figure>
-          <img class="menu-open menu-icon-img" src="img\Burgermeny_transparent.png" alt="Åpne burgermeny">
-          <img class="menu-close menu-icon-img" src="img\Cross_Transparent.png" alt="Lukk Burgermeny">
+          <img class="menu-open menu-icon-img" src="img\header-images\Burgermeny_transparent.png" alt="Åpne burgermeny">
+          <img class="menu-close menu-icon-img" src="img\header-images\Cross_Transparent.png" alt="Lukk Burgermeny">
         </figure>
       </label>
-      <nav class="menuNav" aria-label="Side Header">
-        <a href="index.html">
-          <p class="headerActive">
+      <nav class="header__content__nav" aria-label="Side Header">
+        <a class="header__content__nav__button" href="index.html">
+          <p>
             Front&nbsp;page
           </p></a>
-        <a href="booking.html">
+        <a class="header__content__nav__button" href="booking.html">
           <p>
           Booking
         </p>
         </a> 
-        <a href="cafe.html">
+        <a class="header__content__nav__button" href="cafe.html">
           <p>
             Restaurant
           </p>
         </a>
-        <a href="Accessibility.html">
+        <a class="header__content__nav__button" href="Accessibility.html">
           <p>
             Accessibility
           </p>
         </a>
-        <a href="topical.html">
-          <p>
+        <a class="header__content__nav__button" href="topical.html">
+          <p class="headerActive">
             Topical
           </p>
         </a>
       </nav>
-    </div>
-    </header>
-    <!-- Header Slutt -->
+    </section>
+  </header>
+<!-- Header Slutt -->
 
+
+
+
+
+
+  <main>
     <section class="Card-Flex">
       <div class="Card">
         <div class="Card__info">
@@ -82,27 +89,6 @@
               <div class="Cards__button">Reserver</div>
             </label>
           </div>
-        </div><!-- Card__info -->
-        <input type="checkbox" name="SpawnContactForm" id="form"> <!-- Form checkboks -->
-        <div class="Card__form">
-          <div>
-
-            <h3>Book</h3>
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-              required>
-            <input type="datetime-local" name="date" required>
-            <textarea name="text" placeholder="Ekstra information"></textarea>
-          </div>
-          <div>
-            <div class="Card__form__tos">
-              <input type="checkbox" name="checkbox" required>
-              <p>I agree to the Terms of Service</p>
-            </div>
-            <input class="Cards__button" type="submit" value="Book nå" />
-          </div>
-        </div>
-      </div>
       <!--  -->
       <div class="Card">
         <div class="Card__info">
@@ -131,25 +117,6 @@
           </div>
         </div><!-- Card__info -->
         <input type="checkbox" name="SpawnContactForm" id="form2"> <!-- Form checkboks -->
-        <div class="Card__form">
-          <div>
-
-            <h3>Book</h3>
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-              required>
-            <input type="datetime-local" name="date" required>
-            <textarea name="text" placeholder="Ekstra information"></textarea>
-          </div>
-          <div>
-            <div class="Card__form__tos">
-              <input type="checkbox" name="checkbox" required>
-              <p>I agree to the Terms of Service</p>
-            </div>
-            <input class="Cards__button" type="submit" value="Book nå" />
-          </div>
-        </div>
-      </div>
       <!--  -->
       <div class="Card">
         <div class="Card__info">
@@ -178,24 +145,6 @@
           </div>
         </div><!-- Card__info -->
         <input type="checkbox" name="SpawnContactForm" id="form3"> <!-- Form checkboks -->
-        <div class="Card__form">
-          <div>
-
-            <h3>Book</h3>
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="text" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-              required>
-            <input type="datetime-local" name="date" required>
-            <textarea name="text" placeholder="Ekstra information"></textarea>
-          </div>
-          <div>
-            <div class="Card__form__tos">
-              <input type="checkbox" name="checkbox" required>
-              <p>I agree to the Terms of Service</p>
-            </div>
-            <input class="Cards__button" type="submit" value="Book nå" />
-          </div>
-        </div>
       </div>
     </section>
   </main>

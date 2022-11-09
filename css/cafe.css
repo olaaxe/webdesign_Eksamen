@@ -1,4 +1,13 @@
+h1 {
+  text-align: center;
+}
+hr {
+  margin: 15px 0 15px 0;
+  border-color: rgba(0, 0, 0, 40%);
+}
+
 /* ------- NAVIGASJONSBAR ------- */
+
 .nav-bar {
   width: auto;
   height: auto;
@@ -6,24 +15,24 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 20px 0 20px 0;
 }
-.nav-bar > a {
+.nav-bar__link {
   width: 1fr;
   margin: auto;
   border: none;
   height: 25px;
   background-color: var(--clr-bakgrunn);
 }
-.nav-bar > a > p {
+.nav-bar__link > p {
   font-size: 2rem;
   text-decoration: underline;
   transition: color 0.15s;
   font-weight: 700;
 }
-.nav-bar > a > p:hover {
+.nav-bar__link > p:hover {
   color: var(--clr-rød);
   cursor: pointer;
 }
-.nav-bar > a > p:active {
+.nav-bar__link > p:active {
   color: var(--clr-rød__activate);
 }
 @media (max-width: 600px){
@@ -38,18 +47,8 @@
 
 .retter-wrapper{
   margin: auto;
-  margin-top: 20px;
-  padding: 15px 15px 1px 15px;
+  padding: 40px 15px 1px 15px;
   width: min(1000px,90%);
-}
-h1 {
-  text-align: center;
-  font-size: 4rem;
-}
-
-.retter-wrapper hr {
-  margin: 15px 0 15px 0;
-  border-color: rgba(0, 0, 0, 40%);
 }
 
 /* ------- RETTER HEADER ------- */
@@ -71,41 +70,38 @@ h1 {
 /* ------- RETTER CONTAINER ------- */
 
 
-main h3{
-  color: var(--clr-retter-overskrift);
-}
 .retter-container {
   width: 1fr;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 200px;
 }
-.retter-container > div:nth-child(1) > h3 {
+.retter-container__info > h3 {
   width: 1fr;
   height: auto;
   font-size: 2.5rem;
   margin-bottom: 10px;
-  padding: 10px 10px 0 0px;
+  padding: 10px 10px 0 2px;
 }
-.retter-container > div:nth-child(1) > p:nth-child(2) {
+.retter-container__info > p:nth-child(2) {
   width: 1fr;
   height: auto;
-  padding: 10px 10px 0 0px;
+  padding: 10px 10px 0 2px;
 }
 
-.retter-container > div:nth-child(1) > p:nth-child(3) {
+.retter-container__info > p:nth-child(3) {
   width: 1fr;
   height: auto;
   font-style: italic;
-  padding: 60px 10px 10px 0px;
+  padding: 60px 10px 10px 2px;
 }
-.retter-container > div:nth-child(2) {
+.retter-container__bilde {
   align-items: center;
   padding: auto;
   margin: auto;
   display: flex;
 }
-.retter-container > div:nth-child(2) > img {
+.retter-container__bilde > img {
   object-fit: cover;
   max-width:96%;
   max-height:96%;
@@ -117,13 +113,13 @@ main h3{
   .retter-container {
     grid-template-columns: 1fr;
   }
-  .retter-container > div:nth-child(1) > h1 {
+  .retter-container__info > h1 {
     width: min(400px,90%);
   }
-  .retter-container > div:nth-child(1) > p:nth-child(2) {
+  .retter-container__info > p:nth-child(2) {
     width: min(400px,90%);
   }
-  .retter-container > div:nth-child(1) > p:nth-child(3) {
+  .retter-container__info > p:nth-child(3) {
     width: min(400px,90%);
   }
 }

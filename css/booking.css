@@ -1,23 +1,29 @@
 /*dadadddddddddddddddddddd*/
-h2, h1{
-  font-size: 30px;
-  font-weight: bold;
+h2 {
+  font-size: 3rem;
 }
 .intro-booking{
   flex-wrap: wrap-reverse;
   gap: 2rem;
-  padding-top: 40px;
 }
 .intro-booking >*{
   flex: 1 1 45%;
 }
-.intro-booking img{
+.intro-booking__img{
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.intro-booking__img img{
+  /* width: 100%;
+  margin-bottom: 2em; */
   width: 100%;
-  margin-bottom: 2em;
-  
+  max-height: 400px;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+  border-radius: 5px;
 }
 .intro-booking__info{
-  margin: 0 0 4rem 0;
+  margin: 3rem 0 4rem 0;
 }
 .intro-booking__info p{
   padding: 0 0 3rem 0;
@@ -27,7 +33,16 @@ h2, h1{
   padding: 1rem 5rem;
   margin: 1rem 0;
 }
+.intro-booking__info a:hover{
+  color: var(--clr-knapper);
+}
 
+.Card-introtekst{
+  margin: 2rem 0 0;
+}
+.Card-introtekst >*{
+  margin-bottom: 1.5rem;
+}
 
 .Card-Flex{
   display: flex;
@@ -185,7 +200,7 @@ input#form, input#form2, input#form3{
 }
 
 .Cards__button:active {
-  background-color: var(h--clr-rød__over);
+  background-color: var(--clr-rød__activate);
 }
 .Cards__button#submit{
   border: 0;
@@ -198,45 +213,56 @@ input#form, input#form2, input#form3{
 
 /*ending på andre delen*/
 
-.infoSection{
+.info-Section{
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 5rem;
-  margin: 4rem 0;
+  margin: 6rem 0;
+  
 }
-.infoSection#reverse{
+.info-Section#reverse{
   grid-template-columns: 2fr 1fr;
 }
-.infoSection .H-comment{
+
+.info-Section__img{
+  margin: auto 0;
+  overflow: hidden;
+}
+.info-Section__img img{
+  width: 100%;
+  max-height: 500px;
+  aspect-ratio: 0.66/1;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.info-Section__info__header p{
   padding: 0;
   font-size: 1.7rem;
 }
-.infoSection figure{
-  margin: auto 0;
-}
-.infoSection img{
-  width: 100%;
-}
-.infoSection > div > *:not(hr){
+
+.info-Section__info > *:not(hr){
   padding: 2rem 0; /* Endre????*/
 }
-.infoSection hr{
+.info-Section__info hr{
   opacity: 40%;
 }
 
-.infoGrid{
+.info-Section__info__flex{
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
-.infoGrid li{
+.info-Section__info__flex li{
   display: flex;
   flex: 1 1 26rem;
   gap: 1rem;
 }
-.infoGrid li img{
-  width: 2rem;
-  height: 2rem;
+.info-Section__info__flex li img{
+  flex-basis: 2rem;
+  max-height: 2rem;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 @media (max-width: 700px){
@@ -244,14 +270,14 @@ input#form, input#form2, input#form3{
     grid-template-columns: 1fr;
   }
 
-  .infoSection{
+  .info-Section{
     grid-template-columns: 1fr;
     gap: 0;
   }
-  .infoSection#reverse{
+  .info-Section#reverse{
     grid-template-columns: 1fr;
   }
-  .infoSection > figure{
+  .info-Section__img{
     display: none;
   }
 }

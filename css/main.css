@@ -6,7 +6,6 @@
   --clr-tekst: rgb(46, 46, 46);
   --clr-knapper: rgb(255, 255, 255);
   --clr-boocking__card: rgb(255, 253, 248);
-  --clr-retter-overskrift: rgb(0, 0, 0);
 
   --clr-grå: rgb(46,46,46);
   --clr-beige: rgb(225, 215, 196);
@@ -28,11 +27,10 @@
   :root{
     --clr-header: linear-gradient( 30deg, rgb(0, 0, 0) 0%, rgb(32, 32, 32) 100%);
     --clr-bakgrunn: rgb(31, 31, 31);
-    --clr-overskrift: rgb(225, 215, 196);
+    --clr-overskrift: rgb(255, 250, 240);
     --clr-tekst: rgb(225, 215, 196);
     --clr-knapper: rgb(255, 250, 240);
     --clr-boocking__card: rgb(26, 26, 26);
-    --clr-retter-overskrift: rgb(255, 250, 240);
   }
 }
 main h1:after,
@@ -45,10 +43,16 @@ main h2:after{
   background-color: var(--clr-rød);
   transform: translate(3px, 2px);
 }
+main a:hover{
+  color: var(--clr-rød__hover);
+}
 
 p{
   padding-bottom: 1rem;
   line-height: 1.5em;
+}
+h1 {
+  font-size: 4rem;
 }
 
 
@@ -62,7 +66,8 @@ body ::selection{
 body{
   margin: 0px;
   position: relative;
-  padding-top: 218px;
+  /* padding-top: 218px; */
+   /* Fjerner pga test endring av header fiks ved å fjerne denne lina + 1 til */
   background-color: var(--clr-bakgrunn);
   display: flex;
   flex-direction: column;
@@ -86,20 +91,24 @@ html{
   font-weight: bold;
 }
 
-.HeaderCenterButton {
-  text-align: center;
-}
 main{
   margin: 0 auto; 
   max-width: 1000px;
   flex: 1 0 auto;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 4rem 2rem 1rem 2rem;
 }
+
+.hr_opacity {
+  opacity: 40%;
+  margin-bottom: 1rem;
+}
+
 header{
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; */ 
+  /* Fjerner pga test endring av header fiks ved å fjerne denne lina + 1 til */
   background: var(--clr-header);/*<--Header farge*/
   box-sizing: border-box;
 }
