@@ -70,40 +70,54 @@
     <div> <!-- Polypane Test -->
       <section class="polypane">
         <figure class="img">
-          <img src="img\accessability-images\H1_error.png" alt="Feilmelding som  ber oss bruke bare 1 H1 per side">
+          <img src="css\Alt\H1_error.png" alt="Feilmelding som  ber oss bruke bare 1 H1 per side">
         </figure>
+        <div class="polypane__text">
+          <h2>Headdings</h2>
           <p>For den automatiske testen brukte vi et program som heter Polypane. Gjennom Polypane fant vi ut hvordan vi skulle 
             bruke &lt;H&gt; elementer slik at nettsiden blir strukturert riktig. Den sa i fra om at det kun kunne være et H1 element per 
             side og viste hvordan en automatisk frembrakt innholdsfortegnelse ville se ut. Dette er nyttig for bl.a. skjermlesere.
           </p>
+        </div>
+      </section>
+      
+      <hr>
+
+      <section class="polypane">
+        <div class="polypane__text">
+          <h2>Alt tekst</h2>
+          <p>
+            Vi fant også ut hvordan og hvorfor vi må gi en alt-tekst til bildene våre. Polypane ga en feilmelding hvis bildet 
+            manglet test eller brukte unødvendige ord som image når vi beskrev bildet. Dette er også nyttig for skjermlesere slik 
+            at svaksynte kan høre hva som er på bildet, eller hvis bildet av en eller annen grunn ikke laster inn så står det hva 
+            som skulle vært der.
+          </p>
+        </div>
+        
+        <figure class="img">
+          <img  src="css\Alt\Img-tekst-redundant.png" alt="Skjermbilde av feilmelding for bruk av bildetekst">        
+        </figure>
       </section>
 
-      <section class="polypane-reverse">
-        <figure class="img">
-          <img  src="img\accessability-images\Img-tekst-redundant.png" alt="Skjermbilde av feilmelding for bruk av bildetekst">        
-        </figure>
-        <p>
-          Vi fant også ut hvordan og hvorfor vi må gi en alt-tekst til bildene våre. Polypane ga en feilmelding hvis bildet 
-          manglet test eller brukte unødvendige ord som image når vi beskrev bildet. Dette er også nyttig for skjermlesere slik 
-          at svaksynte kan høre hva som er på bildet, eller hvis bildet av en eller annen grunn ikke laster inn så står det hva 
-          som skulle vært der.
-        </p>
-      </section>
+      <hr>
 
       <section class="polypane">
         <figure class="img">
           <img  src="img\accessability-images\Focus_page_order.png" alt="Skjermbilde av streker på nettsiden som viser rekkeføgen nettleseren forstår at siden er i før test">
-        </figure>
-        <figure class="img">
           <img src="img\accessability-images\Focus-order-fix.png" alt="Skjermbilde av streker på nettsiden som viser rekkeføgen nettleseren forstår at siden er i etter test">
         </figure>
-        <p class="span2">
-          En annen, men relatert test var kalt «focus-order». Denne testen kjekket i hvilken rekkefølge de forskjellige linkene 
-          kom. Vi fant da kjapt ut at vi ikke hadde alle lenkene i riktig rekkefølge. Problemet med det er at brukeren ville 
-          hoppet opp og ned på siden mens hen brukte tab for å navigere.
-        </p>
+        <div class="polypane__text">
+          <h2>Focus order</h2>
+          <p class="span2">
+            En annen, men relatert test var kalt «focus-order». Denne testen kjekket i hvilken rekkefølge de forskjellige linkene 
+            kom. Vi fant da kjapt ut at vi ikke hadde alle lenkene i riktig rekkefølge. Problemet med det er at brukeren ville 
+            hoppet opp og ned på siden mens hen brukte tab for å navigere.
+          </p>
+        </div>
       </section>
     </div>
+
+    <hr>
 
     <section> <!-- REM -->
       <video src="img\accessability-images\REM.mp4" autoplay="true" controls muted loop height="200px"></video>
