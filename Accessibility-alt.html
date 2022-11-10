@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <title>C-SONS / Inkludering</title>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/Accessibility.css">
+  <link rel="stylesheet" href="css/Alt/Accessibility-alt.css">
   <link rel="stylesheet" href="css/Header_Footer.css">
   <link rel="website icon" type="png" href="img\header-images\Logo_web_icon.png">
   
@@ -22,7 +22,7 @@
   <!-- Header Start -->
   <header class="header">
     <section class="header__logo">
-      <a href="Accessibility-alt.html">
+      <a href="index.html">
         <img src="img\header-images\Logo_new.transparent.png" alt="C-SONS Logo">
       </a>
     </section>
@@ -63,95 +63,91 @@
     </section>
   </header>
   <!-- Header Slutt -->
-<main>
-  
-  <!-- Skriftstørrelse -->
-  <!-- Darkmode -->
-
-    <!-- @media og wrap -->
-
-  <article class="accesibilityGrid">
-    <h1 class="col-span-2">Inkluderende design</h1>
-      <p>
-        Vi åpnet nettsiden vår i polypane for å lete etter problemer knyttet til inkluderende design. 
-        Polypane hadde en egen side for å gi oss feilmeldinger knyttet opp mot det. Feil vi fant var blant 
-        annet at vi hadde brukt H1 flere enn ett sted på samme side, eller at vi brukte image i 
-        bildeteksten til bildene våre, når skjermlesere allerede leser opp at den leser bildetekst.
-      </p>
-
-    <figure class="bildeboks">
-      <img src="img\accessability-images\H1_error.png" alt="Feilmelding som  ber oss bruke bare 1 H1 per side">
-      <figcaption>Eksempel på en enkel feilmelding vi fikk</figcaption>
-    </figure>
-
-    <figure class="bildeboks row-span-2">
-      
-      <img  src="img\accessability-images\Imagetekst_redundant.png" alt="Skjermbilde av feilmelding for bruk av bildetekst">
-      <figcaption>Eksempel av en feilmelding vi fikk; vi hadde skrevet image i bildebeskrivelsen, noe som skjermlesere allerede leser opp</figcaption>
-    </figure>
-
-    
-      <p>
-        Vi var allerede obs på bruken av font farger som hadde bra kontrast med bakgrunnen før vi startet så vi fikk ingen
-        feilmeldinger på det når vi kjørte programmet for å teste tilgjengligheten. Vi var også obs på å passe på at avsnittene
-        våre ikke ble for brede eller lange, for at det skulle være enkelt å skumme innholdet
-        utenom det var det mye vi ikke tenkte på, som vi fikk bedre kunnskap om når vi brukte 
-        polypane, f.eks at man ikke trenger å skrive bilde (eller image på engelsk) i bildeteksten, siden
-        en skjermleser allerede leser opp at det er ett bilde den beskriver, noe som ville gjort at brukere 
-        med skjermleser ville fått den informasjone dobbelt. 
-      
-      </p>
-      <p>
-        Vi fikk forståelse for at det ikke bare holdt å skrive «Image missing» som bilde tekst, men at vi skulle 
-        ha en ordentlig beskrivelse av bildet. Dette er pågrunn av at skjermleser skal kunne lese opp en beskrivelse 
-        av bildet, om svaksynte skal bruke nettsiden vår. Vi fant også da ut at vi ikke trengte å bruke «Image» eller 
-        «Bilde» på norsk for å beskrive bildet, da de skjermleseren som er laget for svaksynte allerede gjør det. Derav 
-        feilmeldingen «Redundant» som vi fikk i Polypane
-      </p>
-    
-      
-      <figure class="bildeboks row-span-2 col-span-2">
-        <img  src="img\accessability-images\Focus_page_order.png" alt="Skjermbilde av streker på nettsiden som viser rekkeføgen nettleseren forstår at siden er i">
-        <figcaption>
-          Her ser vi at rekkefølgen hadde ført en bruker som navigerte med tastatur/skjermleser til 
-          bunnen av siden rett etter navigasjonsbaren, for så å navigere til toppen av det faktiske innholdet tilslutt
-        </figcaption>
-      </figure>
-
-      <p>
-        Polypane hjalp oss også med å gjøre siden enklere å navigere igjennom, ved at vi kunne se hvor rekkefølgen
-        av elementene som en browser ser. dette hjelper ved at en bruker som navigerer med tastatur og/eller en skjermleser
-        får navigert igjennom netsiden i riktig rekkefølge, og blir for eksempel ikke sendt til bunnen av siden rett etter
-        toppen, men heller at den hopper til neste logiske element.
-      </p>
-
-      <p>
-        Vi valgte å bruke <abbr title="Root EM">REM</abbr> for de forskjellige font-størrelsene våre, istedenfor å bruke en fastlåst størrelse som px, 
-        dette gjør at nettsiden endrer seg om noen bruker en annen en default font størrelse på sin enhet. Default størrelse 
-        er 16px, så for å gjøre det lett for oss å konvertere fra px har vi satt font-størrelse i HTML taggen til 62.5%. 
-        Dette gjør at 1 rem blir lik 10px. Om en bruker da har satt sin font-størrelse til for eksempel 32px vil teksten vår også dobble seg.
-      </p>
 
 
-    
+  <main>
+    <h1>Inkluderende design</h1>
+    <div> <!-- Polypane Test -->
+      <section class="polypane">
+        <figure class="img">
+          <img src="img\accessability-images\H1_error.png" alt="Feilmelding som  ber oss bruke bare 1 H1 per side">
+        </figure>
+          <p>For den automatiske testen brukte vi et program som heter Polypane. Gjennom Polypane fant vi ut hvordan vi skulle 
+            bruke &lt;H&gt; elementer slik at nettsiden blir strukturert riktig. Den sa i fra om at det kun kunne være et H1 element per 
+            side og viste hvordan en automatisk frembrakt innholdsfortegnelse ville se ut. Dette er nyttig for bl.a. skjermlesere.
+          </p>
+      </section>
+
+      <section class="polypane-reverse">
+        <figure class="img">
+          <img  src="img\accessability-images\Img-tekst-redundant.png" alt="Skjermbilde av feilmelding for bruk av bildetekst">        
+        </figure>
+        <p>
+          Vi fant også ut hvordan og hvorfor vi må gi en alt-tekst til bildene våre. Polypane ga en feilmelding hvis bildet 
+          manglet test eller brukte unødvendige ord som image når vi beskrev bildet. Dette er også nyttig for skjermlesere slik 
+          at svaksynte kan høre hva som er på bildet, eller hvis bildet av en eller annen grunn ikke laster inn så står det hva 
+          som skulle vært der.
+        </p>
+      </section>
+
+      <section class="polypane">
+        <figure class="img">
+          <img  src="img\accessability-images\Focus_page_order.png" alt="Skjermbilde av streker på nettsiden som viser rekkeføgen nettleseren forstår at siden er i før test">
+        </figure>
+        <figure class="img">
+          <img src="img\accessability-images\Focus-order-fix.png" alt="Skjermbilde av streker på nettsiden som viser rekkeføgen nettleseren forstår at siden er i etter test">
+        </figure>
+        <p class="span2">
+          En annen, men relatert test var kalt «focus-order». Denne testen kjekket i hvilken rekkefølge de forskjellige linkene 
+          kom. Vi fant da kjapt ut at vi ikke hadde alle lenkene i riktig rekkefølge. Problemet med det er at brukeren ville 
+          hoppet opp og ned på siden mens hen brukte tab for å navigere.
+        </p>
+      </section>
+    </div>
+
+    <section> <!-- REM -->
       <video src="img\accessability-images\REM.mp4" autoplay="true" controls muted loop height="200px"></video>
-    
-    <p>Nettsiden er programert med rem som fontsize istedenfor px. Dette gjør at de som har f.eks dårlig 
-    syn og velger å sette standardfontstørrelsen på enheten sin større, så vil nettsiden vår følge med.</p>
+      <p>Nettsiden er programmert med <abbr title="Root EM">rem</abbr> som fontstørrelse istedenfor px. Dette gjør 
+        at skriftstrørrelsen vil endre seg med det som brukeren har satt som standard. Det er nyttig for mennesker 
+        med dårlig syn som kan ha økt standard fontstørrelse slik at ting blir lettere å lese
+      </p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </section>
 
-    <p>Vi har programert inn både dark og light mode inn i nettsiden vår. Hvilken modus du får avhenger av 
-      hva som er satt som standard. Fordelen med dark mode er at brukeren kan velge og ha en mørkere skjerm 
-      på kveldstid slik at ikke øynene blir like slitene. Darkmode lager også en god kontrast til skriften, 
-      noe som gjør det lettere å lese reksen i hveldig sterkt lys. Lightmode derimot blir lettere å lese på 
-      skjermer med veldig lav lysstyrke.</p>
+    <section><!-- @media -->
+      <figure class="img">
+        <img src="css\Alt\Responsive-design.png" alt="Viser Responsive-design">
+      </figure>
+      <p>
+        Nettsiden er programmert inn med fokus på mottakelig design. Dette skjer ved hjelp av @media og flex-wrap: wrap; 
+        Disse to formene for CSS kode gjør at boksene hvor elementene er plassert endrer seg basert på skjermstørrelse.
+      </p>
+      <p>
+        Vi har tatt utgangspunkt i nyere mobilenheter og funnet ut at 280px bredde er de minste skjermene og derfor passet 
+        ekstra godt på at nettsiden ser korrekt ut. På 320px har vi valgt å fjerne den ekstra padding på &lt;body&gt;, som var 
+          der for å gjøre det lettere å lese, slik at mest mulig informasjon skal kunne vises.
+      </p>
+    </section>
 
-      <video src="img\accessability-images\Darkmode.mp4" autoplay="true" controls muted loop height="200px"></video>
+    <section><!-- Darkmode -->
+      <video src="img\accessability-images\Darkmode.mp4" autoplay="true" controls muted loop></video>
+      <p>Nettsiden er programmert inn med både Dark og Light. Modusen som oppstår avhenger av hva som er standard på 
+        enheten. Darkmode kan ha effekten av å være mindre hard mot øynene i mørke rom, i tillegg vil den økte kontrasten 
+        være til hjelp i veldig lyse omgivelser. Lightmode kan være lettere å lese på mørke skjermen
+        
+        Når vi ser på kontrast, hadde vi ingen problemer siden vi hadde det i bakhodet når vi designet siden. Dette 
+        passet vi på både i Dark- og Lightmode vor vi stort sett bruker beige på svart eller motsatt.
+      </p>
+    </section>
+  </main>
 
 
   
-  </article>
-</main>
-
   <!--Footer Start-->
   <footer>
     <div class="footerCointainer">

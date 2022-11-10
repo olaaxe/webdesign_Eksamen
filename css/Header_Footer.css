@@ -84,6 +84,7 @@
   border: none;
   padding: 8px 0 2px 0;
   font-weight: bold;
+  /* font-size: 2rem; */
   cursor: pointer;
 }
 .header__content__nav__button p:hover {
