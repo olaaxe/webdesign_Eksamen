@@ -15,26 +15,37 @@ h1{
   
 }
 video{
-  max-width: 400px;
-  float: left;
+  height: 200px;
 }
+@media (max-width:400px) {
+  video{
+    max-width: 100%;
+  }
+}
+
 hr{
   margin: 2rem;
   opacity: 40%;
 }
 
-.polypane{
+.AccFlex{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2rem;
   align-items: center;
 }
-.polypane *{
+.AccFlex.reverse{
+  flex-wrap: wrap-reverse;
+}
+.AccFlex.big *{
+  flex: 1 1 100%;
+}
+.AccFlex *{
   flex: 1 1 400px;
   max-height: 300px;
 }
-.polypane__text h2{
+.AccFlex__text h2{
   /* text-align: center; */
   padding-bottom: 1rem;
   font-size: 3rem;

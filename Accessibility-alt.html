@@ -68,11 +68,11 @@
   <main>
     <h1>Inkluderende design</h1>
     <div> <!-- Polypane Test -->
-      <section class="polypane">
+      <section class="AccFlex">
         <figure class="img">
           <img src="css\Alt\H1_error.png" alt="Feilmelding som  ber oss bruke bare 1 H1 per side">
         </figure>
-        <div class="polypane__text">
+        <div class="AccFlex__text">
           <h2>Headdings</h2>
           <p>For den automatiske testen brukte vi et program som heter Polypane. Gjennom Polypane fant vi ut hvordan vi skulle 
             bruke &lt;H&gt; elementer slik at nettsiden blir strukturert riktig. Den sa i fra om at det kun kunne være et H1 element per 
@@ -83,8 +83,8 @@
       
       <hr>
 
-      <section class="polypane">
-        <div class="polypane__text">
+      <section class="AccFlex">
+        <div class="AccFlex__text">
           <h2>Alt tekst</h2>
           <p>
             Vi fant også ut hvordan og hvorfor vi må gi en alt-tekst til bildene våre. Polypane ga en feilmelding hvis bildet 
@@ -101,14 +101,13 @@
 
       <hr>
 
-      <section class="polypane">
+      <section class="AccFlex">
         <figure class="img">
-          <img  src="img\accessability-images\Focus_page_order.png" alt="Skjermbilde av streker på nettsiden som viser rekkeføgen nettleseren forstår at siden er i før test">
-          <img src="img\accessability-images\Focus-order-fix.png" alt="Skjermbilde av streker på nettsiden som viser rekkeføgen nettleseren forstår at siden er i etter test">
+          <img  src="css\Alt\Focus-order-combo.png" alt="Skjermbilde av streker på nettsiden som viser rekkeføgen nettleseren forstår at siden er i før og etter test">
         </figure>
-        <div class="polypane__text">
+        <div class="AccFlex__text">
           <h2>Focus order</h2>
-          <p class="span2">
+          <p>
             En annen, men relatert test var kalt «focus-order». Denne testen kjekket i hvilken rekkefølge de forskjellige linkene 
             kom. Vi fant da kjapt ut at vi ikke hadde alle lenkene i riktig rekkefølge. Problemet med det er at brukeren ville 
             hoppet opp og ned på siden mens hen brukte tab for å navigere.
@@ -119,44 +118,54 @@
 
     <hr>
 
-    <section> <!-- REM -->
-      <video src="img\accessability-images\REM.mp4" autoplay="true" controls muted loop height="200px"></video>
-      <p>Nettsiden er programmert med <abbr title="Root EM">rem</abbr> som fontstørrelse istedenfor px. Dette gjør 
-        at skriftstrørrelsen vil endre seg med det som brukeren har satt som standard. Det er nyttig for mennesker 
-        med dårlig syn som kan ha økt standard fontstørrelse slik at ting blir lettere å lese
-      </p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    </section>
-
-    <section><!-- @media -->
+    <section class="AccFlex big"><!-- @media -->
       <figure class="img">
         <img src="css\Alt\Responsive-design.png" alt="Viser Responsive-design">
       </figure>
-      <p>
-        Nettsiden er programmert inn med fokus på mottakelig design. Dette skjer ved hjelp av @media og flex-wrap: wrap; 
-        Disse to formene for CSS kode gjør at boksene hvor elementene er plassert endrer seg basert på skjermstørrelse.
-      </p>
-      <p>
-        Vi har tatt utgangspunkt i nyere mobilenheter og funnet ut at 280px bredde er de minste skjermene og derfor passet 
-        ekstra godt på at nettsiden ser korrekt ut. På 320px har vi valgt å fjerne den ekstra padding på &lt;body&gt;, som var 
-          der for å gjøre det lettere å lese, slik at mest mulig informasjon skal kunne vises.
-      </p>
+      <div class="AccFlex__text">
+        <h2>Mottakelig design</h2>
+        <p>
+          Nettsiden er programmert inn med fokus på mottakelig design. Dette skjer ved hjelp av @media og flex-wrap: wrap; 
+          Disse to formene for CSS kode gjør at boksene hvor elementene er plassert endrer seg basert på skjermstørrelse.
+        </p>
+        <p>
+          Vi har tatt utgangspunkt i nyere mobilenheter og funnet ut at 280px bredde er de minste skjermene og derfor passet 
+          ekstra godt på at nettsiden ser korrekt ut. På 320px har vi valgt å fjerne den ekstra padding på &lt;body&gt;, som var 
+            der for å gjøre det lettere å lese, slik at mest mulig informasjon skal kunne vises.
+        </p>
+      </div>
     </section>
 
-    <section><!-- Darkmode -->
-      <video src="img\accessability-images\Darkmode.mp4" autoplay="true" controls muted loop></video>
-      <p>Nettsiden er programmert inn med både Dark og Light. Modusen som oppstår avhenger av hva som er standard på 
-        enheten. Darkmode kan ha effekten av å være mindre hard mot øynene i mørke rom, i tillegg vil den økte kontrasten 
-        være til hjelp i veldig lyse omgivelser. Lightmode kan være lettere å lese på mørke skjermen
-        
-        Når vi ser på kontrast, hadde vi ingen problemer siden vi hadde det i bakhodet når vi designet siden. Dette 
-        passet vi på både i Dark- og Lightmode vor vi stort sett bruker beige på svart eller motsatt.
-      </p>
+    <hr>
+
+    <section class="AccFlex"> <!-- REM -->
+      <div class="AccFlex__text">
+        <h2>REM</h2>
+        <p>Nettsiden er programmert med <abbr title="Root EM">rem</abbr> som fontstørrelse istedenfor px. Dette gjør 
+          at skriftstrørrelsen vil endre seg med det som brukeren har satt som standard. Det er nyttig for mennesker 
+          med dårlig syn som kan ha økt standard fontstørrelse slik at ting blir lettere å lese
+        </p>
+      </div>
+
+
+      <video src="img\accessability-images\REM.mp4" autoplay="true" controls muted loop ></video><!-- height="200px" -->
+    </section>
+
+    <hr>
+
+    <section class="AccFlex reverse"><!-- Darkmode -->
+      <video src="img\accessability-images\Darkmode.mp4" autoplay="true" controls muted loop ></video>
+      <div class="AccFlex__text">
+        <h2>Darkmode og Lightmode</h2>
+        <p>Nettsiden er programmert inn med både Dark og Light. Modusen som oppstår avhenger av hva som er standard på 
+          enheten. Darkmode kan ha effekten av å være mindre hard mot øynene i mørke rom, i tillegg vil den økte kontrasten 
+          være til hjelp i veldig lyse omgivelser. Lightmode kan være lettere å lese på mørke skjermen
+        </p>
+        <p>  
+          Når vi ser på kontrast, hadde vi ingen problemer siden vi hadde det i bakhodet når vi designet siden. Dette 
+          passet vi på både i Dark- og Lightmode vor vi stort sett bruker beige på svart eller motsatt.
+        </p>
+      </div>
     </section>
   </main>
 
