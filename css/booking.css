@@ -150,6 +150,7 @@ input#form, input#form2, input#form3{
 #form3 ~.Card__form{
   display: none;
 }
+
 #form:checked ~.Card__form,
 #form2:checked ~.Card__form,
 #form3:checked ~.Card__form{
@@ -278,7 +279,6 @@ main{
   transform: translateX(100%);
   opacity: 0;
   transition: opacity 250ms ease-in, transform 500ms ease-in;
-  
 }
 
 .slide-delay{
@@ -304,6 +304,14 @@ main{
   }
   .info-Section__img{
     display: none;
+  }
+  .slide-venstre{
+    transform: translateX(-50%);
+    transition: opacity 200ms ease-in, transform 350ms ease-in;
+  }
+  .slide-høyre{
+    transform: translateX(50%);
+    transition: opacity 200ms ease-in, transform 350ms ease-in;
   }
 }
 
