@@ -1,66 +1,54 @@
-.accesibilityGrid > h1 {
-  justify-self: center;
-  justify-content: center;
+h1{
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 2rem;
 }
-.accesibilityGrid > p{
+.img{
+  margin: auto 0;
+  overflow: hidden;
+  padding: 1rem;
+}
+.img img{
   width: 100%;
-  margin: auto;
-  padding-top: min(5%, 5rem);
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  
+}
+video{
+  height: 200px;
+}
+@media (max-width:400px) {
+  video{
+    max-width: 100%;
+  }
 }
 
-.bildeboks{
+hr{
+  margin: 2rem;
+  opacity: 40%;
+}
+
+.AccFlex{
   display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  justify-self: center;
-
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  align-items: center;
 }
-.bildeboks > img{
-  border-radius: 5px 5px 0 0;
-  padding-bottom: 0;
-  max-width: 100%;
-
+.AccFlex.reverse{
+  flex-wrap: wrap-reverse;
 }
-
-.bildeboks > figcaption{
-  padding-left: auto;
-  padding-right: auto;
-  padding:  1rem;
-  background-color: rgb(46,46,46, 0.8);
-  color: var(--clr-beige);
-  border-radius: 0 0 5px 5px;
+.AccFlex.big *{
+  flex: 1 1 100%;
+  object-fit: cover;
 }
-
-
-
-.accesibilityGrid{
-  display:grid;
-  gap: 1rem;
-  margin-top: 2rem;
-  grid-template-columns: 1fr;
-  max-width: 90%;
-  justify-content: center;
-  margin:auto;
+.AccFlex *{
+  flex: 1 1 400px;
+  max-height: 300px;
 }
-.accesibilityGrid > p{
-  padding: 1rem 2rem;
-  text-align: left;
-  max-width: 90%;
-}
-
-@media (min-width: 700px) {
-  .accesibilityGrid{
-    grid-template-columns: 1fr 1fr;
-  }
-  .col-span-2{
-    grid-column: span 2;
-  }
-  .row-span-2{
-    grid-row: span 2;
-  }
-}
-
-.bildecap{
-  padding-top: 2rem;
-  display: block;
+.AccFlex__text h2{
+  /* text-align: center; */
+  padding-bottom: 1rem;
+  font-size: 3rem;
 }
