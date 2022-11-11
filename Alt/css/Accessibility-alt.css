@@ -41,6 +41,7 @@ hr{
 }
 .AccFlex.big *{
   flex: 1 1 100%;
+  object-fit: cover;
 }
 .AccFlex *{
   flex: 1 1 400px;
