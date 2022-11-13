@@ -40,7 +40,11 @@ body{
   display: none;
 }
 
-
+@media (hover: none){
+  .articles{
+    pointer-events: none;
+  }
+}
 .articles{
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
