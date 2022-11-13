@@ -1,201 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/Header_Footer.css" />
+		<link rel="stylesheet" href="css/booking.css" />
+		<link rel="stylesheet" href="css/test.css" />
+		<script src="loadIn.js" defer></script>
+		<noscript>
+			<style>
+				.venstre,
+				.høyre {
+					transform: translateX(0);
+					opacity: 1;
+				}
+			</style>
+		</noscript>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/Header_Footer.css">
-  <link rel="stylesheet" href="css/booking.css">
-  <link rel="stylesheet" href="css/test.css">
-  <script src='loadIn.js' defer></script>
-  <noscript>
-    <style>
-      .venstre,
-      .høyre{
-        transform: translateX(0);
-        opacity: 1;
-      }
-    </style>
-  </noscript>
-</head>
+	<body>
+		<!-- Header Start -->
+		<header class="header">
+			<section class="header__logo">
+				<a href="test.html">
+					<img
+						src="img\header-images\Logo_new.transparent.png"
+						alt="C-SONS Logo" />
+				</a>
+			</section>
+			<section class="header__content">
+				<input id="menu-checkbox-toggle" type="checkbox" />
+				<!-- Checkbox for drpMeny -->
+				<label
+					class="header__content__icon-container"
+					for="menu-checkbox-toggle">
+					<figure>
+						<img
+							class="menu-open menu-icon-img"
+							src="img\header-images\Burgermeny_transparent.png"
+							alt="Åpne burgermeny" />
+						<img
+							class="menu-close menu-icon-img"
+							src="img\header-images\Cross_Transparent.png"
+							alt="Lukk Burgermeny" />
+					</figure>
+				</label>
+				<nav class="header__content__nav" aria-label="Side Header">
+					<a class="header__content__nav__button" href="index.html">
+						<p>Front&nbsp;page</p></a
+					>
+					<a class="header__content__nav__button" href="booking.html">
+						<p>Booking</p>
+					</a>
+					<a class="header__content__nav__button" href="cafe.html">
+						<p>Restaurant</p>
+					</a>
+					<a class="header__content__nav__button" href="Accessibility.html">
+						<p>Accessibility</p>
+					</a>
+					<a class="header__content__nav__button" href="topical.html">
+						<p class="headerActive">Topical</p>
+					</a>
+				</nav>
+			</section>
+		</header>
+		<!-- Header Slutt -->
 
-<body >
-  <!-- Header Start -->
-  <header class="header">
-    <section class="header__logo">
-      <a href="test.html">
-        <img src="img\header-images\Logo_new.transparent.png" alt="C-SONS Logo">
-      </a>
-    </section>
-    <section class="header__content">
-      <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
-      <label class='header__content__icon-container' for="menu-checkbox-toggle">
-        <figure>
-          <img class="menu-open menu-icon-img" src="img\header-images\Burgermeny_transparent.png" alt="Åpne burgermeny">
-          <img class="menu-close menu-icon-img" src="img\header-images\Cross_Transparent.png" alt="Lukk Burgermeny">
-        </figure>
-      </label>
-      <nav class="header__content__nav" aria-label="Side Header">
-        <a class="header__content__nav__button" href="index.html">
-          <p>
-            Front&nbsp;page
-          </p></a>
-        <a class="header__content__nav__button" href="booking.html">
-          <p>
-          Booking
-        </p>
-        </a> 
-        <a class="header__content__nav__button" href="cafe.html">
-          <p>
-            Restaurant
-          </p>
-        </a>
-        <a class="header__content__nav__button" href="Accessibility.html">
-          <p>
-            Accessibility
-          </p>
-        </a>
-        <a class="header__content__nav__button" href="topical.html">
-          <p class="headerActive">
-            Topical
-          </p>
-        </a>
-      </nav>
-    </section>
-  </header>
-<!-- Header Slutt -->
+		<main style="padding-top: 120rem">
+			<section class="info-Section">
+				<figure class="info-Section__img slide-in slide-venstre">
+					<!-- Bildet venste side -->
+					<img src="img\booking-images\møterom.png" alt="Ett av møterommene" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</figure>
+				<div class="info-Section__info slide-in slide-høyre slide-delay">
+					<!-- Teskt høyre side -->
+					<div class="info-Section__info__header">
+						<p>Frihet til å velge</p>
+						<h2>Et rom for ethvert behov</h2>
+					</div>
+					<p>
+						Velg fra et bredt utvalg av møterom for å finne den perfekte
+						beliggenheten og stedet for ditt neste møte. Vi gleder oss til å
+						hjelpe deg med å finne det perfekte styrerommet for arrangementet
+						ditt, det perfekte private rommet for å intervjue kandidater, eller
+						et inspirerende sted for en treningsøkt.
+					</p>
+					<ul class="info-Section__info__flex">
+						<li>
+							<img src="img\Booking-icons\Scale.png" alt="Konfigurer rom" />
+							<p>Fullt utstyrte plasser for samlinger av enhver størrelse</p>
+						</li>
+						<li>
+							<img src="img\Booking-icons\Location.png" alt="Plassering" />
+							<p>Ha møte i hvilken som helst by</p>
+						</li>
+						<li>
+							<img src="img\Booking-icons\TV.png" alt="TV" />
+							<p>Arrangementslokaler, styrerom, kurslokaler og enda mer</p>
+						</li>
+						<li>
+							<img src="img\Booking-icons\Sofa.png" alt="Sofa" />
+							<p>Komfortable, profesjonelle miljøer</p>
+						</li>
+						<li>
+							<img src="img\Booking-icons\Mobile.png" alt="Mobil" />
+							<p>Bestill på dagen eller i forveien via appen</p>
+						</li>
+						<li>
+							<img src="img\Booking-icons\Bufee.png" alt="Service" />
+							<p>Erfarne rådgivere som hjelper deg med å finne riktig område</p>
+						</li>
+					</ul>
+					<hr />
+				</div>
+			</section>
 
+			<section class="info-Section" id="reverse">
+				<div class="info-Section__info slide-in slide-venstre slide-delay">
+					<div class="info-Section__info__header">
+						<p>Hva er inkludert</p>
+						<h2>Alt er tatt vare på</h2>
+					</div>
+					<p>
+						Rommene våre er fullt utstyrt med kvalitetsmøbler og
+						videokonferanseutstyr, slik at du kan gå inn og kjøre produktive
+						økter. Resepsjonistene våre vil hilse på gjestene dine, mens
+						supportteamet vårt vil forberede rommet ditt og hjelpe alt til å gå
+						på skinner.
+					</p>
+					<ul class="info-Section__info__flex">
+						<li>
+							<img src="img\Booking-icons\TV.png" loading="lazy" alt="TV" />
+							<p>Flatskjerm-TV, tusjtavler og flipover</p>
+						</li>
+						<li>
+							<img
+								src="img\Booking-icons\Chair.png"
+								loading="lazy"
+								alt="Stol" />
+							<p>Pauseområder</p>
+						</li>
+						<li>
+							<img
+								src="img\Booking-icons\Scale.png"
+								loading="lazy"
+								alt="Konfigurer rom" />
+							<p>Konfigurer møterommet på din måte</p>
+						</li>
+						<li>
+							<img
+								src="img\Booking-icons\Bufee.png"
+								loading="lazy"
+								alt="Service" />
+							<p>Profesjonelt resepsjonistteam som tar imot gjester</p>
+						</li>
+						<li>
+							<img src="img\Booking-icons\Wifi.png" loading="lazy" alt="Wifi" />
+							<p>Trådløst internett i bedriftskvalitet</p>
+						</li>
+						<li>
+							<img
+								src="img\Booking-icons\Person.png"
+								loading="lazy"
+								alt="Person" />
+							<p>Erfarent supportteam på stedet</p>
+						</li>
+					</ul>
+					<hr />
+				</div>
+				<figure class="info-Section__img slide-in slide-høyre">
+					<img
+						src="img\booking-images\hotellrommetnye.png"
+						loading="lazy"
+						alt="Ett av hotellrommene" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</figure>
+			</section>
 
-  <main style="padding-top: 120rem;">
-    
-    <section class="info-Section"> 
-      <figure class="info-Section__img slide-in slide-venstre"> <!-- Bildet venste side -->
-        <img src="img\booking-images\møterom.png" alt="Ett av møterommene">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </figure>
-      <div class="info-Section__info slide-in slide-høyre slide-delay"> <!-- Teskt høyre side -->
-        <div class="info-Section__info__header">
-          <p>Frihet til å velge</p>
-          <h2>Et rom for ethvert behov</h2>
-        </div>
-        <p>Velg fra et bredt utvalg av møterom for å finne den perfekte beliggenheten og stedet for ditt neste møte. 
-          Vi gleder oss til å hjelpe deg med å finne det perfekte styrerommet for arrangementet ditt, det perfekte private 
-          rommet for å intervjue kandidater, eller et inspirerende sted for en treningsøkt.</p>
-        <ul class="info-Section__info__flex">
-          <li>
-            <img src="img\Booking-icons\Scale.png" alt="Konfigurer rom">
-            <p>Fullt utstyrte plasser for samlinger av enhver størrelse</p>
-          </li>
-          <li>
-            <img src="img\Booking-icons\Location.png" alt="Plassering">
-            <p>Ha møte i hvilken som helst by</p>              
-          </li>
-          <li>
-            <img src="img\Booking-icons\TV.png" alt="TV">
-            <p>Arrangementslokaler, styrerom, kurslokaler og enda mer</p>
-          </li>
-          <li>
-            <img src="img\Booking-icons\Sofa.png" alt="Sofa">
-            <p>Komfortable, profesjonelle miljøer</p>
-          </li>
-          <li>
-            <img src="img\Booking-icons\Mobile.png" alt="Mobil">
-            <p>Bestill på dagen eller i forveien via appen</p>
-          </li>
-          <li>
-            <img src="img\Booking-icons\Bufee.png" alt="Service">
-            <p>Erfarne rådgivere som hjelper deg med å finne riktig område</p>
-          </li>
-        </ul>
-        <hr>
-      </div>
-    </section>
-
-    <section class="info-Section" id="reverse">
-      <div class="info-Section__info  slide-in slide-venstre slide-delay"> 
-        <div class="info-Section__info__header">
-          <p>Hva er inkludert</p>
-          <h2>Alt er tatt vare på</h2>
-        </div>
-        <p>Rommene våre er fullt utstyrt med kvalitetsmøbler og videokonferanseutstyr, slik at du kan gå inn og kjøre produktive økter. 
-          Resepsjonistene våre vil hilse på gjestene dine, mens supportteamet vårt vil forberede rommet 
-          ditt og hjelpe alt til å gå på skinner.</p>
-        <ul class="info-Section__info__flex">
-          <li>
-            <img src="img\Booking-icons\TV.png" loading="lazy" alt="TV">
-            <p>Flatskjerm-TV, tusjtavler og flipover</p>
-          </li>
-          <li>
-            <img src="img\Booking-icons\Chair.png" loading="lazy" alt="Stol">
-            <p>Pauseområder</p>              
-          </li>
-          <li>
-            <img src="img\Booking-icons\Scale.png" loading="lazy" alt="Konfigurer rom">
-            <p>Konfigurer møterommet på din måte</p>
-          </li>
-          <li>
-            <img src="img\Booking-icons\Bufee.png" loading="lazy" alt="Service">
-            <p>Profesjonelt resepsjonistteam som tar imot gjester</p>
-          </li>
-          <li>
-            <img src="img\Booking-icons\Wifi.png" loading="lazy" alt="Wifi"> 
-            <p>Trådløst internett i bedriftskvalitet</p>
-          </li>
-          <li>
-            <img src="img\Booking-icons\Person.png" loading="lazy" alt="Person">
-            <p>Erfarent supportteam på stedet</p>
-          </li>
-        </ul>
-        <hr>
-      </div>
-      <figure class="info-Section__img slide-in slide-høyre">
-        <img src="img\booking-images\hotellrommetnye.png" loading="lazy" alt="Ett av hotellrommene">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </figure>
-    </section> 
-
-    <section class="info-Section">
-      <figure class="info-Section__img slide-in slide-venstre">
-        <img src="img\booking-images\Delicious_food.png" loading="lazy" alt="En av våre delikate retter">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </figure>
-      <div class="info-Section__info slide-in slide-høyre slide-delay"> 
-        <div class="info-Section__info__header">
-          <p>Bredt spekter av tjenester</p>
-          <h2>Tjenestene du trenger, når du trenger dem</h2>
-        </div>
-        <p>Å bestille et møterom gir deg tilgang til en rekke tjenester som kan bidra til å gjøre møtet ditt til en suksess. 
-          Tjenestene kan du bestille på forhånd, så har vi alt satt opp og klart til bruk samme dag.
-        </p>
-        <ul class="info-Section__info__flex">
-          <li>
-            <img src="img\Booking-icons\Laptop.png" loading="lazy" alt="Laptop">
-            <p>Support for IT- og teknisknologi</p>
-          </li>
-          <li>
-            <img src="img\Booking-icons\Paper.png" loading="lazy" alt="Papir">
-            <p>Hjelp til Administrative oppgaver</p>              
-          </li>
-          <li>
-            <img src="img\Booking-icons\Scale.png" loading="lazy" alt="Diagonal linje">
-            <p>Ytterligere arbeidsplasser ved behov</p>
-          </li>
-          <li>
-            <img src="img\Booking-icons\Cafe.png" loading="lazy" alt="Cafe">
-            <p>Cateringtjenester</p>
-          </li>
-          <li>
-            <img src="img\Booking-icons\Projector.png" loading="lazy" alt="Projektor">
-            <p>Projektorer og annet møteutstyr</p>
-          </li>
-        </ul>
-        <hr>
-      </div>
-    </section>
-  </main>
-</body>
-
+			<section class="info-Section">
+				<figure class="info-Section__img slide-in slide-venstre">
+					<img
+						src="img\booking-images\Delicious_food.png"
+						loading="lazy"
+						alt="En av våre delikate retter" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</figure>
+				<div class="info-Section__info slide-in slide-høyre slide-delay">
+					<div class="info-Section__info__header">
+						<p>Bredt spekter av tjenester</p>
+						<h2>Tjenestene du trenger, når du trenger dem</h2>
+					</div>
+					<p>
+						Å bestille et møterom gir deg tilgang til en rekke tjenester som kan
+						bidra til å gjøre møtet ditt til en suksess. Tjenestene kan du
+						bestille på forhånd, så har vi alt satt opp og klart til bruk samme
+						dag.
+					</p>
+					<ul class="info-Section__info__flex">
+						<li>
+							<img
+								src="img\Booking-icons\Laptop.png"
+								loading="lazy"
+								alt="Laptop" />
+							<p>Support for IT- og teknisknologi</p>
+						</li>
+						<li>
+							<img
+								src="img\Booking-icons\Paper.png"
+								loading="lazy"
+								alt="Papir" />
+							<p>Hjelp til Administrative oppgaver</p>
+						</li>
+						<li>
+							<img
+								src="img\Booking-icons\Scale.png"
+								loading="lazy"
+								alt="Diagonal linje" />
+							<p>Ytterligere arbeidsplasser ved behov</p>
+						</li>
+						<li>
+							<img src="img\Booking-icons\Cafe.png" loading="lazy" alt="Cafe" />
+							<p>Cateringtjenester</p>
+						</li>
+						<li>
+							<img
+								src="img\Booking-icons\Projector.png"
+								loading="lazy"
+								alt="Projektor" />
+							<p>Projektorer og annet møteutstyr</p>
+						</li>
+					</ul>
+					<hr />
+				</div>
+			</section>
+		</main>
+	</body>
 </html>

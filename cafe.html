@@ -1,350 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/cafe.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/Header_Footer.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C-SONS / Restaurant</title>
-  <link rel="website icon" type="png" href="img\header-images\Logo_web_icon.png">
-</head>
-<body>
-  <!-- Header Start -->
-  <header class="header">
-    <section class="header__logo">
-      <a href="index.html">
-        <img src="img\header-images\Logo_new.transparent.png" alt="C-SONS Logo">
-      </a>
-    </section>
-    <section class="header__content">
-      <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
-      <label class='header__content__icon-container' for="menu-checkbox-toggle">
-        <figure>
-          <img class="menu-open menu-icon-img" src="img\header-images\Burgermeny_transparent.png" alt="Åpne burgermeny">
-          <img class="menu-close menu-icon-img" src="img\header-images\Cross_Transparent.png" alt="Lukk Burgermeny">
-        </figure>
-      </label>
-      <nav class="header__content__nav" aria-label="Side Header">
-        <a class="header__content__nav__button" href="index.html">
-          <p>
-            Hjemmeside
-          </p></a>
-        <a class="header__content__nav__button" href="booking.html">
-          <p>
-            Reserver
-          </p>
-        </a> 
-        <a class="header__content__nav__button" href="cafe.html">
-          <p class="headerActive">
-            Restaurant
-          </p>
-        </a>
-        <a class="header__content__nav__button" href="Accessibility.html">
-          <p>
-            Inkludering
-          </p>
-        </a>
-        <a class="header__content__nav__button" href="topical.html">
-          <p>
-            Aktuelt
-          </p>
-        </a>
-      </nav>
-    </section>
-  </header>
-  <!-- Header Slutt -->
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/cafe.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/Header_Footer.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>C-SONS / Restaurant</title>
+		<link
+			rel="website icon"
+			type="png"
+			href="img\header-images\Logo_web_icon.png" />
+	</head>
+	<body>
+		<!-- Header Start -->
+		<header class="header">
+			<section class="header__logo">
+				<a href="index.html">
+					<img
+						src="img\header-images\Logo_new.transparent.png"
+						alt="C-SONS Logo" />
+				</a>
+			</section>
+			<section class="header__content">
+				<input id="menu-checkbox-toggle" type="checkbox" />
+				<!-- Checkbox for drpMeny -->
+				<label
+					class="header__content__icon-container"
+					for="menu-checkbox-toggle">
+					<figure>
+						<img
+							class="menu-open menu-icon-img"
+							src="img\header-images\Burgermeny_transparent.png"
+							alt="Åpne burgermeny" />
+						<img
+							class="menu-close menu-icon-img"
+							src="img\header-images\Cross_Transparent.png"
+							alt="Lukk Burgermeny" />
+					</figure>
+				</label>
+				<nav class="header__content__nav" aria-label="Side Header">
+					<a class="header__content__nav__button" href="index.html">
+						<p>Hjemmeside</p></a
+					>
+					<a class="header__content__nav__button" href="booking.html">
+						<p>Reserver</p>
+					</a>
+					<a class="header__content__nav__button" href="cafe.html">
+						<p class="headerActive">Restaurant</p>
+					</a>
+					<a class="header__content__nav__button" href="Accessibility.html">
+						<p>Inkludering</p>
+					</a>
+					<a class="header__content__nav__button" href="topical.html">
+						<p>Aktuelt</p>
+					</a>
+				</nav>
+			</section>
+		</header>
+		<!-- Header Slutt -->
 
-  <!------- MAIN START ------->
-  <main class="retter-wrapper">
-    <h1>MENY</h1>
+		<!------- MAIN START ------->
+		<main class="retter-wrapper">
+			<h1>MENY</h1>
 
-    <!------- NAVIGASJONSBAR START ------->
-    <nav class="nav-bar" aria-label="Restaurant navigasjonsbar">
-        <a href="#lunch" class="nav-bar__link">
-          <p>Lunch</p>
-        </a>
-        <a href="#dinner" class="nav-bar__link">
-          <p>Middag</p>
-        </a>
-        <a href="#dessert" class="nav-bar__link">
-          <p>Dessert</p>
-        </a>
-        <a href="#drinks" class="nav-bar__link">
-          <p>Drikke</p>
-        </a>
-    </nav>
-    <!------- NAVIGASJONSBAR SLUTT ------->
+			<!------- NAVIGASJONSBAR START ------->
+			<nav class="nav-bar" aria-label="Restaurant navigasjonsbar">
+				<a href="#lunch" class="nav-bar__link">
+					<p>Lunch</p>
+				</a>
+				<a href="#dinner" class="nav-bar__link">
+					<p>Middag</p>
+				</a>
+				<a href="#dessert" class="nav-bar__link">
+					<p>Dessert</p>
+				</a>
+				<a href="#drinks" class="nav-bar__link">
+					<p>Drikke</p>
+				</a>
+			</nav>
+			<!------- NAVIGASJONSBAR SLUTT ------->
 
-    <!------- LUNCH START ------->
-    <div class="retter-header" >
-      <h2 id="lunch">LUNCH</h2>
-    </div>
-    <hr>
-    <div class="retter-container">
-      <div class="retter-container__info">
-        <h3>Bakt potet - 119,-</h3>
-        <p>Bakt potet, toppet med ost.</p>
-        <p>Allergener: Melk</p>
-      </div>
-      <div class="retter-container__bilde">
-        <img src="img/dish-images/potato.jpg" title="Baked potato" alt="Bakt Potet">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </div>
-    </div>
-    <hr>
-    <div class="retter-container">
-      <div class="retter-container__info">
-        <h3>Caesar Salat - 99,-</h3>
-        <p>En klassisk caesar salat, med en tvist.</p> 
-        <p>Allergener: Egg, Sesamfrø</p>
-      </div>
-      <div class="retter-container__bilde">
-        <img src="img/dish-images/ceasar.jpg" title="Ceasar salad" alt="Caesar Salat">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </div>
-    </div>
-    <hr>
-    <div class="retter-container">
-      <div class="retter-container__info">       
-        <h3>Den ultimate sandwich - 129,-</h3>
-        <p>En veldig god sandwich.</p> 
-        <p>Allergener: Egg, Gluten, Melk, Sennep</p>
-      </div>
-      <div class="retter-container__bilde">
-        <img src="img/dish-images/sandwich.jpg" title="Ultimate sandwitch" alt="Den Ultimate Sandwich">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </div>
-    </div>
-    <hr>
-    <!------- LUNCH SLUTT ------->
+			<!------- LUNCH START ------->
+			<div class="retter-header">
+				<h2 id="lunch">LUNCH</h2>
+			</div>
+			<hr />
+			<div class="retter-container">
+				<div class="retter-container__info">
+					<h3>Bakt potet - 119,-</h3>
+					<p>Bakt potet, toppet med ost.</p>
+					<p>Allergener: Melk</p>
+				</div>
+				<div class="retter-container__bilde">
+					<img
+						src="img/dish-images/potato.jpg"
+						title="Baked potato"
+						alt="Bakt Potet" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</div>
+			</div>
+			<hr />
+			<div class="retter-container">
+				<div class="retter-container__info">
+					<h3>Caesar Salat - 99,-</h3>
+					<p>En klassisk caesar salat, med en tvist.</p>
+					<p>Allergener: Egg, Sesamfrø</p>
+				</div>
+				<div class="retter-container__bilde">
+					<img
+						src="img/dish-images/ceasar.jpg"
+						title="Ceasar salad"
+						alt="Caesar Salat" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</div>
+			</div>
+			<hr />
+			<div class="retter-container">
+				<div class="retter-container__info">
+					<h3>Den ultimate sandwich - 129,-</h3>
+					<p>En veldig god sandwich.</p>
+					<p>Allergener: Egg, Gluten, Melk, Sennep</p>
+				</div>
+				<div class="retter-container__bilde">
+					<img
+						src="img/dish-images/sandwich.jpg"
+						title="Ultimate sandwitch"
+						alt="Den Ultimate Sandwich" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</div>
+			</div>
+			<hr />
+			<!------- LUNCH SLUTT ------->
 
-    <!------- MIDDAG START ------->
-    <div class="retter-header">
-      <h2 style="color: var(--clr-knapper)"id="dinner">MIDDAG</h2>
-    </div>
-    <hr>
-    <div class="retter-container">
-      <div class="retter-container__info">
-        <h3>Melkebiff - 229,-</h3>
-        <p >Melk i biff, en klassisk kombinasjon.</p> 
-        <p >Allergener: Melk</p>
-      </div>
-      <div class="retter-container__bilde">
-        <img src="img/dish-images/milksteak.jpg" title="Milk steak" loading="lazy" alt="Melkebiff">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </div>
-    </div>
-    <hr>
-    <div class="retter-container">
-      <div class="retter-container__info">
-        <h3>Pasta Tuna - 199,-</h3>
-        <p>En italiensk japansk kombinasjon som du ikke kommer til å glemme.</p> 
-        <p>Allergener: Fisk, Gluten</p>
-      </div>
-      <div class="retter-container__bilde">
-        <img src="img/dish-images/tunapasta.jpg" title="Pasta tuna" loading="lazy" alt="Pasta Tuna">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </div>
-    </div>
-    <hr>
-    <div class="retter-container">
-      <div class="retter-container__info">
-        <h3>Caesar Salat - 99,-</h3>
-        <p>En klassisk caesar salat, med en tvist.</p> 
-        <p>Allergener: Egg, Sesamfrø</p>
-      </div>
-      <div class="retter-container__bilde">
-        <img src="img/dish-images/ceasar.jpg" title="Caesar salad" loading="lazy" alt="Caesar Salat">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </div>
-    </div>
-    <hr>
-    <!------- MIDDAG SLUTT ------->
+			<!------- MIDDAG START ------->
+			<div class="retter-header">
+				<h2 style="color: var(--clr-knapper)" id="dinner">MIDDAG</h2>
+			</div>
+			<hr />
+			<div class="retter-container">
+				<div class="retter-container__info">
+					<h3>Melkebiff - 229,-</h3>
+					<p>Melk i biff, en klassisk kombinasjon.</p>
+					<p>Allergener: Melk</p>
+				</div>
+				<div class="retter-container__bilde">
+					<img
+						src="img/dish-images/milksteak.jpg"
+						title="Milk steak"
+						loading="lazy"
+						alt="Melkebiff" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</div>
+			</div>
+			<hr />
+			<div class="retter-container">
+				<div class="retter-container__info">
+					<h3>Pasta Tuna - 199,-</h3>
+					<p>
+						En italiensk japansk kombinasjon som du ikke kommer til å glemme.
+					</p>
+					<p>Allergener: Fisk, Gluten</p>
+				</div>
+				<div class="retter-container__bilde">
+					<img
+						src="img/dish-images/tunapasta.jpg"
+						title="Pasta tuna"
+						loading="lazy"
+						alt="Pasta Tuna" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</div>
+			</div>
+			<hr />
+			<div class="retter-container">
+				<div class="retter-container__info">
+					<h3>Caesar Salat - 99,-</h3>
+					<p>En klassisk caesar salat, med en tvist.</p>
+					<p>Allergener: Egg, Sesamfrø</p>
+				</div>
+				<div class="retter-container__bilde">
+					<img
+						src="img/dish-images/ceasar.jpg"
+						title="Caesar salad"
+						loading="lazy"
+						alt="Caesar Salat" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</div>
+			</div>
+			<hr />
+			<!------- MIDDAG SLUTT ------->
 
-    <!------- DESSERT START ------->
-    <div class="retter-header">
-      <h2 style="color: var(--clr-knapper)"id="dessert">DESSERT</h2>
-    </div>
-    <hr>
-    <div class="retter-container">
-      <div class="retter-container__info">
-        <h3>Banansplit - 99,-</h3>
-        <p>En splittet banan med is og sjokoladesaus</p> 
-        <p>Allergener: Egg, Melk</p>
-      </div>
-      <div class="retter-container__bilde">
-        <img src="img/dish-images/banansplit.jpg" title="Bananasplit" loading="lazy" alt="Banansplit">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </div>
-    </div>
-    <hr>
-    <div class="retter-container">
-      <div class="retter-container__info">
-        <h3>Jellybean Créme Brûlée - 199,-</h3>
-        <p>En klassisk Créme Brûlée, toppet med gelé bønner.</p>
-        <p>Allergener: Egg, Melk</p>
-      </div>
-      <div class="retter-container__bilde">
-        <img src="img/dish-images/cremebrule.jpg" title="Créme Brûlée" loading="lazy" alt="Créme Brûlée med gelé bønner">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </div>
-    </div>
-    <hr>
-    <div class="retter-container">
-      <div class="retter-container__info">
-        <h3>Jordbær med Cashews - 219,-</h3>
-        <p>En luksuriøs blanding av jorbær og cashews.</p> 
-        <p>Allergener: Nøtter</p>
-      </div>
-      <div class="retter-container__bilde">
-        <img src="img/dish-images/strawberry.jpg" title="Strawberry cashew" loading="lazy" alt="Jorbbær med cashews">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </div>
-    </div>
-    <hr>
-    <!------- DESSERT SLUTT ------->
+			<!------- DESSERT START ------->
+			<div class="retter-header">
+				<h2 style="color: var(--clr-knapper)" id="dessert">DESSERT</h2>
+			</div>
+			<hr />
+			<div class="retter-container">
+				<div class="retter-container__info">
+					<h3>Banansplit - 99,-</h3>
+					<p>En splittet banan med is og sjokoladesaus</p>
+					<p>Allergener: Egg, Melk</p>
+				</div>
+				<div class="retter-container__bilde">
+					<img
+						src="img/dish-images/banansplit.jpg"
+						title="Bananasplit"
+						loading="lazy"
+						alt="Banansplit" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</div>
+			</div>
+			<hr />
+			<div class="retter-container">
+				<div class="retter-container__info">
+					<h3>Jellybean Créme Brûlée - 199,-</h3>
+					<p>En klassisk Créme Brûlée, toppet med gelé bønner.</p>
+					<p>Allergener: Egg, Melk</p>
+				</div>
+				<div class="retter-container__bilde">
+					<img
+						src="img/dish-images/cremebrule.jpg"
+						title="Créme Brûlée"
+						loading="lazy"
+						alt="Créme Brûlée med gelé bønner" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</div>
+			</div>
+			<hr />
+			<div class="retter-container">
+				<div class="retter-container__info">
+					<h3>Jordbær med Cashews - 219,-</h3>
+					<p>En luksuriøs blanding av jorbær og cashews.</p>
+					<p>Allergener: Nøtter</p>
+				</div>
+				<div class="retter-container__bilde">
+					<img
+						src="img/dish-images/strawberry.jpg"
+						title="Strawberry cashew"
+						loading="lazy"
+						alt="Jorbbær med cashews" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</div>
+			</div>
+			<hr />
+			<!------- DESSERT SLUTT ------->
 
-    <!------- DRINKS START ------->
-    <div class="retter-header">
-      <h2 style="color: var(--clr-knapper)"id="drinks">DRIKKE</h2>
-    </div>
-    <hr>
-    <div class="retter-container">
-      <div class="retter-container__info">
-        <h3>Piña Colada  - 89,-</h3>
-        <p>En god blanding av rom, annanasjuice og kokosmelk.</p> 
-        <p>Allergener: Ingen</p>
-      </div>
-      <div class="retter-container__bilde">
-        <img src="img/dish-images/pinacolada.jpg" title="Piña colada" loading="lazy" alt="Pina Colada">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </div>
-    </div>
-    <hr>
-    <div class="retter-container">
-      <div class="retter-container__info">
-        <h3>Øl  - 79,-</h3>
-        <p>Vårt hjemmebrygget fatøl.</p> 
-        <p>Allergener: Gluten</p>
-      </div>
-      <div class="retter-container__bilde">
-        <img src="img/dish-images/beer.jpg" title="Beer" loading="lazy" alt="Øl">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </div>
-    </div>
-    <hr>
-    <div class="retter-container">
-      <div class="retter-container__info">
-        <h3>Ildbrus - 49,-</h3>
-        <p>Vår egne blanding av cola og ild, NB:VARM.</p>       
-        <p>Allergener: Sulfitter</p>
-      </div>
-      <div class="retter-container__bilde">
-        <img src="img/dish-images/firesoda.jpg" title="Fire soda" loading="lazy" alt="Ildbrus">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </div>
-    </div>
-    <hr>
-    <div class="retter-container">
-      <div class="retter-container__info">
-        <h3>Vann - 29,-</h3>
-        <p>Vårt egenproduserte vann.</p> 
-        <p>Allergener: Ingen</p>
-      </div>
-      <div class="retter-container__bilde">
-        <img src="img/dish-images/water.jpg" title="Water" loading="lazy" alt="Vann">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-      </div>
-    </div>
-    <hr>
-    <!------- DRINKS SLUTT ------->
-  </main>
-  <!------- MAIN SLUTT ------->
+			<!------- DRINKS START ------->
+			<div class="retter-header">
+				<h2 style="color: var(--clr-knapper)" id="drinks">DRIKKE</h2>
+			</div>
+			<hr />
+			<div class="retter-container">
+				<div class="retter-container__info">
+					<h3>Piña Colada - 89,-</h3>
+					<p>En god blanding av rom, annanasjuice og kokosmelk.</p>
+					<p>Allergener: Ingen</p>
+				</div>
+				<div class="retter-container__bilde">
+					<img
+						src="img/dish-images/pinacolada.jpg"
+						title="Piña colada"
+						loading="lazy"
+						alt="Pina Colada" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</div>
+			</div>
+			<hr />
+			<div class="retter-container">
+				<div class="retter-container__info">
+					<h3>Øl - 79,-</h3>
+					<p>Vårt hjemmebrygget fatøl.</p>
+					<p>Allergener: Gluten</p>
+				</div>
+				<div class="retter-container__bilde">
+					<img
+						src="img/dish-images/beer.jpg"
+						title="Beer"
+						loading="lazy"
+						alt="Øl" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</div>
+			</div>
+			<hr />
+			<div class="retter-container">
+				<div class="retter-container__info">
+					<h3>Ildbrus - 49,-</h3>
+					<p>Vår egne blanding av cola og ild, NB:VARM.</p>
+					<p>Allergener: Sulfitter</p>
+				</div>
+				<div class="retter-container__bilde">
+					<img
+						src="img/dish-images/firesoda.jpg"
+						title="Fire soda"
+						loading="lazy"
+						alt="Ildbrus" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</div>
+			</div>
+			<hr />
+			<div class="retter-container">
+				<div class="retter-container__info">
+					<h3>Vann - 29,-</h3>
+					<p>Vårt egenproduserte vann.</p>
+					<p>Allergener: Ingen</p>
+				</div>
+				<div class="retter-container__bilde">
+					<img
+						src="img/dish-images/water.jpg"
+						title="Water"
+						loading="lazy"
+						alt="Vann" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+				</div>
+			</div>
+			<hr />
+			<!------- DRINKS SLUTT ------->
+		</main>
+		<!------- MAIN SLUTT ------->
 
-  <!--Footer Start-->
-  <footer>
-    <div class="footerCointainer">
-      <section class="kontaktOss">
-        <h2>Kontakt oss</h2>
-        <div class="kontaktOss__sosialemedier">
-          <figure class="kontaktOss__sosialemedier__bilde">
-            <img src="img\footer-images\Telefon_icon.png" loading="lazy" alt="Telefon ikon">
-          </figure>
-          <a href="tel: +4712345678">
-            <p>+47 123 45 678</p>
-          </a>
-          <figure class="kontaktOss__sosialemedier__bilde">
-            <img src="img\footer-images\Mail_icon.png" loading="lazy" alt="E post ikon">
-          </figure>
-          <a href="mailto:c-sons@example.com">
-            <p>c-sons@example.com</p>
-          </a>
-          <figure class="kontaktOss__sosialemedier__bilde">
-            <img src="img\footer-images\Instagram_icon.png" loading="lazy" alt="Instagram ikon">
-          </figure>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-            <p>Instagram</p>
-          </a>
-          <figure class="kontaktOss__sosialemedier__bilde">
-            <img src="img\footer-images\Facebook_icon.png" loading="lazy" alt="Facebook ikon">
-          </figure>
-          <a href="https://facebook.com" target="_blank" rel="noopener">
-            <p>Facebook</p>
-          </a>
-          <figure class="kontaktOss__sosialemedier__bilde">
-            <img src="img\footer-images\Twitter_icon.png" loading="lazy" alt="Twitter ikon">
-          </figure>
-          <a href="https://twitter.com/" target="_blank" rel="noopener">
-            <p>Twitter</p>
-          </a>
-        </div>
-      </section>
+		<!--Footer Start-->
+		<footer>
+			<div class="footerCointainer">
+				<section class="kontaktOss">
+					<h2>Kontakt oss</h2>
+					<div class="kontaktOss__sosialemedier">
+						<figure class="kontaktOss__sosialemedier__bilde">
+							<img
+								src="img\footer-images\Telefon_icon.png"
+								loading="lazy"
+								alt="Telefon ikon" />
+						</figure>
+						<a href="tel: +4712345678">
+							<p>+47 123 45 678</p>
+						</a>
+						<figure class="kontaktOss__sosialemedier__bilde">
+							<img
+								src="img\footer-images\Mail_icon.png"
+								loading="lazy"
+								alt="E post ikon" />
+						</figure>
+						<a href="mailto:c-sons@example.com">
+							<p>c-sons@example.com</p>
+						</a>
+						<figure class="kontaktOss__sosialemedier__bilde">
+							<img
+								src="img\footer-images\Instagram_icon.png"
+								loading="lazy"
+								alt="Instagram ikon" />
+						</figure>
+						<a href="https://www.instagram.com/" target="_blank" rel="noopener">
+							<p>Instagram</p>
+						</a>
+						<figure class="kontaktOss__sosialemedier__bilde">
+							<img
+								src="img\footer-images\Facebook_icon.png"
+								loading="lazy"
+								alt="Facebook ikon" />
+						</figure>
+						<a href="https://facebook.com" target="_blank" rel="noopener">
+							<p>Facebook</p>
+						</a>
+						<figure class="kontaktOss__sosialemedier__bilde">
+							<img
+								src="img\footer-images\Twitter_icon.png"
+								loading="lazy"
+								alt="Twitter ikon" />
+						</figure>
+						<a href="https://twitter.com/" target="_blank" rel="noopener">
+							<p>Twitter</p>
+						</a>
+					</div>
+				</section>
 
-      <section class="åpningstider">
-        <h2>Åpningstider</h2>
-        <div class="åpningstider__tidspunkt">
-          <p>Mandag - Torsdag:</p>
-          <p>09-22</p>
-        </div>
-        <div class="åpningstider__tidspunkt">
-          <p>Fredag:</p>
-          <p>09-23</p>
-        </div>
-        <div class="åpningstider__tidspunkt">
-          <p>Lørdag:</p>
-          <p>10-23</p>
-        </div>
-        <div class="åpningstider__tidspunkt">
-          <p>Søndag:</p>
-          <p>10-20</p>
-        </div>
-      </section>
-      
-      <section class="adresse">
-        <h2>Finn oss</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno" 
-        width="300" 
-        height="200" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade"
-        aria-label="Google maps">
-        loading="lazy"</iframe>
-        <a href="https://goo.gl/maps/tBUQerRK4z7mX8H1A" target="_blank" rel="noopener" class="adresse__link">
-          <p>Ellen Gleditschs hus</p>
-          <p>Pilestredet 35</p>
-          <p>0166 Oslo</p>
-        </a>
+				<section class="åpningstider">
+					<h2>Åpningstider</h2>
+					<div class="åpningstider__tidspunkt">
+						<p>Mandag - Torsdag:</p>
+						<p>09-22</p>
+					</div>
+					<div class="åpningstider__tidspunkt">
+						<p>Fredag:</p>
+						<p>09-23</p>
+					</div>
+					<div class="åpningstider__tidspunkt">
+						<p>Lørdag:</p>
+						<p>10-23</p>
+					</div>
+					<div class="åpningstider__tidspunkt">
+						<p>Søndag:</p>
+						<p>10-20</p>
+					</div>
+				</section>
 
-      </section>
-    </div>
-  </footer>
-  <!--Footer slutt-->
-</body>
+				<section class="adresse">
+					<h2>Finn oss</h2>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno"
+						width="300"
+						height="200"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+						aria-label="Google maps">
+						loading="lazy"</iframe
+					>
+					<a
+						href="https://goo.gl/maps/tBUQerRK4z7mX8H1A"
+						target="_blank"
+						rel="noopener"
+						class="adresse__link">
+						<p>Ellen Gleditschs hus</p>
+						<p>Pilestredet 35</p>
+						<p>0166 Oslo</p>
+					</a>
+				</section>
+			</div>
+		</footer>
+		<!--Footer slutt-->
+	</body>
 </html>
