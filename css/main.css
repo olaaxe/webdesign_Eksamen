@@ -92,7 +92,7 @@ h2 {
 sup{
   font-size: 1.5rem;
 }
-.hr_opacity {
+hr{
   opacity: 40%;
   margin-bottom: 1rem;
 }
@@ -103,3 +103,6 @@ sup{
   }
 
 }
+
+/* https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/ */
+/* https://scalablecss.com/bem-css-examples/ */

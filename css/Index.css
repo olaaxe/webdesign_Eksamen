@@ -15,7 +15,7 @@
 .intro-wrapper > * {
   flex: 1 1 48%;
 }
-p {
+.intro__text {
   padding-top: 2rem;
 }
 
