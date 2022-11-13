@@ -16,23 +16,20 @@ hr {
   margin: 20px 0 20px 0;
 }
 .nav-bar__link {
-  width: 1fr;
   margin: auto;
   border: none;
   height: 25px;
   background-color: var(--clr-bakgrunn);
-}
-.nav-bar__link > p {
   font-size: 2rem;
   text-decoration: underline;
   transition: color 0.15s;
   font-weight: 700;
 }
-.nav-bar__link > p:hover {
+.nav-bar__link:hover {
   color: var(--clr-rød);
   cursor: pointer;
 }
-.nav-bar__link > p:active {
+.nav-bar__link:active {
   color: var(--clr-rød__activate);
 }
 @media (max-width: 600px){
@@ -53,14 +50,11 @@ hr {
 
 /* ------- RETTER HEADER ------- */
 
-.retter-header {
-  width: 1fr;
+.banner-header {
   background-color: var(--clr-rød);
   height: 65px;
   text-align: center;
   border-radius: 5px;
-}
-.retter-header > h2 {
   line-height: 65px;
   vertical-align: middle;
   font-size: 3rem;
@@ -70,38 +64,34 @@ hr {
 /* ------- RETTER CONTAINER ------- */
 
 
-.retter-container {
-  width: 1fr;
+.retter__container {
   height: auto;
   display: grid;
   grid-template-columns: 1fr 200px;
 }
-.retter-container__info > h3 {
-  width: 1fr;
+.retter__header {
   height: auto;
   font-size: 2.5rem;
   margin-bottom: 10px;
   padding: 10px 10px 0 2px;
 }
-.retter-container__info > p:nth-child(2) {
-  width: 1fr;
+.retter__text:nth-child(2) {
   height: auto;
   padding: 10px 10px 0 2px;
 }
 
-.retter-container__info > p:nth-child(3) {
-  width: 1fr;
+.retter__text:nth-child(3) {
   height: auto;
   font-style: italic;
   padding: 60px 10px 10px 2px;
 }
-.retter-container__bilde {
+.retter__photo {
   align-items: center;
   padding: auto;
   margin: auto;
   display: flex;
 }
-.retter-container__bilde > img {
+.photo__img {
   object-fit: cover;
   max-width:96%;
   max-height:96%;
@@ -110,16 +100,16 @@ hr {
   border: solid;
 }
 @media (max-width: 400px){
-  .retter-container {
+  .retter__container {
     grid-template-columns: 1fr;
   }
-  .retter-container__info > h1 {
+  .banner-header {
     width: min(400px,90%);
   }
-  .retter-container__info > p:nth-child(2) {
+  .retter__text:nth-child(2) {
     width: min(400px,90%);
   }
-  .retter-container__info > p:nth-child(3) {
+  .retter__text:nth-child(3) {
     width: min(400px,90%);
   }
 }
