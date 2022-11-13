@@ -1,289 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <title>C-SONS / Aktuelt</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/topical.css">
-  <link rel="stylesheet" href="css/Header_Footer.css">
-  <link rel="website icon" type="png" href="img\header-images\Logo_web_icon.png">
-</head>
-<body>
-  
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet" />
+		<title>C-SONS / Aktuelt</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/topical.css" />
+		<link rel="stylesheet" href="css/Header_Footer.css" />
+		<link
+			rel="website icon"
+			type="png"
+			href="img\header-images\Logo_web_icon.png" />
+	</head>
+	<body>
+		<!-- Header Start -->
+		<header class="header">
+			<section class="header__logo">
+				<a href="topical-alt.html">
+					<img
+						src="img\header-images\Logo_new.transparent.png"
+						alt="C-SONS Logo" />
+				</a>
+			</section>
+			<section class="header__content">
+				<input id="menu-checkbox-toggle" type="checkbox" />
+				<!-- Checkbox for drpMeny -->
+				<label
+					class="header__content__icon-container"
+					for="menu-checkbox-toggle">
+					<figure>
+						<img
+							class="menu-open menu-icon-img"
+							src="img\header-images\Burgermeny_transparent.png"
+							alt="Åpne burgermeny" />
+						<img
+							class="menu-close menu-icon-img"
+							src="img\header-images\Cross_Transparent.png"
+							alt="Lukk Burgermeny" />
+					</figure>
+				</label>
+				<nav class="header__content__nav" aria-label="Side Header">
+					<a class="header__content__nav__button" href="index.html">
+						<p>Hjemmeside</p></a
+					>
+					<a class="header__content__nav__button" href="booking.html">
+						<p>Reserver</p>
+					</a>
+					<a class="header__content__nav__button" href="cafe.html">
+						<p>Restaurant</p>
+					</a>
+					<a class="header__content__nav__button" href="Accessibility.html">
+						<p>Inkludering</p>
+					</a>
+					<a class="header__content__nav__button" href="topical.html">
+						<p class="headerActive">Aktuelt</p>
+					</a>
+				</nav>
+			</section>
+		</header>
+		<!-- Header Slutt -->
+		<main>
+			<h1>Aktuelt</h1>
+			<section class="topicalGrid">
+				<p class="overskrift-undertekst col-span-2">
+					På denne siden har vi to tekster om teknologiutvikling rundt
+					maskinlæring og litt drøfting rundt det. Tekstene er fra tidligere
+					oppgaver vi har levert i teknologi og sammfun for programmerere faget.
+					Vi har lagt inn kilder og bilder, og endret på formatering fra den
+					orginale oppagaven. bildene har vi generert ved hjelp av Midjourney AI
+					og vi eier de kommersielle rettighetene for bruken av de
+				</p>
+				<hr class="col-span-2 hr_opacity" />
+				<figure class="col-span-2 bildecontainer">
+					<img
+						src="img\topical-images\Matrix_numbers.png"
+						alt="matrix numbers" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2020) -->
+					<figcaption>
+						Digital illustrasjon laget ved hjelp av Midjourney AI, (Axelsen,
+						2022).
+					</figcaption>
+				</figure>
 
-  <!-- Header Start -->
-  <header class="header">
-    <section class="header__logo">
-      <a href="topical-alt.html">
-        <img src="img\header-images\Logo_new.transparent.png" alt="C-SONS Logo">
-      </a>
-    </section>
-    <section class="header__content">
-      <input id="menu-checkbox-toggle" type="checkbox" /> <!-- Checkbox for drpMeny -->
-      <label class='header__content__icon-container' for="menu-checkbox-toggle">
-        <figure>
-          <img class="menu-open menu-icon-img" src="img\header-images\Burgermeny_transparent.png" alt="Åpne burgermeny">
-          <img class="menu-close menu-icon-img" src="img\header-images\Cross_Transparent.png" alt="Lukk Burgermeny">
-        </figure>
-      </label>
-      <nav class="header__content__nav" aria-label="Side Header">
-        <a class="header__content__nav__button" href="index.html">
-          <p>
-            Hjemmeside
-          </p></a>
-        <a class="header__content__nav__button" href="booking.html">
-          <p>
-            Reserver
-          </p>
-        </a> 
-        <a class="header__content__nav__button" href="cafe.html">
-          <p>
-            Restaurant
-          </p>
-        </a>
-        <a class="header__content__nav__button" href="Accessibility.html">
-          <p>
-            Inkludering
-          </p>
-        </a>
-        <a class="header__content__nav__button" href="topical.html">
-          <p class="headerActive">
-            Aktuelt
-          </p>
-        </a>
-      </nav>
-    </section>
-  </header>
-  <!-- Header Slutt -->
-  <main>
-    <H1>Aktuelt</H1>
-    <section class="topicalGrid">
-      <p class="overskrift-undertekst col-span-2">
-        På denne siden har vi to tekster om teknologiutvikling rundt maskinlæring og litt drøfting rundt det. Tekstene er fra tidligere oppgaver vi har levert i teknologi og sammfun for programmerere faget.
-        Vi har lagt inn kilder og bilder, og endret på formatering fra den orginale oppagaven. bildene har vi generert ved hjelp
-        av Midjourney AI og vi eier de kommersielle rettighetene for bruken av de
-      </p>
-      <hr class="col-span-2 hr_opacity">
-      <figure class="col-span-2 bildecontainer">
-        <img  src="img\topical-images\Matrix_numbers.png" alt="matrix numbers">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2020) -->
-        <figcaption>
-          Digital illustrasjon laget ved hjelp av Midjourney AI, (Axelsen, 2022).
-        </figcaption>
-      </figure>
-        
-      <h2 class="col-span-2">
-        Drøfting rundt bruken av maskinlæring i sosiale medier
-      </h2>
+				<h2 class="col-span-2">
+					Drøfting rundt bruken av maskinlæring i sosiale medier
+				</h2>
 
-      <p> 
-        I dag ser vi at det blir mer og mer normalt at maskinlæringsalgoritmer velger hva slags 
-        innhold vi ser på sosiale medier. Dette fører til en rekke forbedringer i hvordan vi
-        konsumerer innehold og hvordan vi innhenter informasjon. Det er også tydelig at det 
-        åpner for en rekke negative og i noen tilfeller løsninger som utnytter folk, og dette kan være problematisk<a href="#kilde"><sup>[1]</sup></a>
-      </p>
+				<p>
+					I dag ser vi at det blir mer og mer normalt at maskinlæringsalgoritmer
+					velger hva slags innhold vi ser på sosiale medier. Dette fører til en
+					rekke forbedringer i hvordan vi konsumerer innehold og hvordan vi
+					innhenter informasjon. Det er også tydelig at det åpner for en rekke
+					negative og i noen tilfeller løsninger som utnytter folk, og dette kan
+					være problematisk<a href="#kilde"><sup>[1]</sup></a>
+				</p>
 
-      <p>
-        Det positive med slike algoritmer er at man blir oppdatert på hva som er aktuelt og relevant,
-        uten å måtte selv søke seg opp på det. Her holder det med at du utnytter forskjellige
-        plattformer hvor algoritmer oppstår, som for eksempel diverse sosiale medier. <a href="#kilde"><sup>[2]</sup></a>
-      </p>
+				<p>
+					Det positive med slike algoritmer er at man blir oppdatert på hva som
+					er aktuelt og relevant, uten å måtte selv søke seg opp på det. Her
+					holder det med at du utnytter forskjellige plattformer hvor algoritmer
+					oppstår, som for eksempel diverse sosiale medier.
+					<a href="#kilde"><sup>[2]</sup></a>
+				</p>
 
-      <figure class="bildecontainer">
-        <img src="img\topical-images\AI_rendition_of_machinelearning.png" alt="AIs rendition of machine-learning">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-        <figcaption>
-          AI rendtition av maskinlæring, Digital illustrasjon laget ved hjelp av Midjourney AI, (Axelsen, 2022).
-        </figcaption>
-      </figure>
+				<figure class="bildecontainer">
+					<img
+						src="img\topical-images\AI_rendition_of_machinelearning.png"
+						alt="AIs rendition of machine-learning" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+					<figcaption>
+						AI rendtition av maskinlæring, Digital illustrasjon laget ved hjelp
+						av Midjourney AI, (Axelsen, 2022).
+					</figcaption>
+				</figure>
 
-      <p>
-        Ved hjelp av maskinlæringsalgoritmen fjernes behovet for å selv filtrere mediene, og passende 
-        innhold oppdages lettere. En annen positiv endring er utfasing av det vi nå kjenner som «clickbait». 
-        Dette kommer som et resultat av at algoritmen velger innhold som er mer interessant og relevant, 
-        istedenfor de som skriker høyest. <a href="#kilde"><sup>[3]</sup></a>
-      </p>
+				<p>
+					Ved hjelp av maskinlæringsalgoritmen fjernes behovet for å selv
+					filtrere mediene, og passende innhold oppdages lettere. En annen
+					positiv endring er utfasing av det vi nå kjenner som «clickbait».
+					Dette kommer som et resultat av at algoritmen velger innhold som er
+					mer interessant og relevant, istedenfor de som skriker høyest.
+					<a href="#kilde"><sup>[3]</sup></a>
+				</p>
 
-      <p class="row-span-2">
-        Vi får ikke kun gode løsninger uten noen negative konsekvenser. Nettroll kan utnytte algoritmene 
-        ved å få folk til å klikke seg inn på deres medier, som kan få maskinene til å tro at flere 
-        ønsker å se det samme innholdet. På denne måten kan for eksempel ett nettroll nå ut til flere 
-        folk. Dette er et eksempel på hvordan folk lærer seg hvordan algoritmene fungerer og kan utnytte 
-        det til deres fordel. Det kan være spesielt farlig når politiske aktører utnytter disse systemene 
-        for å få makt og spre misinformasjon som vi har sett I f.eks. USA de siste årene. <a href="#kilde"><sup>[4]</sup></a>
-      </p>
+				<p class="row-span-2">
+					Vi får ikke kun gode løsninger uten noen negative konsekvenser.
+					Nettroll kan utnytte algoritmene ved å få folk til å klikke seg inn på
+					deres medier, som kan få maskinene til å tro at flere ønsker å se det
+					samme innholdet. På denne måten kan for eksempel ett nettroll nå ut
+					til flere folk. Dette er et eksempel på hvordan folk lærer seg hvordan
+					algoritmene fungerer og kan utnytte det til deres fordel. Det kan være
+					spesielt farlig når politiske aktører utnytter disse systemene for å
+					få makt og spre misinformasjon som vi har sett I f.eks. USA de siste
+					årene. <a href="#kilde"><sup>[4]</sup></a>
+				</p>
 
-      <p>
-        Så lenge man klarer å filtrere bort upassende innhold, er maskinlæringsalgoritmene svært nyttig 
-        i vår hverdag. Maskinlæring åpner for mange positive og effektive løsninger som driver media 
-        fremover, men ikke uten konsekvenser og bekymringer. <a href="#kilde"><sup>[2]</sup></a>
-      </p>
+				<p>
+					Så lenge man klarer å filtrere bort upassende innhold, er
+					maskinlæringsalgoritmene svært nyttig i vår hverdag. Maskinlæring
+					åpner for mange positive og effektive løsninger som driver media
+					fremover, men ikke uten konsekvenser og bekymringer.
+					<a href="#kilde"><sup>[2]</sup></a>
+				</p>
 
-      <div class="kildeliste" id="kilde">
+				<div class="kildeliste" id="kilde">
+					<h3>Referanser</h3>
 
-        <h3>
-        Referanser
-        </h2>
+					<ol>
+						<li>
+							<p>
+								Kjetil Sander;
+								<a href="https://estudie.no/maskinlaering/"
+									>https://estudie.no/maskinlaering/</a
+								>
+							</p>
+						</li>
+						<li>
+							<p>
+								Espen Hofoss;
+								<a
+									href="https://forskning.no/forsvarets-forskningsinstitutt-informasjonsteknologi-internett/sosiale-medier-er-blitt-et-vapen/1731298"
+									>https://forskning.no/forsvarets-forskningsinstitutt-informasjonsteknologi-internett/sosiale-medier-er-blitt-et-vapen/1731298</a
+								>
+							</p>
+						</li>
+						<li>
+							<p>
+								John Olav Oldertrøen;
+								<a
+									href="https://forskning.no/data-kart-kunstig-intelligens/stordata-og-kunstig-intelligens-viser-ressursene-i-norge/1781446"
+									>https://forskning.no/data-kart-kunstig-intelligens/stordata-og-kunstig-intelligens-viser-ressursene-i-norge/1781446</a
+								>
+							</p>
+						</li>
+						<li>
+							<p>
+								Morten Goodwin;
+								<a
+									href="https://www.nrk.no/ytring/netthat-er-et-teknologiproblem-1.15555637"
+									>https://www.nrk.no/ytring/netthat-er-et-teknologiproblem-1.15555637</a
+								>
+							</p>
+						</li>
+					</ol>
+				</div>
+			</section>
+			<hr class="hr_opacity" />
+			<section class="topicalGrid">
+				<h2 class="col-span-2">Ansvaret til de som utvikler ny teknologi</h2>
 
-        <ol>
-          <li><p>Kjetil Sander; <a href="https://estudie.no/maskinlaering/">https://estudie.no/maskinlaering/</a></p></li>
-          <li><p>Espen Hofoss; <a href="https://forskning.no/forsvarets-forskningsinstitutt-informasjonsteknologi-internett/sosiale-medier-er-blitt-et-vapen/1731298">https://forskning.no/forsvarets-forskningsinstitutt-informasjonsteknologi-internett/sosiale-medier-er-blitt-et-vapen/1731298</a></p></li>
-          <li><p>John Olav Oldertrøen; <a href="https://forskning.no/data-kart-kunstig-intelligens/stordata-og-kunstig-intelligens-viser-ressursene-i-norge/1781446">https://forskning.no/data-kart-kunstig-intelligens/stordata-og-kunstig-intelligens-viser-ressursene-i-norge/1781446</a></p></li>
-          <li><p>Morten Goodwin; <a href="https://www.nrk.no/ytring/netthat-er-et-teknologiproblem-1.15555637">https://www.nrk.no/ytring/netthat-er-et-teknologiproblem-1.15555637</a></p></li>
-        </ol>
+				<p>
+					I dagens samfunn, med kontinuerlig utvikling av nye teknologier, er
+					det usikkert hvem som har ansvaret for konsekvensene som kommer av ny
+					teknologi. Noen vil si at samfunnet i stor grad blir påvirket av
+					teknologi, som for eksempel etter den industrielle revolusjonen, da
+					nye innovasjoner bidro til blant annet urbanisering og stor endring i
+					samfunnet. Men endringen i samfunnet som teknologi fører til er ikke
+					nødvendigvis positiv. Det kan være vanskelig å vurdere hvem som har
+					ansvaret for de negative konsekvensene av teknologien som utvikles.
+					Noen kan påstå at oppfinneren av dampmaskinen har skylden for
+					klimautfordringene vi står ovenfor i dag, mens andre kan si at skylden
+					ligger på de som misbrukte teknologien.
+					<a href="#kilde2"><sup>[1]</sup></a>
+				</p>
 
-      </div>
+				<figure class="bildecontainer display-none-max-700px">
+					<img
+						src="img\topical-images\Steam_engine_ai.png"
+						loading="lazy"
+						alt="A steam engine producing steam" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+					<figcaption>A steam engine. (Axelsen, 2022)</figcaption>
+				</figure>
 
-  
-    </section>
-    <hr class="hr_opacity">
-    <section class="topicalGrid">
+				<figure class="bildecontainer col-span-2">
+					<img
+						src="img\topical-images\Sosiale_medier_samfunn.png"
+						loading="lazy"
+						alt="Person med en F som ligner facebook logoen ved siden av" />
+					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
+					<figcaption>AI-generert bilde, (Axelsen, 2022).</figcaption>
+				</figure>
 
-      <h2 class="col-span-2">Ansvaret til de som utvikler ny teknologi</h2>
-      
-      <p>
-        I dagens samfunn, med kontinuerlig utvikling av nye teknologier, er det usikkert hvem som 
-        har ansvaret for konsekvensene som kommer av ny teknologi. Noen vil si at samfunnet i stor 
-        grad blir påvirket av teknologi, som for eksempel etter den industrielle revolusjonen, da 
-        nye innovasjoner bidro til blant annet urbanisering og stor endring i samfunnet. Men endringen 
-        i samfunnet som teknologi fører til er ikke nødvendigvis positiv. Det kan være vanskelig 
-        å vurdere hvem som har ansvaret for de negative konsekvensene av teknologien som utvikles. 
-        Noen kan påstå at oppfinneren av dampmaskinen har skylden for klimautfordringene vi står ovenfor 
-        i dag, mens andre kan si at skylden ligger på de som misbrukte teknologien. <a href="#kilde2"><sup>[1]</sup></a>
-      </p>
+				<p>
+					Sosiale medier er et eksempel på hvordan teknologien kan ha påvirkning
+					på samfunnet. Men ansvaret for konsekvensene kan ikke bare skyldes på
+					innovatører. Det kan dukke opp uventede konsekvenser, som for eksempel
+					de konsekvensene utbyggingen av industri har hatt på klimaet.<a
+						href="#kilde2"
+						><sup>[2]</sup></a
+					>
+				</p>
 
-      <figure class="bildecontainer display-none-max-700px">
-        <img src="img\topical-images\Steam_engine_ai.png" loading="lazy" alt="A steam engine producing steam">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-        <figcaption>
-          A steam engine. (Axelsen, 2022)
-        </figcaption>
-      </figure>
+				<p>
+					De som utvikler og produserer ny teknologi har etter vår mening ett
+					sosialt ansvar overfor resten av samfunnet. De burde både vurdere
+					hvordan produktet deres er planlagt å bli brukt, men også hvordan noen
+					kan misbruke de. Det er vanskelig å si i hvilken grad man kan gardere
+					seg helt mot at innovasjoner har en negativ innvirkning på samfunnet,
+					men man burde konfronteres med spørsmål om hvordan innovasjoner kan
+					komme til å ha en effekt på samfunnet, og ta denne vurderingen
+					seriøst.
+				</p>
 
+				<div class="kildeliste col-span-2" id="kilde2">
+					<h3>Referanser</h3>
 
-      <figure class="bildecontainer col-span-2">
-        <img src="img\topical-images\Sosiale_medier_samfunn.png" loading="lazy" alt="Person med en F som ligner facebook logoen ved siden av">
-        <!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
-        <figcaption>
-          AI-generert bilde, (Axelsen, 2022).
-        </figcaption>
-      </figure>
+					<ol>
+						<li>
+							<p>
+								Ellen Schrumpf, Edvard Bull og Knut Are Tvedt;
+								<a href="https://snl.no/den_industrielle_revolusjon"
+									>https://snl.no/den_industrielle_revolusjon</a
+								>
+							</p>
+						</li>
+						<li>
+							<p>
+								Tor W. Andreassen;
+								<a
+									href="https://www.nhh.no/nhh-bulletin/artikkelarkiv/2022/november/sosiale-medier-er-usosiale/"
+									>https://www.nhh.no/nhh-bulletin/artikkelarkiv/2022/november/sosiale-medier-er-usosiale/</a
+								>
+							</p>
+						</li>
+					</ol>
+				</div>
+			</section>
+		</main>
 
-        <p>
-          Sosiale medier er et eksempel på hvordan teknologien kan ha påvirkning på samfunnet. 
-          Men ansvaret for konsekvensene kan ikke bare skyldes på innovatører. Det kan dukke opp uventede 
-          konsekvenser, som for eksempel de konsekvensene utbyggingen av industri har hatt på klimaet.<a href="#kilde2"><sup>[2]</sup></a>
-        </p>
-      
-        <p>
-        De som utvikler og produserer ny teknologi har etter vår mening ett sosialt ansvar overfor resten 
-        av samfunnet. De burde både vurdere hvordan produktet deres er planlagt å bli brukt, men også 
-        hvordan noen kan misbruke de. Det er vanskelig å si i hvilken grad man kan gardere seg helt 
-        mot at innovasjoner har en negativ innvirkning på samfunnet, men man burde konfronteres med 
-        spørsmål om hvordan innovasjoner kan komme til å ha en effekt på samfunnet, og ta denne vurderingen seriøst.
-        </p>
+		<!--Footer Start-->
+		<footer>
+			<div class="footerCointainer">
+				<section class="kontaktOss">
+					<h2>Kontakt oss</h2>
+					<div class="kontaktOss__sosialemedier">
+						<figure class="kontaktOss__sosialemedier__bilde">
+							<img
+								src="img\footer-images\Telefon_icon.png"
+								loading="lazy"
+								alt="Telefon ikon" />
+						</figure>
+						<a href="tel: +4712345678">
+							<p>+47 123 45 678</p>
+						</a>
+						<figure class="kontaktOss__sosialemedier__bilde">
+							<img
+								src="img\footer-images\Mail_icon.png"
+								loading="lazy"
+								alt="E post ikon" />
+						</figure>
+						<a href="mailto:c-sons@example.com">
+							<p>c-sons@example.com</p>
+						</a>
+						<figure class="kontaktOss__sosialemedier__bilde">
+							<img
+								src="img\footer-images\Instagram_icon.png"
+								loading="lazy"
+								alt="Instagram ikon" />
+						</figure>
+						<a href="https://www.instagram.com/" target="_blank" rel="noopener">
+							<p>Instagram</p>
+						</a>
+						<figure class="kontaktOss__sosialemedier__bilde">
+							<img
+								src="img\footer-images\Facebook_icon.png"
+								loading="lazy"
+								alt="Facebook ikon" />
+						</figure>
+						<a href="https://facebook.com" target="_blank" rel="noopener">
+							<p>Facebook</p>
+						</a>
+						<figure class="kontaktOss__sosialemedier__bilde">
+							<img
+								src="img\footer-images\Twitter_icon.png"
+								loading="lazy"
+								alt="Twitter ikon" />
+						</figure>
+						<a href="https://twitter.com/" target="_blank" rel="noopener">
+							<p>Twitter</p>
+						</a>
+					</div>
+				</section>
 
-      <div class="kildeliste col-span-2" id="kilde2">
+				<section class="åpningstider">
+					<h2>Åpningstider</h2>
+					<div class="åpningstider__tidspunkt">
+						<p>Mandag - Torsdag:</p>
+						<p>09-22</p>
+					</div>
+					<div class="åpningstider__tidspunkt">
+						<p>Fredag:</p>
+						<p>09-23</p>
+					</div>
+					<div class="åpningstider__tidspunkt">
+						<p>Lørdag:</p>
+						<p>10-23</p>
+					</div>
+					<div class="åpningstider__tidspunkt">
+						<p>Søndag:</p>
+						<p>10-20</p>
+					</div>
+				</section>
 
-        <h3>
-          Referanser
-        </h3>
-
-        <ol>
-          <li><p>Ellen Schrumpf, Edvard Bull og Knut Are Tvedt; <a href="https://snl.no/den_industrielle_revolusjon">https://snl.no/den_industrielle_revolusjon</a></p></li>
-          <li><p>Tor W. Andreassen; <a href="https://www.nhh.no/nhh-bulletin/artikkelarkiv/2022/november/sosiale-medier-er-usosiale/">https://www.nhh.no/nhh-bulletin/artikkelarkiv/2022/november/sosiale-medier-er-usosiale/</a></p></li>
-        </ol>
-
-      </div>
-
-  </section>
-
-  </main>
-
-  <!--Footer Start-->
-  <footer>
-    <div class="footerCointainer">
-      <section class="kontaktOss">
-        <h2>Kontakt oss</h2>
-        <div class="kontaktOss__sosialemedier">
-          <figure class="kontaktOss__sosialemedier__bilde">
-            <img src="img\footer-images\Telefon_icon.png" loading="lazy" alt="Telefon ikon">
-          </figure>
-          <a href="tel: +4712345678">
-            <p>+47 123 45 678</p>
-          </a>
-          <figure class="kontaktOss__sosialemedier__bilde">
-            <img src="img\footer-images\Mail_icon.png" loading="lazy" alt="E post ikon">
-          </figure>
-          <a href="mailto:c-sons@example.com">
-            <p>c-sons@example.com</p>
-          </a>
-          <figure class="kontaktOss__sosialemedier__bilde">
-            <img src="img\footer-images\Instagram_icon.png" loading="lazy" alt="Instagram ikon">
-          </figure>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-            <p>Instagram</p>
-          </a>
-          <figure class="kontaktOss__sosialemedier__bilde">
-            <img src="img\footer-images\Facebook_icon.png" loading="lazy" alt="Facebook ikon">
-          </figure>
-          <a href="https://facebook.com" target="_blank" rel="noopener">
-            <p>Facebook</p>
-          </a>
-          <figure class="kontaktOss__sosialemedier__bilde">
-            <img src="img\footer-images\Twitter_icon.png" loading="lazy" alt="Twitter ikon">
-          </figure>
-          <a href="https://twitter.com/" target="_blank" rel="noopener">
-            <p>Twitter</p>
-          </a>
-        </div>
-      </section>
-
-      <section class="åpningstider">
-        <h2>Åpningstider</h2>
-        <div class="åpningstider__tidspunkt">
-          <p>Mandag - Torsdag:</p>
-          <p>09-22</p>
-        </div>
-        <div class="åpningstider__tidspunkt">
-          <p>Fredag:</p>
-          <p>09-23</p>
-        </div>
-        <div class="åpningstider__tidspunkt">
-          <p>Lørdag:</p>
-          <p>10-23</p>
-        </div>
-        <div class="åpningstider__tidspunkt">
-          <p>Søndag:</p>
-          <p>10-20</p>
-        </div>
-      </section>
-      
-      <section class="adresse">
-        <h2>Finn oss</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno" 
-        width="300" 
-        height="200" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade"
-        aria-label="Google maps">
-        loading="lazy"</iframe>
-        <a href="https://goo.gl/maps/tBUQerRK4z7mX8H1A" target="_blank" rel="noopener" class="adresse__link">
-          <p>Ellen Gleditschs hus</p>
-          <p>Pilestredet 35</p>
-          <p>0166 Oslo</p>
-        </a>
-
-      </section>
-    </div>
-  </footer>
-  <!--Footer slutt-->
-</body>
+				<section class="adresse">
+					<h2>Finn oss</h2>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393.7729353721004!2d10.733914635603998!3d59.9194845138149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1667222934645!5m2!1sno!2sno"
+						width="300"
+						height="200"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+						aria-label="Google maps">
+						loading="lazy"</iframe
+					>
+					<a
+						href="https://goo.gl/maps/tBUQerRK4z7mX8H1A"
+						target="_blank"
+						rel="noopener"
+						class="adresse__link">
+						<p>Ellen Gleditschs hus</p>
+						<p>Pilestredet 35</p>
+						<p>0166 Oslo</p>
+					</a>
+				</section>
+			</div>
+		</footer>
+		<!--Footer slutt-->
+	</body>
 </html>
