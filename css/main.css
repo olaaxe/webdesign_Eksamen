@@ -18,6 +18,7 @@
 
 :is(h3, h2, h1) {
   color: var(--clr-overskrift);
+  font-weight: bold;
 }
 :is(p, a, li) {
   color: var(--clr-tekst);
@@ -33,6 +34,36 @@
     --clr-boocking__card: rgb(26, 26, 26);
   }
 }
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 1.4rem;
+  font-size: 62.5%;
+  height: 100%;
+}
+body{
+  margin: 0px;
+  height: 100%;
+  position: relative;
+  background-color: var(--clr-bakgrunn);
+  display: flex;
+  flex-direction: column;
+}
+body ::selection{
+  background-color: rgb(202, 67, 25);
+  color: whitesmoke;}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: Roboto, sans-serif;
+}
+main{
+  margin: 0 auto;
+  max-width: 1000px;
+  flex: 1 0 auto;
+  padding: 4rem 2rem 1rem 2rem;
+}
 main h1:after,
 main h2:after{
   display: inline-block;
@@ -43,6 +74,7 @@ main h2:after{
   background-color: var(--clr-rød);
   transform: translate(3px, 2px);
 }
+
 main a:hover{
   color: var(--clr-rød__hover);
 }
@@ -54,69 +86,17 @@ p{
 h1 {
   font-size: 4rem;
 }
-
-
-body, html {
-  height: 100%;
+h2 {
+  font-size: 3rem;
 }
-body ::selection{
-  background-color: rgb(202, 67, 25);
-  color: whitesmoke;}
-
-body{
-  margin: 0px;
-  position: relative;
-  background-color: var(--clr-bakgrunn);
-  display: flex;
-  flex-direction: column;
+sup{
+  font-size: 1.5rem;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 1.6rem;
-  font-family: Roboto, sans-serif;
-}
-
-html{
-  scroll-behavior: smooth;
-  scroll-padding: 1.4rem;
-  font-size: 62.5%;
-}
-
-.overskrift {
-  color: var(--clr-overskrift);
-  font-weight: bold;
-}
-
-main{
-  margin: 0 auto;
-  max-width: 1000px;
-  flex: 1 0 auto;
-  padding: 4rem 2rem 1rem 2rem;
-}
-
 .hr_opacity {
   opacity: 40%;
   margin-bottom: 1rem;
 }
 
-header{
-  background: var(--clr-header);/*<--Header farge*/
-  box-sizing: border-box;
-}
-footer {
-  display: flex;
-  flex-shrink: 0;
-  background-color: var(--clr-footer); /*<--Footer farge*/
-  justify-content: center;
-  margin-top: 1em;
-}
-
-sup{
-  font-size: 1.5rem;
-
-}
 @media (max-width: 319px) {
   main{
     padding: 1rem 0 1rem 0;

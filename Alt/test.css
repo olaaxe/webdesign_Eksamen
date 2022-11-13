@@ -61,41 +61,39 @@ body{
   background-size:cover;
   background-position:center;
 }
-.articles__text--header{
-  font-size: 4rem;
-  color: white;
+.articles__container--img1{
+  transition: background-image 2s ease-in;
+  background-image: url("../img/topical-images/AI_rendition_of_machinelearning.png");
 }
-.articles__text{
+.articles__container--img2{
+  background-image: url("../img/topical-images/Sosiale_medier_samfunn.png");
+}
+.articles__content{
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
 }
-.articles__text p{
+
+.articles__content--header{
+  font-size: 4rem;
+  color: white;
+}
+.articles__content--text{
   max-width: 80ch;
   color: white;
   background-color: rgb(0, 0, 0, 0.9);
   border-radius: 10px;
   padding: 2rem;
 }
-.articles__text p a{
+.articles__content--link{
   color: white;
   text-decoration: none;
 }
-.articles__text p a:hover{
+.articles__content--link:hover{
   color: var(--clr-rød__hover);
 }
-.articles__text--ref{
+.articles__content--ref{
   color: white;
-}
-
-
-.articles__container--art1{
-  transition: background-image 2s ease-in;
-  background-image: url("../img/topical-images/AI_rendition_of_machinelearning.png");
-}
-
-.articles__container--art2{
-  background-image: url("../img/topical-images/Sosiale_medier_samfunn.png");
 }

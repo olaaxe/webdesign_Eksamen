@@ -8,6 +8,10 @@
   width: 100%;
   transition: filter 0.25s;
 } */
+header{
+  background: var(--clr-header);/*<--Header farge*/
+  box-sizing: border-box;
+}
 .header__logo{
   display: flex;
   justify-content: center;
@@ -143,6 +147,13 @@
 }
 
 /*--------- Footer-------- */
+footer {
+  display: flex;
+  flex-shrink: 0;
+  background-color: var(--clr-footer); /*<--Footer farge*/
+  justify-content: center;
+  margin-top: 1em;
+}
 
 .footerCointainer{
   display: grid;
