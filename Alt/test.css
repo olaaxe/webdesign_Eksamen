@@ -41,7 +41,7 @@ body{
 }
 
 @media (hover: none){
-  .articles{
+  .articles__content{
     pointer-events: none;
   }
 }
