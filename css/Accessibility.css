@@ -44,6 +44,13 @@ hr{
   border-radius: 5px;
   
 }
+.photo__img--cover{
+  object-fit: cover;
+  max-height: 310px;
+}
+.photo__img--pos{
+  object-position: 0px -20px;
+}
 .container__photo--big{
   flex: 1 1 100%;
   
