@@ -20,7 +20,7 @@ header:hover .header__logo{
   transform: translateY(0%);
   transition: transform 500ms ease-in;
 }
-footer{
+/* footer{
   opacity: 0;
   transform: translateY(80%);
   transition: opacity 500ms ease-in, transform 500ms ease-in;
@@ -31,7 +31,7 @@ footer:hover{
   opacity: 1;
   transform: translateY(0%);
   transition: opacity 500ms ease-in, transform 500ms ease-in;
-}
+} */
 body{
   overflow: hidden;
 }
