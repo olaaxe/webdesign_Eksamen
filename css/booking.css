@@ -1,50 +1,57 @@
-/*dadadddddddddddddddddddd*/
-h2 {
-  font-size: 3rem;
-}
-.intro-booking{
+/* Intro section ----------------------------------------------------------------------*/
+.intro{
   flex-wrap: wrap-reverse;
   gap: 2rem;
 }
-.intro-booking >*{
+.intro >*{
   flex: 1 1 45%;
 }
-.intro-booking__img{
+.intro__img{
   overflow: hidden;
   box-sizing: border-box;
 }
-.intro-booking__img img{
-  /* width: 100%;
-  margin-bottom: 2em; */
+.intro__img img{
   width: 100%;
   max-height: 400px;
   aspect-ratio: 5 / 3;
   object-fit: cover;
   border-radius: 5px;
 }
-.intro-booking__info{
+.intro__info{
   margin: 3rem 0 4rem 0;
 }
-.intro-booking__info p{
+.intro__info--tekst{
   padding: 0 0 3rem 0;
 }
-.intro-booking__info a{
+.intro__info--button{
   text-decoration: none;
   padding: 1rem 5rem;
   margin: 1rem 0;
+  max-width: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--clr-rød);
+  color: var(--clr-knapper);
+  font-weight: bold;
+  transition: box-shadow 0.2s;
 }
-.intro-booking__info a:hover{
+.intro__info--button:hover{
+  box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.705);
   color: var(--clr-knapper);
 }
 
-.Card-introtekst{
+.intro__info--button:active {
+  background-color: var(--clr-rød__activate);
+}
+/* card section -------------------------------------------------------------------------*/
+.card-introtekst{
   margin: 2rem 0 0;
 }
-.Card-introtekst >*{
+.card-introtekst >*{
   margin-bottom: 1.5rem;
 }
 
-.Card-Flex{
+.card-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -53,73 +60,73 @@ h2 {
   
 }
 
-.Card{
+.card{
   display: grid;
   grid-template-columns: 1fr auto;
-  background-color: var(--clr-boocking__card);
+  background-color: var(--clr-booking__card);
   border: solid 1px rgb(0, 0, 0, 40%);
   border-radius: 0 20px 0 20px;
   justify-content: space-between;
   flex: 0 1 min-content;
   margin: 0.5rem;
 }
-.Card:hover{
+.card:hover{
   border: 0px;
   box-shadow: var(--shadow-box);
-  background-color: var(--clr-boocking__card);
+  background-color: var(--clr-booking__card);
   margin-left: 2px;
   transition: box-shadow 0.2s;
 }
 @media (prefers-color-scheme: dark){
-  .Card {
+  .card {
     border: solid 1px var(--clr-rød);
   }
 }
 
 @media (max-width: 659px) {
-  .Card{
+  .card{
     grid-template-columns: auto;
   }
 }
 @media (max-width: 639px) {
-  .Card{
+  .card{
     margin: 0.5rem 0;
   }
 }
 @media (max-width: 350px){
-  .Card__form,
-  #form:checked ~.Card__form,
-  #form2:checked ~.Card__form,
-  #form3:checked ~.Card__form,
-  .Card__info{
+  .card__form,
+  #form:checked ~.card__form,
+  #form2:checked ~.card__form,
+  #form3:checked ~.card__form,
+  .card__info{
     min-width: 260px !important;
   }
 }
 @media (max-width: 300px){
-  .Card__form,
-  #form:checked ~.Card__form,
-  #form2:checked ~.Card__form,
-  #form3:checked ~.Card__form,
-  .Card__info{
+  .card__form,
+  #form:checked ~.card__form,
+  #form2:checked ~.card__form,
+  #form3:checked ~.card__form,
+  .card__info{
     min-width: 240px !important;
   }
 }
 
-.Card :is(h3, h4){
+.card :is(h3, h4){
   font-size: 3rem;
   padding-bottom: 4rem;
 }
-.Card p{
+.card p{
   padding-bottom: 3rem;
 }
-.Card p:nth-child(3){
+.card p:nth-child(3){
   padding-bottom: 1rem;
 }
-.Card li p{
+.card li p{
   padding: 0px;
 }
 
-.Card__info{
+.card__info{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -127,16 +134,16 @@ h2 {
   min-width: 288px;
 
 }
-.Cards__info__funksjoner li{
+.cards__info__funksjoner li{
   display: grid;
   grid-template-columns: 20px 1fr;
   gap: 1rem;
 }
-.Cards__info__funksjoner li img{
+.cards__info__funksjoner li img{
   max-width: 100%;
 }
 
-.Card__form__tos{
+.card__form__tos{
   display: grid;
   grid-template-columns: 2rem 1fr;
   gap: 1rem;
@@ -145,26 +152,26 @@ input#form, input#form2, input#form3{
   display: none;
 }
 
-#form ~.Card__form,
-#form2 ~.Card__form,
-#form3 ~.Card__form{
+#form ~.card__form,
+#form2 ~.card__form,
+#form3 ~.card__form{
   display: none;
 }
 
-#form:checked ~.Card__form,
-#form2:checked ~.Card__form,
-#form3:checked ~.Card__form{
+#form:checked ~.card__form,
+#form2:checked ~.card__form,
+#form3:checked ~.card__form{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 2rem 0 2rem 2rem;
   min-width: 288px;
 }
-.Card__form >*{
+.card__form >*{
   width: 100%;
 }
-.Card__form input,
-.Card__form  textarea{
+.card__form input,
+.card__form  textarea{
   width: 90%;
   outline: none;
   border: 1px solid var(--clr-grå);
@@ -174,18 +181,18 @@ input#form, input#form2, input#form3{
   margin: 5px 0 5px 0;
 }
 
-.Card__form  textarea{
+.card__form  textarea{
   resize: none;
   min-height: 6rem;
 }
 
-.Card__form  input:focus,
-.Card__form  textarea:focus{
+.card__form  input:focus,
+.card__form  textarea:focus{
   outline: none;
   border: 2px solid var(--clr-rød);
 }
 
-.Cards__button{
+.cards__button{
   max-width: fit-content;
   border-radius: 10px;
   padding: 1rem 2rem;
@@ -196,19 +203,19 @@ input#form, input#form2, input#form3{
   transition: box-shadow 0.2s;
   margin-top: 4rem;
 }
-.Cards__button:hover{
+.cards__button:hover{
   box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.705);
 }
 
-.Cards__button:active {
+.cards__button:active {
   background-color: var(--clr-rød__activate);
 }
-.Cards__button#submit{
+.cards__button#submit{
   border: 0;
   padding: 1rem 2rem;
   margin: 0;
 }
-/*---------------------------------------------*/
+/*---------------------------------------------------------------------------*/
 
 
 

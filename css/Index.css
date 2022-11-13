@@ -1,9 +1,3 @@
-.intro__overskrift{
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-}
-
-
 .intro-wrapper {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -15,7 +9,12 @@
 .intro-wrapper > * {
   flex: 1 1 48%;
 }
-p {
+.intro__overskrift{
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.intro__text {
   padding-top: 2rem;
 }
 
