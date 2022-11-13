@@ -68,82 +68,84 @@
 		<!-- Header Slutt -->
 		<main>
 			<h1>Inkluderende design</h1>
-			<div>
-				<!-- Polypane Test -->
-				<section class="AccFlex">
-					<figure class="img">
-						<img
-							src="img\accessability-images\H1_error.png"
-							alt="Feilmelding som  ber oss bruke bare 1 H1 per side" />
-					</figure>
-					<div class="AccFlex__text">
-						<h2>Headdings</h2>
-						<p>
-							For den automatiske testen brukte vi et program som heter
-							Polypane. Gjennom Polypane fant vi ut hvordan vi skulle bruke
-							&lt;H&gt; elementer slik at nettsiden blir strukturert riktig. Den
-							sa i fra om at det kun kunne være et H1 element per side og viste
-							hvordan en automatisk frembrakt innholdsfortegnelse ville se ut.
-							Dette er nyttig for bl.a. skjermlesere.
-						</p>
-					</div>
-				</section>
-
-				<hr />
-
-				<section class="AccFlex">
-					<div class="AccFlex__text">
-						<h2>Alt tekst</h2>
-						<p>
-							Vi fant også ut hvordan og hvorfor vi må gi en alt-tekst til
-							bildene våre. Polypane ga en feilmelding hvis bildet manglet test
-							eller brukte unødvendige ord som image når vi beskrev bildet.
-							Dette er også nyttig for skjermlesere slik at svaksynte kan høre
-							hva som er på bildet, eller hvis bildet av en eller annen grunn
-							ikke laster inn så står det hva som skulle vært der.
-						</p>
-					</div>
-
-					<figure class="img">
-						<img
-							src="img\accessability-images\Img-tekst-redundant.png"
-							alt="Skjermbilde av feilmelding for bruk av bildetekst" />
-					</figure>
-				</section>
-
-				<hr />
-
-				<section class="AccFlex">
-					<figure class="img">
-						<!-- lag bildet på 480:300 -->
-						<img
-							src="img\accessability-images\Focus-order-combo.png"
-							alt="Skjermbilde av streker på nettsiden som viser rekkeføgen nettleseren forstår at siden er i før og etter test" />
-					</figure>
-					<div class="AccFlex__text">
-						<h2>Focus order</h2>
-						<p>
-							En annen, men relatert test var kalt «focus-order». Denne testen
-							sjekket i hvilken rekkefølge de forskjellige linkene kom. Vi fant
-							da kjapt ut at vi ikke hadde alle lenkene i riktig rekkefølge.
-							Problemet med det er at brukeren ville hoppet opp og ned på siden
-							mens hen brukte tab for å navigere.
-						</p>
-					</div>
-				</section>
-			</div>
+			<!-- Polypane Test -->
+			<section class="container">
+				<figure class="container__photo">
+					<img
+						class="photo__img"
+						src="img\accessability-images\H1_error.png"
+						alt="Feilmelding som  ber oss bruke bare 1 H1 per side" />
+				</figure>
+				<div class="container__body">
+					<h2 class="container__header">Headdings</h2>
+					<p>
+						For den automatiske testen brukte vi et program som heter Polypane.
+						Gjennom Polypane fant vi ut hvordan vi skulle bruke &lt;H&gt;
+						elementer slik at nettsiden blir strukturert riktig. Den sa i fra om
+						at det kun kunne være et H1 element per side og viste hvordan en
+						automatisk frembrakt innholdsfortegnelse ville se ut. Dette er
+						nyttig for bl.a. skjermlesere.
+					</p>
+				</div>
+			</section>
 
 			<hr />
 
-			<section class="AccFlex big">
-				<!-- @media -->
-				<figure class="img aspec">
+			<section class="container">
+				<div class="container__body">
+					<h2 class="container__header">Alt tekst</h2>
+					<p>
+						Vi fant også ut hvordan og hvorfor vi må gi en alt-tekst til bildene
+						våre. Polypane ga en feilmelding hvis bildet manglet test eller
+						brukte unødvendige ord som image når vi beskrev bildet. Dette er
+						også nyttig for skjermlesere slik at svaksynte kan høre hva som er
+						på bildet, eller hvis bildet av en eller annen grunn ikke laster inn
+						så står det hva som skulle vært der.
+					</p>
+				</div>
+
+				<figure class="container__photo">
 					<img
+						class="photo__img"
+						src="img\accessability-images\Img-tekst-redundant.png"
+						alt="Skjermbilde av feilmelding for bruk av bildetekst" />
+				</figure>
+			</section>
+
+			<hr />
+
+			<section class="container">
+				<figure class="container__photo">
+					<!-- lag bildet på 480:300 -->
+					<img
+						class="photo__img"
+						src="img\accessability-images\Focus-order-combo.png"
+						alt="Skjermbilde av streker på nettsiden som viser rekkeføgen nettleseren forstår at siden er i før og etter test" />
+				</figure>
+				<div class="container__body">
+					<h2 class="container__header">Focus order</h2>
+					<p>
+						En annen, men relatert test var kalt «focus-order». Denne testen
+						sjekket i hvilken rekkefølge de forskjellige linkene kom. Vi fant da
+						kjapt ut at vi ikke hadde alle lenkene i riktig rekkefølge.
+						Problemet med det er at brukeren ville hoppet opp og ned på siden
+						mens hen brukte tab for å navigere.
+					</p>
+				</div>
+			</section>
+
+			<hr />
+
+			<section class="container">
+				<!-- @media -->
+				<figure class="container__photo container__photo--big">
+					<img
+						class="photo__img photo__img--cover"
 						src="img\accessability-images\Responsive-design.png"
 						alt="Viser Responsive-design" />
 				</figure>
-				<div class="AccFlex__text">
-					<h2>Responsiv design</h2>
+				<div class="container__body">
+					<h2 class="container__header">Responsiv design</h2>
 					<p>
 						Nettsiden er programmert inn med fokus på responsiv design. Dette
 						skjer ved hjelp av @media og flex-wrap: wrap; Disse to formene for
@@ -162,10 +164,10 @@
 
 			<hr />
 
-			<section class="AccFlex">
+			<section class="container">
 				<!-- REM -->
-				<div class="AccFlex__text">
-					<h2>REM</h2>
+				<div class="container__body">
+					<h2 class="container__header">REM</h2>
 					<p>
 						Nettsiden er programmert med <abbr title="Root EM">rem</abbr> som
 						fontstørrelse istedenfor px. Dette gjør at skriftstrørrelsen vil
@@ -186,7 +188,7 @@
 
 			<hr />
 
-			<section class="AccFlex reverse">
+			<section class="container container--wrapReverse">
 				<!-- Darkmode -->
 				<video
 					src="img\accessability-images\Darkmode.mp4"
@@ -194,8 +196,8 @@
 					controls
 					muted
 					loop></video>
-				<div class="AccFlex__text">
-					<h2>Darkmode og Lightmode</h2>
+				<div class="container__body">
+					<h2 class="container__header">Darkmode og Lightmode</h2>
 					<p>
 						Nettsiden er programmert inn med både Dark og Light. Modusen som
 						oppstår avhenger av hva som er standard på enheten. Darkmode kan ha
