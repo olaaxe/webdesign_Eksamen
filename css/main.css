@@ -5,7 +5,7 @@
   --clr-overskrift: rgb(0, 0, 0);
   --clr-tekst: rgb(46, 46, 46);
   --clr-knapper: rgb(255, 255, 255);
-  --clr-booking__card: rgb(255, 253, 248);
+  --clr-boocking__card: rgb(255, 253, 248);
 
   --clr-grå: rgb(46,46,46);
   --clr-beige: rgb(225, 215, 196);
@@ -31,7 +31,7 @@
     --clr-overskrift: rgb(255, 250, 240);
     --clr-tekst: rgb(225, 215, 196);
     --clr-knapper: rgb(255, 250, 240);
-    --clr-booking__card: rgb(26, 26, 26);
+    --clr-boocking__card: rgb(26, 26, 26);
   }
 }
 html{
@@ -92,7 +92,7 @@ h2 {
 sup{
   font-size: 1.5rem;
 }
-hr{
+.hr_opacity {
   opacity: 40%;
   margin-bottom: 1rem;
 }

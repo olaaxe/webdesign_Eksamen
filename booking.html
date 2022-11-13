@@ -87,16 +87,16 @@
 		<!-- Header Slutt -->
 
 		<main>
-			<section class="intro">
-				<figure class="intro__img">
+			<section class="intro-booking">
+				<figure class="intro-booking__img">
 					<img
 						src="img/booking-images/Hotell.png"
 						alt="Utenfor konferansebygget" />
 					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
 				</figure>
-				<div class="intro__info">
+				<div class="intro-booking__info">
 					<h1>Møterom</h1>
-					<p class="intro__info--tekst">
+					<p>
 						Våre møterom er lokalisert i de fleste store byene i verden, slik at
 						vi er tilgjengelige hver gang du har lyst til å holde et møte.
 						Imponer kundene dine, arranger minneverdige workshops, eller lever
@@ -104,13 +104,13 @@
 						forespørsel. Et dedikert team vil være til stede for å hjelpe deg
 						med å holde møtet ditt.
 					</p>
-					<a class="intro__info--button" href="#møterom">Reserver nå</a>
+					<a class="Cards__button" href="#møterom">Reserver nå</a>
 				</div>
 				<hr class="hr_opacity" />
 			</section>
-			<!--ending på Intro------------------------------------------------------------------------>
+			<!--ending på første del-->
 
-			<section class="card-introtekst" name="møterom" id="møterom">
+			<section class="Card-introtekst" name="møterom" id="møterom">
 				<h2>Våre møterom</h2>
 				<p>
 					Vi tilbyr møterom for en rekke forretningsbehov. Les om dem nedenfor
@@ -118,10 +118,10 @@
 					bestilling på farten gjennom appen vår.
 				</p>
 
-				<!-- cards section ------------------------------------------------------------------------>
-				<section class="card-container">
-					<div class="card">
-						<div class="card__info">
+				<!-- Cards section -->
+				<section class="Card-Flex">
+					<div class="Card">
+						<div class="Card__info">
 							<div>
 								<h3>Konferanserom</h3>
 								<p>
@@ -129,7 +129,7 @@
 									rommene perfekte for ditt neste forretningsmøte.
 								</p>
 								<p>Funksjoner</p>
-								<ul class="cards__info__funksjoner">
+								<ul class="Cards__info__funksjoner">
 									<li>
 										<img
 											src="img\Booking-icons\Checkmark.png"
@@ -154,15 +154,15 @@
 								</ul>
 							</div>
 							<label for="form">
-								<div class="cards__button">Reserver</div>
+								<div class="Cards__button">Reserver</div>
 								<!-- form fysisk knapp -->
 							</label>
 						</div>
-						<!-- card__info -->
+						<!-- Card__info -->
 						<input type="checkbox" name="SpawnContactForm" id="form" />
 						<!-- Form checkboks -->
 						<form
-							class="card__form"
+							class="Card__form"
 							action="https://formsubmit.co/4196f20562bac6a16f89faeeda50d84c"
 							method="POST">
 							<input type="hidden" name="_captcha" value="false" />
@@ -189,12 +189,12 @@
 									placeholder="Ekstra information"></textarea>
 							</div>
 							<div>
-								<div class="card__form__tos">
+								<div class="Card__form__tos">
 									<input type="checkbox" name="checkbox" required />
 									<p>I agree to the Terms of Service</p>
 								</div>
 								<input
-									class="cards__button"
+									class="Cards__button"
 									id="submit"
 									type="submit"
 									value="Book nå" />
@@ -202,8 +202,8 @@
 						</form>
 					</div>
 					<!--  -->
-					<div class="card">
-						<div class="card__info">
+					<div class="Card">
+						<div class="Card__info">
 							<div>
 								<h3>Treningsrom</h3>
 								<p>
@@ -211,7 +211,7 @@
 									støtte på stedet.
 								</p>
 								<p>Funksjoner</p>
-								<ul class="cards__info__funksjoner">
+								<ul class="Cards__info__funksjoner">
 									<li>
 										<img
 											src="img\Booking-icons\Checkmark.png"
@@ -237,14 +237,14 @@
 							</div>
 							<label for="form2">
 								<!-- form fysisk knapp -->
-								<div class="cards__button">Reserver</div>
+								<div class="Cards__button">Reserver</div>
 							</label>
 						</div>
-						<!-- card__info -->
+						<!-- Card__info -->
 						<input type="checkbox" name="SpawnContactForm" id="form2" />
 						<!-- Form checkboks -->
 						<form
-							class="card__form"
+							class="Card__form"
 							action="https://formsubmit.co/4196f20562bac6a16f89faeeda50d84c"
 							method="POST">
 							<input type="hidden" name="_captcha" value="false" />
@@ -271,12 +271,12 @@
 									placeholder="Ekstra information"></textarea>
 							</div>
 							<div>
-								<div class="card__form__tos">
+								<div class="Card__form__tos">
 									<input type="checkbox" name="checkbox" required />
 									<p>I agree to the Terms of Service</p>
 								</div>
 								<input
-									class="cards__button"
+									class="Cards__button"
 									id="submit"
 									type="submit"
 									value="Book nå" />
@@ -284,8 +284,8 @@
 						</form>
 					</div>
 					<!--  -->
-					<div class="card">
-						<div class="card__info">
+					<div class="Card">
+						<div class="Card__info">
 							<div>
 								<h3>Intervjurom</h3>
 								<p>
@@ -293,7 +293,7 @@
 									Intervjue kandidater i ditt valg av profesjonelle.
 								</p>
 								<p>Funksjoner</p>
-								<ul class="cards__info__funksjoner">
+								<ul class="Cards__info__funksjoner">
 									<li>
 										<img
 											src="img\Booking-icons\Checkmark.png"
@@ -319,14 +319,14 @@
 							</div>
 							<label for="form3">
 								<!-- form fysisk knapp -->
-								<div class="cards__button">Reserver</div>
+								<div class="Cards__button">Reserver</div>
 							</label>
 						</div>
-						<!-- card__info -->
+						<!-- Card__info -->
 						<input type="checkbox" name="SpawnContactForm" id="form3" />
 						<!-- Form checkboks -->
 						<form
-							class="card__form"
+							class="Card__form"
 							action="https://formsubmit.co/4196f20562bac6a16f89faeeda50d84c"
 							method="POST">
 							<input type="hidden" name="_captcha" value="false" />
@@ -353,12 +353,12 @@
 									placeholder="Ekstra information"></textarea>
 							</div>
 							<div>
-								<div class="card__form__tos">
+								<div class="Card__form__tos">
 									<input type="checkbox" name="checkbox" required />
 									<p>I agree to the Terms of Service</p>
 								</div>
 								<input
-									class="cards__button"
+									class="Cards__button"
 									id="submit"
 									type="submit"
 									value="Book nå" />
@@ -367,7 +367,7 @@
 					</div>
 				</section>
 			</section>
-			<!--ending på cards-->
+			<!--ending på Cards-->
 
 			<section class="info-Section">
 				<figure class="info-Section__img slide-in slide-venstre">
