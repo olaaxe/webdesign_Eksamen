@@ -1,5 +1,5 @@
 header{
-  opacity: 0;
+  opacity: 0.4;
   transform: translateY(-80%);
   transition: opacity 500ms ease-in, transform 500ms ease-in;
   position: absolute;
@@ -41,7 +41,7 @@ body{
 }
 
 @media (hover: none){
-  .articles{
+  .articles__content{
     pointer-events: none;
   }
 }
@@ -62,7 +62,6 @@ body{
   background-position:center;
 }
 .articles__container--img1{
-  transition: background-image 2s ease-in;
   background-image: url("../img/topical-images/AI_rendition_of_machinelearning.png");
 }
 .articles__container--img2{
