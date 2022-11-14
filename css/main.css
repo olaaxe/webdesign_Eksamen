@@ -108,3 +108,49 @@ hr{
 
 /* https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/ */
 /* https://scalablecss.com/bem-css-examples/ */
+
+/* slide animation */
+main{
+  overflow-x: hidden;
+}
+.slide-venstre{
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: opacity 250ms ease-in, transform 500ms ease-in;
+
+}
+.slide-høyre{
+  transform: translateX(100%);
+  opacity: 0;
+  transition: opacity 250ms ease-in, transform 500ms ease-in;
+}
+
+.slide-delay{
+  transition-delay: 250ms;
+}
+.slide-venstre.appear,
+.slide-høyre.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+/* Infosection slide animation ferdig */
+@media (max-width: 700px){
+  .info-Section{
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .info-Section#reverse{
+    grid-template-columns: 1fr;
+  }
+  .info-Section__img{
+    display: none;
+  }
+  .slide-venstre{
+    transform: translateX(-50%);
+    transition: opacity 200ms ease-in, transform 350ms ease-in;
+  }
+  .slide-høyre{
+    transform: translateX(50%);
+    transition: opacity 200ms ease-in, transform 350ms ease-in;
+  }
+}

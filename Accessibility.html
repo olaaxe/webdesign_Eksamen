@@ -17,6 +17,19 @@
 			rel="website icon"
 			type="png"
 			href="img\header-images\Logo_web_icon.png" />
+		<script src="script.js" defer></script>
+		<noscript>
+			<style>
+				.slide-venstre,
+				.slide-høyre {
+					transform: translateX(0);
+					opacity: 1;
+				}
+				.slide-delay {
+					transition-delay: 0ms;
+				}
+			</style>
+		</noscript>
 	</head>
 
 	<body class="body">
@@ -70,13 +83,13 @@
 			<h1>Inkluderende design</h1>
 			<!-- Polypane Test -->
 			<section class="container">
-				<figure class="container__photo">
+				<figure class="container__photo slide-in slide-venstre">
 					<img
 						class="photo__img"
 						src="img\accessability-images\H1_error.png"
 						alt="Feilmelding som  ber oss bruke bare 1 H1 per side" />
 				</figure>
-				<div class="container__body">
+				<div class="container__body slide-in slide-høyre slide-delay">
 					<h2 class="container__header">Headdings</h2>
 					<p>
 						For den automatiske testen brukte vi et program som heter Polypane.
