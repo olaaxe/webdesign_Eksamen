@@ -1,110 +1,119 @@
-.bildecontainer{
+header{
+  opacity: 0.4;
+  transform: translateY(-80%);
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+  position: absolute;
+  inset: 0 0 auto 0;
+}
+header:hover{
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+}
+header .header__content__nav,
+header .header__logo{
+  transform: translateY(-300%);
+  transition: transform 500ms ease-in;
+}
+header:hover .header__content__nav,
+header:hover .header__logo{
+  transform: translateY(0%);
+  transition: transform 500ms ease-in;
+}
+/* footer{
+  opacity: 0;
+  transform: translateY(80%);
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+  position: absolute;
+  inset: auto 0 0 0;
+}
+footer:hover{
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+} */
+body{
+  overflow: hidden;
+}
+
+
+
+@media (hover: none){
+  .articles__content{
+    pointer-events: none;
+  }
+}
+.articles{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.articles--scroll >*{
+  scroll-snap-align: start;
+}
+.articles__container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scrollbar-width: none;/* Hides scrollbar firefox */
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+.articles__container::-webkit-scrollbar {/* Hides scrollbar chrome and edge */
+  display: none;
+}
+.articles__container--img1{
+  background-image: url("../img/topical-images/AI_rendition_of_machinelearning.png");
+  /* background-image: url("../img/topical-images/Matrix_numbers.png"); */
+}
+.articles__container--img2{
+  background-image: url("../img/topical-images/Sosiale_medier_samfunn.png");
+}
+.articles__content{
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.articles__header{
+  font-size: 4rem;
+  color: white;
+  padding: 2rem;
   border-radius: 10px;
-  max-width: 100%;
-  justify-self: center;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  width: 95%;
+  background-color: rgb(0, 0, 0, 0.8);
 }
-.bildecontainer > img{
-  border-radius: 5px 5px 0 0;
-  padding-bottom: 0;
+.articles__text{
+  max-width: 80ch;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 2rem;
 }
-
-
-.bildecontainer > figcaption{
-  padding-left: auto;
-  padding-right: auto;
-  padding:  1rem;
-  background-color: rgb(46,46,46, 0.8);
-  color: var(--clr-beige);
-  border-radius: 0 0 5px 5px;
-}
-h1{
-  text-align: center;
-}
-h2{
-  padding-top: 1rem;
-}
-.overskrift-undertekst{
-  margin-left: 1rem;
-}
-
-.topicalGrid{
-  /*background-color: rgb(46,46,46);*/
-  display:grid;
-  gap: 8px;
-  margin-bottom: 2em;
-  grid-template-columns: 1fr 1fr;
-  padding-left: auto;
-  padding-right: auto;
-
-}
-
-.tekstBoksTopical {
-  padding: max(1vh, 1rem);
-
-}
-  
-.topicalGrid > p{
-  max-width: 80%;
-}
-.col-span-2{
-  grid-column: span 2;
-}
-.row-span-2{
-  grid-row: span 2;
-}
-
-@media (max-width: 700px) {
-  .topicalGrid{
-    grid-template-columns: 1fr;
-  }
-
-  .col-span-2{
-    grid-column: span 1;
-  }
-  .row-span-2{
-    grid-row: span 1
-  }
-  .display-none-max-700px{
-    display: none;
-  }
-
-
-}
-
-.topicalGrid > figure > img{
-  width: 100%;
-}
-
-.topicalGrid > p{
-  padding: 1rem 2rem;
-  text-align: left;
-  max-width: 90%;
-}
-.topicalGrid > h2{
-  justify-self: center;
-  font-size: 3rem;
-}
-
-a{
+.articles__link{
+  color: white;
   text-decoration: none;
-  word-break: break-all;
-
+}
+.articles__link:hover{
+  color: var(--clr-rød__hover);
 }
 
-.kildeliste{
-  padding-left: 5rem;
-  max-width: 80%;
-  margin: auto;
+.referanser{
+  background-color: rgb(0, 0, 0, 0.9);
+  padding: 3ch;
+  border-radius: 10px;
+  max-width: 80ch;
+  color: white;
 }
-.topicalGrid > ol > li{
-  font-size: 1.6rem;
-  max-width: 90%;
+.referanser__header{
+  color: white;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
 }
-/*------------------------------------------*/
-
-
+.referanser__list{
+  color: white;
+}
+.referanser__list p{
+  color: inherit;
+}
