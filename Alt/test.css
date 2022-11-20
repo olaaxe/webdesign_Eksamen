@@ -325,18 +325,12 @@ form{
 
 /* Infosection slide animation ferdig */
 @media (max-width: 700px){
-  .førsteDelen{
-    grid-template-columns: 1fr;
-  }
-
-  .roomInfo{
+  .roomInfo__container,
+  .roomInfo--reverse{
     grid-template-columns: 1fr;
     gap: 0;
   }
-  .roominfo--reverse{
-    grid-template-columns: 1fr;
-  }
-  .info-Section__img{
+  .roomInfo__photo{
     display: none;
   }
   .slideIn--venstre{
