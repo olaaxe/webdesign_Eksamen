@@ -1,4 +1,42 @@
+main{
+  overflow-x: hidden;
+}
 
+.intro{
+  gap: 2rem;
+}
+.intro__photo{
+	overflow: hidden;
+}
+.photo__img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.photo__img--ar5-3{
+  max-height: 400px;
+  aspect-ratio: 5 / 3;
+}
+
+.intro__body{
+	margin: 3rem 0 3rem 0;
+}
+.intro__text{
+	padding-bottom: 3rem;
+}
+.button.button--large{
+	padding: 0.6em 4em;
+}
+
+.card-intro{
+  margin-top: 2.5rem;
+}
+.card-intro__header,
+.card-intro__text{
+  margin-bottom: 1.5rem;
+}
+
+/* -------------card---------------------------- */
 .card__container{
   display: flex;
   flex-wrap: wrap;
@@ -13,6 +51,11 @@
 	border-radius: 0.2rem 2rem 0.2rem 2rem;
 	overflow: hidden;
 	transition: transform 500ms ease;
+  background-repeat: no-repeat;
+	/* background-position: center; */
+  /* background-size: cover; */
+  /* background-size: contain; */
+
 }
 .card--img1{
   background-image: url(../img/booking-images/hotellrommetnye.png);
@@ -86,7 +129,7 @@
 	background-size: contain;
 }
 
-.card__button {
+.button {
 	cursor: pointer;
 	display: inline-block;
 	text-decoration: none;
@@ -96,11 +139,11 @@
 	border-radius: 10px;
 	font-weight: bold;
 }
-.card__button:hover {
+.button:hover {
 	box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.705);
 }
 
-.card__button:active {
+.button:active {
 	background-color: var(--clr-rød__activate);
 }
 @media (hover) {
@@ -186,10 +229,11 @@ form{
   display: grid;
   grid-template-columns: 2rem 1fr;
   gap: 1rem;
+  align-items: center;
 }
 .tos__checkbox{
   width: 15px;
-  justify-self: center;
+
 }
 .--fitcontent{
   max-width: fit-content;
@@ -199,11 +243,108 @@ form{
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
-.card__button--form{
+.button--borderNone{
   border: none;
 } 
 
-
 .form__checkbox{
   display: none;
+}
+/* ---------card Slutt--------------------------------------------------------------------------- 
+------------------------------------------------------------------------------------ 
+------------------------------------------------------------------------------------ */
+
+.roomInfo__container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  margin: 6rem 0;
+  
+}
+.roomInfo--reverse{
+  grid-template-columns: 2fr 1fr;
+}
+
+.roomInfo__photo{
+  margin: auto 0;
+  overflow: hidden;
+}
+.photo__img--ar066-1{
+  max-height: 500px;
+  aspect-ratio: 0.66/1;
+}
+
+.roomInfo__preHeader{
+  padding: 0;
+  font-size: 1.7rem;
+}
+
+.roomInfo__body > *:not(hr){
+  padding: 2rem 0; /* Endre????*/
+}
+
+.roomInfo__flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.roomInfo__list{
+  display: flex;
+  flex: 1 1 26rem;
+  gap: 1rem;
+}
+.roomInfo__icon{
+  flex-basis: 2rem;
+  max-height: 2rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+/* Infosection slide animation */
+
+.slideIn--venstre{
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: opacity 250ms ease-in, transform 500ms ease-in;
+
+}
+.slideIn--høyre{
+  transform: translateX(100%);
+  opacity: 0;
+  transition: opacity 250ms ease-in, transform 500ms ease-in;
+}
+
+.slideIn--delay{
+  transition-delay: 250ms;
+}
+.slideIn--venstre.appear,
+.slideIn--høyre.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Infosection slide animation ferdig */
+@media (max-width: 700px){
+  .førsteDelen{
+    grid-template-columns: 1fr;
+  }
+
+  .roomInfo{
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .roominfo--reverse{
+    grid-template-columns: 1fr;
+  }
+  .info-Section__img{
+    display: none;
+  }
+  .slideIn--venstre{
+    transform: translateX(-50%);
+    transition: opacity 200ms ease-in, transform 350ms ease-in;
+  }
+  .slideIn--høyre{
+    transform: translateX(50%);
+    transition: opacity 200ms ease-in, transform 350ms ease-in;
+  }
 }
