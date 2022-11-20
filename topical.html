@@ -17,10 +17,42 @@
 			rel="website icon"
 			type="png"
 			href="img\header-images\Logo_web_icon.png" />
+		<script defer>
+			window.onload = function () {
+				var element = document.getElementById("moveHeader");
+				element.classList.add("moveHeader");
+			};
+		</script>
+		<noscript>
+			<style>
+				header {
+					opacity: 0.4;
+					transform: translateY(-80%);
+					transition: opacity 500ms ease-in, transform 500ms ease-in;
+					position: absolute;
+					inset: 0 0 auto 0;
+				}
+				header:hover {
+					opacity: 1;
+					transform: translateY(0%);
+					transition: opacity 500ms ease-in, transform 500ms ease-in;
+				}
+				header .header__content__nav,
+				header .header__logo {
+					transform: translateY(-300%);
+					transition: transform 500ms ease-in;
+				}
+				header:hover .header__content__nav,
+				header:hover .header__logo {
+					transform: translateY(0%);
+					transition: transform 500ms ease-in;
+				}
+			</style>
+		</noscript>
 	</head>
 	<body>
 		<!-- Header Start -->
-		<header class="header">
+		<header class="header" id="moveHeader">
 			<section class="header__logo">
 				<a href="index.html">
 					<img

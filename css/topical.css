@@ -1,22 +1,22 @@
-header{
+.moveHeader{
   opacity: 0.4;
   transform: translateY(-80%);
   transition: opacity 500ms ease-in, transform 500ms ease-in;
   position: absolute;
   inset: 0 0 auto 0;
 }
-header:hover{
+.moveHeader:hover{
   opacity: 1;
   transform: translateY(0%);
   transition: opacity 500ms ease-in, transform 500ms ease-in;
 }
-header .header__content__nav,
-header .header__logo{
+.moveHeader .header__content__nav,
+.moveHeader .header__logo{
   transform: translateY(-300%);
   transition: transform 500ms ease-in;
 }
-header:hover .header__content__nav,
-header:hover .header__logo{
+.moveHeader:hover .header__content__nav,
+.moveHeader:hover .header__logo{
   transform: translateY(0%);
   transition: transform 500ms ease-in;
 }
