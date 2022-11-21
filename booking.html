@@ -26,23 +26,19 @@
 		<script src="script.js" defer></script>
 		<noscript>
 			<style>
-				.slide-venstre,
-				.slide-høyre {
+				.slideIn--venstre,
+				.slideIn--høyre {
 					transform: translateX(0);
 					opacity: 1;
-				}
-				.slide-delay {
-					transition-delay: 0ms;
 				}
 			</style>
 		</noscript>
 	</head>
-
 	<body>
 		<!-- Header Start -->
 		<header class="header">
 			<section class="header__logo">
-				<a href="Cards.html">
+				<a href="booking.html">
 					<img
 						src="img\header-images\Logo_new.transparent.png"
 						alt="C-SONS Logo" />
@@ -85,18 +81,18 @@
 			</section>
 		</header>
 		<!-- Header Slutt -->
-
 		<main>
-			<section class="intro-booking">
-				<figure class="intro-booking__img">
+			<section class="intro">
+				<figure class="intro__photo">
 					<img
+						class="photo__img photo__img--ar5-3"
 						src="img/booking-images/Hotell.png"
 						alt="Utenfor konferansebygget" />
 					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
 				</figure>
-				<div class="intro-booking__info">
+				<div class="intro__body">
 					<h1>Møterom</h1>
-					<p>
+					<p class="intro__text">
 						Våre møterom er lokalisert i de fleste store byene i verden, slik at
 						vi er tilgjengelige hver gang du har lyst til å holde et møte.
 						Imponer kundene dine, arranger minneverdige workshops, eller lever
@@ -104,65 +100,46 @@
 						forespørsel. Et dedikert team vil være til stede for å hjelpe deg
 						med å holde møtet ditt.
 					</p>
-					<a class="Cards__button" href="#møterom">Reserver nå</a>
+					<a class="button button--large" href="#møterom">Reserver nå</a>
 				</div>
-				<hr class="hr_opacity" />
+				<hr />
 			</section>
 			<!--ending på første del-->
 
-			<section class="Card-introtekst" name="møterom" id="møterom">
-				<h2>Våre møterom</h2>
-				<p>
+			<section class="card-intro" name="møterom" id="møterom">
+				<h2 class="card-intro__header">Våre møterom</h2>
+				<p class="card-intro__text">
 					Vi tilbyr møterom for en rekke forretningsbehov. Les om dem nedenfor
 					og reserver deretter en plass som passer deg eller legg inn en
 					bestilling på farten gjennom appen vår.
 				</p>
 
-				<!-- Cards section -->
-				<section class="Card-Flex">
-					<div class="Card">
-						<div class="Card__info">
-							<div>
-								<h3>Konferanserom</h3>
-								<p>
-									Utstyrt med den nyeste presentasjonsteknologien, er disse
-									rommene perfekte for ditt neste forretningsmøte.
-								</p>
-								<p>Funksjoner</p>
-								<ul class="Cards__info__funksjoner">
-									<li>
-										<img
-											src="img\Booking-icons\Checkmark.png"
-											loading="lazy"
-											alt="chechMark" />
-										<p>Internett i bedriftsklasse</p>
-									</li>
-									<li>
-										<img
-											src="img\Booking-icons\Checkmark.png"
-											loading="lazy"
-											alt="chechMark" />
-										<p>Konfigurer i henhold til behovene dine</p>
-									</li>
-									<li>
-										<img
-											src="img\Booking-icons\Checkmark.png"
-											loading="lazy"
-											alt="chechMark" />
-										<p>Tusjtavler og projektorer</p>
-									</li>
-								</ul>
-							</div>
-							<label for="form">
-								<div class="Cards__button">Reserver</div>
+				<!-- Cards---------------- -->
+				<section class="card__container">
+					<div class="card card--img1">
+						<input
+							class="form__checkbox"
+							type="checkbox"
+							name="SpawnContactForm"
+							id="form1" />
+						<div class="card__body">
+							<h3 class="card__header">Konferanserom</h3>
+							<p class="card__text">
+								Utstyrt med den nyeste presentasjonsteknologien, er disse
+								rommene perfekte for ditt neste forretningsmøte.
+							</p>
+							<ul class="card__list">
+								<li class="list__item">Internett i bedriftsklasse</li>
+								<li class="list__item">Konfigurer til dine behov</li>
+								<li class="list__item">Tusjtavler og projektorer</li>
+							</ul>
+							<label for="form1">
+								<div class="button">Reserver</div>
 								<!-- form fysisk knapp -->
 							</label>
 						</div>
-						<!-- Card__info -->
-						<input type="checkbox" name="SpawnContactForm" id="form" />
-						<!-- Form checkboks -->
 						<form
-							class="Card__form"
+							class="card__form"
 							action="https://formsubmit.co/4196f20562bac6a16f89faeeda50d84c"
 							method="POST">
 							<input type="hidden" name="_captcha" value="false" />
@@ -174,77 +151,83 @@
 								type="hidden"
 								name="_subject"
 								value="New submission, Konferanserom" />
-							<div>
-								<h4>Reserver</h4>
-								<input type="text" name="name" placeholder="Name" required />
-								<input
-									type="email"
-									name="email"
-									placeholder="E-mail"
-									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-									required />
-								<input type="datetime-local" name="date" required />
-								<textarea
-									name="text"
-									placeholder="Ekstra information"></textarea>
-							</div>
-							<div>
-								<div class="Card__form__tos">
-									<input type="checkbox" name="checkbox" required />
-									<p>I agree to the Terms of Service</p>
+							<div class="form__body">
+								<div>
+									<h4 class="card__header">Reserver</h4>
+									<input
+										class="form__info"
+										type="text"
+										name="name"
+										placeholder="Name"
+										required />
+									<input
+										class="form__info"
+										type="email"
+										name="email"
+										placeholder="E-mail"
+										pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+										required />
+									<input
+										class="form__info"
+										type="datetime-local"
+										name="date"
+										required />
+									<textarea
+										class="form__info form__info--textarea"
+										name="text"
+										placeholder="Ekstra information"></textarea>
 								</div>
-								<input
-									class="Cards__button"
-									id="submit"
-									type="submit"
-									value="Book nå" />
+								<div>
+									<div class="form__tos">
+										<input
+											class="tos__checkbox"
+											id="tos1"
+											type="checkbox"
+											name="checkbox"
+											required />
+										<label for="tos1">
+											<p class="card__text">I agree to the Terms of Service</p>
+										</label>
+									</div>
+									<div class="form__buttonGrid">
+										<input
+											class="button button--borderNone"
+											id="submit"
+											type="submit"
+											value="Book nå" />
+										<label for="form1">
+											<div class="button">Tilbake</div>
+										</label>
+									</div>
+								</div>
 							</div>
 						</form>
 					</div>
-					<!--  -->
-					<div class="Card">
-						<div class="Card__info">
-							<div>
-								<h3>Treningsrom</h3>
-								<p>
-									Spesialbygde rom, perfekte for treningsøkter, med catering og
-									støtte på stedet.
-								</p>
-								<p>Funksjoner</p>
-								<ul class="Cards__info__funksjoner">
-									<li>
-										<img
-											src="img\Booking-icons\Checkmark.png"
-											loading="lazy"
-											alt="chechMark" />
-										<p>Tilgjengelige cateringalternativer</p>
-									</li>
-									<li>
-										<img
-											src="img\Booking-icons\Checkmark.png"
-											loading="lazy"
-											alt="chechMark" />
-										<p>Supportteam på stedet</p>
-									</li>
-									<li>
-										<img
-											src="img\Booking-icons\Checkmark.png"
-											loading="lazy"
-											alt="chechMark" />
-										<p>Pauseområder</p>
-									</li>
-								</ul>
-							</div>
+
+					<div class="card card--img2">
+						<input
+							class="form__checkbox"
+							type="checkbox"
+							name="SpawnContactForm"
+							id="form2" />
+						<div class="card__body">
+							<h2 class="card__header">Treningsrom</h2>
+							<p class="card__text">
+								Spesialbygde rom, perfekte for treningsøkter, med catering og
+								støtte på stedet.
+							</p>
+							<ul class="card__list card__list--expadding">
+								<li class="list__item">Tilgjengelige cateringalternativer</li>
+								<li class="list__item">Supportteam på stedet</li>
+								<li class="list__item">Pauseområder</li>
+							</ul>
 							<label for="form2">
+								<div class="button">Reserver</div>
 								<!-- form fysisk knapp -->
-								<div class="Cards__button">Reserver</div>
 							</label>
 						</div>
-						<!-- Card__info -->
-						<input type="checkbox" name="SpawnContactForm" id="form2" />
-						<!-- Form checkboks -->
 						<form
-							class="Card__form"
+							class="card__form"
 							action="https://formsubmit.co/4196f20562bac6a16f89faeeda50d84c"
 							method="POST">
 							<input type="hidden" name="_captcha" value="false" />
@@ -255,78 +238,84 @@
 							<input
 								type="hidden"
 								name="_subject"
-								value="New submission, Treningsrom" />
-							<div>
-								<h4>Reserver</h4>
-								<input type="text" name="name" placeholder="Name" required />
-								<input
-									type="email"
-									name="email"
-									placeholder="E-mail"
-									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-									required />
-								<input type="datetime-local" name="date" required />
-								<textarea
-									name="text"
-									placeholder="Ekstra information"></textarea>
-							</div>
-							<div>
-								<div class="Card__form__tos">
-									<input type="checkbox" name="checkbox" required />
-									<p>I agree to the Terms of Service</p>
+								value="New submission, Konferanserom" />
+							<div class="form__body">
+								<div>
+									<h4 class="card__header">Reserver</h4>
+									<input
+										class="form__info"
+										type="text"
+										name="name"
+										placeholder="Name"
+										required />
+									<input
+										class="form__info"
+										type="email"
+										name="email"
+										placeholder="E-mail"
+										pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+										required />
+									<input
+										class="form__info"
+										type="datetime-local"
+										name="date"
+										required />
+									<textarea
+										class="form__info form__info--textarea"
+										name="text"
+										placeholder="Ekstra information"></textarea>
 								</div>
-								<input
-									class="Cards__button"
-									id="submit"
-									type="submit"
-									value="Book nå" />
+								<div>
+									<div class="form__tos">
+										<input
+											class="tos__checkbox"
+											id="tos2"
+											type="checkbox"
+											name="checkbox"
+											required />
+										<label for="tos2">
+											<p class="card__text">I agree to the Terms of Service</p>
+										</label>
+									</div>
+									<div class="form__buttonGrid">
+										<input
+											class="button button--borderNone"
+											id="submit"
+											type="submit"
+											value="Book nå" />
+										<label for="form2">
+											<div class="button">Tilbake</div>
+										</label>
+									</div>
+								</div>
 							</div>
 						</form>
 					</div>
-					<!--  -->
-					<div class="Card">
-						<div class="Card__info">
-							<div>
-								<h3>Intervjurom</h3>
-								<p>
-									Inspirerende, avslappede og diskrete rom. Klar for at du skal
-									Intervjue kandidater i ditt valg av profesjonelle.
-								</p>
-								<p>Funksjoner</p>
-								<ul class="Cards__info__funksjoner">
-									<li>
-										<img
-											src="img\Booking-icons\Checkmark.png"
-											loading="lazy"
-											alt="chechMark" />
-										<p>Bestill i 1 time eller mer</p>
-									</li>
-									<li>
-										<img
-											src="img\Booking-icons\Checkmark.png"
-											loading="lazy"
-											alt="chechMark" />
-										<p>En resepsjonist tar imot kandidatene</p>
-									</li>
-									<li>
-										<img
-											src="img\Booking-icons\Checkmark.png"
-											loading="lazy"
-											alt="chechMark" />
-										<p>Presentasjonsutstyr er tilgjengelig</p>
-									</li>
-								</ul>
-							</div>
+
+					<div class="card card--img3">
+						<input
+							class="form__checkbox"
+							type="checkbox"
+							name="SpawnContactForm"
+							id="form3" />
+						<div class="card__body">
+							<h2 class="card__header">Intervjurom</h2>
+							<p class="card__text">
+								Inspirerende, avslappede og diskrete rom. Klar for at du skal
+								Intervjue kandidater i ditt valg av profesjonelle.
+							</p>
+							<ul class="card__list card__list--expadding">
+								<li class="list__item">Bestill i 1 time eller mer</li>
+								<li class="list__item">Resepsjonist tar imot kandidatene</li>
+								<li class="list__item">Presentasjonsutstyr er tilgjengelig</li>
+							</ul>
 							<label for="form3">
+								<div class="button">Reserver</div>
 								<!-- form fysisk knapp -->
-								<div class="Cards__button">Reserver</div>
 							</label>
 						</div>
-						<!-- Card__info -->
-						<input type="checkbox" name="SpawnContactForm" id="form3" />
-						<!-- Form checkboks -->
 						<form
-							class="Card__form"
+							class="card__form"
 							action="https://formsubmit.co/4196f20562bac6a16f89faeeda50d84c"
 							method="POST">
 							<input type="hidden" name="_captcha" value="false" />
@@ -337,31 +326,56 @@
 							<input
 								type="hidden"
 								name="_subject"
-								value="New submission, Intervjurom" />
-							<div>
-								<h4>Reserver</h4>
-								<input type="text" name="name" placeholder="Name" required />
-								<input
-									type="email"
-									name="email"
-									placeholder="E-mail"
-									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-									required />
-								<input type="datetime-local" name="date" required />
-								<textarea
-									name="text"
-									placeholder="Ekstra information"></textarea>
-							</div>
-							<div>
-								<div class="Card__form__tos">
-									<input type="checkbox" name="checkbox" required />
-									<p>I agree to the Terms of Service</p>
+								value="New submission, Konferanserom" />
+							<div class="form__body">
+								<div>
+									<h4 class="card__header">Reserver</h4>
+									<input
+										class="form__info"
+										type="text"
+										name="name"
+										placeholder="Name"
+										required />
+									<input
+										class="form__info"
+										type="email"
+										name="email"
+										placeholder="E-mail"
+										pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+										required />
+									<input
+										class="form__info"
+										type="datetime-local"
+										name="date"
+										required />
+									<textarea
+										class="form__info form__info--textarea"
+										name="text"
+										placeholder="Ekstra information"></textarea>
 								</div>
-								<input
-									class="Cards__button"
-									id="submit"
-									type="submit"
-									value="Book nå" />
+								<div>
+									<div class="form__tos">
+										<input
+											class="tos__checkbox"
+											id="tos3"
+											type="checkbox"
+											name="checkbox"
+											required />
+										<label for="tos3">
+											<p class="card__text">I agree to the Terms of Service</p>
+										</label>
+									</div>
+									<div class="form__buttonGrid">
+										<input
+											class="button button--borderNone"
+											id="submit"
+											type="submit"
+											value="Book nå" />
+										<label for="form3">
+											<div class="button">Tilbake</div>
+										</label>
+									</div>
+								</div>
 							</div>
 						</form>
 					</div>
@@ -369,19 +383,20 @@
 			</section>
 			<!--ending på Cards-->
 
-			<section class="info-Section">
-				<figure class="info-Section__img slideIn slide-venstre">
+			<section class="roomInfo__container">
+				<figure class="roomInfo__photo slideIn slideIn--venstre">
 					<!-- Bildet venste side -->
 					<img
+						class="photo__img photo__img--ar066-1"
 						src="img\booking-images\møterom.png"
 						loading="lazy"
 						alt="Ett av møterommene" />
 					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
 				</figure>
-				<div class="info-Section__info slideIn slide-høyre slide-delay">
+				<div class="roomInfo__body slideIn slideIn--høyre slideIn--delay">
 					<!-- Teskt høyre side -->
-					<div class="info-Section__info__header">
-						<p>Frihet til å velge</p>
+					<div>
+						<p class="roomInfo__preHeader">Frihet til å velge</p>
 						<h2>Et rom for ethvert behov</h2>
 					</div>
 					<p>
@@ -391,38 +406,50 @@
 						ditt, det perfekte private rommet for å intervjue kandidater, eller
 						et inspirerende sted for en treningsøkt.
 					</p>
-					<ul class="info-Section__info__flex">
-						<li>
+					<ul class="roomInfo__flex">
+						<li class="roomInfo__list">
 							<img
+								class="roomInfo__icon"
 								src="img\Booking-icons\Scale.png"
 								loading="lazy"
 								alt="Konfigurer rom" />
 							<p>Fullt utstyrte plasser for samlinger av enhver størrelse</p>
 						</li>
-						<li>
+						<li class="roomInfo__list">
 							<img
+								class="roomInfo__icon"
 								src="img\Booking-icons\Location.png"
 								loading="lazy"
 								alt="Plassering" />
 							<p>Ha møte i hvilken som helst by</p>
 						</li>
-						<li>
-							<img src="img\Booking-icons\TV.png" loading="lazy" alt="TV" />
+						<li class="roomInfo__list">
+							<img
+								class="roomInfo__icon"
+								src="img\Booking-icons\TV.png"
+								loading="lazy"
+								alt="TV" />
 							<p>Arrangementslokaler, styrerom, kurslokaler og enda mer</p>
 						</li>
-						<li>
-							<img src="img\Booking-icons\Sofa.png" loading="lazy" alt="Sofa" />
+						<li class="roomInfo__list">
+							<img
+								class="roomInfo__icon"
+								src="img\Booking-icons\Sofa.png"
+								loading="lazy"
+								alt="Sofa" />
 							<p>Komfortable, profesjonelle miljøer</p>
 						</li>
-						<li>
+						<li class="roomInfo__list">
 							<img
+								class="roomInfo__icon"
 								src="img\Booking-icons\Mobile.png"
 								loading="lazy"
 								alt="Mobil" />
 							<p>Bestill på dagen eller i forveien via appen</p>
 						</li>
-						<li>
+						<li class="roomInfo__list">
 							<img
+								class="roomInfo__icon"
 								src="img\Booking-icons\Bufee.png"
 								loading="lazy"
 								alt="Service" />
@@ -433,10 +460,10 @@
 				</div>
 			</section>
 
-			<section class="info-Section" id="reverse">
-				<div class="info-Section__info slideIn slide-venstre slide-delay">
-					<div class="info-Section__info__header">
-						<p>Hva er inkludert</p>
+			<section class="roomInfo__container roomInfo--reverse">
+				<div class="roomInfo__body slideIn slideIn--venstre slideIn--delay">
+					<div>
+						<p class="roomInfo__preHeader">Hva er inkludert</p>
 						<h2>Alt er tatt vare på</h2>
 					</div>
 					<p>
@@ -446,38 +473,50 @@
 						supportteamet vårt vil forberede rommet ditt og hjelpe alt til å gå
 						på skinner.
 					</p>
-					<ul class="info-Section__info__flex">
-						<li>
-							<img src="img\Booking-icons\TV.png" loading="lazy" alt="TV" />
+					<ul class="roomInfo__flex">
+						<li class="roomInfo__list">
+							<img
+								class="roomInfo__icon"
+								src="img\Booking-icons\TV.png"
+								loading="lazy"
+								alt="TV" />
 							<p>Flatskjerm-TV, tusjtavler og flipover</p>
 						</li>
-						<li>
+						<li class="roomInfo__list">
 							<img
+								class="roomInfo__icon"
 								src="img\Booking-icons\Chair.png"
 								loading="lazy"
 								alt="Stol" />
 							<p>Pauseområder</p>
 						</li>
-						<li>
+						<li class="roomInfo__list">
 							<img
+								class="roomInfo__icon"
 								src="img\Booking-icons\Scale.png"
 								loading="lazy"
 								alt="Konfigurer rom" />
 							<p>Konfigurer møterommet på din måte</p>
 						</li>
-						<li>
+						<li class="roomInfo__list">
 							<img
+								class="roomInfo__icon"
 								src="img\Booking-icons\Bufee.png"
 								loading="lazy"
 								alt="Service" />
 							<p>Profesjonelt resepsjonistteam som tar imot gjester</p>
 						</li>
-						<li>
-							<img src="img\Booking-icons\Wifi.png" loading="lazy" alt="Wifi" />
+						<li class="roomInfo__list">
+							<img
+								class="roomInfo__icon"
+								src="img\Booking-icons\Wifi.png"
+								loading="lazy"
+								alt="Wifi" />
 							<p>Trådløst internett i bedriftskvalitet</p>
 						</li>
-						<li>
+						<li class="roomInfo__list">
 							<img
+								class="roomInfo__icon"
 								src="img\Booking-icons\Person.png"
 								loading="lazy"
 								alt="Person" />
@@ -486,8 +525,9 @@
 					</ul>
 					<hr />
 				</div>
-				<figure class="info-Section__img slideIn slide-høyre">
+				<figure class="roomInfo__photo slideIn slideIn--høyre">
 					<img
+						class="photo__img photo__img--ar066-1"
 						src="img\booking-images\hotellrommetnye.png"
 						loading="lazy"
 						alt="Ett av hotellrommene" />
@@ -495,17 +535,18 @@
 				</figure>
 			</section>
 
-			<section class="info-Section">
-				<figure class="info-Section__img slideIn slide-venstre">
+			<section class="roomInfo__container">
+				<figure class="roomInfo__photo slideIn slideIn--venstre">
 					<img
+						class="photo__img photo__img--ar066-1"
 						src="img\booking-images\Delicious_food.png"
 						loading="lazy"
 						alt="En av våre delikate retter" />
 					<!-- Bilde generert med AI for denne eksamen, (Axelsen,2022) -->
 				</figure>
-				<div class="info-Section__info slideIn slide-høyre slide-delay">
-					<div class="info-Section__info__header">
-						<p>Bredt spekter av tjenester</p>
+				<div class="roomInfo__body slideIn slideIn--høyre slideIn--delay">
+					<div>
+						<p class="roomInfo__preHeader">Bredt spekter av tjenester</p>
 						<h2>Tjenestene du trenger, når du trenger dem</h2>
 					</div>
 					<p>
@@ -514,34 +555,42 @@
 						bestille på forhånd, så har vi alt satt opp og klart til bruk samme
 						dag.
 					</p>
-					<ul class="info-Section__info__flex">
-						<li>
+					<ul class="roomInfo__flex">
+						<li class="roomInfo__list">
 							<img
+								class="roomInfo__icon"
 								src="img\Booking-icons\Laptop.png"
 								loading="lazy"
 								alt="Laptop" />
 							<p>Support for IT- og teknisknologi</p>
 						</li>
-						<li>
+						<li class="roomInfo__list">
 							<img
+								class="roomInfo__icon"
 								src="img\Booking-icons\Paper.png"
 								loading="lazy"
 								alt="Papir" />
 							<p>Hjelp til Administrative oppgaver</p>
 						</li>
-						<li>
+						<li class="roomInfo__list">
 							<img
+								class="roomInfo__icon"
 								src="img\Booking-icons\Scale.png"
 								loading="lazy"
 								alt="Diagonal linje" />
 							<p>Ytterligere arbeidsplasser ved behov</p>
 						</li>
-						<li>
-							<img src="img\Booking-icons\Cafe.png" loading="lazy" alt="Cafe" />
+						<li class="roomInfo__list">
+							<img
+								class="roomInfo__icon"
+								src="img\Booking-icons\Cafe.png"
+								loading="lazy"
+								alt="Cafe" />
 							<p>Cateringtjenester</p>
 						</li>
-						<li>
+						<li class="roomInfo__list">
 							<img
+								class="roomInfo__icon"
 								src="img\Booking-icons\Projector.png"
 								loading="lazy"
 								alt="Projektor" />
@@ -552,7 +601,6 @@
 				</div>
 			</section>
 		</main>
-
 		<!--Footer Start-->
 		<footer>
 			<div class="footerCointainer">
