@@ -1,4 +1,4 @@
-const sliders = document.querySelectorAll(".slide-in");
+const sliders = document.querySelectorAll(".slideIn");
 
 const appearOptions = {
   threshold: 0,

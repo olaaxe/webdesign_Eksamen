@@ -1,156 +1,166 @@
-:root{
-  --clr-header: linear-gradient( 30deg, rgb(0, 0, 0) 0%, rgb(80, 80, 80) 100%);
-  --clr-bakgrunn: rgb(255, 250, 240);
-  --clr-footer: rgb(21, 21, 21);
-  --clr-overskrift: rgb(0, 0, 0);
-  --clr-tekst: rgb(46, 46, 46);
-  --clr-knapper: rgb(255, 255, 255);
-  --clr-boocking__card: rgb(255, 253, 248);
+:root {
+	--clr-header: linear-gradient(30deg, rgb(0, 0, 0) 0%, rgb(80, 80, 80) 100%);
+	--clr-bakgrunn: rgb(255, 250, 240);
+	--clr-footer: rgb(21, 21, 21);
+	--clr-overskrift: rgb(0, 0, 0);
+	--clr-tekst: rgb(46, 46, 46);
+	--clr-knapper: rgb(255, 255, 255);
+	--clr-boocking__card: rgb(255, 253, 248);
 
-  --clr-grå: rgb(46,46,46);
-  --clr-beige: rgb(225, 215, 196);
-  --clr-rød: rgb(202, 67, 25);
-  --clr-rød__hover: rgb(223, 109, 70);
-  --clr-rød__activate: rgb(241, 129, 95);
+	--clr-grå: rgb(46, 46, 46);
+	--clr-beige: rgb(225, 215, 196);
+	--clr-rød: rgb(202, 67, 25);
+	--clr-rød__hover: rgb(223, 109, 70);
+	--clr-rød__activate: rgb(241, 129, 95);
 
-  --shadow-box: -5px 5px 20px 0px rgba(0, 0, 0, 0.596);
+	--shadow-box: -5px 5px 20px 0px rgba(0, 0, 0, 0.596);
 }
 
 :is(h3, h2, h1) {
-  color: var(--clr-overskrift);
-  font-weight: bold;
+	color: var(--clr-overskrift);
+	font-weight: bold;
 }
 :is(p, a, li) {
-  color: var(--clr-tekst);
+	color: var(--clr-tekst);
 }
 
-@media (prefers-color-scheme: dark){ /*---Endre fargen hvis i darkmode---*/
-  :root{
-    --clr-header: linear-gradient( 30deg, rgb(0, 0, 0) 0%, rgb(32, 32, 32) 100%);
-    --clr-bakgrunn: rgb(31, 31, 31);
-    --clr-overskrift: rgb(255, 250, 240);
-    --clr-tekst: rgb(225, 215, 196);
-    --clr-knapper: rgb(255, 250, 240);
-    --clr-boocking__card: rgb(26, 26, 26);
-  }
+@media (prefers-color-scheme: dark) {
+	/*---Endre fargen hvis i darkmode---*/
+	:root {
+		--clr-header: linear-gradient(30deg, rgb(0, 0, 0) 0%, rgb(32, 32, 32) 100%);
+		--clr-bakgrunn: rgb(31, 31, 31);
+		--clr-overskrift: rgb(255, 250, 240);
+		--clr-tekst: rgb(225, 215, 196);
+		--clr-knapper: rgb(255, 250, 240);
+		--clr-boocking__card: rgb(26, 26, 26);
+	}
 }
-html{
-  scroll-behavior: smooth;
-  scroll-padding: 1.4rem;
-  font-size: 62.5%;
-  height: 100%;
+html {
+	scroll-behavior: smooth;
+	scroll-padding: 1.4rem;
+	font-size: 62.5%;
+	height: 100%;
 }
-body{
-  margin: 0px;
-  height: 100%;
-  position: relative;
-  background-color: var(--clr-bakgrunn);
-  display: flex;
-  flex-direction: column;
+body {
+	margin: 0px;
+	height: 100%;
+	position: relative;
+	background-color: var(--clr-bakgrunn);
+	display: flex;
+	flex-direction: column;
 }
-body ::selection{
-  background-color: rgb(202, 67, 25);
-  color: whitesmoke;}
+body ::selection {
+	background-color: rgb(202, 67, 25);
+	color: whitesmoke;
+}
 
 * {
-  margin: 0;
-  padding: 0;
-  font-size: 1.6rem;
-  font-family: Roboto, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 1.6rem;
+	font-family: Roboto, sans-serif;
 }
-main{
-  margin: 0 auto;
-  max-width: 1000px;
-  flex: 1 0 auto;
-  padding: 4rem 2rem 1rem 2rem;
+main {
+	margin: 0 auto;
+	max-width: 1000px;
+	flex: 1 0 auto;
+	padding: 4rem 2rem 1rem 2rem;
 }
 main h1:after,
-main h2:after{
-  display: inline-block;
-  content: "";
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  background-color: var(--clr-rød);
-  transform: translate(3px, 2px);
+main h2:after {
+	display: inline-block;
+	content: "";
+	border-radius: 50%;
+	width: 8px;
+	height: 8px;
+	background-color: var(--clr-rød);
+	transform: translate(3px, 2px);
 }
 
-main a:hover{
-  color: var(--clr-rød__hover);
+main a:hover {
+	color: var(--clr-rød__hover);
 }
 
-p{
-  padding-bottom: 1rem;
-  line-height: 1.5em;
+p {
+	padding-bottom: 1rem;
+	line-height: 1.5em;
 }
 h1 {
-  font-size: 4rem;
-  font-weight: bold;
+	font-size: 4rem;
 }
 h2 {
-  font-size: 3rem;
-  font-weight: bold;
+	font-size: 3rem;
 }
-sup{
-  font-size: 1.5rem;
+sup {
+	font-size: 1.5rem;
 }
-hr{
-  opacity: 40%;
-  margin-bottom: 1rem;
+hr {
+	opacity: 40%;
+	margin-bottom: 1rem;
 }
 
 @media (max-width: 319px) {
-  main{
-    padding: 1rem 0 1rem 0;
-  }
-
+	main {
+		padding: 1rem 0 1rem 0;
+	}
 }
 
 /* https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/ */
 /* https://scalablecss.com/bem-css-examples/ */
 
 /* slide animation */
-main{
-  overflow-x: hidden;
+main {
+	overflow-x: hidden;
 }
-.slide-venstre{
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: opacity 250ms ease-in, transform 500ms ease-in;
+.slide-venstre {
+	transform: translateX(-100%);
+	opacity: 0;
+	transition: opacity 250ms ease-in, transform 500ms ease-in;
+}
+.slide-høyre {
+	transform: translateX(100%);
+	opacity: 0;
+	transition: opacity 250ms ease-in, transform 500ms ease-in;
+}
 
-}
-.slide-høyre{
-  transform: translateX(100%);
-  opacity: 0;
-  transition: opacity 250ms ease-in, transform 500ms ease-in;
-}
-
-.slide-delay{
-  transition-delay: 250ms;
+.slide-delay {
+	transition-delay: 250ms;
 }
 .slide-venstre.appear,
 .slide-høyre.appear {
-  transform: translateX(0);
-  opacity: 1;
+	transform: translateX(0);
+	opacity: 1;
 }
 /* Infosection slide animation ferdig */
-@media (max-width: 700px){
-  .info-Section{
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-  .info-Section#reverse{
-    grid-template-columns: 1fr;
-  }
-  .info-Section__img{
-    display: none;
-  }
-  .slide-venstre{
-    transform: translateX(-50%);
-    transition: opacity 200ms ease-in, transform 350ms ease-in;
-  }
-  .slide-høyre{
-    transform: translateX(50%);
-    transition: opacity 200ms ease-in, transform 350ms ease-in;
-  }
+@media (max-width: 700px) {
+	.info-Section {
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+	.info-Section#reverse {
+		grid-template-columns: 1fr;
+	}
+	.info-Section__img {
+		display: none;
+	}
+	.slide-venstre {
+		transform: translateX(-50%);
+		transition: opacity 200ms ease-in, transform 350ms ease-in;
+	}
+	.slide-høyre {
+		transform: translateX(50%);
+		transition: opacity 200ms ease-in, transform 350ms ease-in;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		transition-delay: 0ms !important;
+		scroll-behavior: auto !important;
+	}
 }
