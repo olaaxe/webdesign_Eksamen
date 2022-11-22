@@ -52,9 +52,7 @@ main{
 	overflow: hidden;
 	transition: transform 500ms ease;
   background-repeat: no-repeat;
-	/* background-position: center; */
-  /* background-size: cover; */
-  /* background-size: contain; */
+  background-size: cover;
 
 }
 .card--img1{
@@ -141,6 +139,7 @@ main{
 }
 .button:hover {
 	box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.705);
+  color: var(--clr-knapper);
 }
 
 .button:active {
