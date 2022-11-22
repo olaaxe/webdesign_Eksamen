@@ -82,7 +82,7 @@
 		<main>
 			<h1>Inkluderende design</h1>
 			<p>
-				I denne teksten gjennomgår vi hvilke tiltak vi har iverksatt for å passe På
+				I denne teksten gjennomgår vi hvilke tiltak vi har iverksatt for å passe på
 				at siden er responsiv og inkluderende i sitt design, vi har kjørt siden igjennom 
 				en automatisk test i programmet polypane, og gjort en del tiltak uttenom hva den ba om.
 			</p>
@@ -116,11 +116,11 @@
 					<h2 class="container__header">Alt tekst</h2>
 					<p>
 						Vi fant også ut hvordan og hvorfor vi må gi en alt-tekst til bildene
-						våre. Polypane ga en feilmelding hvis bildet manglet test eller
+						våre. Polypane ga en feilmelding hvis bildet manglet tekst eller
 						brukte unødvendige ord som image når vi beskrev bildet. Dette er
 						også nyttig for skjermlesere slik at svaksynte kan høre hva som er
-						på bildet, eller hvis bildet av en eller annen grunn ikke laster inn
-						så står det hva som skulle vært der.
+						på bildet, uten at bilde blir lest opp dobbelt. Det kan også gi brukeren
+						ett inntrykk av hva som skulle vært der om bildet ikke blir lastet inn
 					</p>
 				</div>
 
@@ -145,11 +145,11 @@
 				<div class="container__body">
 					<h2 class="container__header">Focus order</h2>
 					<p>
-						En annen, men relatert test var kalt «focus-order». Denne testen
-						sjekket i hvilken rekkefølge de forskjellige linkene kom. Vi fant da
-						kjapt ut at vi ikke hadde alle lenkene i riktig rekkefølge.
-						Problemet med det er at brukeren ville hoppet opp og ned på siden
-						mens hen brukte tab for å navigere.
+						Vi testet for «focus-order», som sjekker om strukturen til html-filen gir 
+						mening med hvordan nettsiden ser ut. Dette er viktig for brukere som bruker 
+						tab knappen til å navigere igjennom siden og de som bruker skjermlesere. 
+						Uten endringene vi gjorde etter denne testen hadde tab ført deg til 
+						innholdet av siden, for så å navigere det til navigasjonsbaren helt til slutt.
 					</p>
 				</div>
 			</section>
@@ -167,16 +167,13 @@
 				<div class="container__body">
 					<h2 class="container__header">Responsiv design</h2>
 					<p>
-						Vi har fokusert på å ha responsivt design, mye med hjel fra
+						Vi har fokusert på å ha responsivt design, mye med hjelp fra
 						@media og flex-wrap: wrap; de gjør at boksene med de elementene endrer seg
 						basert på skjermstørrelse.
-					</p>
-					<p>
-						Vi har tatt utgangspunkt i nyere mobilenheter og funnet ut at 280px
-						bredde er de minste skjermene og derfor passet ekstra godt på at
-						nettsiden ser korrekt ut. På 320px har vi valgt å fjerne den ekstra
-						padding på &lt;body&gt;, som var der for å gjøre det lettere å lese,
-						slik at mest mulig informasjon skal kunne vises.
+						Vi tok utgangspunktet i en brettet Galaxy Fold som den smaleste enheten 
+						nettsiden skulle funke på. Nettsiden skal da være leselig og responsiv 
+						ned til 280px, for å passe på at innholdet ikke blir for smalt under 
+						320px fjerner vi da padding fra  &lt;body&gt;.
 					</p>
 				</div>
 			</section>
@@ -188,11 +185,11 @@
 				<div class="container__body">
 					<h2 class="container__header">REM</h2>
 					<p>
-						Nettsiden er programmert med <abbr title="Root EM">REM</abbr> som
+						Vi brukte enheten <abbr title="Root EM">REM</abbr> som
 						fontstørrelse istedenfor px. Dette gjør at skriftstrørrelsen vil
 						endre seg med det som brukeren har satt som standard. Det er nyttig
 						for mennesker med dårlig syn som kan ha økt standard fontstørrelse
-						slik at ting blir lettere å lese
+						slik at ting blir lettere å lese.
 					</p>
 				</div>
 
@@ -218,7 +215,7 @@
 				<div class="container__body">
 					<h2 class="container__header">Darkmode og Lightmode</h2>
 					<p>
-						Vi har designet nettsiden med både Dark- og Lightmode. Modusen som
+						Vi har designet nettsiden med både Dark- og Light- mode. Modusen som
 						oppstår avhenger av hva som er standard på enheten. Darkmode kan ha
 						effekten av å være mindre hard mot øynene i mørke rom, i tillegg vil
 						den økte kontrasten være til hjelp i veldig lyse omgivelser.
@@ -227,7 +224,7 @@
 					<p>
 						Vi tok hensyn til konrtast tidlig i designprosessen, og fikk ingen feil
 						på det i den automatiserte testen på grunn av det. Dette passet vi på både i Dark- og
-						Lightmode vor vi stort sett bruker beige på svart eller motsatt.
+						Lightmode vor vi stort sett bruker en lys beige på svart eller motsatt.
 					</p>
 				</div>
 			</section>
