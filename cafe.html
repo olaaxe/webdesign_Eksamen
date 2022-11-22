@@ -22,8 +22,9 @@
 		<!-- Header Start -->
 		<header class="header">
 			<section class="header__logo">
-				<a href="index.html">
+				<a class="header__logoLink" href="index.html">
 					<img
+						class="header__logoImg"
 						src="img\header-images\Logo_new.transparent.png"
 						alt="C-SONS Logo" />
 				</a>
@@ -31,35 +32,33 @@
 			<section class="header__content">
 				<input id="menu-checkbox-toggle" type="checkbox" />
 				<!-- Checkbox for drpMeny -->
-				<label
-					class="header__content__icon-container"
-					for="menu-checkbox-toggle">
+				<label class="header__iconContainer" for="menu-checkbox-toggle">
 					<figure>
 						<img
-							class="menu-open menu-icon-img"
+							class="menu__open menuIcon__img"
 							src="img\header-images\Burgermeny_transparent.png"
 							alt="Åpne burgermeny" />
 						<img
-							class="menu-close menu-icon-img"
+							class="menu__close menuIcon__img"
 							src="img\header-images\Cross_Transparent.png"
 							alt="Lukk Burgermeny" />
 					</figure>
 				</label>
-				<nav class="header__content__nav" aria-label="Side Header">
-					<a class="header__content__nav__button" href="index.html">
-						<p>Hjemmeside</p></a
+				<nav class="header__nav" aria-label="Side Header">
+					<a class="header__navButton" href="index.html">
+						<p class="navButton__links">Hjemmeside</p></a
 					>
-					<a class="header__content__nav__button" href="booking.html">
-						<p>Reserver</p>
+					<a class="header__navButton" href="booking.html">
+						<p class="navButton__links">Reserver</p>
 					</a>
-					<a class="header__content__nav__button" href="cafe.html">
-						<p class="headerActive">Restaurant</p>
+					<a class="header__navButton" href="cafe.html">
+						<p class="navButton__links navButton__links--active">Restaurant</p>
 					</a>
-					<a class="header__content__nav__button" href="Accessibility.html">
-						<p>Inkludering</p>
+					<a class="header__navButton" href="Accessibility.html">
+						<p class="navButton__links">Inkludering</p>
 					</a>
-					<a class="header__content__nav__button" href="topical.html">
-						<p>Aktuelt</p>
+					<a class="header__navButton" href="topical.html">
+						<p class="navButton__links">Aktuelt</p>
 					</a>
 				</nav>
 			</section>

@@ -12,43 +12,31 @@
   transform: translateY(0%);
   transition: opacity 500ms ease-in, transform 500ms ease-in;
 }
-.moveHeader .header__content__nav,
+.moveHeader .header__nav,
 .moveHeader .header__logo{
   transform: translateY(-300%);
   transition: transform 500ms ease-in;
   transition-delay: 1s;
 }
-.moveHeader:hover .header__content__nav,
+.moveHeader:hover .header__nav,
 .moveHeader:hover .header__logo{
   transform: translateY(0%);
   transition: transform 500ms ease-in;
 }
-/* @media (min-width: 900px){
-  .header__content__icon-container{
+@media (min-width: 900px){
+  .header__iconContainer{
     display: block;
     transform: translate(10px, 25px);
     opacity: 1;
     transition: opacity 500ms linear;
     transition-delay: 1s;
   }
-  .moveHeader:hover .header__content__icon-container{
+  header:hover .header__iconContainer{
     opacity: 0;
     transition: opacity 200ms linear;
   }
-} */
-
-/* footer{
-  opacity: 0;
-  transform: translateY(80%);
-  transition: opacity 500ms ease-in, transform 500ms ease-in;
-  position: absolute;
-  inset: auto 0 0 0;
 }
-footer:hover{
-  opacity: 1;
-  transform: translateY(0%);
-  transition: opacity 500ms ease-in, transform 500ms ease-in;
-} */
+
 body{
   overflow: hidden;
 }
