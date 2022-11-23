@@ -138,6 +138,7 @@ header{
 }
 
 /*--------- Footer-------- */
+
 footer {
   display: flex;
   flex-shrink: 0;
@@ -146,7 +147,7 @@ footer {
   margin-top: 1em;
 }
 
-.footerCointainer{
+.footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
@@ -155,55 +156,51 @@ footer {
   max-width: 1600px;
   column-gap: 140px;
 }
-.footerCointainer h2 {
+.footer__header {
   text-align: center;
   color: white;
   margin: 5px 0px 25px 0px;
 }
-.footerCointainer p {
+.footer__link {
+  text-decoration: none;
+}
+.footer__text {
   color: var(--clr-beige);
   vertical-align: middle;
   line-height: 40px;
   padding: 0;
 }
-.footerCointainer a {
-  text-decoration: none;
-}
-
 /* Kontakt oss / Sosiale medier */
 
-.kontaktOss__sosialemedier {
+.footer__sosialemedier {
   display: grid;
   grid-template-columns: 40px 1fr;
   gap: 5px 20px;
   
 }
-.kontaktOss__sosialemedier p {
+.sosialemedier__text {
   margin-left: 0;
   transition: color 0.15s;
 }
-.kontaktOss__sosialemedier p:hover {
+.sosialemedier__text:hover {
   color: var(--clr-rød__hover);
 }
-.kontaktOss__sosialemedier p:active {
+.sosialemedier__text:active {
   color: var(--clr-rød__activate);
 }
-.kontaktOss__sosialemedier__bilde {
+.sosialemedier__photo {
   max-width: 40px;
   max-height: 40px;
   background-color: var(--clr-beige)
 }
-.kontaktOss__sosialemedier__bilde img {
+.sosialemedier__img {
   height: 100%;
   width: 100%;
 }
 
 /* Åpningstider */
 
-.åpningstider {
-  padding: 0;
-}
-.åpningstider__tidspunkt {
+.footer__tidspunkt {
   display: flex;
   justify-content: space-between;
   max-width: 400px;
@@ -212,12 +209,12 @@ footer {
 
 /* Adresse og google iframe */
 
-.adresse{
+.footer__adresse{
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
 }
-.adresse iframe{
+.footer__adresse iframe{
   padding: 0 0 0 0;
   border:0;
   margin-bottom: 10px;
@@ -227,28 +224,28 @@ footer {
   text-decoration: underline;
   text-decoration-color: var(--clr-beige);
 }
-.adresse__link > p {
+.adresse__text {
   line-height: 22px;
   font-style: italic;
 }
 
 @media (max-width: 1500px) {
-  .footerCointainer{
+  .footer{
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (max-width: 1200px) {
-  .footerCointainer{
+  .footer{
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 750px) {
-  .footerCointainer{
+  .footer{
     grid-template-columns: 1fr;
   }
 }
 @media (max-width: 300px) {
-  .adresse iframe {
+  .footer__adresse iframe {
     display: none;
   }
 }
