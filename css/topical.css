@@ -69,10 +69,12 @@ body{
 }
 .articles__container--img1{
   background-image: url("../img/topical-images/AI_rendition_of_machinelearning.png");
-  /* background-image: url("../img/topical-images/Matrix_numbers.png"); */
+/*Digital illustrasjon laget ved hjelp av Midjourney AI, (Axelsen, 2022)*/
 }
+
 .articles__container--img2{
   background-image: url("../img/topical-images/Sosiale_medier_samfunn.png");
+/*Digital illustrasjon laget ved hjelp av Midjourney AI, (Axelsen, 2022)*/
 }
 .articles__content{
   height: 100vh;
