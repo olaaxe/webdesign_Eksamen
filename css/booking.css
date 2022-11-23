@@ -53,7 +53,6 @@ main{
 	transition: transform 500ms ease;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 .card--img1{
   background-image: url(../img/booking-images/Konferanserom.png);
@@ -111,7 +110,7 @@ main{
   padding-bottom: 2rem;
 }
 .card__list--expadding{
-  padding-bottom: 4.4rem;
+  /* padding-bottom: 4.4rem; */
 }
 .list__item {
 	color: white;
@@ -215,7 +214,7 @@ form{
 
 .form__info--textarea{
   resize: none;
-  min-height: 4rem;
+  min-height: 3rem;
 }
 
 .card__form  input:focus,
