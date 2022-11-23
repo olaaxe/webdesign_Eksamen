@@ -1,20 +1,21 @@
+
+/* CSS over Hjemmeside-fanen. */
+
 .intro__overskrift{
   padding-top: 1rem;
   padding-bottom: 1.5rem;
 }
-
-
 .intro-wrapper {
   display: flex;
   flex-wrap: wrap-reverse;
   padding-bottom: min(20px, 95%);
   gap: 30px;
-  
 }
 
 .intro-wrapper > * {
   flex: 1 1 48%;
 }
+
 .intro__text {
   padding-top: 2rem;
 }
@@ -31,6 +32,9 @@
   object-fit: cover;
   border-radius: 5px;
 }
+
+/* Endring når skjermen blir for liten for det vanlige designet */
+
 @media(max-width: 929px){
   .intro__img img{
     min-height: auto;
