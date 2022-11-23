@@ -58,13 +58,13 @@ main{
 
 }
 .card--img1{
-  background-image: url(../img/booking-images/hotellrommetnye.png);
+  background-image: url(../img/booking-images/Konferanserom.png);
 }
 .card--img2{
-  background-image: url(../img/booking-images/Hotell.png);
+  background-image: url(../img/booking-images/Treningsrom.png);
 }
 .card--img3{
-  background-image: url(../img/booking-images/møterom.png);
+  background-image: url(../img/booking-images/Intervjurom.png);
 }
 
 .card:hover,
