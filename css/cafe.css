@@ -54,16 +54,45 @@ hr {
 
 /* ------- RETTER HEADER ------- */
 
-.banner-header {
-  background-color: var(--clr-rød);
-  height: 65px;
+
+
+.banner-header{
+  position: relative;
+  max-width: 600px;
+  margin: 100px auto;
   text-align: center;
-  border-radius: 5px;
-  line-height: 65px;
-  vertical-align: middle;
-  font-size: 3rem;
-  color: var(--clr-knapper)
+} 
+
+.banner-header:before{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background:  var(--clr-rød);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -2;
 }
+
+.banner-header:after{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: var(--clr-rød);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-radius: 0px;
+  z-index: -2;
+}
+.span-banner-header{
+  background: var(--clr-bakgrunn);
+  font-size: 2.5rem;
+}
+
+
 
 /* ------- RETTER CONTAINER ------- */
 
