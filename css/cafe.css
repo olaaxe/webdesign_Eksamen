@@ -54,16 +54,23 @@ hr {
 
 /* ------- RETTER HEADER ------- */
 
-.banner-header {
-  background-color: var(--clr-rød);
-  height: 65px;
-  text-align: center;
-  border-radius: 5px;
-  line-height: 65px;
-  vertical-align: middle;
-  font-size: 3rem;
-  color: var(--clr-knapper)
+.banner__header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 10px 0;
 }
+.banner__color{
+  background-color: var(--clr-rød);
+  height: 2px;
+  width: 80%;
+  border-radius: 5px;
+  justify-self: center;
+}
+.banner__text{
+  margin: 0 10px;
+}
+
 
 /* ------- RETTER CONTAINER ------- */
 
