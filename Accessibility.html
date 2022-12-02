@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,6 +9,11 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Roboto:wght@400;500;700&display=swap"
 			rel="stylesheet" />
+			<meta name="theme-color" content="#151515" />
+			<link rel="canonical" href="https://olaaxe.github.io/webdesign_Eksamen/Accessibility.html"/>
+			<meta
+				name="description"
+				content="Dette er inkluderings siden til C-SONS konferansesenter" />
 		<title>C-SONS / Inkludering</title>
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/Accessibility.css" />
@@ -17,7 +22,7 @@
 			rel="website icon"
 			type="png"
 			href="img\header-images\Logo_web_icon.png" />
-			<!--Bilde designet og laget for denne examen (Johannesen, 2022).-->
+		<!--Bilde designet og laget for denne examen (Johannesen, 2022).-->
 		<script src="script.js" defer></script>
 		<noscript>
 			<style>
@@ -42,7 +47,7 @@
 						class="header__logoImg"
 						src="img\header-images\Logo_new.transparent.png"
 						alt="C-SONS Logo" />
-						<!--Bilde designet og laget for denne examen (Johannesen, 2022).-->
+					<!--Bilde designet og laget for denne examen (Johannesen, 2022).-->
 				</a>
 			</section>
 			<section class="header__content">
@@ -54,12 +59,12 @@
 							class="menu__open menuIcon__img"
 							src="img\header-images\Burgermeny_transparent.png"
 							alt="Åpne burgermeny" />
-							<!--Bilde designet og laget for denne examen (Johannesen, 2022).-->
+						<!--Bilde designet og laget for denne examen (Johannesen, 2022).-->
 						<img
 							class="menu__close menuIcon__img"
 							src="img\header-images\Cross_Transparent.png"
 							alt="Lukk Burgermeny" />
-							<!--Bilde designet og laget for denne examen (Johannesen, 2022).-->
+						<!--Bilde designet og laget for denne examen (Johannesen, 2022).-->
 					</figure>
 				</label>
 				<nav class="header__nav" aria-label="Side Header">
@@ -73,7 +78,7 @@
 						<p class="navButton__links">Restaurant</p>
 					</a>
 					<a class="header__navButton" href="Accessibility.html">
-						<p class="navButton__links  navButton__links--active">Inkludering</p>
+						<p class="navButton__links navButton__links--active">Inkludering</p>
 					</a>
 					<a class="header__navButton" href="topical.html">
 						<p class="navButton__links">Aktuelt</p>
@@ -86,12 +91,13 @@
 		<main>
 			<h1>Inkluderende design</h1>
 			<p>
-				I denne teksten gjennomgår vi hvilke tiltak vi har iverksatt for å passe på
-				at siden er responsiv og inkluderende i sitt design. Vi har kjørt siden igjennom 
-				en automatisk test i programmet polypane, og gjort en del tiltak utenom hva den ba om.
+				I denne teksten gjennomgår vi hvilke tiltak vi har iverksatt for å passe
+				på at siden er responsiv og inkluderende i sitt design. Vi har kjørt
+				siden igjennom en automatisk test i programmet polypane, og gjort en del
+				tiltak utenom hva den ba om.
 			</p>
 
-			<hr>
+			<hr />
 
 			<!-- Polypane Test -->
 			<section class="container">
@@ -100,7 +106,7 @@
 						class="photo__img"
 						src="img\accessability-images\H1_error.png"
 						alt="Feilmelding som  ber oss bruke bare 1 H1 per side" />
-						<!--Skjermbilde tatt under testing (Smeby, 2022).-->
+					<!--Skjermbilde tatt under testing (Smeby, 2022).-->
 				</figure>
 				<div class="container__body">
 					<h2 class="container__header">Headdings</h2>
@@ -124,8 +130,9 @@
 						våre. Polypane ga en feilmelding hvis bildet manglet tekst eller
 						brukte unødvendige ord som image når vi beskrev bildet. Dette er
 						også nyttig for skjermlesere slik at svaksynte kan høre hva som er
-						på bildet, uten at bilde blir lest opp dobbelt. Det kan også gi brukeren
-						ett inntrykk av hva som skulle vært der om bildet ikke blir lastet inn
+						på bildet, uten at bilde blir lest opp dobbelt. Det kan også gi
+						brukeren ett inntrykk av hva som skulle vært der om bildet ikke blir
+						lastet inn
 					</p>
 				</div>
 
@@ -134,7 +141,7 @@
 						class="photo__img"
 						src="img\accessability-images\Img-tekst-redundant.png"
 						alt="Skjermbilde av feilmelding for bruk av bildetekst" />
-						<!--Skjermbilde tatt under testing (Smeby, 2022).-->
+					<!--Skjermbilde tatt under testing (Smeby, 2022).-->
 				</figure>
 			</section>
 
@@ -151,11 +158,11 @@
 				<div class="container__body">
 					<h2 class="container__header">Focus order</h2>
 					<p>
-						Vi testet for «focus-order», som sjekker om strukturen til html-filen gir 
-						mening med hvordan nettsiden ser ut. Dette er viktig for brukere som bruker 
-						tab knappen til å navigere igjennom siden og de som bruker skjermlesere. 
-						Uten endringene vi gjorde etter denne testen hadde tab ført deg til 
-						innholdet av siden, for så å navigere det til navigasjonsbaren helt til slutt.
+						Vi testet for «focus-order», som sjekker om strukturen til
+						html-filen gir mening med hvordan nettsiden ser ut. Dette er viktig
+						for brukere som bruker tab knappen til å navigere igjennom siden og
+						de som bruker skjermlesere. Uten endringene vi gjorde hadde tab ført
+						deg rundt på siden uten struktur.
 					</p>
 				</div>
 			</section>
@@ -169,18 +176,18 @@
 						class="photo__img photo__img--cover"
 						src="img\accessability-images\Responsive-design.png"
 						alt="Viser Responsive-design" />
-						<!--Skjermbilde gjort under testing (Smeby, 2022).-->
+					<!--Skjermbilde gjort under testing (Smeby, 2022).-->
 				</figure>
 				<div class="container__body">
 					<h2 class="container__header">Responsiv design</h2>
 					<p>
-						Vi har fokusert på å ha responsivt design, mye med hjelp fra
-						@media og flex-wrap: wrap;. De gjør at boksene med de elementene endrer seg
-						basert på skjermstørrelse.
-						Vi tok utgangspunktet i en brettet Galaxy Fold som den smaleste enheten 
-						nettsiden skulle funke på. Nettsiden skal da være leselig og responsiv 
-						ned til 280px, for å passe på at innholdet ikke blir for smalt under 
-						320px fjernet vi da padding fra  &lt;body&gt;.
+						Vi har fokusert på å ha responsivt design, mye med hjelp fra @media
+						og flex-wrap: wrap;. De gjør at boksene med de elementene endrer seg
+						basert på skjermstørrelse. Vi tok utgangspunktet i en brettet Galaxy
+						Fold som den smaleste enheten nettsiden skulle fungere på. Nettsiden
+						skal da være leselig og responsiv ned til 280px, for å passe på at
+						innholdet ikke blir for smalt under 320px fjernet vi da padding fra
+						&lt;body&gt;.
 					</p>
 				</div>
 			</section>
@@ -192,11 +199,10 @@
 				<div class="container__body">
 					<h2 class="container__header">REM</h2>
 					<p>
-						Vi brukte enheten <abbr title="Root EM">REM</abbr> som
-						fontstørrelse istedenfor px. Dette gjør at skriftstrørrelsen vil
-						endre seg med det som brukeren har satt som standard. Det er nyttig
-						for mennesker med dårlig syn som kan ha økt standard fontstørrelse
-						slik at ting blir lettere å lese.
+						Vi brukte enheten <abbr title="Root EM">REM</abbr> som fontstørrelse
+						istedenfor px. Dette gjør at skriftstrørrelsen vil endre seg med det
+						som brukeren har satt som standard. Det er nyttig for brukere med
+						dårlig syn som benytter seg av større fontstørrelse.
 					</p>
 				</div>
 
@@ -231,9 +237,10 @@
 						Lightmode kan være lettere å lese på mørke skjermer.
 					</p>
 					<p>
-						Vi tok hensyn til konrtast tidlig i designprosessen, og fikk ingen feil
-						på det i den automatiserte testen på grunn av det. Dette passet vi på både i Dark- og
-						Lightmode hvor vi stort sett bruker en lys beige på svart eller motsatt.
+						Vi tok hensyn til kontrast tidlig i designprosessen, og fikk ingen
+						feil på det i den automatiserte testen på grunn av det. Dette passet
+						vi på både i Dark- og Lightmode hvor vi stort sett bruker en lys
+						beige på svart eller motsatt.
 					</p>
 				</div>
 			</section>
@@ -273,7 +280,11 @@
 								loading="lazy"
 								alt="Instagram ikon" />
 						</figure>
-						<a href="https://www.instagram.com/" target="_blank" rel="noopener" class="footer__link">
+						<a
+							href="https://www.instagram.com/"
+							target="_blank"
+							rel="noopener"
+							class="footer__link">
 							<p class="sosialemedier__text footer__text">Instagram</p>
 						</a>
 						<figure class="sosialemedier__photo">
@@ -283,17 +294,25 @@
 								loading="lazy"
 								alt="Facebook ikon" />
 						</figure>
-						<a href="https://facebook.com" target="_blank" rel="noopener" class="footer__link">
+						<a
+							href="https://facebook.com"
+							target="_blank"
+							rel="noopener"
+							class="footer__link">
 							<p class="sosialemedier__text footer__text">Facebook</p>
 						</a>
 						<figure class="sosialemedier__photo">
 							<img
-								class="sosialemedier__img"	
+								class="sosialemedier__img"
 								src="img\footer-images\Twitter_icon.png"
 								loading="lazy"
 								alt="Twitter ikon" />
 						</figure>
-						<a href="https://twitter.com/" target="_blank" rel="noopener" class="footer__link">
+						<a
+							href="https://twitter.com/"
+							target="_blank"
+							rel="noopener"
+							class="footer__link">
 							<p class="sosialemedier__text footer__text">Twitter</p>
 						</a>
 					</div>
@@ -317,7 +336,7 @@
 						<p class="footer__text">Søndag:</p>
 						<p class="footer__text">10-20</p>
 					</div>
-				</section>	
+				</section>
 				<!-- Adresse og google iframe/kart -->
 				<section class="footer__adresse">
 					<h2 class="footer__header">Finn oss</h2>

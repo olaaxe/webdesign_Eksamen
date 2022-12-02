@@ -24,7 +24,7 @@
 	color: var(--clr-overskrift);
 	font-weight: bold;
 }
-:is(p, a, li) {
+:is(p, a, li, em) {
 	color: var(--clr-tekst);
 }
 
@@ -84,8 +84,10 @@ main h2:after {
 main a:hover {
 	color: var(--clr-rød__hover);
 }
-
-p {
+em{
+	display: block;
+}
+p, em {
 	padding-bottom: 1rem;
 	line-height: 1.5em;
 }

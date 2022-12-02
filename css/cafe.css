@@ -70,6 +70,9 @@ hr {
 .banner__text{
   margin: 0 10px;
 }
+.banner__text::after{
+  display: none;
+}
 
 
 /* ------- RETTER CONTAINER ------- */
